@@ -1,0 +1,10 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_ProyectoGestion</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>ROQUE-PC\SQLEXPRESS</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>C:\KB\ProyectoGestion</Directory>
+	<DataFile>GX_KB_ProyectoGestion.mdf</DataFile>
+	<LogFile>GX_KB_ProyectoGestion_log.ldf</LogFile>
+	<HostName>ROQUE-PC</HostName>
+</ConnectionInformation>

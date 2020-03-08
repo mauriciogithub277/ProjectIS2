@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="prgs.xsl"?>
+<Objects>
+   <Charset>UTF-8</Charset>
+   <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus16Trial/</Path>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Usuario</ObjName>
+      <ObjDesc>Usuario</ObjDesc>
+      <ObjLink>usuario.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Wlogin</ObjName>
+      <ObjDesc>Wlogin</ObjDesc>
+      <ObjLink>wlogin.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Home</ObjName>
+      <ObjDesc>Home</ObjDesc>
+      <ObjLink>home.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWAttraction</ObjName>
+      <ObjDesc>Attractions</ObjDesc>
+      <ObjLink>wwattraction.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWDasboard</ObjName>
+      <ObjDesc>WWDasboard</ObjDesc>
+      <ObjLink>wwdasboard.aspx</ObjLink>
+   </Object>
+</Objects>

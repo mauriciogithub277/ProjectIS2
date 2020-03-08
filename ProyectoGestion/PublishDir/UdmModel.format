@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLINT              0       4       ""   1     ModelId                        ""
+2       SQLNCHAR            2       256     ""   2     ModelName                      Modern_Spanish_CI_AS
+3       SQLINT              0       4       ""   3     ModelType                      ""
+4       SQLINT              0       4       ""   4     ModelParentId                  ""

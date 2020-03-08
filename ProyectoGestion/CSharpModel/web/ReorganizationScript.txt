@@ -1,0 +1,2 @@
+CREATE TABLE [Attraction] ([AttractionID] smallint NOT NULL IDENTITY(1,1), [AttractionName] nchar(20) NOT NULL , [AttractionAddress] nvarchar(1024) NOT NULL , [AttractionPhone] nchar(20) NOT NULL , PRIMARY KEY([AttractionID]))
+
