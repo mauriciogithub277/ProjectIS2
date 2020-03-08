@@ -1,0 +1,5 @@
+Links de acceso al Sistema
+user: admin
+pass: admin123
+
+https://trialapps3.genexus.com/Id95e454576c200aa329d2f193572c3476/wlogin.aspx
