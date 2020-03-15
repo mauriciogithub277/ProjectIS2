@@ -4,8 +4,8 @@
 <Mod>1</Mod>
 <OldMod>2</OldMod>
 <Table>
-<TableId>2</TableId>
-<TableName>Attraction</TableName>
-<Description>Attraction</Description></Table>
-<ReorgAction>*</ReorgAction>
-<ObjNavig>Roque\MDL002\GEN15\AttractionConversion.xml</ObjNavig></Object>
+<TableId>6</TableId>
+<TableName>Modulos</TableName>
+<Description>Modulos</Description></Table>
+<ReorgAction>#</ReorgAction>
+<ObjNavig>Roque\MDL002\GEN15\ModulosConversion.xml</ObjNavig></Object>

@@ -3,6 +3,7 @@ current_obj_i(2,web,15).
 current_guid('804e8afc-4f18-440b-98bc-8e9ab463f6f7').
  
  
+called_tree_i(13,15,13,16).
 called_tree_i(13,15,13,4).
  
  
@@ -23,12 +24,10 @@ called_tree_i(13,15,13,4).
 ij_object_dependency(wwdasboard,[],[],[],15).
  
  
-obj_parms_i([],[]).
+obj_parms_i([ 'String aP0_rolUser' ],[ [ 'Roluser',in ] ]).
  
  
  
  
  
-module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
-module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  

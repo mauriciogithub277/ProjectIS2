@@ -6,7 +6,7 @@
 <ObjCls>13</ObjCls>
 <ObjId>13</ObjId>
 <ObjName>WWAttraction</ObjName>
-<ObjDesc>Attractions</ObjDesc>
+<ObjDesc>Work With Attraction</ObjDesc>
 <ObjPgmName>WWAttraction</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
@@ -109,23 +109,6 @@
 <AttriId>4</AttriId>
 <AttriName>AttractionID</AttriName>
 <Description>Attraction ID</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>7</AttriId>
-<AttriName>AttractionPhone</AttriName>
-<Description>Attraction Phone</Description></Attribute>
-<Attribute>
-<AttriId>6</AttriId>
-<AttriName>AttractionAddress</AttriName>
-<Description>Attraction Address</Description></Attribute>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>AttractionName</AttriName>
-<Description>Attraction Name</Description></Attribute>
-<Attribute>
-<AttriId>4</AttriId>
-<AttriName>AttractionID</AttriName>
-<Description>Attraction ID</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

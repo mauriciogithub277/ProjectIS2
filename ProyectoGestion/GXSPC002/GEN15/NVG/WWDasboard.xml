@@ -12,27 +12,6 @@
 <Result>genreq</Result>
 <Warnings>
 <Warning>
-<MsgCode>spc0038</MsgCode>
-<Message>
-<Token>There is no index for order </Token>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>AttractionName</AttriName>
-<Description>Attraction Name</Description></Attribute>
-<Token>; poor performance may be noticed</Token>
-<Token> in grid '</Token>
-<Token>Grid</Token>
-<Token>'</Token>
-<Token>.</Token></Message></Warning>
-<Warning>
-<MsgCode>spc0156</MsgCode>
-<Message>
-<Token>Event </Token>
-<Token>'Administración'</Token>
-<Token> for control '</Token>
-<Token>Administracion</Token>
-<Token>' is not defined.</Token></Message></Warning>
-<Warning>
 <MsgCode>spc0156</MsgCode>
 <Message>
 <Token>Event </Token>
@@ -53,8 +32,25 @@
 <GenId>15</GenId>
 <GenName>Default (C#)</GenName></Generator>
 <FormClass>HTML</FormClass>
-<Parameters></Parameters>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Roluser</VarId>
+<VarName>&amp;rolUser</VarName></Variable></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
+<Event>
+<EventName>'Administración'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>16</ObjId>
+<ObjName>WWAdmin</ObjName>
+<ObjPgmName>WWAdmin</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
 <Event>
 <EventName>Load</EventName>
 <ImplicitForEach>
@@ -62,19 +58,17 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>2</TableId>
-<TableName>Attraction</TableName>
-<Description>Attraction</Description></Table></BaseTable>
+<TableId>7</TableId>
+<TableName>Proyecto</TableName>
+<Description>Proyecto</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>5</AttriId>
-<AttriName>AttractionName</AttriName>
-<Description>Attraction Name</Description></Attribute></Order>
+<AttriId>16</AttriId>
+<AttriName>ProyectoID</AttriName>
+<Description>Proyecto ID</Description></Attribute></Order>
 <Condition></Condition>
+<IndexName>IPROYECTO</IndexName>
 <LevelOptions></LevelOptions>
-<Optimizations>
-<Optimization>
-<Type>ServerPaging</Type></Optimization></Optimizations>
 <OptimizedWhere>
 <StartFrom>
 <Condition>
@@ -85,32 +79,15 @@
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
-<TableId>2</TableId>
-<TableName>Attraction</TableName>
-<Description>Attraction</Description>
+<TableId>7</TableId>
+<TableName>Proyecto</TableName>
+<Description>Proyecto</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>4</AttriId>
-<AttriName>AttractionID</AttriName>
-<Description>Attraction ID</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>7</AttriId>
-<AttriName>AttractionPhone</AttriName>
-<Description>Attraction Phone</Description></Attribute>
-<Attribute>
-<AttriId>6</AttriId>
-<AttriName>AttractionAddress</AttriName>
-<Description>Attraction Address</Description></Attribute>
-<Attribute>
-<AttriId>5</AttriId>
-<AttriName>AttractionName</AttriName>
-<Description>Attraction Name</Description></Attribute>
-<Attribute>
-<AttriId>4</AttriId>
-<AttriName>AttractionID</AttriName>
-<Description>Attraction ID</Description></Attribute></Into>
+<AttriId>16</AttriId>
+<AttriName>ProyectoID</AttriName>
+<Description>Proyecto ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

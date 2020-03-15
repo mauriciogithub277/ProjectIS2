@@ -16,7 +16,17 @@
 <GenId>15</GenId>
 <GenName>Default (C#)</GenName></Generator>
 <FormClass>HTML</FormClass>
-<Parameters></Parameters>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Usuarioid</VarId>
+<VarName>&amp;UsuarioID</VarName></Variable></Parameter></Parameters>
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
@@ -38,7 +48,18 @@
 <AttriId>1</AttriId>
 <AttriName>UsuarioID</AttriName>
 <Description>Usuario ID</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></NavigationTree>
+<Tables>
+<Table>
+<TableId>3</TableId>
+<TableName>Roles</TableName>
+<Description>Roles</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>RolesID</AttriName>
+<Description>Roles ID</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
 <AggSelFormulas></AggSelFormulas></Formulas>
@@ -61,7 +82,11 @@
 <Attribute>
 <AttriId>3</AttriId>
 <AttriName>Password</AttriName>
-<Description>Password</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Password</Description></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>RolesID</AttriName>
+<Description>Roles ID</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>1</TableId>
@@ -76,7 +101,11 @@
 <Attribute>
 <AttriId>3</AttriId>
 <AttriName>Password</AttriName>
-<Description>Password</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Password</Description></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>RolesID</AttriName>
+<Description>Roles ID</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>1</TableId>
@@ -94,21 +123,21 @@
 <Prompts>
 <Prompt>
 <Table>
-<TableId>1</TableId>
-<TableName>Usuario</TableName>
-<Description>Usuario</Description></Table>
+<TableId>3</TableId>
+<TableName>Roles</TableName>
+<Description>Roles</Description></Table>
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>7</ObjId>
-<ObjName>Gx0010</ObjName>
-<ObjPgmName>Gx0010</ObjPgmName>
+<ObjId>20</ObjId>
+<ObjName>Gx0030</ObjName>
+<ObjPgmName>Gx0030</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <InputParameters></InputParameters>
 <OutputParameters>
 <Attribute>
-<AttriId>1</AttriId>
-<AttriName>UsuarioID</AttriName>
-<Description>Usuario ID</Description></Attribute></OutputParameters>
+<AttriId>8</AttriId>
+<AttriName>RolesID</AttriName>
+<Description>Roles ID</Description></Attribute></OutputParameters>
 <PromptType>System</PromptType></Prompt></Prompts>
 <Suggests></Suggests></ObjectSpec>

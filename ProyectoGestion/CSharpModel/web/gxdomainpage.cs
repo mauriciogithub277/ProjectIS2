@@ -2,7 +2,7 @@
                File: Page
         Description: Page
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:50:24.35
+       Generated on: 3/14/2020 11:48:9.24
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -13,6 +13,12 @@ using GeneXus.Resources;
 using GeneXus.Application;
 using GeneXus.Metadata;
 using GeneXus.Cryptography;
+using GeneXus.Reorg;
+using System.Threading;
+using GeneXus.Programs;
+using System.Web.Services;
+using System.Data;
+using GeneXus.Data;
 using GeneXus.Data.ADO;
 using GeneXus.Data.NTier;
 using GeneXus.Data.NTier.ADO;
@@ -21,9 +27,6 @@ using GeneXus.Search;
 using GeneXus.Encryption;
 using GeneXus.Http.Client;
 using System.Xml.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Activation;
-using System.Runtime.Serialization;
 namespace GeneXus.Programs {
    public class gxdomainpage
    {

@@ -1,8 +1,8 @@
 /*
                File: WWAttraction
-        Description: Attractions
+        Description: Work With Attraction
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 17:10:58.30
+       Generated on: 3/13/2020 18:2:19.78
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -251,7 +251,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203717105833", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20203131821982", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -376,7 +376,7 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Attractions" ;
+         return "Work With Attraction" ;
       }
 
       protected void WB0D0( )
@@ -645,7 +645,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 16_0_7-138086", 0) ;
-            Form.Meta.addItem("description", "Attractions", 0) ;
+            Form.Meta.addItem("description", "Work With Attraction", 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -1351,7 +1351,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203717105862", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203131822017", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1369,7 +1369,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("wwattraction.js", "?20203717105862", false, true);
+            context.AddJavascriptSource("wwattraction.js", "?20203131822017", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1572,7 +1572,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Attractions";
+         Form.Caption = "Work With Attraction";
          subGrid_Rows = 10;
          context.GX_msglist.DisplayMode = 1;
          if ( context.isSpaRequest( ) )

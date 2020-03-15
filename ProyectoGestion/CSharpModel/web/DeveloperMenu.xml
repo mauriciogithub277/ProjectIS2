@@ -5,9 +5,15 @@
    <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus16Trial/</Path>
    <Object>
       <ObjCls>0</ObjCls>
-      <ObjName>Usuario</ObjName>
-      <ObjDesc>Usuario</ObjDesc>
-      <ObjLink>usuario.aspx</ObjLink>
+      <ObjName>Modulos</ObjName>
+      <ObjDesc>Modulos</ObjDesc>
+      <ObjLink>modulos.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Proyecto</ObjName>
+      <ObjDesc>Proyecto</ObjDesc>
+      <ObjLink>proyecto.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
@@ -23,14 +29,20 @@
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
-      <ObjName>WWAttraction</ObjName>
-      <ObjDesc>Attractions</ObjDesc>
-      <ObjLink>wwattraction.aspx</ObjLink>
+      <ObjName>WWAdmin</ObjName>
+      <ObjDesc>WWAdmin</ObjDesc>
+      <ObjLink>wwadmin.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
-      <ObjName>WWDasboard</ObjName>
-      <ObjDesc>WWDasboard</ObjDesc>
-      <ObjLink>wwdasboard.aspx</ObjLink>
+      <ObjName>WWUsuario</ObjName>
+      <ObjDesc>Usuarios</ObjDesc>
+      <ObjLink>wwusuario.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWRoles</ObjName>
+      <ObjDesc>Roles</ObjDesc>
+      <ObjLink>wwroles.aspx</ObjLink>
    </Object>
 </Objects>

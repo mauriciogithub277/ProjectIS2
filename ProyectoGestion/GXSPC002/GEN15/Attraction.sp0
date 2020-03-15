@@ -194,9 +194,11 @@ v_i(f,o,4,'Pgmname').
 act_info_i(1,[ [ 4 ] ]).
  
  
+tbl_to_delete_i(2,[ 5,[ [ 2,4,4 ] ],c,'IATTRACTIONSUPPLIER',[ [ 5,4 ],[ 5,10 ] ],[ 4,10 ],'' ]).
  
  
  
+attri_i(10,[ 'SupplierID',int,4,0,'ZZZ9',0,'Supplier ID','',0 ]).
 attri_i(7,[ 'AttractionPhone',char,20,0,'',0,'Attraction Phone','',0 ]).
 attri_i(6,[ 'AttractionAddress',svchar,1024,0,'',0,'Attraction Address','',0 ]).
 attri_i(5,[ 'AttractionName',char,20,0,'',0,'Attraction Name','',0 ]).
@@ -209,9 +211,11 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
 attri_i('Attractionid',[ 'AttractionID',int,4,0,'ZZZ9',0,'Attraction ID','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
+table_i(5,[ 'AttractionSupplier',[ 4,10 ],'Attraction Supplier','AttractionSupplier' ]).
 table_i(2,[ 'Attraction',[ 4,5,6,7 ],'Attraction','Attraction' ]).
  
 index_i(2,[ 'IATTRACTION',u,[ 4 ],'IAttraction' ]).
+index_i(5,[ 'IATTRACTIONSUPPLIER',u,[ 4,10 ],'IAttractionSupplier' ]).
  
  
  
@@ -1063,13 +1067,31 @@ att_prop_i(2,7,'AttRegEx','',d).
 att_prop_i(2,7,'AttValidationFailedMsg','',d).
 att_prop_i(2,7,'DownloadOffline','0',d).
 att_prop_i(2,7,'FullName','AttractionPhone',v).
+att_prop_i(2,10,'ExternalName','SupplierID',d).
+att_prop_i(2,10,'ExternalNamespace','ProyectoGestion',d).
+att_prop_i(2,10,'EmptyAsNull','Yes',d).
+att_prop_i(2,10,idBasedOn,71,v).
+att_prop_i(2,10,'AUTONUMBER','-1',d).
+att_prop_i(2,10,'AUTONUMBER_START','1',d).
+att_prop_i(2,10,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,10,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,10,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,10,'AttRegEx','',d).
+att_prop_i(2,10,'AttValidationFailedMsg','',d).
+att_prop_i(2,10,'DownloadOffline','0',d).
+att_prop_i(2,10,'FullName','SupplierID',v).
  
+tbl_prop_i(2,5,'AllDirSuper',[ [ 2,[ 4 ] ] ],v).
+tbl_prop_i(2,2,'DirSubor',[ [ 5,[ 4 ] ] ],v).
+tbl_prop_i(2,5,'DirSuper',[ [ 2,[ 4 ] ] ],v).
  
 tbl_att_prop_i(2,2,4,'AllowNulls',n).
 tbl_att_prop_i(2,2,4,'AUTONUMBER',y).
 tbl_att_prop_i(2,2,5,'AllowNulls',n).
 tbl_att_prop_i(2,2,6,'AllowNulls',n).
 tbl_att_prop_i(2,2,7,'AllowNulls',n).
+tbl_att_prop_i(2,5,4,'AllowNulls',n).
+tbl_att_prop_i(2,5,10,'AllowNulls',n).
  
 var_prop_i(2,'Attractionid',idBasedOn,'',v).
  
@@ -1088,8 +1110,6 @@ struct_dt_i([ 26,50,78 ],name,'Attribute').
 struct_dt_i([ 26,50,78 ],namespace,'ProyectoGestion.TransactionContext').
 struct_dt_i([ 26,50,0 ],fullname,'TransactionContext').
 struct_dt_i([ 26,50,78 ],fullname,'TransactionContext.Attribute').
-struct_dt_i([ 26,50,0 ],modified,yes).
-struct_dt_i([ 26,50,78 ],modified,yes).
  
 struct_dt_elem_i([ 26,50,0 ],1,name,'Callerobject').
 struct_dt_elem_i([ 26,50,0 ],1,camelname,'CallerObject').

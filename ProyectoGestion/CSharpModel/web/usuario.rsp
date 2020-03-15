@@ -13,6 +13,9 @@
 /r:system.data.dll
 /r:system.data.dll
 /r:bin\GeneXus.Programs.Common.dll
+/r:bin\GeneXus.dll
+/r:bin\GeneXus.dll
 /r:GxBaseBuilder.dll
 /out:bin\usuario.dll
 usuario.cs
+isauthorized.cs

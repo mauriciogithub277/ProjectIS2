@@ -67,6 +67,7 @@
 <Variable>
 <VarId>Password</VarId>
 <VarName>&amp;password</VarName></Variable></Condition></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
 <NavigationTree>
 <Table>
 <TableId>1</TableId>
@@ -78,16 +79,18 @@
 <AttriId>1</AttriId>
 <AttriName>UsuarioID</AttriName>
 <Description>Usuario ID</Description></Attribute></KeyAttributes>
-<Into>
+<Tables>
+<Table>
+<TableId>3</TableId>
+<TableName>Roles</TableName>
+<Description>Roles</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
 <Attribute>
-<AttriId>3</AttriId>
-<AttriName>Password</AttriName>
-<Description>Password</Description></Attribute>
-<Attribute>
-<AttriId>2</AttriId>
-<AttriName>Name</AttriName>
-<Description>Name</Description></Attribute></Into>
-<Tables></Tables></Table></NavigationTree>
+<AttriId>8</AttriId>
+<AttriName>RolesID</AttriName>
+<Description>Roles ID</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
@@ -100,7 +103,10 @@
 <ObjName>WWDasboard</ObjName>
 <ObjPgmName>WWDasboard</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Parameters></Parameters>
+<Parameters>
+<Variable>
+<VarId>Iduser</VarId>
+<VarName>&amp;idUser</VarName></Variable></Parameters>
 <IF></IF></CALL></Level></Event>
 <Event>
 <EventName>Load</EventName></Event>

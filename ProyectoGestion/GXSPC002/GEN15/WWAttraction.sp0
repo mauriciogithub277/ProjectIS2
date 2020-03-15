@@ -1,4 +1,4 @@
-spec_i([ web,13,'Attractions','WWAttraction',0,eng,'16_0_7-138086' ]).
+spec_i([ web,13,'Work With Attraction','WWAttraction',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
@@ -125,7 +125,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Attractions')).
+rule_i(0,prop('ObjDesc','Work With Attraction')).
 rule_i(0,prop('ObjName','WWAttraction')).
 rule_i(0,maingen(15)).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).

@@ -2,7 +2,7 @@
                File: Attraction
         Description: Attraction
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:50:20.44
+       Generated on: 3/13/2020 18:2:17.89
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -1304,6 +1304,17 @@ namespace GeneXus.Programs {
             AV11Pgmname = "Attraction";
             AssignAttri("", false, "AV11Pgmname", AV11Pgmname);
          }
+         if ( AnyError == 0 )
+         {
+            /* Using cursor T000211 */
+            pr_default.execute(9, new Object[] {A4AttractionID});
+            if ( (pr_default.getStatus(9) != 101) )
+            {
+               GX_msglist.addItem(context.GetMessage( "GXM_del", new   object[]  {"Attraction Supplier"}), "CannotDeleteReferencedRecord", 1, "");
+               AnyError = 1;
+            }
+            pr_default.close(9);
+         }
       }
 
       protected void EndLevel022( )
@@ -1344,13 +1355,13 @@ namespace GeneXus.Programs {
       public void ScanStart022( )
       {
          /* Scan By routine */
-         /* Using cursor T000211 */
-         pr_default.execute(9);
+         /* Using cursor T000212 */
+         pr_default.execute(10);
          RcdFound2 = 0;
-         if ( (pr_default.getStatus(9) != 101) )
+         if ( (pr_default.getStatus(10) != 101) )
          {
             RcdFound2 = 1;
-            A4AttractionID = T000211_A4AttractionID[0];
+            A4AttractionID = T000212_A4AttractionID[0];
             AssignAttri("", false, "A4AttractionID", StringUtil.LTrimStr( (decimal)(A4AttractionID), 4, 0));
          }
          /* Load Subordinate Levels */
@@ -1359,19 +1370,19 @@ namespace GeneXus.Programs {
       protected void ScanNext022( )
       {
          /* Scan next routine */
-         pr_default.readNext(9);
+         pr_default.readNext(10);
          RcdFound2 = 0;
-         if ( (pr_default.getStatus(9) != 101) )
+         if ( (pr_default.getStatus(10) != 101) )
          {
             RcdFound2 = 1;
-            A4AttractionID = T000211_A4AttractionID[0];
+            A4AttractionID = T000212_A4AttractionID[0];
             AssignAttri("", false, "A4AttractionID", StringUtil.LTrimStr( (decimal)(A4AttractionID), 4, 0));
          }
       }
 
       protected void ScanEnd022( )
       {
-         pr_default.close(9);
+         pr_default.close(10);
       }
 
       protected void AfterConfirm022( )
@@ -1458,7 +1469,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203716502112", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20203131821837", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1635,7 +1646,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203716502117", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203131821841", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1651,7 +1662,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("attraction.js", "?20203716502117", false, true);
+         context.AddJavascriptSource("attraction.js", "?20203131821841", false, true);
          /* End function include_jscripts */
       }
 
@@ -1835,6 +1846,8 @@ namespace GeneXus.Programs {
          T00022_A7AttractionPhone = new String[] {""} ;
          T00028_A4AttractionID = new short[1] ;
          T000211_A4AttractionID = new short[1] ;
+         T000211_A10SupplierID = new short[1] ;
+         T000212_A4AttractionID = new short[1] ;
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
@@ -1866,7 +1879,10 @@ namespace GeneXus.Programs {
                , new Object[] {
                }
                , new Object[] {
-               T000211_A4AttractionID
+               T000211_A4AttractionID, T000211_A10SupplierID
+               }
+               , new Object[] {
+               T000212_A4AttractionID
                }
             }
          );
@@ -1989,6 +2005,8 @@ namespace GeneXus.Programs {
       private String[] T00022_A7AttractionPhone ;
       private short[] T00028_A4AttractionID ;
       private short[] T000211_A4AttractionID ;
+      private short[] T000211_A10SupplierID ;
+      private short[] T000212_A4AttractionID ;
       private GXWebForm Form ;
       private SdtTransactionContext AV9TrnContext ;
    }
@@ -2009,6 +2027,7 @@ namespace GeneXus.Programs {
          ,new UpdateCursor(def[7])
          ,new UpdateCursor(def[8])
          ,new ForEachCursor(def[9])
+         ,new ForEachCursor(def[10])
        };
     }
 
@@ -2060,6 +2079,10 @@ namespace GeneXus.Programs {
           } ;
           Object[] prmT000211 ;
           prmT000211 = new Object[] {
+          new Object[] {"@AttractionID",SqlDbType.SmallInt,4,0}
+          } ;
+          Object[] prmT000212 ;
+          prmT000212 = new Object[] {
           } ;
           def= new CursorDef[] {
               new CursorDef("T00022", "SELECT [AttractionID], [AttractionName], [AttractionAddress], [AttractionPhone] FROM [Attraction] WITH (UPDLOCK) WHERE [AttractionID] = @AttractionID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00022,1, GxCacheFrequency.OFF ,true,false )
@@ -2071,7 +2094,8 @@ namespace GeneXus.Programs {
              ,new CursorDef("T00028", "INSERT INTO [Attraction]([AttractionName], [AttractionAddress], [AttractionPhone]) VALUES(@AttractionName, @AttractionAddress, @AttractionPhone); SELECT SCOPE_IDENTITY()", GxErrorMask.GX_NOMASK,prmT00028)
              ,new CursorDef("T00029", "UPDATE [Attraction] SET [AttractionName]=@AttractionName, [AttractionAddress]=@AttractionAddress, [AttractionPhone]=@AttractionPhone  WHERE [AttractionID] = @AttractionID", GxErrorMask.GX_NOMASK,prmT00029)
              ,new CursorDef("T000210", "DELETE FROM [Attraction]  WHERE [AttractionID] = @AttractionID", GxErrorMask.GX_NOMASK,prmT000210)
-             ,new CursorDef("T000211", "SELECT [AttractionID] FROM [Attraction] ORDER BY [AttractionID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000211,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000211", "SELECT TOP 1 [AttractionID], [SupplierID] FROM [AttractionSupplier] WHERE [AttractionID] = @AttractionID ",true, GxErrorMask.GX_NOMASK, false, this,prmT000211,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000212", "SELECT [AttractionID] FROM [Attraction] ORDER BY [AttractionID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000212,100, GxCacheFrequency.OFF ,true,false )
           };
        }
     }
@@ -2114,6 +2138,10 @@ namespace GeneXus.Programs {
                 return;
              case 9 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
+                ((short[]) buf[1])[0] = rslt.getShort(2) ;
+                return;
+             case 10 :
+                ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 return;
        }
     }
@@ -2154,6 +2182,9 @@ namespace GeneXus.Programs {
                 stmt.SetParameter(4, (short)parms[3]);
                 return;
              case 8 :
+                stmt.SetParameter(1, (short)parms[0]);
+                return;
+             case 9 :
                 stmt.SetParameter(1, (short)parms[0]);
                 return;
        }

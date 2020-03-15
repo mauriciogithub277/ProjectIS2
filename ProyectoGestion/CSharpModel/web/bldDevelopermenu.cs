@@ -54,12 +54,22 @@ public class bldDevelopermenu : GxBaseBuilder
       sc.Add( @"home", "dll");
       sc.Add( @"notauthorized", "dll");
       sc.Add( @"tabbedview", "dll");
-      sc.Add( @"viewattraction", "dll");
-      sc.Add( @"wwattraction", "dll");
-      sc.Add( @"attractiongeneral", "dll");
       sc.Add( @"wwdasboard", "dll");
+      sc.Add( @"wwadmin", "dll");
+      sc.Add( @"viewusuario", "dll");
+      sc.Add( @"wwusuario", "dll");
+      sc.Add( @"usuariogeneral", "dll");
+      sc.Add( @"gx0030", "dll");
+      sc.Add( @"viewroles", "dll");
+      sc.Add( @"wwroles", "dll");
+      sc.Add( @"rolesgeneral", "dll");
+      sc.Add( @"rolesusuariowc", "dll");
+      sc.Add( @"gx0060", "dll");
+      sc.Add( @"gx0070", "dll");
       sc.Add( @"usuario", "dll");
-      sc.Add( @"attraction", "dll");
+      sc.Add( @"roles", "dll");
+      sc.Add( @"modulos", "dll");
+      sc.Add( @"proyecto", "dll");
       return sc ;
    }
 

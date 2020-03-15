@@ -136,7 +136,6 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
  
  
  
-function_i(1,'Isauthorized',yes,udp,o(1,'IsAuthorized'),[],11,'Isauthorized',[ [ t('Name',23) ] ]).
  
  
  
@@ -165,29 +164,8 @@ dom_info_i(20,[ 'GeneXus\Url' ]).
  
 break_i(1,rpt,0,[],[ [],[],[] ]).
  
-b_group_i(1,1,lit,0,1,9).
-b_group_i(1,2,lit,0,10,0).
+b_group_i(1,1,lit,0,1,0).
  
-b_line_i(0,1,1,cmd,0,[]).
-b_line_i(1,1,1,cmd,0,[]).
-b_line_i(2,1,1,cmd,0,[ t('',107,0,0),t('Programnames',23,0,0),t(=,10,0,0),t([ 'ProgramNames',[ t('(',0,2,20),t(')',4,2,21) ],n ],46,0,0) ]).
-b_line_i(3,1,1,cmd,0,[]).
-b_line_i(4,1,1,cmd,0,[ t('',107,0,0),t('Name',23,0,0),t(=,10,0,0),t('"WWAttraction"',3,0,0) ]).
-b_line_i(5,1,1,cmd,0,[ t('',107,0,0),t('Description',23,0,0),t(=,10,0,0),t('"Attractions"',3,0,0) ]).
-b_line_i(6,1,1,cmd,0,[ t('',107,0,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWAttraction'),28,0,0),t(')',4,0,0) ]).
-b_line_i(7,1,1,cmd,0,[ t('',145,0,0),t('''ADDPROGRAM''',3,7,4) ]).
-b_line_i(8,1,1,cmd,0,[]).
-b_line_i(9,1,1,cmd,0,[ t('',143,0,0),t('''ADDPROGRAM''',3,9,5) ]).
-b_line_i(10,1,2,cmd,0,[ t('',107,0,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
-b_line_i(11,1,2,cmd,0,[ t('',107,0,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('udp(',1,0,0),t('Isauthorized',3,0,0),t(11,3,0,0),t('Name',23,0,0),t(')',4,0,0) ]).
-b_line_i(12,1,2,cmd,0,[ t('',109,0,0),t('(',0,0,5),t('Isauthorized',23,0,6),t(')',4,0,19) ]).
-b_line_i(13,1,2,cmd,0,[ t('',107,0,0),t('Programname',23,0,0),t(=,10,0,0),t([ 'ProgramNames.ProgramName',[ t('(',0,13,131),t(')',4,13,132) ],n ],46,0,0) ]).
-b_line_i(14,1,2,cmd,0,[ t('',107,0,0),t([ t('Programname',23,0,0),t('Name',3,0,0) ],29,0,0),t(=,10,0,0),t('Name',23,0,0) ]).
-b_line_i(15,1,2,cmd,0,[ t('',107,0,0),t([ t('Programname',23,0,0),t('Description',3,0,0) ],29,0,0),t(=,10,0,0),t('Description',23,0,0) ]).
-b_line_i(16,1,2,cmd,0,[ t('',107,0,0),t([ t('Programname',23,0,0),t('Link',3,0,0) ],29,0,0),t(=,10,0,0),t('Link',23,0,0) ]).
-b_line_i(17,1,2,cmd,0,[ t('',107,0,0),t([ t('Programnames',23,17,3),t('add(',1,17,17) ],31,17,3),t('Programname',23,0,22),t(')',4,0,34) ]).
-b_line_i(18,1,2,cmd,0,[ t('',111,0,0) ]).
-b_line_i(19,1,2,cmd,0,[ t('',144,0,0) ]).
  
  
  
@@ -319,12 +297,8 @@ struct_dt_elem_i([ 26,48,75 ],3,'JsonInclude',idJsonEmpty).
  
  
  
-pgm_parm_i(proc,11,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
-pgm_parm_i(web,13,'WWATTRACTION',[],[]).
  
 pgm_callprotocol_i(proc,12,'LISTPROGRAMS','INTERNAL','Secure').
-pgm_callprotocol_i(proc,11,'ISAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,13,'WWATTRACTION','INTERNAL','Secure').
  
  
  

@@ -4,6 +4,7 @@ current_guid('7b6b8f9d-da2f-424a-b384-039f3d553a4d').
  
  
 called_tree_i(13,12,13,10).
+called_tree_i(13,12,13,24).
 called_tree_i(13,12,13,14).
 called_tree_i(13,12,13,13).
 called_tree_i(13,12,1,11).

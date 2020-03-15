@@ -24,6 +24,8 @@ d576314b-960b-4f9b-adf0-373a7f287291=PlaceHolderAudio
 d4b5891b-4373-4ea4-8a97-68b77a0ce14c=PoweredByGeneXus
 28da6cce-b945-4cc5-8e39-a91759ac9224=DeleteRow
 9c1b08ed-b544-4096-b8aa-7de1e6446ab4=UndeleteRow
+bb498bfc-4355-49fe-aa64-226d7fb27c54=businessman
+6d4c54f1-c293-43d2-b961-3d54336cb66d=role
 [Location]
 90274dae-49c6-47ae-98c4-7a8f5eb82c12=English,Carmine,I,Carmine/PageFirst.png,
 eb16c005-5a7d-48a8-a16c-d7dcc1909b6e=English,Carmine,I,Carmine/PageLast.png,
@@ -50,3 +52,5 @@ d576314b-960b-4f9b-adf0-373a7f287291=English,Carmine,I,PlaceHolderAudio.png,
 d4b5891b-4373-4ea4-8a97-68b77a0ce14c=English,Carmine,I,PoweredByGeneXus.png,
 28da6cce-b945-4cc5-8e39-a91759ac9224=English,Carmine,I,DeleteRow.gif,
 9c1b08ed-b544-4096-b8aa-7de1e6446ab4=English,Carmine,I,UndeleteRow.gif,
+bb498bfc-4355-49fe-aa64-226d7fb27c54=English,Carmine,I,businessman.png,
+6d4c54f1-c293-43d2-b961-3d54336cb66d=English,Carmine,I,role.png,

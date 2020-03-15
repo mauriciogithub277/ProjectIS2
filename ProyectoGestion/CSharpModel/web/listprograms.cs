@@ -2,7 +2,7 @@
                File: ListPrograms
         Description: List Programs
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:50:18.12
+       Generated on: 3/14/2020 11:13:35.51
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -92,35 +92,7 @@ namespace GeneXus.Programs {
       {
          /* GeneXus formulas */
          /* Output device settings */
-         AV9ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "ProyectoGestion");
-         AV11name = "WWAttraction";
-         AV12description = "Attractions";
-         AV13link = "wwattraction.aspx";
-         /* Execute user subroutine: 'ADDPROGRAM' */
-         S111 ();
-         if ( returnInSub )
-         {
-            this.cleanup();
-            if (true) return;
-         }
          this.cleanup();
-      }
-
-      protected void S111( )
-      {
-         /* 'ADDPROGRAM' Routine */
-         AV8IsAuthorized = true;
-         GXt_boolean1 = AV8IsAuthorized;
-         new isauthorized(context ).execute(  AV11name, out  GXt_boolean1) ;
-         AV8IsAuthorized = GXt_boolean1;
-         if ( AV8IsAuthorized )
-         {
-            AV10ProgramName = new SdtProgramNames_ProgramName(context);
-            AV10ProgramName.gxTpr_Name = AV11name;
-            AV10ProgramName.gxTpr_Description = AV12description;
-            AV10ProgramName.gxTpr_Link = AV13link;
-            AV9ProgramNames.Add(AV10ProgramName, 0);
-         }
       }
 
       public override void cleanup( )
@@ -139,23 +111,12 @@ namespace GeneXus.Programs {
 
       public override void initialize( )
       {
-         AV11name = "";
-         AV12description = "";
-         AV13link = "";
-         AV10ProgramName = new SdtProgramNames_ProgramName(context);
          /* GeneXus formulas. */
          context.Gx_err = 0;
       }
 
-      private bool returnInSub ;
-      private bool AV8IsAuthorized ;
-      private bool GXt_boolean1 ;
-      private String AV11name ;
-      private String AV12description ;
-      private String AV13link ;
       private GXBaseCollection<SdtProgramNames_ProgramName> aP0_ProgramNames ;
       private GXBaseCollection<SdtProgramNames_ProgramName> AV9ProgramNames ;
-      private SdtProgramNames_ProgramName AV10ProgramName ;
    }
 
 }
