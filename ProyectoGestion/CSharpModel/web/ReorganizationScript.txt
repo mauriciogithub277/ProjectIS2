@@ -1,2 +1,10 @@
-ALTER TABLE [Modulos] ALTER COLUMN [ModulosDescripcion] nvarchar(1024) NOT NULL
+ALTER TABLE [Usuario] ALTER COLUMN [Name] nchar(40) NOT NULL
+
+ALTER TABLE [Roles] ALTER COLUMN [RolesName] nchar(40) NOT NULL
+
+ALTER TABLE [Modulos] ALTER COLUMN [ModulosName] nchar(40) NOT NULL
+
+ALTER TABLE [Proyecto] ALTER COLUMN [ProyectoNombre] nchar(40) NOT NULL
+
+ALTER TABLE [Tarea] ALTER COLUMN [TareaName] nchar(40) NOT NULL
 

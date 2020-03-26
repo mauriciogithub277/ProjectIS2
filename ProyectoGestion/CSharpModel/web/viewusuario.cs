@@ -2,7 +2,7 @@
                File: ViewUsuario
         Description: View Usuario
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/13/2020 14:40:18.79
+       Generated on: 3/22/2020 21:2:9.6
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -229,7 +229,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202031314401881", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202032221298", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -427,7 +427,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A2Name), StringUtil.RTrim( context.localUtil.Format( A2Name, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ViewUsuario.htm");
+            GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A2Name), StringUtil.RTrim( context.localUtil.Format( A2Name, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ViewUsuario.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -941,7 +941,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202031314401895", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2020322212927", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -957,7 +957,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("viewusuario.js", "?202031314401895", false, true);
+         context.AddJavascriptSource("viewusuario.js", "?2020322212928", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false, true);
@@ -1209,11 +1209,11 @@ namespace GeneXus.Programs {
        {
              case 0 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
+                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
                 return;
              case 1 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
+                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
                 return;
        }
     }

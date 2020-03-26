@@ -25,7 +25,7 @@ lits_i('Usuario ID',5,10).
 lits_i('Name',5,10).
 lits_i('Password',5,10).
  
-cls_i([ 0,0 ],[ 5,1070 ]).
+cls_i([ 0,0 ],[ 5,1090 ]).
  
 pos_i('Cusuarioid',[ 0,0,0 ]).
 pos_i('Cname',[ 0,0,0 ]).
@@ -33,7 +33,7 @@ pos_i('Cpassword',[ 0,0,0 ]).
 pos_i('Linkselection',[ 1,2,0 ]).
 pos_i(1,[ 1,2,1025 ]).
 pos_i(2,[ 1,2,1030 ]).
-pos_i(3,[ 1,2,1051 ]).
+pos_i(3,[ 1,2,1071 ]).
  
 repeat_i(2,[ 1,2,[ 'Linkselection',1,2,3 ],[] ]).
  
@@ -154,7 +154,7 @@ v_i(t,o,2,1).
  
  
 attri_i(3,[ 'Password',char,20,0,'',0,'Password','',0 ]).
-attri_i(2,[ 'Name',char,20,0,'',0,'Name','',0 ]).
+attri_i(2,[ 'Name',char,40,0,'',0,'Name','',0 ]).
 attri_i(1,[ 'UsuarioID',int,4,0,'ZZZ9',0,'Usuario ID','',0 ]).
 attri_i('Linkselection_GXI',[ 'Linkselection_GXI',svchar,2048,0,'',0,'',[],13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
@@ -162,7 +162,7 @@ attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
 attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',10 ]).
 attri_i('Pusuarioid',[ pUsuarioID,int,4,0,'ZZZ9',0,'Usuario ID','',9 ]).
 attri_i('Cpassword',[ cPassword,char,20,0,'',0,'Password','',8 ]).
-attri_i('Cname',[ cName,char,20,0,'',0,'Name','',7 ]).
+attri_i('Cname',[ cName,char,40,0,'',0,'Name','',7 ]).
 attri_i('Cusuarioid',[ cUsuarioID,int,4,0,'ZZZ9',0,'Usuario ID','',6 ]).
 attri_i('Linkselection',[ 'LinkSelection',bits,1024,0,'',0,'Link Selection','',5 ]).
  
@@ -555,7 +555,7 @@ html_comp_i(25,'Semanticcontent',div,d,[ str ]).
 html_comp_i(25,'Align',left,d,[ str ]).
 html_comp_i(25,'Valign',top,d,[ str ]).
 html_comp_i(26,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(26,'Colcount',20,d,[ num ]).
+html_comp_i(26,'Colcount',40,d,[ num ]).
 html_comp_i(26,'Attid',-7,v,[ num ]).
 html_comp_i(26,'Class','Attribute',v,[ str ]).
 html_comp_i(26,'Controlname','&Cname',d,[ str ]).
@@ -575,7 +575,7 @@ html_comp_i(26,'Readonly',0,v,[ bool ]).
 html_comp_i(26,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(26,'Ispassword',0,d,[ bool ]).
 html_comp_i(26,'Autoresize',-1,d,[ bool ]).
-html_comp_i(26,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(26,'Gxwidth',measure(40,chr),d,[ measure ]).
 html_comp_i(26,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(26,'Ismultiline',0,d,[ bool ]).
 html_comp_i(26,'Maxtextnumberlines',0,d,[ num ]).
@@ -840,7 +840,7 @@ html_comp_i(46,'Colvisible',-1,d,[ bool ]).
 html_comp_i(46,'Title','',d,[ str ]).
 html_comp_i(46,'Invitemsg','',d,[ str ]).
 html_comp_i(47,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(47,'Colcount',20,d,[ num ]).
+html_comp_i(47,'Colcount',40,d,[ num ]).
 html_comp_i(47,'Colattid',2,v,[ num ]).
 html_comp_i(47,'Controlname','Name',d,[ str ]).
 html_comp_i(47,'Class','DescriptionAttribute',v,[ str ]).

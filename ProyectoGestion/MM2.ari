@@ -15,14 +15,18 @@ pgm_prop_i(web,11,'TABBEDVIEW','URLAccess','No').
 pgm_prop_i(web,4,'RWDMASTERPAGE','WEB_COMP','Master').
 pgm_prop_i(web,24,'ATTRACTIONATTRACTIONSUPPLIERWC','WEB_COMP','Yes').
 pgm_prop_i(web,24,'ATTRACTIONATTRACTIONSUPPLIERWC','URLAccess','No').
-pgm_prop_i(web,25,'ROLESUSUARIOWC','WEB_COMP','Yes').
-pgm_prop_i(web,25,'ROLESUSUARIOWC','URLAccess','No').
-pgm_prop_i(web,19,'USUARIOGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,19,'USUARIOGENERAL','URLAccess','No').
 pgm_prop_i(web,14,'ATTRACTIONGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,14,'ATTRACTIONGENERAL','URLAccess','No').
+pgm_prop_i(web,19,'USUARIOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,19,'USUARIOGENERAL','URLAccess','No').
+pgm_prop_i(web,25,'ROLESUSUARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,25,'ROLESUSUARIOWC','URLAccess','No').
 pgm_prop_i(web,23,'ROLESGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,23,'ROLESGENERAL','URLAccess','No').
+pgm_prop_i(web,36,'PROYECTOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,36,'PROYECTOGENERAL','URLAccess','No').
+pgm_prop_i(web,39,'TAREAGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,39,'TAREAGENERAL','URLAccess','No').
  
 model_wrkinfo_i([ '.Net Environment','CSharpModel' ]).
  
@@ -97,7 +101,7 @@ lng_prop_i(1,'LangTimeFormat','12',v).
 lng_prop_i(1,'LangDecimalPoint','.',v).
 lng_prop_i(1,'FullyQualifiedName','English',d).
  
-ver_stamp('20200314.143608').
+ver_stamp('20200323.010058').
  
-ver_stamp(date(2020,3,14),time(11,48,4,64)).
+ver_stamp(date(2020,3,22),time(21,1,12,92)).
  

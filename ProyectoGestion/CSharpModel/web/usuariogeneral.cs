@@ -2,7 +2,7 @@
                File: UsuarioGeneral
         Description: Usuario General
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/13/2020 18:2:17.59
+       Generated on: 3/22/2020 21:2:2.33
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -254,7 +254,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203131821762", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2020322212236", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -344,7 +344,7 @@ namespace GeneXus.Programs {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
          {
-            context.AddJavascriptSource("usuariogeneral.js", "?20203131821764", false, true);
+            context.AddJavascriptSource("usuariogeneral.js", "?2020322212238", false, true);
          }
          GxWebStd.gx_hidden_field( context, sPrefix+"GX_FocusControl", GX_FocusControl);
          define_styles( ) ;
@@ -474,7 +474,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A2Name), StringUtil.RTrim( context.localUtil.Format( A2Name, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_UsuarioGeneral.htm");
+            GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A2Name), StringUtil.RTrim( context.localUtil.Format( A2Name, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_UsuarioGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -506,7 +506,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtRolesName_Internalname, StringUtil.RTrim( A9RolesName), StringUtil.RTrim( context.localUtil.Format( A9RolesName, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", edtRolesName_Link, "", "", "", edtRolesName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtRolesName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_UsuarioGeneral.htm");
+            GxWebStd.gx_single_line_edit( context, edtRolesName_Internalname, StringUtil.RTrim( A9RolesName), StringUtil.RTrim( context.localUtil.Format( A9RolesName, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", edtRolesName_Link, "", "", "", edtRolesName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtRolesName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_UsuarioGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -1135,7 +1135,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203131821779", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2020322212258", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1150,7 +1150,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("usuariogeneral.js", "?20203131821779", false, true);
+         context.AddJavascriptSource("usuariogeneral.js", "?2020322212258", false, true);
          /* End function include_jscripts */
       }
 
@@ -1417,9 +1417,9 @@ namespace GeneXus.Programs {
              case 0 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
-                ((String[]) buf[2])[0] = rslt.getString(3, 20) ;
+                ((String[]) buf[2])[0] = rslt.getString(3, 40) ;
                 ((short[]) buf[3])[0] = rslt.getShort(4) ;
-                ((String[]) buf[4])[0] = rslt.getString(5, 20) ;
+                ((String[]) buf[4])[0] = rslt.getString(5, 40) ;
                 return;
        }
     }

@@ -2,7 +2,7 @@
                File: Gx0010
         Description: Selection List Usuario
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:50:23.78
+       Generated on: 3/22/2020 21:2:15.41
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -254,7 +254,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203716502382", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20203222121544", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -459,7 +459,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_label_element( context, edtavCname_Internalname, "Name", "col-sm-3 AttributeLabel", 0, true);
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_44_idx + "',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavCname_Internalname, StringUtil.RTrim( AV7cName), StringUtil.RTrim( context.localUtil.Format( AV7cName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCname_Jsonclick, 0, "Attribute", "", "", "", "", edtavCname_Visible, edtavCname_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Gx0010.htm");
+            GxWebStd.gx_single_line_edit( context, edtavCname_Internalname, StringUtil.RTrim( AV7cName), StringUtil.RTrim( context.localUtil.Format( AV7cName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCname_Jsonclick, 0, "Attribute", "", "", "", "", edtavCname_Visible, edtavCname_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Gx0010.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -1003,7 +1003,7 @@ namespace GeneXus.Programs {
                                                  TypeConstants.STRING, TypeConstants.STRING, TypeConstants.STRING, TypeConstants.STRING, TypeConstants.SHORT
                                                  }
             } ) ;
-            lV7cName = StringUtil.PadR( StringUtil.RTrim( AV7cName), 20, "%");
+            lV7cName = StringUtil.PadR( StringUtil.RTrim( AV7cName), 40, "%");
             lV8cPassword = StringUtil.PadR( StringUtil.RTrim( AV8cPassword), 20, "%");
             /* Using cursor H00072 */
             pr_default.execute(0, new Object[] {AV6cUsuarioID, lV7cName, lV8cPassword, GXPagingFrom2, GXPagingTo2, GXPagingTo2});
@@ -1055,7 +1055,7 @@ namespace GeneXus.Programs {
                                               TypeConstants.STRING, TypeConstants.STRING, TypeConstants.STRING, TypeConstants.STRING, TypeConstants.SHORT
                                               }
          } ) ;
-         lV7cName = StringUtil.PadR( StringUtil.RTrim( AV7cName), 20, "%");
+         lV7cName = StringUtil.PadR( StringUtil.RTrim( AV7cName), 40, "%");
          lV8cPassword = StringUtil.PadR( StringUtil.RTrim( AV8cPassword), 20, "%");
          /* Using cursor H00073 */
          pr_default.execute(1, new Object[] {AV6cUsuarioID, lV7cName, lV8cPassword});
@@ -1330,7 +1330,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2020371650247", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203222121578", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1346,7 +1346,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("gx0010.js", "?2020371650247", false, true);
+         context.AddJavascriptSource("gx0010.js", "?20203222121578", false, true);
          /* End function include_jscripts */
       }
 
@@ -1459,7 +1459,7 @@ namespace GeneXus.Programs {
             ROClassString = "DescriptionAttribute";
             edtName_Link = "javascript:gx.popup.gxReturn(["+"'"+GXUtil.EncodeJSConstant( StringUtil.LTrim( StringUtil.NToC( (decimal)(A1UsuarioID), 4, 0, ".", "")))+"'"+"]);";
             AssignProp("", false, edtName_Internalname, "Link", edtName_Link, !bGXsfl_44_Refreshing);
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtName_Internalname,StringUtil.RTrim( A2Name),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)edtName_Link,(String)"",(String)"",(String)"",(String)edtName_Jsonclick,(short)0,(String)"DescriptionAttribute",(String)"",(String)ROClassString,(String)"WWColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)20,(short)0,(short)0,(short)44,(short)1,(short)-1,(short)-1,(bool)true,(String)"Name",(String)"left",(bool)true,(String)""});
+            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtName_Internalname,StringUtil.RTrim( A2Name),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)edtName_Link,(String)"",(String)"",(String)"",(String)edtName_Jsonclick,(short)0,(String)"DescriptionAttribute",(String)"",(String)ROClassString,(String)"WWColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)40,(short)0,(short)0,(short)44,(short)1,(short)-1,(short)-1,(bool)true,(String)"Name",(String)"left",(bool)true,(String)""});
             /* Subfile cell */
             if ( Grid1Container.GetWrapped() == 1 )
             {
@@ -1906,7 +1906,7 @@ namespace GeneXus.Programs {
           Object[] prmH00072 ;
           prmH00072 = new Object[] {
           new Object[] {"@AV6cUsuarioID",SqlDbType.SmallInt,4,0} ,
-          new Object[] {"@lV7cName",SqlDbType.NChar,20,0} ,
+          new Object[] {"@lV7cName",SqlDbType.NChar,40,0} ,
           new Object[] {"@lV8cPassword",SqlDbType.NChar,20,0} ,
           new Object[] {"@GXPagingFrom2",SqlDbType.Int,9,0} ,
           new Object[] {"@GXPagingTo2",SqlDbType.Int,9,0} ,
@@ -1915,7 +1915,7 @@ namespace GeneXus.Programs {
           Object[] prmH00073 ;
           prmH00073 = new Object[] {
           new Object[] {"@AV6cUsuarioID",SqlDbType.SmallInt,4,0} ,
-          new Object[] {"@lV7cName",SqlDbType.NChar,20,0} ,
+          new Object[] {"@lV7cName",SqlDbType.NChar,40,0} ,
           new Object[] {"@lV8cPassword",SqlDbType.NChar,20,0}
           } ;
           def= new CursorDef[] {
@@ -1933,7 +1933,7 @@ namespace GeneXus.Programs {
        {
              case 0 :
                 ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
+                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
                 ((short[]) buf[2])[0] = rslt.getShort(3) ;
                 return;
              case 1 :

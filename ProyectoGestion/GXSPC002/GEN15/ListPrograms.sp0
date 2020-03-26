@@ -238,8 +238,6 @@ struct_dt_i([ 26,48,75 ],name,'ProgramName').
 struct_dt_i([ 26,48,75 ],namespace,'ProyectoGestion.ProgramNames').
 struct_dt_i([ 26,48,0 ],fullname,'ProgramNames').
 struct_dt_i([ 26,48,75 ],fullname,'ProgramNames.ProgramName').
-struct_dt_i([ 26,48,0 ],modified,yes).
-struct_dt_i([ 26,48,75 ],modified,yes).
  
 struct_dt_elem_i([ 26,48,75 ],1,name,'Name').
 struct_dt_elem_i([ 26,48,75 ],1,camelname,'Name').

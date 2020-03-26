@@ -2,7 +2,7 @@
                File: Usuario
         Description: Usuario
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/13/2020 18:2:16.48
+       Generated on: 3/22/2020 21:2:11.23
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -372,7 +372,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
          TempTags = "  onfocus=\"gx.evt.onfocus(this, 39,'',false,'',0)\"";
-         GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A2Name), StringUtil.RTrim( context.localUtil.Format( A2Name, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,39);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Usuario.htm");
+         GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A2Name), StringUtil.RTrim( context.localUtil.Format( A2Name, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,39);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Usuario.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -427,7 +427,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         GxWebStd.gx_single_line_edit( context, edtRolesName_Internalname, StringUtil.RTrim( A9RolesName), StringUtil.RTrim( context.localUtil.Format( A9RolesName, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtRolesName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtRolesName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Usuario.htm");
+         GxWebStd.gx_single_line_edit( context, edtRolesName_Internalname, StringUtil.RTrim( A9RolesName), StringUtil.RTrim( context.localUtil.Format( A9RolesName, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtRolesName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtRolesName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Usuario.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -1609,7 +1609,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203131821725", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20203222121180", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1790,7 +1790,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203131821732", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203222121184", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1806,7 +1806,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("usuario.js", "?20203131821732", false, true);
+         context.AddJavascriptSource("usuario.js", "?20203222121184", false, true);
          /* End function include_jscripts */
       }
 
@@ -2271,13 +2271,13 @@ namespace GeneXus.Programs {
           } ;
           Object[] prmT000110 ;
           prmT000110 = new Object[] {
-          new Object[] {"@Name",SqlDbType.NChar,20,0} ,
+          new Object[] {"@Name",SqlDbType.NChar,40,0} ,
           new Object[] {"@Password",SqlDbType.NChar,20,0} ,
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
           Object[] prmT000111 ;
           prmT000111 = new Object[] {
-          new Object[] {"@Name",SqlDbType.NChar,20,0} ,
+          new Object[] {"@Name",SqlDbType.NChar,40,0} ,
           new Object[] {"@Password",SqlDbType.NChar,20,0} ,
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0} ,
           new Object[] {"@UsuarioID",SqlDbType.SmallInt,4,0}
@@ -2319,28 +2319,28 @@ namespace GeneXus.Programs {
        {
              case 0 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
+                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
                 ((String[]) buf[2])[0] = rslt.getString(3, 20) ;
                 ((short[]) buf[3])[0] = rslt.getShort(4) ;
                 return;
              case 1 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
+                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
                 ((String[]) buf[2])[0] = rslt.getString(3, 20) ;
                 ((short[]) buf[3])[0] = rslt.getShort(4) ;
                 return;
              case 2 :
-                ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
+                ((String[]) buf[0])[0] = rslt.getString(1, 40) ;
                 return;
              case 3 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 20) ;
+                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
                 ((String[]) buf[2])[0] = rslt.getString(3, 20) ;
-                ((String[]) buf[3])[0] = rslt.getString(4, 20) ;
+                ((String[]) buf[3])[0] = rslt.getString(4, 40) ;
                 ((short[]) buf[4])[0] = rslt.getShort(5) ;
                 return;
              case 4 :
-                ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
+                ((String[]) buf[0])[0] = rslt.getString(1, 40) ;
                 return;
              case 5 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
@@ -2355,7 +2355,7 @@ namespace GeneXus.Programs {
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 return;
              case 11 :
-                ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
+                ((String[]) buf[0])[0] = rslt.getString(1, 40) ;
                 return;
              case 12 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;

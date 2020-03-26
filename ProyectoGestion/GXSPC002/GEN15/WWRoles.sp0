@@ -22,13 +22,13 @@ lac_i(2,[ [ 'Rolesname','Update','Delete' ] ]).
  
 lits_i('Roles',5,10).
  
-cls_i([ 0,0 ],[ 5,66 ]).
+cls_i([ 0,0 ],[ 5,86 ]).
  
 pos_i('Rolesname',[ 0,0,0 ]).
 pos_i(8,[ 1,2,0 ]).
 pos_i(9,[ 1,2,5 ]).
-pos_i('Update',[ 1,2,26 ]).
-pos_i('Delete',[ 1,2,47 ]).
+pos_i('Update',[ 1,2,46 ]).
+pos_i('Delete',[ 1,2,67 ]).
  
 repeat_i(2,[ 1,2,[ 8,9,'Update','Delete' ],[ 'Update','Delete' ] ]).
  
@@ -151,7 +151,7 @@ v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
  
  
  
-attri_i(9,[ 'RolesName',char,20,0,'',0,'Roles Name','',0 ]).
+attri_i(9,[ 'RolesName',char,40,0,'',0,'Roles Name','',0 ]).
 attri_i(8,[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',19 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',18 ]).
@@ -159,7 +159,7 @@ attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',17 ]).
 attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',16 ]).
 attri_i('Delete',[ 'Delete',char,20,0,'',0,'Delete','',15 ]).
 attri_i('Update',[ 'Update',char,20,0,'',0,'Update','',14 ]).
-attri_i('Rolesname',[ 'RolesName',char,20,0,'',0,'Roles Name','',13 ]).
+attri_i('Rolesname',[ 'RolesName',char,40,0,'',0,'Roles Name','',13 ]).
 attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,'Trn Context Att','',12 ]).
 attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',11 ]).
 attri_i('Gridpagecount',[ 'GridPageCount',int,8,0,'ZZZZZZZ9',1,'Grid Page Count','',10 ]).
@@ -455,7 +455,7 @@ html_comp_i(15,'Semanticcontent',div,d,[ str ]).
 html_comp_i(15,'Align',left,d,[ str ]).
 html_comp_i(15,'Valign',top,d,[ str ]).
 html_comp_i(16,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(16,'Colcount',20,d,[ num ]).
+html_comp_i(16,'Colcount',40,d,[ num ]).
 html_comp_i(16,'Attid',-13,v,[ num ]).
 html_comp_i(16,'Class','FilterSearchAttribute',v,[ str ]).
 html_comp_i(16,'Controlname','&Rolesname',d,[ str ]).
@@ -475,7 +475,7 @@ html_comp_i(16,'Readonly',0,v,[ bool ]).
 html_comp_i(16,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(16,'Ispassword',0,d,[ bool ]).
 html_comp_i(16,'Autoresize',-1,d,[ bool ]).
-html_comp_i(16,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(16,'Gxwidth',measure(40,chr),d,[ measure ]).
 html_comp_i(16,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(16,'Ismultiline',0,d,[ bool ]).
 html_comp_i(16,'Maxtextnumberlines',0,d,[ num ]).
@@ -609,7 +609,7 @@ html_comp_i(26,'Colvisible',-1,v,[ bool ]).
 html_comp_i(26,'Title','',d,[ str ]).
 html_comp_i(26,'Invitemsg','',d,[ str ]).
 html_comp_i(27,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(27,'Colcount',20,d,[ num ]).
+html_comp_i(27,'Colcount',40,d,[ num ]).
 html_comp_i(27,'Colattid',9,v,[ num ]).
 html_comp_i(27,'Controlname','Rolesname',d,[ str ]).
 html_comp_i(27,'Class','DescriptionAttribute',v,[ str ]).
@@ -631,7 +631,7 @@ html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(27,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Coltitle','Name',d,[ str ]).
+html_comp_i(27,'Coltitle','Nombre',d,[ str ]).
 html_comp_i(27,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).

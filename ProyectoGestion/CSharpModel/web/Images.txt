@@ -26,6 +26,8 @@ d4b5891b-4373-4ea4-8a97-68b77a0ce14c=PoweredByGeneXus
 9c1b08ed-b544-4096-b8aa-7de1e6446ab4=UndeleteRow
 bb498bfc-4355-49fe-aa64-226d7fb27c54=businessman
 6d4c54f1-c293-43d2-b961-3d54336cb66d=role
+eac1dc67-7006-47fe-97fc-257bde3903c9=system
+fb75beaa-d16e-4ddd-8200-2616223af0c5=homework__1_
 [Location]
 90274dae-49c6-47ae-98c4-7a8f5eb82c12=English,Carmine,I,Carmine/PageFirst.png,
 eb16c005-5a7d-48a8-a16c-d7dcc1909b6e=English,Carmine,I,Carmine/PageLast.png,
@@ -54,3 +56,5 @@ d4b5891b-4373-4ea4-8a97-68b77a0ce14c=English,Carmine,I,PoweredByGeneXus.png,
 9c1b08ed-b544-4096-b8aa-7de1e6446ab4=English,Carmine,I,UndeleteRow.gif,
 bb498bfc-4355-49fe-aa64-226d7fb27c54=English,Carmine,I,businessman.png,
 6d4c54f1-c293-43d2-b961-3d54336cb66d=English,Carmine,I,role.png,
+eac1dc67-7006-47fe-97fc-257bde3903c9=English,Carmine,I,system.png,
+fb75beaa-d16e-4ddd-8200-2616223af0c5=English,Carmine,I,homework__1_.png,

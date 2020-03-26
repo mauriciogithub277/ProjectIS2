@@ -183,7 +183,7 @@ v_i(t,o,1,15).
  
  
 attri_i(15,[ 'ModulosDescripcion',svchar,1024,0,'',0,'Modulos Descripcion','',0 ]).
-attri_i(14,[ 'ModulosName',char,20,0,'',0,'Modulos Name','',0 ]).
+attri_i(14,[ 'ModulosName',char,40,0,'',0,'Modulos Name','',0 ]).
 attri_i(13,[ 'ModulosID',int,4,0,'ZZZ9',0,'Modulos ID','',0 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
@@ -651,7 +651,7 @@ html_comp_i(38,'Semanticcontent',div,d,[ str ]).
 html_comp_i(38,'Align',left,d,[ str ]).
 html_comp_i(38,'Valign',top,d,[ str ]).
 html_comp_i(39,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(39,'Colcount',20,d,[ num ]).
+html_comp_i(39,'Colcount',40,d,[ num ]).
 html_comp_i(39,'Attid',14,v,[ num ]).
 html_comp_i(39,'Class','Attribute',v,[ str ]).
 html_comp_i(39,'Controlname','Modulosname',d,[ str ]).
@@ -671,7 +671,7 @@ html_comp_i(39,'Readonly',0,v,[ bool ]).
 html_comp_i(39,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(39,'Ispassword',0,d,[ bool ]).
 html_comp_i(39,'Autoresize',-1,d,[ bool ]).
-html_comp_i(39,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(39,'Gxwidth',measure(40,chr),d,[ measure ]).
 html_comp_i(39,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(39,'Ismultiline',0,d,[ bool ]).
 html_comp_i(39,'Maxtextnumberlines',0,d,[ num ]).

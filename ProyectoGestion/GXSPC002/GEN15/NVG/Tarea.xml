@@ -1,0 +1,136 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_7-138086</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>8</ObjId>
+<ObjName>Tarea</ObjName>
+<ObjDesc>Tarea</ObjDesc>
+<ObjPgmName>Tarea</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Tareaid</VarId>
+<VarName>&amp;TareaID</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>8</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>8</TableId>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>8</TableId>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>TareaID</AttriName>
+<Description>Tarea ID</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>8</TableId>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>TareaName</AttriName>
+<Description>Tarea Name</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>TareaVersion</AttriName>
+<Description>Tarea Version</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>TareaPrioridad</AttriName>
+<Description>Tarea Prioridad</Description></Attribute>
+<Attribute>
+<AttriId>27</AttriId>
+<AttriName>TareaEstado</AttriName>
+<Description>Tarea Estado</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>TareaDescripcion</AttriName>
+<Description>Tarea Descripcion</Description></Attribute>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>TareaObersvacion</AttriName>
+<Description>Tarea Obersvacion</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>8</TableId>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>TareaName</AttriName>
+<Description>Tarea Name</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>TareaVersion</AttriName>
+<Description>Tarea Version</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>TareaPrioridad</AttriName>
+<Description>Tarea Prioridad</Description></Attribute>
+<Attribute>
+<AttriId>27</AttriId>
+<AttriName>TareaEstado</AttriName>
+<Description>Tarea Estado</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>TareaDescripcion</AttriName>
+<Description>Tarea Descripcion</Description></Attribute>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>TareaObersvacion</AttriName>
+<Description>Tarea Obersvacion</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>8</TableId>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

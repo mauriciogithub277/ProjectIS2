@@ -19,7 +19,7 @@ lac_i(2,[ [] ]).
  
  
  
-cls_i([ 0,0 ],[ 0,19 ]).
+cls_i([ 0,0 ],[ 0,39 ]).
  
 pos_i(8,[ 0,0,0 ]).
 pos_i(9,[ 0,0,0 ]).
@@ -140,7 +140,7 @@ v_i(t,o,3,9).
  
  
  
-attri_i(9,[ 'RolesName',char,20,0,'',0,'Roles Name','',0 ]).
+attri_i(9,[ 'RolesName',char,40,0,'',0,'Roles Name','',0 ]).
 attri_i(8,[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
@@ -475,7 +475,7 @@ html_comp_i(22,'Semanticcontent',div,d,[ str ]).
 html_comp_i(22,'Align',left,d,[ str ]).
 html_comp_i(22,'Valign',top,d,[ str ]).
 html_comp_i(23,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(23,'Colcount',20,d,[ num ]).
+html_comp_i(23,'Colcount',40,d,[ num ]).
 html_comp_i(23,'Attid',9,v,[ num ]).
 html_comp_i(23,'Class','ReadonlyAttribute',v,[ str ]).
 html_comp_i(23,'Controlname','Rolesname',d,[ str ]).
@@ -496,7 +496,7 @@ html_comp_i(23,'Readonly',-1,v,[ bool ]).
 html_comp_i(23,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(23,'Ispassword',0,d,[ bool ]).
 html_comp_i(23,'Autoresize',-1,d,[ bool ]).
-html_comp_i(23,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(23,'Gxwidth',measure(40,chr),d,[ measure ]).
 html_comp_i(23,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(23,'Ismultiline',0,d,[ bool ]).
 html_comp_i(23,'Maxtextnumberlines',0,d,[ num ]).

@@ -2,7 +2,7 @@
                File: Gx0030
         Description: Selection List Roles
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/13/2020 15:38:51.67
+       Generated on: 3/22/2020 21:2:14.98
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -253,7 +253,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202031315385170", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2020322212151", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -456,7 +456,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_label_element( context, edtavCrolesname_Internalname, "Roles Name", "col-sm-3 AttributeLabel", 0, true);
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_34_idx + "',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavCrolesname_Internalname, StringUtil.RTrim( AV7cRolesName), StringUtil.RTrim( context.localUtil.Format( AV7cRolesName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCrolesname_Jsonclick, 0, "Attribute", "", "", "", "", edtavCrolesname_Visible, edtavCrolesname_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Gx0030.htm");
+            GxWebStd.gx_single_line_edit( context, edtavCrolesname_Internalname, StringUtil.RTrim( AV7cRolesName), StringUtil.RTrim( context.localUtil.Format( AV7cRolesName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCrolesname_Jsonclick, 0, "Attribute", "", "", "", "", edtavCrolesname_Visible, edtavCrolesname_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Gx0030.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -954,7 +954,7 @@ namespace GeneXus.Programs {
                                                  TypeConstants.STRING, TypeConstants.STRING, TypeConstants.SHORT
                                                  }
             } ) ;
-            lV7cRolesName = StringUtil.PadR( StringUtil.RTrim( AV7cRolesName), 20, "%");
+            lV7cRolesName = StringUtil.PadR( StringUtil.RTrim( AV7cRolesName), 40, "%");
             /* Using cursor H000K2 */
             pr_default.execute(0, new Object[] {AV6cRolesID, lV7cRolesName, GXPagingFrom2, GXPagingTo2, GXPagingTo2});
             nGXsfl_34_idx = 1;
@@ -1002,7 +1002,7 @@ namespace GeneXus.Programs {
                                               TypeConstants.STRING, TypeConstants.STRING, TypeConstants.SHORT
                                               }
          } ) ;
-         lV7cRolesName = StringUtil.PadR( StringUtil.RTrim( AV7cRolesName), 20, "%");
+         lV7cRolesName = StringUtil.PadR( StringUtil.RTrim( AV7cRolesName), 40, "%");
          /* Using cursor H000K3 */
          pr_default.execute(1, new Object[] {AV6cRolesID, lV7cRolesName});
          GRID1_nRecordCount = H000K3_AGRID1_nRecordCount[0];
@@ -1270,7 +1270,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202031315385190", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203222121522", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1286,7 +1286,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("gx0030.js", "?202031315385190", false, true);
+         context.AddJavascriptSource("gx0030.js", "?20203222121522", false, true);
          /* End function include_jscripts */
       }
 
@@ -1397,7 +1397,7 @@ namespace GeneXus.Programs {
             ROClassString = "DescriptionAttribute";
             edtRolesName_Link = "javascript:gx.popup.gxReturn(["+"'"+GXUtil.EncodeJSConstant( StringUtil.LTrim( StringUtil.NToC( (decimal)(A8RolesID), 4, 0, ".", "")))+"'"+"]);";
             AssignProp("", false, edtRolesName_Internalname, "Link", edtRolesName_Link, !bGXsfl_34_Refreshing);
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtRolesName_Internalname,StringUtil.RTrim( A9RolesName),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)edtRolesName_Link,(String)"",(String)"",(String)"",(String)edtRolesName_Jsonclick,(short)0,(String)"DescriptionAttribute",(String)"",(String)ROClassString,(String)"WWColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)20,(short)0,(short)0,(short)34,(short)1,(short)-1,(short)-1,(bool)true,(String)"Name",(String)"left",(bool)true,(String)""});
+            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtRolesName_Internalname,StringUtil.RTrim( A9RolesName),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)edtRolesName_Link,(String)"",(String)"",(String)"",(String)edtRolesName_Jsonclick,(short)0,(String)"DescriptionAttribute",(String)"",(String)ROClassString,(String)"WWColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)40,(short)0,(short)0,(short)34,(short)1,(short)-1,(short)-1,(bool)true,(String)"Name",(String)"left",(bool)true,(String)""});
             send_integrity_lvl_hashes0K2( ) ;
             Grid1Container.AddRow(Grid1Row);
             nGXsfl_34_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_34_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_34_idx+1);
@@ -1786,7 +1786,7 @@ namespace GeneXus.Programs {
           Object[] prmH000K2 ;
           prmH000K2 = new Object[] {
           new Object[] {"@AV6cRolesID",SqlDbType.SmallInt,4,0} ,
-          new Object[] {"@lV7cRolesName",SqlDbType.NChar,20,0} ,
+          new Object[] {"@lV7cRolesName",SqlDbType.NChar,40,0} ,
           new Object[] {"@GXPagingFrom2",SqlDbType.Int,9,0} ,
           new Object[] {"@GXPagingTo2",SqlDbType.Int,9,0} ,
           new Object[] {"@GXPagingTo2",SqlDbType.Int,9,0}
@@ -1794,7 +1794,7 @@ namespace GeneXus.Programs {
           Object[] prmH000K3 ;
           prmH000K3 = new Object[] {
           new Object[] {"@AV6cRolesID",SqlDbType.SmallInt,4,0} ,
-          new Object[] {"@lV7cRolesName",SqlDbType.NChar,20,0}
+          new Object[] {"@lV7cRolesName",SqlDbType.NChar,40,0}
           } ;
           def= new CursorDef[] {
               new CursorDef("H000K2", "scmdbuf",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000K2,11, GxCacheFrequency.OFF ,false,false )
@@ -1810,7 +1810,7 @@ namespace GeneXus.Programs {
        switch ( cursor )
        {
              case 0 :
-                ((String[]) buf[0])[0] = rslt.getString(1, 20) ;
+                ((String[]) buf[0])[0] = rslt.getString(1, 40) ;
                 ((short[]) buf[1])[0] = rslt.getShort(2) ;
                 return;
              case 1 :

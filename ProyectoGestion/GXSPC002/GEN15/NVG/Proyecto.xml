@@ -16,7 +16,17 @@
 <GenId>15</GenId>
 <GenName>Default (C#)</GenName></Generator>
 <FormClass>HTML</FormClass>
-<Parameters></Parameters>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Proyectoid</VarId>
+<VarName>&amp;ProyectoID</VarName></Variable></Parameter></Parameters>
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
@@ -59,9 +69,17 @@
 <AttriName>ProyectoName</AttriName>
 <Description>Proyecto Name</Description></Attribute>
 <Attribute>
+<AttriId>30</AttriId>
+<AttriName>ProyectoNombre</AttriName>
+<Description>Proyecto Nombre</Description></Attribute>
+<Attribute>
 <AttriId>18</AttriId>
 <AttriName>ProyectoFecInicio</AttriName>
 <Description>Proyecto Fec Inicio</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>ProyectoDescription</AttriName>
+<Description>Proyecto Description</Description></Attribute>
 <Attribute>
 <AttriId>19</AttriId>
 <AttriName>ProyectoFecFin</AttriName>
@@ -82,9 +100,17 @@
 <AttriName>ProyectoName</AttriName>
 <Description>Proyecto Name</Description></Attribute>
 <Attribute>
+<AttriId>30</AttriId>
+<AttriName>ProyectoNombre</AttriName>
+<Description>Proyecto Nombre</Description></Attribute>
+<Attribute>
 <AttriId>18</AttriId>
 <AttriName>ProyectoFecInicio</AttriName>
 <Description>Proyecto Fec Inicio</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>ProyectoDescription</AttriName>
+<Description>Proyecto Description</Description></Attribute>
 <Attribute>
 <AttriId>19</AttriId>
 <AttriName>ProyectoFecFin</AttriName>
@@ -107,19 +133,4 @@
 <Levels></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>
-<Prompts>
-<Prompt>
-<Table>
-<TableId>7</TableId>
-<TableName>Proyecto</TableName>
-<Description>Proyecto</Description></Table>
-<ProgramName>
-<Token>Gx0070</Token></ProgramName>
-<InputParameters></InputParameters>
-<OutputParameters>
-<Attribute>
-<AttriId>16</AttriId>
-<AttriName>ProyectoID</AttriName>
-<Description>Proyecto ID</Description></Attribute></OutputParameters>
-<PromptType>System</PromptType></Prompt></Prompts>
 <Suggests></Suggests></ObjectSpec>

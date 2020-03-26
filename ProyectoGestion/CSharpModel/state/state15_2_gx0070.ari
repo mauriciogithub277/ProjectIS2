@@ -29,4 +29,6 @@ obj_parms_i([ 'short aP0_pProyectoID' ],[ [ 'Pproyectoid',out ] ]).
  
  
  
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  

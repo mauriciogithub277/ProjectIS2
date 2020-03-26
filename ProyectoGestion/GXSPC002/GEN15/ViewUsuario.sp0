@@ -31,7 +31,7 @@ lits_i('Usuario Information',5,10).
 lits_i('Usuarios',5,10).
 lits_i('General',5,10).
  
-cls_i([ 0,0 ],[ 5,28 ]).
+cls_i([ 0,0 ],[ 5,39 ]).
  
 pos_i(2,[ 0,0,0 ]).
  
@@ -155,7 +155,7 @@ v_i(t,o,4,2).
  
  
 attri_i(1,[ 'UsuarioID',int,4,0,'ZZZ9',0,'Usuario ID','',0 ]).
-attri_i(2,[ 'Name',char,20,0,'',0,'Name','',0 ]).
+attri_i(2,[ 'Name',char,40,0,'',0,'Name','',0 ]).
 attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],16 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -453,7 +453,7 @@ html_comp_i(18,'Semanticcontent',div,d,[ str ]).
 html_comp_i(18,'Align',left,d,[ str ]).
 html_comp_i(18,'Valign',top,d,[ str ]).
 html_comp_i(19,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(19,'Colcount',20,d,[ num ]).
+html_comp_i(19,'Colcount',40,d,[ num ]).
 html_comp_i(19,'Attid',2,v,[ num ]).
 html_comp_i(19,'Class','ReadonlyAttribute',v,[ str ]).
 html_comp_i(19,'Controlname','Name',d,[ str ]).
@@ -474,7 +474,7 @@ html_comp_i(19,'Readonly',-1,v,[ bool ]).
 html_comp_i(19,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(19,'Ispassword',0,d,[ bool ]).
 html_comp_i(19,'Autoresize',-1,d,[ bool ]).
-html_comp_i(19,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(19,'Gxwidth',measure(40,chr),d,[ measure ]).
 html_comp_i(19,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(19,'Ismultiline',0,d,[ bool ]).
 html_comp_i(19,'Maxtextnumberlines',0,d,[ num ]).

@@ -38,6 +38,8 @@
 <Event>
 <EventName>Lblproyectoestadofilter.Click</EventName></Event>
 <Event>
+<EventName>Lblproyectonombrefilter.Click</EventName></Event>
+<Event>
 <EventName>Load</EventName>
 <LoadMethod>Auto</LoadMethod>
 <ImplicitForEach>
@@ -157,6 +159,27 @@
 <Variable>
 <VarId>Cproyectoestado</VarId>
 <VarName>&amp;cProyectoEstado</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>30</AttriId>
+<AttriName>ProyectoNombre</AttriName>
+<Description>Proyecto Nombre</Description></Attribute>
+<Sp></Sp>
+<Token>like</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproyectonombre</VarId>
+<VarName>&amp;cProyectoNombre</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproyectonombre</VarId>
+<VarName>&amp;cProyectoNombre</VarName></Variable>
 <Token>.</Token>
 <Token>isempty(</Token>
 <Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>

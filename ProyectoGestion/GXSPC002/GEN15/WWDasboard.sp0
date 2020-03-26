@@ -20,14 +20,14 @@ lac_i(2,[ [ 'Errorperfil' ] ]).
  
 lits_i('Proyecto',5,10).
  
-cls_i([ 0,0 ],[ 5,73 ]).
+cls_i([ 0,0 ],[ 5,93 ]).
  
 pos_i('Errorperfil',[ 0,0,0 ]).
 pos_i(16,[ 1,2,0 ]).
 pos_i(17,[ 1,2,5 ]).
-pos_i(18,[ 1,2,26 ]).
-pos_i(19,[ 1,2,35 ]).
-pos_i(20,[ 1,2,44 ]).
+pos_i(18,[ 1,2,46 ]).
+pos_i(19,[ 1,2,55 ]).
+pos_i(20,[ 1,2,64 ]).
  
 repeat_i(2,[ 1,2,[ 16,17,18,19,20 ],[] ]).
  
@@ -128,6 +128,7 @@ rule_i(0,maingen(15)).
 rule_i(0,parm([ 'Roluser' ],[])).
 rule_i(0,parmio([ [ 'Roluser',in ] ])).
 rule_i(0,rule([ a(22,[ '''Administración''','''Administración''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Modulo Desarrollo''','''Modulo Desarrollo''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
 a_i(2,2,t,7,[],[ [],'IPROYECTO',[] ]).
@@ -152,7 +153,7 @@ v_i(f,o,3,[ t('&Errorperfil',23),t('Enabled',3) ]).
 attri_i(20,[ 'ProyectoEstado',char,30,0,'',0,'Proyecto Estado','',0 ]).
 attri_i(19,[ 'ProyectoFecFin',date,8,0,'99/99/99',0,'Proyecto Fec Fin','',0 ]).
 attri_i(18,[ 'ProyectoFecInicio',date,8,0,'99/99/99',0,'Proyecto Fec Inicio','',0 ]).
-attri_i(17,[ 'ProyectoName',char,20,0,'',0,'Proyecto Name','',0 ]).
+attri_i(17,[ 'ProyectoName',char,40,0,'',0,'Proyecto Name','',0 ]).
 attri_i(16,[ 'ProyectoID',int,4,0,'ZZZ9',0,'Proyecto ID','',0 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',27 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',26 ]).
@@ -171,7 +172,7 @@ attri_i('Faseproyect',[ 'FaseProyect',char,20,0,'',0,'Fase Proyect','',17 ]).
 attri_i('Estado',[ 'Estado',char,20,0,'',0,'Estado','',19 ]).
 attri_i('Errorperfil',[ 'ErrorPerfil',char,30,0,'',0,'Error Perfil','',24 ]).
 attri_i('Delete',[ 'Delete',char,20,0,'',0,'Delete','',15 ]).
-attri_i('Attractionname',[ 'AttractionName',char,20,0,'',0,'Attraction Name','',20 ]).
+attri_i('Attractionname',[ 'AttractionName',char,40,0,'',0,'Attraction Name','',20 ]).
 attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',16 ]).
  
 table_i(7,[ 'Proyecto',[ 16,17,18,19,20 ],'Proyecto','Proyecto' ]).
@@ -203,14 +204,17 @@ index_i(7,[ 'IPROYECTO',u,[ 16 ],'IProyecto' ]).
  
  
 dom_info_i(71,[ 'ID' ]).
-dom_info_i(72,[ 'Name' ]).
+dom_info_i(77,[ 'NameProyect' ]).
 dom_info_i(76,[ 'Estado' ]).
+dom_info_i(31,[ 'GeneXus\Address' ]).
+dom_info_i(72,[ 'Name' ]).
  
  
 break_i(2,nvg,1,[],[ [ 16,17,18,19,20 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,2).
-b_group_i(2,2,lit,0,3,0).
+b_group_i(2,2,lit,0,3,10).
+b_group_i(2,3,lit,0,11,0).
  
 b_line_i(2,2,1,cmd,2,[ t('',146,2,0),t('''Administración''',3,2,7) ]).
 b_line_i(3,2,2,cmd,2,[ t('',109,2,0),t('Roluser',23,2,5),t(=,10,2,14),t('"Administrador"',3,3,16) ]).
@@ -219,9 +223,12 @@ b_line_i(5,2,2,cmd,2,[ t('',110,2,0) ]).
 b_line_i(6,2,2,cmd,2,[ t('',107,2,0),t('Errorperfil',23,2,0),t(=,10,2,0),t('"Bloquedo"',3,2,0) ]).
 b_line_i(7,2,2,cmd,2,[ t('',111,2,0) ]).
 b_line_i(8,2,2,cmd,2,[ t('',147,2,0) ]).
-b_line_i(1000,2,2,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
-b_line_i(1001,2,2,cmd,0,[ t('',155,0,0) ]).
-b_line_i(1002,2,2,cmd,0,[ t('',147,0,0) ]).
+b_line_i(10,2,2,cmd,2,[ t('',146,2,0),t('''Modulo Desarrollo''',3,10,7) ]).
+b_line_i(11,2,3,cmd,2,[ t('',104,2,0),t(o(13,'WWProyect'),28,2,2) ]).
+b_line_i(12,2,3,cmd,2,[ t('',147,2,0) ]).
+b_line_i(1000,2,3,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,3,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,3,cmd,0,[ t('',147,0,0) ]).
  
 sf_break_i(37,2).
  
@@ -603,7 +610,7 @@ html_comp_i(38,'Colvisible',-1,d,[ bool ]).
 html_comp_i(38,'Title','',d,[ str ]).
 html_comp_i(38,'Invitemsg','',d,[ str ]).
 html_comp_i(39,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(39,'Colcount',20,d,[ num ]).
+html_comp_i(39,'Colcount',40,d,[ num ]).
 html_comp_i(39,'Colattid',17,v,[ num ]).
 html_comp_i(39,'Controlname','Proyectoname',d,[ str ]).
 html_comp_i(39,'Class','Attribute',v,[ str ]).
@@ -728,7 +735,6 @@ html_comp_i(42,'Invitemsg','',d,[ str ]).
  
  
  
-warn_gen_i(msg([],spc0156,[ 'Event ','''Modulo Desarrollo''',' for control ''','Modulodesarrollo',''' is not defined.' ])).
 warn_gen_i(msg([],spc0156,[ 'Event ','''Modulo Configuracion''',' for control ''','Moduloconfiguracion',''' is not defined.' ])).
  
 lit_i(9,1,t('Proyecto',3),[ ctlname('Titletext') ]).
@@ -789,7 +795,7 @@ att_prop_i(2,16,'FullName','ProyectoID',v).
 att_prop_i(2,17,'ExternalName','ProyectoName',d).
 att_prop_i(2,17,'ExternalNamespace','ProyectoGestion',d).
 att_prop_i(2,17,'EmptyAsNull','Yes',d).
-att_prop_i(2,17,idBasedOn,72,v).
+att_prop_i(2,17,idBasedOn,77,v).
 att_prop_i(2,17,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,17,'DB_NLS_SUPPORT','Yes',d).
 att_prop_i(2,17,'AttRegEx','',d).
@@ -1064,15 +1070,20 @@ struct_dt_elem_i([ 26,50,78 ],2,'JsonInclude',idJsonEmpty).
  
  
 sub_info_i(146,'''Administración''',2,8,[ [ 'Roluser' ],[ 'Errorperfil' ] ]).
+sub_info_i(146,'''Modulo Desarrollo''',10,12,[ [],[] ]).
  
+pgm_parm_i(web,33,'WWPROYECT',[],[]).
 pgm_parm_i(web,16,'WWADMIN',[],[]).
  
 pgm_callprotocol_i(web,15,'WWDASBOARD','INTERNAL','Secure').
+pgm_callprotocol_i(web,33,'WWPROYECT','INTERNAL','Secure').
 pgm_callprotocol_i(web,16,'WWADMIN','INTERNAL','Secure').
  
  
  
  
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  
  
  

@@ -79,6 +79,19 @@
 <AttriId>1</AttriId>
 <AttriName>UsuarioID</AttriName>
 <Description>Usuario ID</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>RolesID</AttriName>
+<Description>Roles ID</Description></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>Password</AttriName>
+<Description>Password</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>Name</AttriName>
+<Description>Name</Description></Attribute></Into>
 <Tables>
 <Table>
 <TableId>3</TableId>
@@ -90,6 +103,11 @@
 <AttriId>8</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>RolesName</AttriName>
+<Description>Roles Name</Description></Attribute></Into>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

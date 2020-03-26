@@ -66,10 +66,19 @@ public class bldDevelopermenu : GxBaseBuilder
       sc.Add( @"rolesusuariowc", "dll");
       sc.Add( @"gx0060", "dll");
       sc.Add( @"gx0070", "dll");
+      sc.Add( @"gx0080", "dll");
+      sc.Add( @"wwproyect", "dll");
+      sc.Add( @"viewproyecto", "dll");
+      sc.Add( @"wwproyecto", "dll");
+      sc.Add( @"proyectogeneral", "dll");
+      sc.Add( @"viewtarea", "dll");
+      sc.Add( @"wwtarea", "dll");
+      sc.Add( @"tareageneral", "dll");
       sc.Add( @"usuario", "dll");
       sc.Add( @"roles", "dll");
       sc.Add( @"modulos", "dll");
       sc.Add( @"proyecto", "dll");
+      sc.Add( @"tarea", "dll");
       return sc ;
    }
 

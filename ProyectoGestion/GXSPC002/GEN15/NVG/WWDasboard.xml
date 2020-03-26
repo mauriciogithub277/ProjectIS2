@@ -15,14 +15,6 @@
 <MsgCode>spc0156</MsgCode>
 <Message>
 <Token>Event </Token>
-<Token>'Modulo Desarrollo'</Token>
-<Token> for control '</Token>
-<Token>Modulodesarrollo</Token>
-<Token>' is not defined.</Token></Message></Warning>
-<Warning>
-<MsgCode>spc0156</MsgCode>
-<Message>
-<Token>Event </Token>
 <Token>'Modulo Configuracion'</Token>
 <Token> for control '</Token>
 <Token>Moduloconfiguracion</Token>
@@ -48,6 +40,18 @@
 <ObjId>16</ObjId>
 <ObjName>WWAdmin</ObjName>
 <ObjPgmName>WWAdmin</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'Modulo Desarrollo'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>33</ObjId>
+<ObjName>WWProyect</ObjName>
+<ObjPgmName>WWProyect</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters></Parameters>
 <IF></IF></CALL></Event>

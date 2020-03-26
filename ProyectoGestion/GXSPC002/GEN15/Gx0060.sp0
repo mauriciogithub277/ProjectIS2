@@ -23,7 +23,7 @@ lac_i(2,[ [ 'Cmodulosid','Cmodulosname' ] ]).
 lits_i('Modulos ID',5,10).
 lits_i('Modulos Name',5,10).
  
-cls_i([ 0,0 ],[ 5,1049 ]).
+cls_i([ 0,0 ],[ 5,1069 ]).
  
 pos_i('Cmodulosid',[ 0,0,0 ]).
 pos_i('Cmodulosname',[ 0,0,0 ]).
@@ -148,14 +148,14 @@ v_i(t,o,2,13).
  
  
  
-attri_i(14,[ 'ModulosName',char,20,0,'',0,'Modulos Name','',0 ]).
+attri_i(14,[ 'ModulosName',char,40,0,'',0,'Modulos Name','',0 ]).
 attri_i(13,[ 'ModulosID',int,4,0,'ZZZ9',0,'Modulos ID','',0 ]).
 attri_i('Linkselection_GXI',[ 'Linkselection_GXI',svchar,2048,0,'',0,'',[],13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
 attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',10 ]).
 attri_i('Pmodulosid',[ pModulosID,int,4,0,'ZZZ9',0,'Modulos ID','',9 ]).
-attri_i('Cmodulosname',[ cModulosName,char,20,0,'',0,'Modulos Name','',7 ]).
+attri_i('Cmodulosname',[ cModulosName,char,40,0,'',0,'Modulos Name','',7 ]).
 attri_i('Cmodulosid',[ cModulosID,int,4,0,'ZZZ9',0,'Modulos ID','',6 ]).
 attri_i('Linkselection',[ 'LinkSelection',bits,1024,0,'',0,'Link Selection','',5 ]).
  
@@ -526,7 +526,7 @@ html_comp_i(25,'Semanticcontent',div,d,[ str ]).
 html_comp_i(25,'Align',left,d,[ str ]).
 html_comp_i(25,'Valign',top,d,[ str ]).
 html_comp_i(26,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(26,'Colcount',20,d,[ num ]).
+html_comp_i(26,'Colcount',40,d,[ num ]).
 html_comp_i(26,'Attid',-7,v,[ num ]).
 html_comp_i(26,'Class','Attribute',v,[ str ]).
 html_comp_i(26,'Controlname','&Cmodulosname',d,[ str ]).
@@ -546,7 +546,7 @@ html_comp_i(26,'Readonly',0,v,[ bool ]).
 html_comp_i(26,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(26,'Ispassword',0,d,[ bool ]).
 html_comp_i(26,'Autoresize',-1,d,[ bool ]).
-html_comp_i(26,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(26,'Gxwidth',measure(40,chr),d,[ measure ]).
 html_comp_i(26,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(26,'Ismultiline',0,d,[ bool ]).
 html_comp_i(26,'Maxtextnumberlines',0,d,[ num ]).
@@ -702,7 +702,7 @@ html_comp_i(36,'Colvisible',-1,d,[ bool ]).
 html_comp_i(36,'Title','',d,[ str ]).
 html_comp_i(36,'Invitemsg','',d,[ str ]).
 html_comp_i(37,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(37,'Colcount',20,d,[ num ]).
+html_comp_i(37,'Colcount',40,d,[ num ]).
 html_comp_i(37,'Colattid',14,v,[ num ]).
 html_comp_i(37,'Controlname','Modulosname',d,[ str ]).
 html_comp_i(37,'Class','DescriptionAttribute',v,[ str ]).

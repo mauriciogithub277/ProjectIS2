@@ -20,13 +20,13 @@ lac_i(2,[ [ 'Update','Delete' ] ]).
  
  
  
-cls_i([ 0,0 ],[ 2,87 ]).
+cls_i([ 0,0 ],[ 2,107 ]).
  
 pos_i(1,[ 1,2,0 ]).
 pos_i(2,[ 1,2,5 ]).
-pos_i(3,[ 1,2,26 ]).
-pos_i('Update',[ 1,2,47 ]).
-pos_i('Delete',[ 1,2,68 ]).
+pos_i(3,[ 1,2,46 ]).
+pos_i('Update',[ 1,2,67 ]).
+pos_i('Delete',[ 1,2,88 ]).
 pos_i(8,[ 0,0,0 ]).
  
 repeat_i(2,[ 1,2,[ 1,2,3,'Update','Delete' ],[ 'Update','Delete' ] ]).
@@ -156,7 +156,7 @@ v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
  
 attri_i(8,[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',0 ]).
 attri_i(3,[ 'Password',char,20,0,'',0,'Password','',0 ]).
-attri_i(2,[ 'Name',char,20,0,'',0,'Name','',0 ]).
+attri_i(2,[ 'Name',char,40,0,'',0,'Name','',0 ]).
 attri_i(1,[ 'UsuarioID',int,4,0,'ZZZ9',0,'Usuario ID','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',16 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',15 ]).
@@ -504,7 +504,7 @@ html_comp_i(21,'Colvisible',-1,v,[ bool ]).
 html_comp_i(21,'Title','',d,[ str ]).
 html_comp_i(21,'Invitemsg','',d,[ str ]).
 html_comp_i(22,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(22,'Colcount',20,d,[ num ]).
+html_comp_i(22,'Colcount',40,d,[ num ]).
 html_comp_i(22,'Colattid',2,v,[ num ]).
 html_comp_i(22,'Controlname','Name',d,[ str ]).
 html_comp_i(22,'Class','DescriptionAttribute',v,[ str ]).

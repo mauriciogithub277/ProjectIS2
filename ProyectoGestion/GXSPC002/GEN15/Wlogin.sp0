@@ -29,7 +29,7 @@ lac_i(3,[ [ 'Usuario','Texterror','Password','Texterror2','Loginerror' ] ]).
  
 lits_i('Iniciar Sesion',5,10).
  
-cls_i([ 0,0 ],[ 5,29 ]).
+cls_i([ 0,0 ],[ 5,39 ]).
  
 pos_i('Usuario',[ 0,0,0 ]).
 pos_i('Texterror',[ 0,0,0 ]).
@@ -161,14 +161,14 @@ v_i(f,o,6,[ t('&Loginerror',23),t('Enabled',3) ]).
  
 attri_i(1,[ 'UsuarioID',int,4,0,'ZZZ9',0,'Usuario ID','',0 ]).
 attri_i(8,[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',0 ]).
-attri_i(2,[ 'Name',char,20,0,'',0,'Name','',0 ]).
+attri_i(2,[ 'Name',char,40,0,'',0,'Name','',0 ]).
 attri_i(3,[ 'Password',char,20,0,'',0,'Password','',0 ]).
-attri_i(9,[ 'RolesName',char,20,0,'',0,'Roles Name','',0 ]).
+attri_i(9,[ 'RolesName',char,40,0,'',0,'Roles Name','',0 ]).
 attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],18 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',17 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',16 ]).
 attri_i('Iduser',[ idUser,char,20,0,'',0,'id User','',15 ]).
-attri_i('Usuario',[ usuario,char,20,0,'',0,usuario,'',5 ]).
+attri_i('Usuario',[ usuario,char,40,0,'',0,usuario,'',5 ]).
 attri_i('Texterror2',[ textError2,char,20,0,'',0,'text Error2','',11 ]).
 attri_i('Texterror',[ textError,char,20,0,'',0,'text Error','',10 ]).
 attri_i('Proy',[ 'Proy',char,30,0,'',0,'Proy','',12 ]).
@@ -379,7 +379,7 @@ html_comp_i(13,'Semanticcontent',div,d,[ str ]).
 html_comp_i(13,'Align',left,d,[ str ]).
 html_comp_i(13,'Valign',top,d,[ str ]).
 html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(14,'Colcount',20,d,[ num ]).
+html_comp_i(14,'Colcount',40,d,[ num ]).
 html_comp_i(14,'Attid',-5,v,[ num ]).
 html_comp_i(14,'Class','Attribute',v,[ str ]).
 html_comp_i(14,'Controlname','&Usuario',d,[ str ]).
@@ -399,7 +399,7 @@ html_comp_i(14,'Readonly',0,v,[ bool ]).
 html_comp_i(14,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(14,'Ispassword',0,d,[ bool ]).
 html_comp_i(14,'Autoresize',-1,d,[ bool ]).
-html_comp_i(14,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(14,'Gxwidth',measure(40,chr),d,[ measure ]).
 html_comp_i(14,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(14,'Ismultiline',0,d,[ bool ]).
 html_comp_i(14,'Maxtextnumberlines',0,d,[ num ]).
@@ -497,8 +497,8 @@ html_comp_i(23,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(23,'Readonly',0,v,[ bool ]).
 html_comp_i(23,'Autocomplete',0,d,[ bool ]).
 html_comp_i(23,'Ispassword',-1,d,[ bool ]).
-html_comp_i(23,'Autoresize',-1,d,[ bool ]).
-html_comp_i(23,'Gxwidth',measure(20,chr),d,[ measure ]).
+html_comp_i(23,'Autoresize',0,v,[ bool ]).
+html_comp_i(23,'Gxwidth',measure(40,chr),v,[ measure ]).
 html_comp_i(23,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(23,'Ismultiline',0,d,[ bool ]).
 html_comp_i(23,'Maxtextnumberlines',0,d,[ num ]).

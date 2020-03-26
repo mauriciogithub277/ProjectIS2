@@ -3,7 +3,9 @@ current_obj_i(2,trn,7).
 current_guid('23009ce3-4bcd-48e1-94cb-4c47095b8925').
  
  
-called_tree_i(0,7,13,0).
+called_tree_i(0,7,13,35).
+called_tree_i(0,7,13,10).
+called_tree_i(0,7,1,11).
 called_tree_i(0,7,13,4).
  
  
@@ -24,10 +26,12 @@ called_tree_i(0,7,13,4).
 ij_object_dependency(proyecto,[],[],[],7).
  
  
-obj_parms_i([],[]).
+obj_parms_i([ 'String aP0_Gx_mode','short aP1_ProyectoID' ],[ [ 'Mode',in ],[ 'Proyectoid',in ] ]).
  
  
  
  
  
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  

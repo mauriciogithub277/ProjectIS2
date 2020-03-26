@@ -2,7 +2,7 @@
                File: ListPrograms
         Description: List Programs
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/14/2020 11:13:35.51
+       Generated on: 3/22/2020 19:15:45.28
        Program type: Callable routine
           Main DBMS: SQL Server
 */

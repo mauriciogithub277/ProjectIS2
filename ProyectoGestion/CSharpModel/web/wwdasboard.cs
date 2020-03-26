@@ -2,7 +2,7 @@
                File: WWDasboard
         Description: WWDasboard
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/14/2020 17:0:55.55
+       Generated on: 3/22/2020 21:2:8.64
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -252,7 +252,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203141705558", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2020322212867", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -548,11 +548,6 @@ namespace GeneXus.Programs {
                         {
                            sEvt = StringUtil.Left( sEvt, (short)(StringUtil.Len( sEvt)-1));
                            if ( StringUtil.StrCmp(sEvt, "RFR") == 0 )
-                           {
-                              context.wbHandled = 1;
-                              dynload_actions( ) ;
-                           }
-                           else if ( StringUtil.StrCmp(sEvt, "'MODULO DESARROLLO'") == 0 )
                            {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
@@ -1025,7 +1020,7 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 32,'',false,'',0)\"";
             ClassString = "HideFiltersButton";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttModulodesarrollo_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(37), 2, 0)+","+"null"+");", "Modulo Desarrollo", bttModulodesarrollo_Jsonclick, 5, "Modulo Desarrollo", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'MODULO DESARROLLO\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_WWDasboard.htm");
+            GxWebStd.gx_button_ctrl( context, bttModulodesarrollo_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(37), 2, 0)+","+"null"+");", "Modulo Desarrollo", bttModulodesarrollo_Jsonclick, 7, "Modulo Desarrollo", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e130f1_client"+"'", TempTags, "", 2, "HLP_WWDasboard.htm");
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "</tr>") ;
             context.WriteHtmlText( "<tr>") ;
@@ -1089,7 +1084,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203141705573", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2020322212888", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1105,7 +1100,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("wwdasboard.js", "?20203141705573", false, true);
+         context.AddJavascriptSource("wwdasboard.js", "?2020322212889", false, true);
          /* End function include_jscripts */
       }
 
@@ -1203,7 +1198,7 @@ namespace GeneXus.Programs {
          }
          /* Single line edit */
          ROClassString = "Attribute";
-         Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoName_Internalname,StringUtil.RTrim( A17ProyectoName),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoName_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)20,(short)0,(short)0,(short)37,(short)1,(short)-1,(short)-1,(bool)false,(String)"Name",(String)"left",(bool)true,(String)""});
+         Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoName_Internalname,StringUtil.RTrim( A17ProyectoName),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoName_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)40,(short)0,(short)0,(short)37,(short)1,(short)-1,(short)-1,(bool)false,(String)"NameProyect",(String)"left",(bool)true,(String)""});
          /* Subfile cell */
          if ( Grid1Container.GetWrapped() == 1 )
          {
@@ -1305,6 +1300,8 @@ namespace GeneXus.Programs {
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("'ADMINISTRACIóN'","{handler:'E120F1',iparms:[{av:'AV25rolUser',fld:'vROLUSER',pic:'',hsh:true}]");
          setEventMetadata("'ADMINISTRACIóN'",",oparms:[{av:'AV24ErrorPerfil',fld:'vERRORPERFIL',pic:''}]}");
+         setEventMetadata("'MODULO DESARROLLO'","{handler:'E130F1',iparms:[]");
+         setEventMetadata("'MODULO DESARROLLO'",",oparms:[]}");
          setEventMetadata("NULL","{handler:'Valid_Proyectoestado',iparms:[]");
          setEventMetadata("NULL",",oparms:[]}");
          return  ;
@@ -1521,7 +1518,7 @@ namespace GeneXus.Programs {
                 ((String[]) buf[0])[0] = rslt.getString(1, 30) ;
                 ((DateTime[]) buf[1])[0] = rslt.getGXDate(2) ;
                 ((DateTime[]) buf[2])[0] = rslt.getGXDate(3) ;
-                ((String[]) buf[3])[0] = rslt.getString(4, 20) ;
+                ((String[]) buf[3])[0] = rslt.getString(4, 40) ;
                 ((short[]) buf[4])[0] = rslt.getShort(5) ;
                 return;
        }

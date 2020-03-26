@@ -10,12 +10,6 @@
       <ObjLink>modulos.aspx</ObjLink>
    </Object>
    <Object>
-      <ObjCls>0</ObjCls>
-      <ObjName>Proyecto</ObjName>
-      <ObjDesc>Proyecto</ObjDesc>
-      <ObjLink>proyecto.aspx</ObjLink>
-   </Object>
-   <Object>
       <ObjCls>13</ObjCls>
       <ObjName>Wlogin</ObjName>
       <ObjDesc>Wlogin</ObjDesc>
@@ -44,5 +38,23 @@
       <ObjName>WWRoles</ObjName>
       <ObjDesc>Roles</ObjDesc>
       <ObjLink>wwroles.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWProyect</ObjName>
+      <ObjDesc>WWProyect</ObjDesc>
+      <ObjLink>wwproyect.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWProyecto</ObjName>
+      <ObjDesc>Proyectoes</ObjDesc>
+      <ObjLink>wwproyecto.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWTarea</ObjName>
+      <ObjDesc>Tareas</ObjDesc>
+      <ObjLink>wwtarea.aspx</ObjLink>
    </Object>
 </Objects>
