@@ -1,0 +1,75 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_7-138086</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>29</ObjId>
+<ObjName>WLineaBase</ObjName>
+<ObjDesc>WLinea Base</ObjDesc>
+<ObjPgmName>WLineaBase</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>'ATRAS'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>18</ObjId>
+<ObjName>WConfig</ObjName>
+<ObjPgmName>WConfig</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>TareaID</AttriName>
+<Description>Tarea ID</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ITAREA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>TareaID</AttriName>
+<Description>Tarea ID</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

@@ -2,7 +2,7 @@
                File: NotAuthorized
         Description: Not Authorized web panel
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:50:22.18
+       Generated on: 8/22/2020 15:16:30.75
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -178,11 +178,11 @@ namespace GeneXus.Programs {
 
       public override short ExecuteStartEvent( )
       {
-         PA0A2( ) ;
+         PA072( ) ;
          gxajaxcallmode = (short)((isAjaxCallMode( ) ? 1 : 0));
          if ( ( gxajaxcallmode == 0 ) && ( GxWebError == 0 ) )
          {
-            START0A2( ) ;
+            START072( ) ;
          }
          return gxajaxcallmode ;
       }
@@ -220,7 +220,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203716502220", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202082215163079", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -308,14 +308,14 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<div") ;
             GxWebStd.ClassAttribute( context, "gx-ct-body"+" "+(String.IsNullOrEmpty(StringUtil.RTrim( Form.Class)) ? "Form" : Form.Class)+"-fx");
             context.WriteHtmlText( ">") ;
-            WE0A2( ) ;
+            WE072( ) ;
             context.WriteHtmlText( "</div>") ;
          }
       }
 
       public override void DispatchEvents( )
       {
-         EVT0A2( ) ;
+         EVT072( ) ;
       }
 
       public override bool HasEnterEvent( )
@@ -343,7 +343,7 @@ namespace GeneXus.Programs {
          return "Not Authorized web panel" ;
       }
 
-      protected void WB0A0( )
+      protected void WB070( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -397,42 +397,42 @@ namespace GeneXus.Programs {
                }
                context.WriteHtmlText( "</div>") ;
             }
-            wb_table1_4_0A2( true) ;
+            wb_table1_4_072( true) ;
          }
          else
          {
-            wb_table1_4_0A2( false) ;
+            wb_table1_4_072( false) ;
          }
          return  ;
       }
 
-      protected void wb_table1_4_0A2e( bool wbgen )
+      protected void wb_table1_4_072e( bool wbgen )
       {
          if ( wbgen )
          {
-            wb_table2_13_0A2( true) ;
+            wb_table2_13_072( true) ;
          }
          else
          {
-            wb_table2_13_0A2( false) ;
+            wb_table2_13_072( false) ;
          }
          return  ;
       }
 
-      protected void wb_table2_13_0A2e( bool wbgen )
+      protected void wb_table2_13_072e( bool wbgen )
       {
          if ( wbgen )
          {
-            wb_table3_16_0A2( true) ;
+            wb_table3_16_072( true) ;
          }
          else
          {
-            wb_table3_16_0A2( false) ;
+            wb_table3_16_072( false) ;
          }
          return  ;
       }
 
-      protected void wb_table3_16_0A2e( bool wbgen )
+      protected void wb_table3_16_072e( bool wbgen )
       {
          if ( wbgen )
          {
@@ -440,7 +440,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START0A2( )
+      protected void START072( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -457,16 +457,16 @@ namespace GeneXus.Programs {
          {
          }
          wbErr = false;
-         STRUP0A0( ) ;
+         STRUP070( ) ;
       }
 
-      protected void WS0A2( )
+      protected void WS072( )
       {
-         START0A2( ) ;
-         EVT0A2( ) ;
+         START072( ) ;
+         EVT072( ) ;
       }
 
-      protected void EVT0A2( )
+      protected void EVT072( )
       {
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
@@ -498,14 +498,14 @@ namespace GeneXus.Programs {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Start */
-                              E110A2 ();
+                              E11072 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                            {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Load */
-                              E120A2 ();
+                              E12072 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                            {
@@ -573,7 +573,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE0A2( )
+      protected void WE072( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -589,7 +589,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void PA0A2( )
+      protected void PA072( )
       {
          if ( nDonePA == 0 )
          {
@@ -642,7 +642,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF0A2( ) ;
+         RF072( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -656,7 +656,7 @@ namespace GeneXus.Programs {
          context.Gx_err = 0;
       }
 
-      protected void RF0A2( )
+      protected void RF072( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -683,16 +683,16 @@ namespace GeneXus.Programs {
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
             /* Execute user event: Load */
-            E120A2 ();
-            WB0A0( ) ;
+            E12072 ();
+            WB070( ) ;
          }
       }
 
-      protected void send_integrity_lvl_hashes0A2( )
+      protected void send_integrity_lvl_hashes072( )
       {
       }
 
-      protected void STRUP0A0( )
+      protected void STRUP070( )
       {
          /* Before Start, stand alone formulas. */
          AV8Pgmname = "NotAuthorized";
@@ -700,7 +700,7 @@ namespace GeneXus.Programs {
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E110A2 ();
+         E11072 ();
          context.wbGlbDoneStart = 1;
          /* After Start, stand alone formulas. */
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
@@ -721,11 +721,11 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E110A2 ();
+         E11072 ();
          if (returnInSub) return;
       }
 
-      protected void E110A2( )
+      protected void E11072( )
       {
          /* Start Routine */
          /* Object Property */
@@ -749,12 +749,12 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void E120A2( )
+      protected void E12072( )
       {
          /* Load Routine */
       }
 
-      protected void wb_table3_16_0A2( bool wbgen )
+      protected void wb_table3_16_072( bool wbgen )
       {
          if ( wbgen )
          {
@@ -769,15 +769,15 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "</tbody>") ;
             /* End of table */
             context.WriteHtmlText( "</table>") ;
-            wb_table3_16_0A2e( true) ;
+            wb_table3_16_072e( true) ;
          }
          else
          {
-            wb_table3_16_0A2e( false) ;
+            wb_table3_16_072e( false) ;
          }
       }
 
-      protected void wb_table2_13_0A2( bool wbgen )
+      protected void wb_table2_13_072( bool wbgen )
       {
          if ( wbgen )
          {
@@ -792,15 +792,15 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "</tbody>") ;
             /* End of table */
             context.WriteHtmlText( "</table>") ;
-            wb_table2_13_0A2e( true) ;
+            wb_table2_13_072e( true) ;
          }
          else
          {
-            wb_table2_13_0A2e( false) ;
+            wb_table2_13_072e( false) ;
          }
       }
 
-      protected void wb_table1_4_0A2( bool wbgen )
+      protected void wb_table1_4_072( bool wbgen )
       {
          if ( wbgen )
          {
@@ -828,11 +828,11 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "</tbody>") ;
             /* End of table */
             context.WriteHtmlText( "</table>") ;
-            wb_table1_4_0A2e( true) ;
+            wb_table1_4_072e( true) ;
          }
          else
          {
-            wb_table1_4_0A2e( false) ;
+            wb_table1_4_072e( false) ;
          }
       }
 
@@ -853,9 +853,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA0A2( ) ;
-         WS0A2( ) ;
-         WE0A2( ) ;
+         PA072( ) ;
+         WS072( ) ;
+         WE072( ) ;
          this.cleanup();
          context.SetWrapped(false);
          context.GX_msglist = BackMsgLst;
@@ -888,7 +888,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203716502233", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202082215163086", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -904,7 +904,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("notauthorized.js", "?20203716502233", false, true);
+         context.AddJavascriptSource("notauthorized.js", "?202082215163086", false, true);
          /* End function include_jscripts */
       }
 

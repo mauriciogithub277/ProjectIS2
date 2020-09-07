@@ -2,31 +2,20 @@
 <ReorgSpec>
 <SpecVersion>16_0_7-138086</SpecVersion>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description></Table>
 <ReorgCls>c</ReorgCls>
-<ReorgCode>pk</ReorgCode>
-<ReorgMsg>Roles needs conversion</ReorgMsg>
-<ReorgAction>#</ReorgAction>
+<ReorgCode>new</ReorgCode>
+<ReorgMsg>Roles is new</ReorgMsg>
+<ReorgAction>*</ReorgAction>
 <TableAttributes>
 <AttrisInTable>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description>
-<TakesValueFrom>
-<Table>
-<TableId>3</TableId>
-<TableName>Roles</TableName>
-<Description>Roles</Description></Table>
-<FromValue>
-<Token>.</Token>
-<Sp></Sp>
-<Attribute>
-<AttriId>8</AttriId>
-<AttriName>RolesID</AttriName>
-<Description>Roles ID</Description></Attribute></FromValue></TakesValueFrom>
+<TakesValueFrom></TakesValueFrom>
 <OnPrimaryKey>Yes</OnPrimaryKey>
 <AttriType>
 <DataType>N</DataType>
@@ -43,21 +32,10 @@
 <Name>AllowNulls</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
-<AttriId>9</AttriId>
+<AttriId>15</AttriId>
 <AttriName>RolesName</AttriName>
 <Description>Roles Name</Description>
-<TakesValueFrom>
-<Table>
-<TableId>3</TableId>
-<TableName>Roles</TableName>
-<Description>Roles</Description></Table>
-<FromValue>
-<Token>.</Token>
-<Sp></Sp>
-<Attribute>
-<AttriId>9</AttriId>
-<AttriName>RolesName</AttriName>
-<Description>Roles Name</Description></Attribute></FromValue></TakesValueFrom>
+<TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
 <Presicion>40</Presicion>
@@ -74,10 +52,15 @@
 <Value>No</Value></Property>
 <Property>
 <Name>NLS</Name>
-<Value>Yes</Value></Property></Properties></AttriType>
-<AttriOldType>
-<DataType>C</DataType>
-<Presicion>20</Presicion>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ModulosID</AttriName>
+<Description>Modulos ID</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
 <Scale>0</Scale>
 <Properties>
 <Property>
@@ -88,26 +71,9 @@
 <Value>No</Value></Property>
 <Property>
 <Name>AllowNulls</Name>
-<Value>No</Value></Property>
-<Property>
-<Name>NLS</Name>
-<Value>Yes</Value></Property></Properties></AttriOldType>
-<AttriChangeType>upd</AttriChangeType></Attribute></AttrisInTable>
+<Value>No</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
 <AttrisNoLongerInTable></AttrisNoLongerInTable>
 <AttrisInManyTables></AttrisInManyTables></TableAttributes>
-<NavigationTree>
-<Table>
-<TableId>3</TableId>
-<TableName>Roles</TableName>
-<Description>Roles</Description>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>8</AttriId>
-<AttriName>RolesID</AttriName>
-<Description>Roles ID</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></NavigationTree>
-<TablesToUpdate></TablesToUpdate>
 <TableIndices>
 <Indices>
 <Index>
@@ -115,14 +81,37 @@
 <IndexType>u</IndexType>
 <IndexAttris>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
-<Clustered>Yes</Clustered></Index></Indices></TableIndices>
-<FKConstraints></FKConstraints>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>IROLES1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ModulosID</AttriName>
+<Description>Modulos ID</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>3</TableId>
+<TableName>Modulos</TableName>
+<Description>Modulos</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ModulosID</AttriName>
+<Description>Modulos ID</Description></Attribute></Attributes></FKConstraint></FKConstraints>
 <Statements>
-<Statement>ALTER TABLE [Roles] ALTER COLUMN [RolesName] nchar(40) NOT NULL </Statement></Statements>
+<Statement>CREATE TABLE [Roles] ([RolesID] smallint NOT NULL IDENTITY(1,1), [RolesName] nchar(40) NOT NULL , [ModulosID] smallint NOT NULL , PRIMARY KEY([RolesID])) </Statement>
+<Statement>CREATE NONCLUSTERED INDEX [IROLES1] ON [Roles] ([ModulosID] )</Statement>
+<Statement>ALTER TABLE [Roles] ADD CONSTRAINT [IROLES1] FOREIGN KEY ([ModulosID]) REFERENCES [Modulos] ([ModulosID])</Statement></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
 <Warnings></Warnings>
 <Errors></Errors></ReorgSpec>

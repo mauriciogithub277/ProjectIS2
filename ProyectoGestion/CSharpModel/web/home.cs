@@ -2,7 +2,7 @@
                File: Home
         Description: Home
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:50:21.93
+       Generated on: 8/22/2020 15:16:31.55
        Program type: Main program
           Main DBMS: SQL Server
 */
@@ -201,11 +201,11 @@ namespace GeneXus.Programs {
 
       public override short ExecuteStartEvent( )
       {
-         PA092( ) ;
+         PA082( ) ;
          gxajaxcallmode = (short)((isAjaxCallMode( ) ? 1 : 0));
          if ( ( gxajaxcallmode == 0 ) && ( GxWebError == 0 ) )
          {
-            START092( ) ;
+            START082( ) ;
          }
          return gxajaxcallmode ;
       }
@@ -243,7 +243,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203716502196", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202082215163157", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -329,14 +329,14 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<div") ;
             GxWebStd.ClassAttribute( context, "gx-ct-body"+" "+(String.IsNullOrEmpty(StringUtil.RTrim( Form.Class)) ? "Form" : Form.Class)+"-fx");
             context.WriteHtmlText( ">") ;
-            WE092( ) ;
+            WE082( ) ;
             context.WriteHtmlText( "</div>") ;
          }
       }
 
       public override void DispatchEvents( )
       {
-         EVT092( ) ;
+         EVT082( ) ;
       }
 
       public override bool HasEnterEvent( )
@@ -364,7 +364,7 @@ namespace GeneXus.Programs {
          return "Home" ;
       }
 
-      protected void WB090( )
+      protected void WB080( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -378,16 +378,16 @@ namespace GeneXus.Programs {
                RenderHtmlOpenForm( ) ;
             }
             GxWebStd.gx_msg_list( context, "", context.GX_msglist.DisplayMode, "", "", "", "false");
-            wb_table1_2_092( true) ;
+            wb_table1_2_082( true) ;
          }
          else
          {
-            wb_table1_2_092( false) ;
+            wb_table1_2_082( false) ;
          }
          return  ;
       }
 
-      protected void wb_table1_2_092e( bool wbgen )
+      protected void wb_table1_2_082e( bool wbgen )
       {
          if ( wbgen )
          {
@@ -425,7 +425,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START092( )
+      protected void START082( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -442,16 +442,16 @@ namespace GeneXus.Programs {
          {
          }
          wbErr = false;
-         STRUP090( ) ;
+         STRUP080( ) ;
       }
 
-      protected void WS092( )
+      protected void WS082( )
       {
-         START092( ) ;
-         EVT092( ) ;
+         START082( ) ;
+         EVT082( ) ;
       }
 
-      protected void EVT092( )
+      protected void EVT082( )
       {
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
@@ -505,7 +505,7 @@ namespace GeneXus.Programs {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
                                     /* Execute user event: Load */
-                                    E11092 ();
+                                    E11082 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                                  {
@@ -539,7 +539,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE092( )
+      protected void WE082( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -555,7 +555,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void PA092( )
+      protected void PA082( )
       {
          if ( nDonePA == 0 )
          {
@@ -609,7 +609,7 @@ namespace GeneXus.Programs {
          initialize_formulas( ) ;
          GxWebStd.set_html_headers( context, 0, "", "");
          GRID1_nCurrentRecord = 0;
-         RF092( ) ;
+         RF082( ) ;
          /* End function gxgrGrid1_refresh */
       }
 
@@ -632,7 +632,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF092( ) ;
+         RF082( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -645,7 +645,7 @@ namespace GeneXus.Programs {
          context.Gx_err = 0;
       }
 
-      protected void RF092( )
+      protected void RF082( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -685,14 +685,14 @@ namespace GeneXus.Programs {
          {
             SubsflControlProps_52( ) ;
             /* Execute user event: Load */
-            E11092 ();
+            E11082 ();
             wbEnd = 5;
-            WB090( ) ;
+            WB080( ) ;
          }
          bGXsfl_5_Refreshing = true;
       }
 
-      protected void send_integrity_lvl_hashes092( )
+      protected void send_integrity_lvl_hashes082( )
       {
       }
 
@@ -716,7 +716,7 @@ namespace GeneXus.Programs {
          return (int)(-1) ;
       }
 
-      protected void STRUP090( )
+      protected void STRUP080( )
       {
          /* Before Start, stand alone formulas. */
          context.Gx_err = 0;
@@ -738,7 +738,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      private void E11092( )
+      private void E11082( )
       {
          /* Load Routine */
          new listprograms(context ).execute( out  AV6ProgramNames) ;
@@ -758,7 +758,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void wb_table1_2_092( bool wbgen )
+      protected void wb_table1_2_082( bool wbgen )
       {
          if ( wbgen )
          {
@@ -846,11 +846,11 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "</tbody>") ;
             /* End of table */
             context.WriteHtmlText( "</table>") ;
-            wb_table1_2_092e( true) ;
+            wb_table1_2_082e( true) ;
          }
          else
          {
-            wb_table1_2_092e( false) ;
+            wb_table1_2_082e( false) ;
          }
       }
 
@@ -869,9 +869,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA092( ) ;
-         WS092( ) ;
-         WE092( ) ;
+         PA082( ) ;
+         WS082( ) ;
+         WE082( ) ;
          this.cleanup();
          context.SetWrapped(false);
          context.GX_msglist = BackMsgLst;
@@ -893,7 +893,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2020371650226", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202082215163167", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -911,7 +911,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("home.js", "?2020371650226", false, true);
+            context.AddJavascriptSource("home.js", "?202082215163167", false, true);
          }
          /* End function include_jscripts */
       }
@@ -929,7 +929,7 @@ namespace GeneXus.Programs {
       protected void sendrow_52( )
       {
          SubsflControlProps_52( ) ;
-         WB090( ) ;
+         WB080( ) ;
          Grid1Row = GXWebRow.GetNew(context,Grid1Container);
          if ( subGrid1_Backcolorstyle == 0 )
          {
@@ -999,7 +999,7 @@ namespace GeneXus.Programs {
          {
             Grid1Container.CloseTag("row");
          }
-         send_integrity_lvl_hashes092( ) ;
+         send_integrity_lvl_hashes082( ) ;
          /* End of Columns property logic. */
          if ( Grid1Container.GetWrapped() == 1 )
          {
@@ -1103,7 +1103,7 @@ namespace GeneXus.Programs {
          EvtRowId = "";
          sEvtType = "";
          AV5MenuItem = "";
-         AV6ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "ProyectoGestion");
+         AV6ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "IS2");
          AV7ProgramName = new SdtProgramNames_ProgramName(context);
          Grid1Row = new GXWebRow();
          subGrid1_Header = "";

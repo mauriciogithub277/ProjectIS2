@@ -1,12 +1,12 @@
-current_obj_i(2,web,25).
+current_obj_i(2,web,22).
  
 current_guid('c3c2ce0f-46ed-4473-a2b3-6477e9ce515a').
  
  
-called_tree_i(13,25,13,10).
-called_tree_i(13,25,13,17).
-called_tree_i(13,25,0,1).
-called_tree_i(13,25,1,11).
+called_tree_i(13,22,13,7).
+called_tree_i(13,22,13,19).
+called_tree_i(13,22,0,1).
+called_tree_i(13,22,1,11).
  
  
  
@@ -23,7 +23,7 @@ called_tree_i(13,25,1,11).
  
  
  
-ij_object_dependency(rolesusuariowc,[],[],[],25).
+ij_object_dependency(rolesusuariowc,[],[],[],22).
  
  
 obj_parms_i([ 'short aP0_RolesID' ],[ [ 'Rolesid',in ] ]).

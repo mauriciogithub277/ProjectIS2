@@ -1,10 +1,10 @@
-spec_i([ web,21,'View Roles','ViewRoles',0,eng,'16_0_7-138086' ]).
+spec_i([ web,11,l('View Roles'),'ViewRoles',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[ 'Pgmname','Exists','GXLvl6' ],[]).
 struct_i(3,1,[],[]).
  
-level_i(2,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 8,9 ] ] ],[ [ [ 3 ],[] ] ],[ 8 ],'IROLES',[ 3,[ [ [],'Rolesid',8 ] ] ],[] ]).
-level_i(3,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 8,9 ] ] ],[ [ [ 3 ],[] ] ],[ 8 ],'IROLES',[ 3,[ [ [],'Rolesid',8 ] ] ],[] ]).
+level_i(2,[ 2,[ [ 2,many ] ],[],[],[ [ [ 2 ],[ 2,15 ] ] ],[ [ [ 2 ],[] ] ],[ 2 ],'IROLES',[ 2,[ [ [],'Rolesid',2 ] ] ],[] ]).
+level_i(3,[ 2,[ [ 2,many ] ],[],[],[ [ [ 2 ],[ 2,15 ] ] ],[ [ [ 2 ],[] ] ],[ 2 ],'IROLES',[ 2,[ [ [],'Rolesid',2 ] ] ],[] ]).
  
 tw_i(2,[]).
 tw_i(3,[]).
@@ -17,24 +17,24 @@ lwi_i(3,[ [] ]).
 level_option_i(3,usr_condition,y).
 level_option_i(3,when_none,'GXLvl6').
  
-ta_i(2,[ [ [ 3,8 ],[ 3,9 ] ] ]).
-ta_i(3,[ [ [ 3,8 ],[ 3,9 ] ] ]).
+ta_i(2,[ [ [ 2,2 ],[ 2,15 ] ] ]).
+ta_i(3,[ [ [ 2,2 ],[ 2,15 ] ] ]).
  
-las_i(2,[ [ 'Rolesid','Tabcode',8,9 ] ]).
-las_i(3,[ [ 'Rolesid','Tabcode',8,9 ] ]).
+las_i(2,[ [ 'Rolesid','Tabcode',2,15 ] ]).
+las_i(3,[ [ 'Rolesid','Tabcode',2,15 ] ]).
  
 lac_i(2,[ [] ]).
 lac_i(3,[ [] ]).
  
  
-lits_i('Roles Information',5,10).
-lits_i('Roles',5,10).
-lits_i('General',5,10).
-lits_i('Usuario',5,10).
+lits_i(l('Roles Information'),5,10).
+lits_i(l('Roles'),5,10).
+lits_i(l('General'),5,10).
+lits_i(l('Usuario'),5,10).
  
 cls_i([ 0,0 ],[ 5,39 ]).
  
-pos_i(9,[ 0,0,0 ]).
+pos_i(15,[ 0,0,0 ]).
  
  
 default_i(e('Pgmname',2,2,'"ViewRoles"')).
@@ -56,9 +56,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -70,13 +71,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -125,9 +126,9 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
-rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('MasterPage',o(13,'WWPBaseObjects.WorkWithPlusMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
 rule_i(0,prop('ObjDesc','View Roles')).
 rule_i(0,prop('ObjName','ViewRoles')).
 rule_i(0,maingen(15)).
@@ -136,45 +137,43 @@ rule_i(0,parmio([ [ 'Rolesid',in ],[ 'Tabcode',in ] ])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ViewRoles"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,3,t,3,[],[ [ [ [],'Rolesid',8 ] ],'IROLES',[] ]).
-a_i(4,2,t,3,[],[ [ [ [],'Rolesid',8 ] ],'IROLES',[] ]).
+a_i(3,3,t,2,[],[ [ [ [],'Rolesid',2 ] ],'IROLES',[] ]).
+a_i(4,2,t,2,[],[ [ [ [],'Rolesid',2 ] ],'IROLES',[] ]).
  
 v_i(f,i,1,[]).
 v_i(f,o,1,'Pgmname').
 v_i(f,i,2,[]).
 v_i(f,o,2,'Err').
 v_i(t,i,3,'Rolesid').
-v_i(t,o,3,8).
-v_i(t,o,3,9).
+v_i(t,o,3,2).
+v_i(t,o,3,15).
 v_i(t,i,4,'Rolesid').
-v_i(t,o,4,8).
-v_i(t,o,4,9).
+v_i(t,o,4,2).
+v_i(t,o,4,15).
  
  
  
  
  
  
-attri_i(8,[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',0 ]).
-attri_i(9,[ 'RolesName',char,40,0,'',0,'Roles Name','',0 ]).
+attri_i(2,[ 'RolesID',int,4,0,'ZZZ9',0,l('Roles ID'),'',0 ]).
+attri_i(15,[ 'RolesName',char,40,0,'',0,l('Roles Name'),'',0 ]).
 attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],16 ]).
-attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',13 ]).
-attri_i('Rolesid',[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',12 ]).
-attri_i('Loadalltabs',[ 'LoadAllTabs',boolean,4,0,'',0,'LoadAllTabs','',11 ]).
-attri_i('Exists',[ 'Exists',boolean,4,0,'',0,'Exists','',10 ]).
-attri_i('Tab',[ 'Tab',o('TabOptions.TabOptionsItem'),0,0,'',0,'Tab','',9 ]).
-attri_i('Tabs',[ 'Tabs',o(objectcollection('TabOptions.TabOptionsItem')),0,0,'',0,'Tabs','',8 ]).
-attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,'Selected Tab Code','',7 ]).
-attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',6 ]).
-attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,l('Program name'),'',15 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',14 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',13 ]).
+attri_i('Rolesid',[ 'RolesID',int,4,0,'ZZZ9',0,l('Roles ID'),'',12 ]).
+attri_i('Loadalltabs',[ 'LoadAllTabs',boolean,4,0,'',0,l('LoadAllTabs'),'',11 ]).
+attri_i('Exists',[ 'Exists',boolean,4,0,'',0,l('Exists'),'',10 ]).
+attri_i('Tab',[ 'Tab',o('TabOptions.TabOptionsItem'),0,0,'',0,l('Tab'),'',9 ]).
+attri_i('Tabs',[ 'Tabs',o(objectcollection('TabOptions.TabOptionsItem')),0,0,'',0,l('Tabs'),'',8 ]).
+attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,l('Selected Tab Code'),'',7 ]).
+attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,l('Tab Code'),'',6 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,l('Is Authorized'),'',5 ]).
  
-table_i(3,[ 'Roles',[ 8,9 ],'Roles','Roles' ]).
+table_i(2,[ 'Roles',[ 2,15 ],l('Roles'),'Roles' ]).
  
-index_i(3,[ 'IROLES',u,[ 8 ],'IRoles' ]).
- 
- 
+index_i(2,[ 'IROLES',u,[ 2 ],'IRoles' ]).
  
  
  
@@ -189,26 +188,28 @@ index_i(3,[ 'IROLES',u,[ 8 ],'IRoles' ]).
  
  
  
-start_i(2,0,0,[ [ [ 8,23,'Rolesid',= ] ],one ]).
-start_i(3,0,0,[ [ [ 8,23,'Rolesid',= ] ],one ]).
- 
-end_i(2,0,0,[ [ [ t(8,2),t(=,10),t('Rolesid',23) ] ] ]).
-end_i(3,0,0,[ [ [ t(8,2),t(=,10),t('Rolesid',23) ] ] ]).
  
  
+start_i(2,0,0,[ [ [ 2,23,'Rolesid',= ] ],one ]).
+start_i(3,0,0,[ [ [ 2,23,'Rolesid',= ] ],one ]).
  
- 
+end_i(2,0,0,[ [ [ t(2,2),t(=,10),t('Rolesid',23) ] ] ]).
+end_i(3,0,0,[ [ [ t(2,2),t(=,10),t('Rolesid',23) ] ] ]).
  
  
  
  
-dom_info_i(72,[ 'Name' ]).
-dom_info_i(71,[ 'ID' ]).
-dom_info_i(75,[ 'TabCode' ]).
  
  
-break_i(3,nvg,1,[],[ [ 9 ],[ 8 ],[] ]).
-break_i(2,nvg,1,[],[ [ 9 ],[],[] ]).
+ 
+ 
+dom_info_i(74,[ 'Name' ]).
+dom_info_i(73,[ 'ID' ]).
+dom_info_i(72,[ 'TabCode' ]).
+ 
+ 
+break_i(3,nvg,1,[],[ [ 15 ],[ 2 ],[] ]).
+break_i(2,nvg,1,[],[ [ 15 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,1).
@@ -219,18 +220,18 @@ b_group_i(2,5,lit,0,27,32).
 b_group_i(2,6,lit,0,33,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
-b_line_i(2,2,2,cmd,1,[ t('',109,1,0),t('.NOT.',8,1,5),t('udp(',1,2,23),t(o(1,'IsAuthorized'),28,2,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
-b_line_i(3,2,2,cmd,1,[ t('',104,1,0),t(o(13,'NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
+b_line_i(2,2,2,cmd,1,[ t('',109,1,0),t('.NOT.',8,1,5),t('udp(',1,2,23),t(o(1,'WWPBaseObjects\IsAuthorized'),28,2,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
+b_line_i(3,2,2,cmd,1,[ t('',104,1,0),t(o(13,'WWPBaseObjects\NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
 b_line_i(4,2,2,cmd,1,[ t('',111,1,0) ]).
 b_line_i([ 6,0 ],2,2,cmd,1,[ t('',107,1,0),t('GXLvl6',23,1,0),t(=,10,1,0),t('0',3,1,0) ]).
 b_line_i(6,3,1,cmd,7,[ t('',121,6,0) ]).
 b_line_i([ 6,1 ],3,1,cmd,6,[ t('',107,6,0),t('GXLvl6',23,6,0),t(=,10,6,0),t('1',3,6,0) ]).
-b_line_i(8,3,1,cmd,7,[ t('',107,7,0),t([ t('Form',3,7,0),t('Caption',3,7,0) ],29,7,0),t(=,10,7,0),t(9,2,7,0) ]).
+b_line_i(8,3,1,cmd,7,[ t('',107,7,0),t([ t('Form',3,7,0),t('Caption',3,7,0) ],29,7,0),t(=,10,7,0),t(15,2,7,0) ]).
 b_line_i(9,3,1,cmd,7,[ t('',107,7,0),t([ t('Viewall',3,7,0),t('Link',3,7,0) ],29,7,0),t(=,10,7,0),t('link(',1,7,0),t(o(13,'WWRoles'),28,7,0),t(')',4,7,0) ]).
 b_line_i(10,3,1,cmd,7,[ t('',107,7,0),t('Exists',23,7,0),t(=,10,7,0),t('TRUE',40,7,0) ]).
 b_line_i(12,3,1,cmd,7,[ t('',128,7,0) ]).
 b_line_i([ 12,1 ],2,4,cmd,7,[ t('',109,7,0),t('GXLvl6',23,7,0),t(=,10,7,0),t('0',3,7,0) ]).
-b_line_i(13,2,4,cmd,8,[ t('',107,8,0),t([ t('Form',3,8,0),t('Caption',3,8,0) ],29,8,0),t(=,10,8,0),t('"Record not found"',3,8,0) ]).
+b_line_i(13,2,4,cmd,8,[ t('',107,8,0),t([ t('Form',3,8,0),t('Caption',3,8,0) ],29,8,0),t(=,10,8,0),t('getmessagetext(',1,8,0),t('"Record not found"',3,8,0),t(')',4,8,0) ]).
 b_line_i(14,2,4,cmd,8,[ t('',107,8,0),t([ t('Viewall',3,8,0),t('Visible',3,8,0) ],29,8,0),t(=,10,8,0),t('FALSE',41,8,0) ]).
 b_line_i(15,2,4,cmd,8,[ t('',107,8,0),t('Exists',23,8,0),t(=,10,8,0),t('FALSE',41,8,0) ]).
 b_line_i(16,2,4,cmd,8,[ t('',111,8,0) ]).
@@ -247,10 +248,10 @@ b_line_i(28,2,5,cmd,8,[ t('',107,8,0),t('Loadalltabs',23,8,0),t(=,10,8,0),t('FAL
 b_line_i(29,2,5,cmd,8,[ t('',145,8,0),t('''LOAD TAB''',3,29,5) ]).
 b_line_i(30,2,5,cmd,8,[ t('',147,8,0) ]).
 b_line_i(32,2,5,cmd,8,[ t('',143,8,0),t('''LOAD TAB''',3,32,5) ]).
-b_line_i(33,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,33,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,33,68) ]).
+b_line_i(33,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,33,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('getmessagetext(',1,33,68),t('"General"',3,33,68),t(')',4,33,68) ]).
 b_line_i(34,2,6,cmd,8,[ t('',107,8,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'RolesGeneral'),28,8,0),t(',',7,8,0),t('Rolesid',23,8,0),t(')',4,8,0) ]).
 b_line_i(35,2,6,cmd,8,[ t('',111,8,0) ]).
-b_line_i(36,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Usuario"',3,36,42) ]).
+b_line_i(36,2,6,cmd,8,[ t('',109,8,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('getmessagetext(',1,36,42),t('"Usuario"',3,36,42),t(')',4,36,42) ]).
 b_line_i(37,2,6,cmd,8,[ t('',107,8,0),t([ t('Usuariowc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'RolesUsuarioWC'),28,8,0),t(',',7,8,0),t('Rolesid',23,8,0),t(')',4,8,0) ]).
 b_line_i(38,2,6,cmd,8,[ t('',111,8,0) ]).
 b_line_i(39,2,6,cmd,8,[ t('',144,8,0) ]).
@@ -279,9 +280,9 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Roles Information',3))).
+html_sub_i(8,9,html_i(0,t(l('Roles Information'),3))).
 html_sub_i(7,10,html_i(1,div(10))).
-html_sub_i(10,11,html_i(0,t('Roles',3))).
+html_sub_i(10,11,html_i(0,t(l('Roles'),3))).
 html_sub_i(3,12,html_i(1,div(12))).
 html_sub_i(12,13,html_i(0,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
@@ -289,12 +290,12 @@ html_sub_i(14,15,html_i(0,div(15))).
 html_sub_i(15,16,html_i(0,div(16))).
 html_sub_i(16,17,html_i(0,div(17))).
 html_sub_i(17,18,html_i(0,div(18))).
-html_sub_i(18,19,html_i(0,t(9,2))).
+html_sub_i(18,19,html_i(0,t(15,2))).
 html_sub_i(3,20,html_i(2,div(20))).
 html_sub_i(20,21,html_i(0,div(21))).
 html_sub_i(21,22,html_i(0,usercontrol(22))).
 html_sub_i(22,23,html_i(0,container(23))).
-html_sub_i(23,24,html_i(0,t('General',3))).
+html_sub_i(23,24,html_i(0,t(l('General'),3))).
 html_sub_i(23,25,html_i(1,div(25))).
 html_sub_i(25,0,html_i(0,html('General'))).
 html_sub_i(22,26,html_i(1,container(26))).
@@ -303,7 +304,7 @@ html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,comp(webcomp))).
 html_sub_i(22,31,html_i(2,container(31))).
-html_sub_i(31,32,html_i(0,t('Usuario',3))).
+html_sub_i(31,32,html_i(0,t(l('Usuario'),3))).
 html_sub_i(31,33,html_i(1,div(33))).
 html_sub_i(33,0,html_i(0,html('Usuario'))).
 html_sub_i(22,34,html_i(3,container(34))).
@@ -315,8 +316,8 @@ html_sub_i(37,38,html_i(0,comp(webcomp))).
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',bootstrapv3).
 html_tags_i(2,'data-abstract-form','').
-html_tags_i(17,'data-gx-att','att:9').
-html_tags_i(19,'data-gx-att','att:9').
+html_tags_i(17,'data-gx-att','att:15').
+html_tags_i(19,'data-gx-att','att:15').
 html_tags_i(25,style,'display:none;').
 html_tags_i(30,'Object','').
 html_tags_i(33,style,'display:none;').
@@ -379,7 +380,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Roles Information',d,[ str ]).
+html_comp_i(9,'Caption',l('Roles Information'),d,[ str ]).
 html_comp_i(9,'Id','Viewtitle',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -388,8 +389,8 @@ html_comp_i(9,'Gxformat',0,d,[ num ]).
 html_comp_i(9,'Title','',d,[ str ]).
 html_comp_i(9,'Fill',-1,d,[ bool ]).
 html_comp_i(9,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(9,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(9,'Font',font('Arial',14,[]),d,[ font ]).
+html_comp_i(9,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(9,'Font',font('Microsoft Sans Serif',9,[]),d,[ font ]).
 html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(10,'Class','col-xs-12 col-sm-4 ViewActionsBackCell',v,[ str ]).
 html_comp_i(10,'Id','',d,[ str ]).
@@ -399,7 +400,7 @@ html_comp_i(10,'Semanticcontent',div,d,[ str ]).
 html_comp_i(10,'Align','Right',v,[ str ]).
 html_comp_i(10,'Valign',top,d,[ str ]).
 html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(11,'Caption','Roles',d,[ str ]).
+html_comp_i(11,'Caption',l('Roles'),d,[ str ]).
 html_comp_i(11,'Id','Viewall',v,[ str ]).
 html_comp_i(11,'Class','BtnTextBlockBack',v,[ str ]).
 html_comp_i(11,'Event','',d,[ str ]).
@@ -408,8 +409,8 @@ html_comp_i(11,'Gxformat',0,d,[ num ]).
 html_comp_i(11,'Title','',d,[ str ]).
 html_comp_i(11,'Fill',-1,d,[ bool ]).
 html_comp_i(11,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(11,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(11,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(11,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(11,'Font',font('Microsoft Sans Serif',9,[]),d,[ font ]).
 html_comp_i(12,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(12,'Class',row,v,[ str ]).
 html_comp_i(12,'Id','',d,[ str ]).
@@ -468,14 +469,14 @@ html_comp_i(18,'Align',left,d,[ str ]).
 html_comp_i(18,'Valign',top,d,[ str ]).
 html_comp_i(19,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(19,'Colcount',40,d,[ num ]).
-html_comp_i(19,'Attid',9,v,[ num ]).
+html_comp_i(19,'Attid',15,v,[ num ]).
 html_comp_i(19,'Class','ReadonlyAttribute',v,[ str ]).
 html_comp_i(19,'Controlname','Rolesname',d,[ str ]).
 html_comp_i(19,'Returnonclick',0,v,[ bool ]).
 html_comp_i(19,'Eventgx','',d,[ str ]).
 html_comp_i(19,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(19,'Captionposition','Left',v,[ str ]).
-html_comp_i(19,'Captionvalue','Name',d,[ str ]).
+html_comp_i(19,'Captionvalue',l('Name'),d,[ str ]).
 html_comp_i(19,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(19,'Controltype',2,d,[ num ]).
 html_comp_i(19,'Inputtype',0,d,[ num ]).
@@ -493,9 +494,9 @@ html_comp_i(19,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(19,'Ismultiline',0,d,[ bool ]).
 html_comp_i(19,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(19,'Fill',-1,d,[ bool ]).
-html_comp_i(19,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(19,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(19,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(19,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(19,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(19,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(19,'Gxformat',0,d,[ num ]).
 html_comp_i(19,'Title','',d,[ str ]).
@@ -530,7 +531,7 @@ html_comp_i(22,'Csssharedsupportfiles',[],d,[ params ]).
 html_comp_i(22,'Jssharedsupportfiles',[ [ t('''Shared/HistoryManager\HistoryManager.js''',3) ],[ t('''Shared/HistoryManager\rsh\json2005.js''',3) ],[ t('''Shared/HistoryManager\rsh\rsh.js''',3) ],[ t('''Shared/HistoryManager\HistoryManagerCreate.js''',3) ] ],d,[ params ]).
 html_comp_i(23,'Containerid',title1,v,[ str ]).
 html_comp_i(24,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(24,'Caption','General',d,[ str ]).
+html_comp_i(24,'Caption',l('General'),d,[ str ]).
 html_comp_i(24,'Id','General_title',v,[ str ]).
 html_comp_i(24,'Class','TextBlock',d,[ str ]).
 html_comp_i(24,'Event','',d,[ str ]).
@@ -539,8 +540,8 @@ html_comp_i(24,'Gxformat',0,v,[ num ]).
 html_comp_i(24,'Title','',d,[ str ]).
 html_comp_i(24,'Fill',-1,d,[ bool ]).
 html_comp_i(24,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(24,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(24,'Font','',d,[ str ]).
+html_comp_i(24,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(24,'Font',font('Microsoft Sans Serif',9,[]),d,[ font ]).
 html_comp_i(25,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(25,'Class','Section',d,[ str ]).
 html_comp_i(25,'Id','',d,[ str ]).
@@ -579,7 +580,7 @@ html_comp_i(30,'Controlname','Generalwc',v,[ str ]).
 html_comp_i(30,'Params',[],v,[ params ]).
 html_comp_i(31,'Containerid',title2,v,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Caption','Usuario',d,[ str ]).
+html_comp_i(32,'Caption',l('Usuario'),d,[ str ]).
 html_comp_i(32,'Id','Usuario_title',v,[ str ]).
 html_comp_i(32,'Class','TextBlock',d,[ str ]).
 html_comp_i(32,'Event','',d,[ str ]).
@@ -588,8 +589,8 @@ html_comp_i(32,'Gxformat',0,v,[ num ]).
 html_comp_i(32,'Title','',d,[ str ]).
 html_comp_i(32,'Fill',-1,d,[ bool ]).
 html_comp_i(32,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(32,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(32,'Font','',d,[ str ]).
+html_comp_i(32,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(32,'Font',font('Microsoft Sans Serif',9,[]),d,[ font ]).
 html_comp_i(33,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(33,'Class','Section',d,[ str ]).
 html_comp_i(33,'Id','',d,[ str ]).
@@ -633,15 +634,15 @@ html_comp_i(38,'Params',[],v,[ params ]).
  
  
  
-lit_i(9,1,t('Roles Information',3),[ ctlname('Viewtitle') ]).
+lit_i(9,1,t(l('Roles Information'),3),[ ctlname('Viewtitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
-lit_i(11,1,t('Roles',3),[ ctlname('Viewall') ]).
+lit_i(11,1,t(l('Roles'),3),[ ctlname('Viewall') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).
 lit_i(5,1,div(5),[ ctlname('') ]).
 lit_i(4,1,div(4),[ ctlname('') ]).
-lit_i(19,1,t(9,2),[ ctlname(9),ctrltype(edit,19),pos(19),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(19,1,t(15,2),[ ctlname(15),ctrltype(edit,19),pos(19),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(18,1,div(18),[ ctlname('') ]).
 lit_i(17,1,div(17),[ ctlname('') ]).
 lit_i(16,1,div(16),[ ctlname('') ]).
@@ -649,13 +650,13 @@ lit_i(15,1,div(15),[ ctlname('') ]).
 lit_i(14,1,div(14),[ ctlname('Tabtable_1') ]).
 lit_i(13,1,div(13),[ ctlname('') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).
-lit_i(24,1,t('General',3),[ ctlname('General_title') ]).
+lit_i(24,1,t(l('General'),3),[ ctlname('General_title') ]).
 lit_i(25,1,div(25),[ ctlname('') ]).
 lit_i(30,1,comp(webcomp),[ ctlname('Generalwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(29,1,div(29),[ ctlname('') ]).
 lit_i(28,1,div(28),[ ctlname('') ]).
 lit_i(27,1,div(27),[ ctlname('Tablegeneral') ]).
-lit_i(32,1,t('Usuario',3),[ ctlname('Usuario_title') ]).
+lit_i(32,1,t(l('Usuario'),3),[ ctlname('Usuario_title') ]).
 lit_i(33,1,div(33),[ ctlname('') ]).
 lit_i(38,1,comp(webcomp),[ ctlname('Usuariowc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(37,1,div(37),[ ctlname('') ]).
@@ -676,37 +677,37 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-att_prop_i(2,9,'ExternalName','RolesName',d).
-att_prop_i(2,9,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,9,'EmptyAsNull','Yes',d).
-att_prop_i(2,9,idBasedOn,72,v).
-att_prop_i(2,9,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,9,'DB_NLS_SUPPORT','Yes',d).
-att_prop_i(2,9,'AttRegEx','',d).
-att_prop_i(2,9,'AttValidationFailedMsg','',d).
-att_prop_i(2,9,'DownloadOffline','0',d).
-att_prop_i(2,9,'FullName','RolesName',v).
-att_prop_i(2,8,'ExternalName','RolesID',d).
-att_prop_i(2,8,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,8,'EmptyAsNull','Yes',d).
-att_prop_i(2,8,idBasedOn,71,v).
-att_prop_i(2,8,'AUTONUMBER','-1',d).
-att_prop_i(2,8,'AUTONUMBER_START','1',d).
-att_prop_i(2,8,'AUTONUMBER_STEP','1',d).
-att_prop_i(2,8,'AUTONUMBER_FORREPLICATION','-1',d).
-att_prop_i(2,8,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,8,'AttRegEx','',d).
-att_prop_i(2,8,'AttValidationFailedMsg','',d).
-att_prop_i(2,8,'DownloadOffline','0',d).
-att_prop_i(2,8,'FullName','RolesID',v).
+att_prop_i(2,15,'ExternalName','RolesName',d).
+att_prop_i(2,15,'ExternalNamespace','IS2',d).
+att_prop_i(2,15,'EmptyAsNull','Yes',d).
+att_prop_i(2,15,idBasedOn,74,v).
+att_prop_i(2,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,15,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,15,'AttRegEx','',d).
+att_prop_i(2,15,'AttValidationFailedMsg','',d).
+att_prop_i(2,15,'DownloadOffline','0',d).
+att_prop_i(2,15,'FullName','RolesName',v).
+att_prop_i(2,2,'ExternalName','RolesID',d).
+att_prop_i(2,2,'ExternalNamespace','IS2',d).
+att_prop_i(2,2,'EmptyAsNull','Yes',d).
+att_prop_i(2,2,idBasedOn,73,v).
+att_prop_i(2,2,'AUTONUMBER','-1',d).
+att_prop_i(2,2,'AUTONUMBER_START','1',d).
+att_prop_i(2,2,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,2,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,2,'AttRegEx','',d).
+att_prop_i(2,2,'AttValidationFailedMsg','',d).
+att_prop_i(2,2,'DownloadOffline','0',d).
+att_prop_i(2,2,'FullName','RolesID',v).
  
  
-tbl_att_prop_i(2,3,8,'AllowNulls',n).
-tbl_att_prop_i(2,3,8,'AUTONUMBER',y).
-tbl_att_prop_i(2,3,9,'AllowNulls',n).
+tbl_att_prop_i(2,2,2,'AllowNulls',n).
+tbl_att_prop_i(2,2,2,'AUTONUMBER',y).
+tbl_att_prop_i(2,2,15,'AllowNulls',n).
  
-var_prop_i(2,'Tabcode',idBasedOn,75,v).
-var_prop_i(2,'Selectedtabcode',idBasedOn,75,v).
+var_prop_i(2,'Tabcode',idBasedOn,72,v).
+var_prop_i(2,'Selectedtabcode',idBasedOn,72,v).
 var_prop_i(2,'Rolesid',idBasedOn,'',v).
  
  
@@ -714,11 +715,11 @@ var_prop_i(2,'Rolesid',idBasedOn,'',v).
  
  
 struct_dt_i([ 26,49,0 ],name,'TabOptions').
-struct_dt_i([ 26,49,0 ],namespace,'ProyectoGestion').
+struct_dt_i([ 26,49,0 ],namespace,'IS2').
 struct_dt_i([ 26,49,0 ],'ObjName','TabOptions').
 struct_dt_i([ 26,49,0 ],'ObjDesc','Tab Options').
 struct_dt_i([ 26,49,0 ],'ExternalName','TabOptions').
-struct_dt_i([ 26,49,0 ],'ExternalNamespace','ProyectoGestion').
+struct_dt_i([ 26,49,0 ],'ExternalNamespace','IS2').
 struct_dt_i([ 26,49,0 ],collection,'True').
 struct_dt_i([ 26,49,0 ],datatype,[ 26,49,76 ]).
 struct_dt_i([ 26,49,0 ],'CollectionItemName','TabOptionsItem').
@@ -730,20 +731,22 @@ struct_dt_i([ 26,49,0 ],'XmlInclude',idXmlIncludeAlways).
 struct_dt_i([ 26,49,0 ],'JsonName','').
 struct_dt_i([ 26,49,0 ],'JsonInclude',idJsonNoProperty).
 struct_dt_i([ 26,49,76 ],name,'TabOptionsItem').
-struct_dt_i([ 26,49,76 ],namespace,'ProyectoGestion.TabOptions').
+struct_dt_i([ 26,49,76 ],namespace,'IS2.TabOptions').
 struct_dt_i([ 26,49,0 ],fullname,'TabOptions').
 struct_dt_i([ 26,49,76 ],fullname,'TabOptions.TabOptionsItem').
+struct_dt_i([ 26,49,0 ],modified,yes).
+struct_dt_i([ 26,49,76 ],modified,yes).
  
 struct_dt_elem_i([ 26,49,76 ],1,name,'Code').
 struct_dt_elem_i([ 26,49,76 ],1,camelname,'Code').
-struct_dt_elem_i([ 26,49,76 ],1,basedon,75).
+struct_dt_elem_i([ 26,49,76 ],1,basedon,72).
 struct_dt_elem_i([ 26,49,76 ],1,length,50).
 struct_dt_elem_i([ 26,49,76 ],1,decimals,0).
 struct_dt_elem_i([ 26,49,76 ],1,type,[ 5,50,0 ]).
 struct_dt_elem_i([ 26,49,76 ],1,pic,'').
 struct_dt_elem_i([ 26,49,76 ],1,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],1,'ExternalName','Code').
-struct_dt_elem_i([ 26,49,76 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],1,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],1,'XmlNamespace','').
@@ -759,7 +762,7 @@ struct_dt_elem_i([ 26,49,76 ],2,type,[ 13,255,0 ]).
 struct_dt_elem_i([ 26,49,76 ],2,pic,'').
 struct_dt_elem_i([ 26,49,76 ],2,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],2,'ExternalName','Description').
-struct_dt_elem_i([ 26,49,76 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],2,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],2,'XmlNamespace','').
@@ -776,7 +779,7 @@ struct_dt_elem_i([ 26,49,76 ],3,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,49,76 ],3,pic,'').
 struct_dt_elem_i([ 26,49,76 ],3,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],3,'ExternalName','Link').
-struct_dt_elem_i([ 26,49,76 ],3,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],3,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],3,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],3,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],3,'XmlNamespace','').
@@ -793,7 +796,7 @@ struct_dt_elem_i([ 26,49,76 ],4,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,49,76 ],4,pic,'').
 struct_dt_elem_i([ 26,49,76 ],4,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],4,'ExternalName','WebComponent').
-struct_dt_elem_i([ 26,49,76 ],4,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],4,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],4,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],4,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],4,'XmlNamespace','').
@@ -806,21 +809,21 @@ struct_dt_elem_i([ 26,49,76 ],4,'JsonInclude',idJsonEmpty).
  
  
  
-sub_info_i(146,'Start',1,24,[ [ 'Pgmname',8,'Rolesid',9,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Usuariowc',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Start',1,24,[ [ 'Pgmname',2,'Rolesid',15,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Usuariowc',3),t('Object',3) ] ] ]).
 sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Rolesid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Usuariowc',3),t('Object',3) ] ] ]).
  
-pgm_parm_i(web,10,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,25,'ROLESUSUARIOWC',[ [ int,4,0,0 ] ],[ [ 'RolesID',in,[] ] ]).
-pgm_parm_i(web,23,'ROLESGENERAL',[ [ int,4,0,0 ] ],[ [ 'RolesID',in,[] ] ]).
-pgm_parm_i(web,22,'WWROLES',[],[]).
-pgm_parm_i(proc,11,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
+pgm_parm_i(web,7,'WWPBASEOBJECTS\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(web,22,'ROLESUSUARIOWC',[ [ int,4,0,0 ] ],[ [ 'RolesID',in,[] ] ]).
+pgm_parm_i(web,21,'ROLESGENERAL',[ [ int,4,0,0 ] ],[ [ 'RolesID',in,[] ] ]).
+pgm_parm_i(web,12,'WWROLES',[],[]).
+pgm_parm_i(proc,11,'WWPBASEOBJECTS\ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
-pgm_callprotocol_i(web,21,'VIEWROLES','INTERNAL','Secure').
-pgm_callprotocol_i(web,10,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,25,'ROLESUSUARIOWC','INTERNAL','Secure').
-pgm_callprotocol_i(web,23,'ROLESGENERAL','INTERNAL','Secure').
-pgm_callprotocol_i(web,22,'WWROLES','INTERNAL','Secure').
-pgm_callprotocol_i(proc,11,'ISAUTHORIZED','INTERNAL','Secure').
+pgm_callprotocol_i(web,11,'VIEWROLES','INTERNAL','Secure').
+pgm_callprotocol_i(web,7,'WWPBASEOBJECTS\NOTAUTHORIZED','INTERNAL','Secure').
+pgm_callprotocol_i(web,22,'ROLESUSUARIOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,21,'ROLESGENERAL','INTERNAL','Secure').
+pgm_callprotocol_i(web,12,'WWROLES','INTERNAL','Secure').
+pgm_callprotocol_i(proc,11,'WWPBASEOBJECTS\ISAUTHORIZED','INTERNAL','Secure').
  
  
  

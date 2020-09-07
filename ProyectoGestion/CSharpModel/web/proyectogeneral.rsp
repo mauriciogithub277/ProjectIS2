@@ -17,5 +17,5 @@
 /r:bin\GeneXus.dll
 /r:GxBaseBuilder.dll
 /out:bin\proyectogeneral.dll
-isauthorized.cs
 proyectogeneral.cs
+wwpbaseobjects\isauthorized.cs

@@ -2,7 +2,7 @@
                File: GxModelInfoProvider
         Description: No description for object
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:9:40.5
+       Generated on: 8/22/2020 15:15:56.75
        Program type: Callable routine
           Main DBMS: SQL Server
 */

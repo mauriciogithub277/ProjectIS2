@@ -4,13 +4,24 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>39</ObjId>
+<ObjId>28</ObjId>
 <ObjName>TareaGeneral</ObjName>
 <ObjDesc>Tarea General</ObjDesc>
 <ObjPgmName>TareaGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
-<Warnings></Warnings>
+<Warnings>
+<Warning>
+<MsgCode>spc0025</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>12</Line></Location>
+<Message>
+<Token>Too many parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>Tarea</Token>
+<Token>.</Token></Message></Warning></Warnings>
 <Errors></Errors>
 <Generator>
 <GenId>15</GenId>
@@ -20,7 +31,7 @@
 <Parameter>
 <IO>in</IO>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
@@ -30,9 +41,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>10</ObjId>
-<ObjName>NotAuthorized</ObjName>
-<ObjPgmName>NotAuthorized</ObjPgmName>
+<ObjId>7</ObjId>
+<ObjName>WWPBaseObjects.NotAuthorized</ObjName>
+<ObjPgmName>WWPBaseObjects.NotAuthorized</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters>
 <Variable>
@@ -47,12 +58,12 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>8</TableId>
+<TableId>5</TableId>
 <TableName>Tarea</TableName>
 <Description>Tarea</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></Order>
 <Condition></Condition>
@@ -62,39 +73,39 @@
 <StartFrom>
 <Condition>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>@TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></Condition></StartFrom>
 <LoopWhile>
 <Condition>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>@TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
-<TableId>8</TableId>
+<TableId>5</TableId>
 <TableName>Tarea</TableName>
 <Description>Tarea</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
@@ -108,7 +119,7 @@
 <Object>
 <ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
 <ObjCls>0</ObjCls>
-<ObjId>8</ObjId>
+<ObjId>6</ObjId>
 <ObjName>Tarea</ObjName>
 <ObjPgmName>Tarea</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
@@ -118,7 +129,7 @@
 <Token>,</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></Parameters>
 <IF></IF></CALL></Event>
@@ -128,7 +139,7 @@
 <Object>
 <ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
 <ObjCls>0</ObjCls>
-<ObjId>8</ObjId>
+<ObjId>6</ObjId>
 <ObjName>Tarea</ObjName>
 <ObjPgmName>Tarea</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
@@ -138,7 +149,7 @@
 <Token>,</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></Parameters>
 <IF></IF></CALL></Event>

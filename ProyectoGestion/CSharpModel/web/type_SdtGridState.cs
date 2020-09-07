@@ -27,7 +27,7 @@ namespace GeneXus.Programs
 {
 	[XmlSerializerFormat]
 	[XmlRoot(ElementName="GridState")]
-	[XmlType(TypeName="GridState" , Namespace="ProyectoGestion" )]
+	[XmlType(TypeName="GridState" , Namespace="IS2" )]
 	[Serializable]
 	public class SdtGridState : GxUserType
 	{
@@ -209,7 +209,7 @@ namespace GeneXus.Programs
 		#endregion
 	}
 	#region Rest interface
-	[DataContract(Name=@"GridState", Namespace="ProyectoGestion")]
+	[DataContract(Name=@"GridState", Namespace="IS2")]
 	public class SdtGridState_RESTInterface : GxGenericCollectionItem<SdtGridState>, System.Web.SessionState.IRequiresSessionState
 	{
 		public SdtGridState_RESTInterface( ) : base()

@@ -50,6 +50,7 @@ public class bldReorganization : GxBaseBuilder
    public override ItemCollection GetResBuildList( )
    {
       ItemCollection sc = new ItemCollection() ;
+      sc.Add( @"bin\messages.spa.dll", cs_path + @"\messages.spa.txt");
       sc.Add( @"bin\messages.eng.dll", cs_path + @"\messages.eng.txt");
       return sc ;
    }
@@ -63,6 +64,11 @@ public class bldReorganization : GxBaseBuilder
          if (checkTime(obj, cs_path + @"\Reorganization.cs" ))
             return true;
          if (checkTime(obj, cs_path + @"\reorg.cs" ))
+            return true;
+      }
+      if ( obj == @"bin\messages.spa.dll" )
+      {
+         if (checkTime(obj, cs_path + @"\messages.spa.txt" ))
             return true;
       }
       if ( obj == @"bin\messages.eng.dll" )

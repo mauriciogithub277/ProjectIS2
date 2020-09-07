@@ -17,5 +17,5 @@
 /r:bin\GeneXus.dll
 /r:GxBaseBuilder.dll
 /out:bin\wwroles.dll
+wwpbaseobjects\isauthorized.cs
 wwroles.cs
-isauthorized.cs

@@ -1,16 +1,16 @@
-spec_i([ web,8,'Wlogin','Wlogin',0,eng,'16_0_7-138086' ]).
+spec_i([ web,15,l('Wlogin'),'Wlogin',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[],[]).
 struct_i(3,2,[],[]).
  
 level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
-level_i(3,[ 1,[ [ 1,many ],[ 3,one ] ],[],[],[ [ [ 1,3 ],[ 3,2,9,8 ] ] ],[ [ [ 1,3 ],[] ] ],[ 1 ],'IUSUARIO',[],[] ]).
+level_i(3,[ 1,[ [ 1,many ],[ 2,one ] ],[],[],[ [ [ 1,2 ],[ 10,9,15,2 ] ] ],[ [ [ 1,2 ],[] ] ],[ 1 ],'IUSUARIO',[],[] ]).
  
 tw_i(2,[]).
-tw_i(3,[ [ 3,[ [ 1,8,8 ] ] ] ]).
+tw_i(3,[ [ 2,[ [ 1,2,2 ] ] ] ]).
  
 lwi_i(2,[ [] ]).
-lwi_i(3,[ [ c([ t(2,2),t(=,10),t('Usuario',23) ],[ 2 ]),c([ t(3,2),t(=,10),t('Password',23) ],[ 3 ]) ] ]).
+lwi_i(3,[ [ c([ t(9,2),t(=,10),t('Usuario',23) ],[ 9 ]),c([ t(10,2),t(=,10),t('Password',23) ],[ 10 ]) ] ]).
  
  
  
@@ -18,16 +18,16 @@ level_option_i(3,usr_condition,y).
 level_option_i(3,when_none,'GXLvl6').
  
 ta_i(2,[ [] ]).
-ta_i(3,[ [ [ 1,8 ],[ 1,3 ],[ 1,2 ],[ 3,9 ] ] ]).
+ta_i(3,[ [ [ 1,2 ],[ 1,10 ],[ 1,9 ],[ 2,15 ] ] ]).
  
 las_i(2,[ [ 'Usuario','Texterror','Password','Texterror2','Loginerror' ] ]).
-las_i(3,[ [ 'Usuario','Texterror','Password','Texterror2','Loginerror',3,2,9,8 ] ]).
+las_i(3,[ [ 'Usuario','Texterror','Password','Texterror2','Loginerror',10,9,15,2 ] ]).
  
 lac_i(2,[ [ 'Usuario','Texterror','Password','Texterror2','Loginerror' ] ]).
 lac_i(3,[ [ 'Usuario','Texterror','Password','Texterror2','Loginerror' ] ]).
  
  
-lits_i('Iniciar Sesion',5,10).
+lits_i(l('Iniciar Sesion'),5,10).
  
 cls_i([ 0,0 ],[ 5,39 ]).
  
@@ -56,9 +56,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -70,13 +71,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -125,16 +126,16 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('WEB_COMP','No')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
 rule_i(0,prop('ObjDesc','Wlogin')).
 rule_i(0,prop('ObjName','Wlogin')).
 rule_i(0,maingen(15)).
-rule_i(0,rule([ a(22,[ '''Iniciar''','''Iniciar''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Iniciar''',[ t('getmessagetext(',1),t('"Iniciar"',3),t(')',4) ],'' ]) ],[],[],[])).
  
 a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
 a_i(2,3,t,1,[],[ [],'IUSUARIO',[] ]).
-a_i(3,3,r,3,[],[ [ [ 1,8,8 ] ],'IROLES',[] ]).
+a_i(3,3,r,2,[],[ [ [ 1,2,2 ] ],'IROLES',[] ]).
 a_i(4,1,f,[ t('&Texterror',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(5,1,f,[ t('&Texterror2',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(6,1,f,[ t('&Loginerror',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
@@ -142,11 +143,11 @@ a_i(6,1,f,[ t('&Loginerror',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ])
 v_i(f,i,1,[]).
 v_i(f,o,1,'Err').
 v_i(t,i,2,[]).
-v_i(t,o,2,8).
-v_i(t,o,2,3).
 v_i(t,o,2,2).
-v_i(r,i,3,8).
-v_i(r,o,3,9).
+v_i(t,o,2,10).
+v_i(t,o,2,9).
+v_i(r,i,3,2).
+v_i(r,o,3,15).
 v_i(f,i,4,[]).
 v_i(f,o,4,[ t('&Texterror',23),t('Enabled',3) ]).
 v_i(f,i,5,[]).
@@ -159,27 +160,27 @@ v_i(f,o,6,[ t('&Loginerror',23),t('Enabled',3) ]).
  
  
  
-attri_i(1,[ 'UsuarioID',int,4,0,'ZZZ9',0,'Usuario ID','',0 ]).
-attri_i(8,[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',0 ]).
-attri_i(2,[ 'Name',char,40,0,'',0,'Name','',0 ]).
-attri_i(3,[ 'Password',char,20,0,'',0,'Password','',0 ]).
-attri_i(9,[ 'RolesName',char,40,0,'',0,'Roles Name','',0 ]).
-attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],18 ]).
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',17 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',16 ]).
-attri_i('Iduser',[ idUser,char,20,0,'',0,'id User','',15 ]).
-attri_i('Usuario',[ usuario,char,40,0,'',0,usuario,'',5 ]).
-attri_i('Texterror2',[ textError2,char,20,0,'',0,'text Error2','',11 ]).
-attri_i('Texterror',[ textError,char,20,0,'',0,'text Error','',10 ]).
-attri_i('Proy',[ 'Proy',char,30,0,'',0,'Proy','',12 ]).
-attri_i('Password',[ password,char,20,0,'',0,password,'',9 ]).
-attri_i('Loginerror',[ 'LoginError',char,30,0,'',0,'Login Error','',14 ]).
+attri_i(1,[ 'UsuarioID',int,4,0,'ZZZ9',0,l('Usuario ID'),'',0 ]).
+attri_i(2,[ 'RolesID',int,4,0,'ZZZ9',0,l('Roles ID'),'',0 ]).
+attri_i(9,[ 'Name',char,40,0,'',0,l('Name'),'',0 ]).
+attri_i(10,[ 'Password',char,20,0,'',0,l('Password'),'',0 ]).
+attri_i(15,[ 'RolesName',char,40,0,'',0,l('Roles Name'),'',0 ]).
+attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],14 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',13 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',12 ]).
+attri_i('Iduser',[ idUser,char,20,0,'',0,l('id User'),'',11 ]).
+attri_i('Usuario',[ usuario,char,40,0,'',0,l(usuario),'',10 ]).
+attri_i('Texterror2',[ textError2,char,20,0,'',0,l('text Error2'),'',9 ]).
+attri_i('Texterror',[ textError,char,20,0,'',0,l('text Error'),'',8 ]).
+attri_i('Proy',[ 'Proy',char,30,0,'',0,l('Proy'),'',7 ]).
+attri_i('Password',[ password,char,20,0,'',0,l(password),'',6 ]).
+attri_i('Loginerror',[ 'LoginError',char,30,0,'',0,l('Login Error'),'',5 ]).
  
-table_i(3,[ 'Roles',[ 8,9 ],'Roles','Roles' ]).
-table_i(1,[ 'Usuario',[ 1,2,3,8 ],'Usuario','Usuario' ]).
+table_i(2,[ 'Roles',[ 2,15 ],l('Roles'),'Roles' ]).
+table_i(1,[ 'Usuario',[ 1,9,10,2 ],l('Usuario'),'Usuario' ]).
  
 index_i(1,[ 'IUSUARIO',u,[ 1 ],'IUsuario' ]).
-index_i(3,[ 'IROLES',u,[ 8 ],'IRoles' ]).
+index_i(2,[ 'IROLES',u,[ 2 ],'IRoles' ]).
  
  
  
@@ -205,12 +206,12 @@ index_i(3,[ 'IROLES',u,[ 8 ],'IRoles' ]).
  
  
  
-dom_info_i(72,[ 'Name' ]).
-dom_info_i(73,[ 'Password' ]).
-dom_info_i(71,[ 'ID' ]).
+dom_info_i(74,[ 'Name' ]).
+dom_info_i(75,[ 'Password' ]).
+dom_info_i(73,[ 'ID' ]).
  
  
-break_i(3,nvg,2,[],[ [ 9 ],[ 2,3 ],[] ]).
+break_i(3,nvg,2,[],[ [ 15 ],[ 9,10 ],[] ]).
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
@@ -221,17 +222,17 @@ b_group_i(2,4,lit,0,11,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('''Iniciar''',3,1,7) ]).
 b_line_i(2,2,2,cmd,1,[ t('',109,1,0),t('null(',1,2,14),t('Usuario',23,1,5),t(')',4,1,23),t('.AND.',9,1,25),t('null(',1,2,41),t('Password',23,1,31),t(')',4,1,50) ]).
-b_line_i(3,2,2,cmd,1,[ t('',107,1,0),t('Texterror',23,1,0),t(=,10,1,0),t('"Campo Obligatorio"',3,1,0) ]).
-b_line_i(4,2,2,cmd,1,[ t('',107,1,0),t('Texterror2',23,1,0),t(=,10,1,0),t('"Campo Obligatorio "',3,1,0) ]).
+b_line_i(3,2,2,cmd,1,[ t('',107,1,0),t('Texterror',23,1,0),t(=,10,1,0),t('getmessagetext(',1,1,0),t('"Campo Obligatorio"',3,1,0),t(')',4,1,0) ]).
+b_line_i(4,2,2,cmd,1,[ t('',107,1,0),t('Texterror2',23,1,0),t(=,10,1,0),t('getmessagetext(',1,1,0),t('"Campo Obligatorio "',3,1,0),t(')',4,1,0) ]).
 b_line_i(5,2,2,cmd,1,[ t('',110,1,0) ]).
 b_line_i([ 6,0 ],2,2,cmd,1,[ t('',107,1,0),t('GXLvl6',23,1,0),t(=,10,1,0),t('0',3,1,0) ]).
 b_line_i(6,3,1,cmd,7,[ t('',121,6,0),t(table,3,6,12),t(1,3,6,12) ]).
 b_line_i([ 6,1 ],3,1,cmd,6,[ t('',107,6,0),t('GXLvl6',23,6,0),t(=,10,6,0),t('1',3,6,0) ]).
-b_line_i(8,3,1,cmd,7,[ t('',107,7,0),t('Iduser',23,7,0),t(=,10,7,0),t(9,2,7,0) ]).
+b_line_i(8,3,1,cmd,7,[ t('',107,7,0),t('Iduser',23,7,0),t(=,10,7,0),t(15,2,7,0) ]).
 b_line_i(9,3,1,cmd,7,[ t('',104,7,0),t(o(13,'WWDasboard'),28,7,4),t('Iduser',23,7,15) ]).
 b_line_i(10,3,1,cmd,7,[ t('',128,7,0) ]).
 b_line_i([ 10,1 ],2,4,cmd,5,[ t('',109,5,0),t('GXLvl6',23,5,0),t(=,10,5,0),t('0',3,5,0) ]).
-b_line_i(11,2,4,cmd,6,[ t('',107,6,0),t('Loginerror',23,6,0),t(=,10,6,0),t('"Error-Credenciales"',3,6,0) ]).
+b_line_i(11,2,4,cmd,6,[ t('',107,6,0),t('Loginerror',23,6,0),t(=,10,6,0),t('getmessagetext(',1,6,0),t('"Error-Credenciales"',3,6,0),t(')',4,6,0) ]).
 b_line_i(12,2,4,cmd,6,[ t('',111,6,0) ]).
 b_line_i(13,2,4,cmd,6,[ t('',111,6,0) ]).
 b_line_i(14,2,4,cmd,6,[ t('',147,6,0) ]).
@@ -260,7 +261,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,table(6))).
 html_sub_i(6,7,html_i(0,row(7))).
 html_sub_i(7,8,html_i(0,cell(8))).
-html_sub_i(8,9,html_i(0,t('Iniciar Sesion',3))).
+html_sub_i(8,9,html_i(0,t(l('Iniciar Sesion'),3))).
 html_sub_i(6,10,html_i(1,row(10))).
 html_sub_i(10,11,html_i(0,cell(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -291,17 +292,17 @@ html_sub_i(34,35,html_i(0,t('Loginerror',23))).
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',bootstrapv3).
 html_tags_i(2,'data-abstract-form','').
-html_tags_i(12,'data-gx-att','var:5').
-html_tags_i(14,'data-gx-att','var:5').
-html_tags_i(16,'data-gx-att','var:10').
-html_tags_i(18,'data-gx-att','var:10').
-html_tags_i(21,'data-gx-att','var:9').
-html_tags_i(23,'data-gx-att','var:9').
+html_tags_i(12,'data-gx-att','var:10').
+html_tags_i(14,'data-gx-att','var:10').
+html_tags_i(16,'data-gx-att','var:8').
+html_tags_i(18,'data-gx-att','var:8').
+html_tags_i(21,'data-gx-att','var:6').
+html_tags_i(23,'data-gx-att','var:6').
 html_tags_i(23,'data-gx-password-reveal','').
-html_tags_i(25,'data-gx-att','var:11').
-html_tags_i(27,'data-gx-att','var:11').
-html_tags_i(33,'data-gx-att','var:14').
-html_tags_i(35,'data-gx-att','var:14').
+html_tags_i(25,'data-gx-att','var:9').
+html_tags_i(27,'data-gx-att','var:9').
+html_tags_i(33,'data-gx-att','var:5').
+html_tags_i(35,'data-gx-att','var:5').
  
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(2,'Class','Section',d,[ str ]).
@@ -351,7 +352,7 @@ html_comp_i(6,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(6,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(6,'Rules',none,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Iniciar Sesion',d,[ str ]).
+html_comp_i(9,'Caption',l('Iniciar Sesion'),d,[ str ]).
 html_comp_i(9,'Id','Textblock1',v,[ str ]).
 html_comp_i(9,'Class','BigTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -360,8 +361,8 @@ html_comp_i(9,'Gxformat',0,d,[ num ]).
 html_comp_i(9,'Title','',d,[ str ]).
 html_comp_i(9,'Fill',-1,d,[ bool ]).
 html_comp_i(9,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(9,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(9,'Font',font('Arial',30,[]),d,[ font ]).
+html_comp_i(9,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(9,'Font',font('Microsoft Sans Serif',30,[]),d,[ font ]).
 html_comp_i(12,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(12,'Class','form-group gx-form-group',v,[ str ]).
 html_comp_i(12,'Id','',d,[ str ]).
@@ -380,13 +381,13 @@ html_comp_i(13,'Align',left,d,[ str ]).
 html_comp_i(13,'Valign',top,d,[ str ]).
 html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(14,'Colcount',40,d,[ num ]).
-html_comp_i(14,'Attid',-5,v,[ num ]).
+html_comp_i(14,'Attid',-10,v,[ num ]).
 html_comp_i(14,'Class','Attribute',v,[ str ]).
 html_comp_i(14,'Controlname','&Usuario',d,[ str ]).
 html_comp_i(14,'Returnonclick',0,v,[ bool ]).
 html_comp_i(14,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(14,'Captionposition','Left',v,[ str ]).
-html_comp_i(14,'Captionvalue','Usuario',d,[ str ]).
+html_comp_i(14,'Captionvalue',l('Usuario'),d,[ str ]).
 html_comp_i(14,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(14,'Controltype',2,d,[ num ]).
 html_comp_i(14,'Inputtype',0,d,[ num ]).
@@ -404,9 +405,9 @@ html_comp_i(14,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(14,'Ismultiline',0,d,[ bool ]).
 html_comp_i(14,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(14,'Fill',-1,d,[ bool ]).
-html_comp_i(14,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(14,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(14,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(14,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(14,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(14,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(14,'Gxformat',0,d,[ num ]).
 html_comp_i(14,'Title','',d,[ str ]).
@@ -429,7 +430,7 @@ html_comp_i(17,'Align',left,d,[ str ]).
 html_comp_i(17,'Valign',top,d,[ str ]).
 html_comp_i(18,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(18,'Colcount',20,d,[ num ]).
-html_comp_i(18,'Attid',-10,v,[ num ]).
+html_comp_i(18,'Attid',-8,v,[ num ]).
 html_comp_i(18,'Class','ErrorAttribute',v,[ str ]).
 html_comp_i(18,'Controlname','&Texterror',d,[ str ]).
 html_comp_i(18,'Returnonclick',0,v,[ bool ]).
@@ -454,9 +455,9 @@ html_comp_i(18,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(18,'Ismultiline',0,d,[ bool ]).
 html_comp_i(18,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(18,'Fill',-1,d,[ bool ]).
-html_comp_i(18,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(18,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(18,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(18,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(18,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(18,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(18,'Gxformat',0,d,[ num ]).
 html_comp_i(18,'Title','',d,[ str ]).
@@ -479,13 +480,13 @@ html_comp_i(22,'Align',left,d,[ str ]).
 html_comp_i(22,'Valign',top,d,[ str ]).
 html_comp_i(23,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(23,'Colcount',20,d,[ num ]).
-html_comp_i(23,'Attid',-9,v,[ num ]).
+html_comp_i(23,'Attid',-6,v,[ num ]).
 html_comp_i(23,'Class','Attribute',v,[ str ]).
 html_comp_i(23,'Controlname','&Password',d,[ str ]).
 html_comp_i(23,'Returnonclick',0,v,[ bool ]).
 html_comp_i(23,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(23,'Captionposition','Left',v,[ str ]).
-html_comp_i(23,'Captionvalue','Contraseña',d,[ str ]).
+html_comp_i(23,'Captionvalue',l('Contraseña'),d,[ str ]).
 html_comp_i(23,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(23,'Controltype',2,d,[ num ]).
 html_comp_i(23,'Inputtype',0,d,[ num ]).
@@ -503,9 +504,9 @@ html_comp_i(23,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(23,'Ismultiline',0,d,[ bool ]).
 html_comp_i(23,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(23,'Fill',-1,d,[ bool ]).
-html_comp_i(23,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(23,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(23,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(23,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(23,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(23,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(23,'Gxformat',0,d,[ num ]).
 html_comp_i(23,'Title','',d,[ str ]).
@@ -528,7 +529,7 @@ html_comp_i(26,'Align',left,d,[ str ]).
 html_comp_i(26,'Valign',top,d,[ str ]).
 html_comp_i(27,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(27,'Colcount',20,d,[ num ]).
-html_comp_i(27,'Attid',-11,v,[ num ]).
+html_comp_i(27,'Attid',-9,v,[ num ]).
 html_comp_i(27,'Class','ErrorAttribute',v,[ str ]).
 html_comp_i(27,'Controlname','&Texterror2',d,[ str ]).
 html_comp_i(27,'Returnonclick',0,v,[ bool ]).
@@ -553,9 +554,9 @@ html_comp_i(27,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(27,'Ismultiline',0,d,[ bool ]).
 html_comp_i(27,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(27,'Fill',-1,d,[ bool ]).
-html_comp_i(27,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(27,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(27,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(27,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(27,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(27,'Gxformat',0,d,[ num ]).
 html_comp_i(27,'Title','',d,[ str ]).
@@ -580,12 +581,12 @@ html_comp_i(30,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(30,'Controlname','Iniciar',v,[ str ]).
 html_comp_i(30,'Class','BtnEnter',v,[ str ]).
 html_comp_i(30,'Event','''Iniciar''',v,[ str ]).
-html_comp_i(30,'Caption','Iniciar',d,[ str ]).
-html_comp_i(30,'Title','Iniciar',d,[ str ]).
-html_comp_i(30,'Font',font('Arial',9,[]),d,[ font ]).
-html_comp_i(30,'Forecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(30,'Caption',l('Iniciar'),d,[ str ]).
+html_comp_i(30,'Title',l('Iniciar'),d,[ str ]).
+html_comp_i(30,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(30,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(30,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(30,'Border','2',d,[ str ]).
+html_comp_i(30,'Border','1',d,[ str ]).
 html_comp_i(30,'Bordercolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(30,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(31,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -622,7 +623,7 @@ html_comp_i(34,'Align',left,d,[ str ]).
 html_comp_i(34,'Valign',top,d,[ str ]).
 html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(35,'Colcount',30,d,[ num ]).
-html_comp_i(35,'Attid',-14,v,[ num ]).
+html_comp_i(35,'Attid',-5,v,[ num ]).
 html_comp_i(35,'Class','TextActionAttribute',v,[ str ]).
 html_comp_i(35,'Controlname','&Loginerror',d,[ str ]).
 html_comp_i(35,'Returnonclick',0,v,[ bool ]).
@@ -647,9 +648,9 @@ html_comp_i(35,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(35,'Ismultiline',0,d,[ bool ]).
 html_comp_i(35,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(35,'Fill',-1,d,[ bool ]).
-html_comp_i(35,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(35,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(35,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(35,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(35,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(35,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(35,'Gxformat',0,d,[ num ]).
 html_comp_i(35,'Title','',d,[ str ]).
@@ -661,7 +662,7 @@ html_comp_i(35,'Invitemsg','',v,[ str ]).
  
  
  
-lit_i(9,1,t('Iniciar Sesion',3),[ ctlname('Textblock1') ]).
+lit_i(9,1,t(l('Iniciar Sesion'),3),[ ctlname('Textblock1') ]).
 lit_i(14,1,t('Usuario',23),[ ctlname('&Usuario'),ctrltype(edit,14),pos(14),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(13,1,div(13),[ ctlname('') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).
@@ -697,53 +698,53 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-att_prop_i(2,9,'ExternalName','RolesName',d).
-att_prop_i(2,9,'ExternalNamespace','ProyectoGestion',d).
+att_prop_i(2,15,'ExternalName','RolesName',d).
+att_prop_i(2,15,'ExternalNamespace','IS2',d).
+att_prop_i(2,15,'EmptyAsNull','Yes',d).
+att_prop_i(2,15,idBasedOn,74,v).
+att_prop_i(2,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,15,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,15,'AttRegEx','',d).
+att_prop_i(2,15,'AttValidationFailedMsg','',d).
+att_prop_i(2,15,'DownloadOffline','0',d).
+att_prop_i(2,15,'FullName','RolesName',v).
+att_prop_i(2,10,'ExternalName','Password',d).
+att_prop_i(2,10,'ExternalNamespace','IS2',d).
+att_prop_i(2,10,'EmptyAsNull','Yes',d).
+att_prop_i(2,10,idBasedOn,75,v).
+att_prop_i(2,10,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,10,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,10,'AttRegEx','',d).
+att_prop_i(2,10,'AttValidationFailedMsg','',d).
+att_prop_i(2,10,'DownloadOffline','0',d).
+att_prop_i(2,10,'FullName','Password',v).
+att_prop_i(2,9,'ExternalName','Name',d).
+att_prop_i(2,9,'ExternalNamespace','IS2',d).
 att_prop_i(2,9,'EmptyAsNull','Yes',d).
-att_prop_i(2,9,idBasedOn,72,v).
+att_prop_i(2,9,idBasedOn,74,v).
 att_prop_i(2,9,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,9,'DB_NLS_SUPPORT','Yes',d).
 att_prop_i(2,9,'AttRegEx','',d).
 att_prop_i(2,9,'AttValidationFailedMsg','',d).
 att_prop_i(2,9,'DownloadOffline','0',d).
-att_prop_i(2,9,'FullName','RolesName',v).
-att_prop_i(2,3,'ExternalName','Password',d).
-att_prop_i(2,3,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,3,'EmptyAsNull','Yes',d).
-att_prop_i(2,3,idBasedOn,73,v).
-att_prop_i(2,3,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,3,'DB_NLS_SUPPORT','Yes',d).
-att_prop_i(2,3,'AttRegEx','',d).
-att_prop_i(2,3,'AttValidationFailedMsg','',d).
-att_prop_i(2,3,'DownloadOffline','0',d).
-att_prop_i(2,3,'FullName','Password',v).
-att_prop_i(2,2,'ExternalName','Name',d).
-att_prop_i(2,2,'ExternalNamespace','ProyectoGestion',d).
+att_prop_i(2,9,'FullName','Name',v).
+att_prop_i(2,2,'ExternalName','RolesID',d).
+att_prop_i(2,2,'ExternalNamespace','IS2',d).
 att_prop_i(2,2,'EmptyAsNull','Yes',d).
-att_prop_i(2,2,idBasedOn,72,v).
+att_prop_i(2,2,idBasedOn,73,v).
+att_prop_i(2,2,'AUTONUMBER','-1',d).
+att_prop_i(2,2,'AUTONUMBER_START','1',d).
+att_prop_i(2,2,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,2,'AUTONUMBER_FORREPLICATION','-1',d).
 att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,2,'DB_NLS_SUPPORT','Yes',d).
 att_prop_i(2,2,'AttRegEx','',d).
 att_prop_i(2,2,'AttValidationFailedMsg','',d).
 att_prop_i(2,2,'DownloadOffline','0',d).
-att_prop_i(2,2,'FullName','Name',v).
-att_prop_i(2,8,'ExternalName','RolesID',d).
-att_prop_i(2,8,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,8,'EmptyAsNull','Yes',d).
-att_prop_i(2,8,idBasedOn,71,v).
-att_prop_i(2,8,'AUTONUMBER','-1',d).
-att_prop_i(2,8,'AUTONUMBER_START','1',d).
-att_prop_i(2,8,'AUTONUMBER_STEP','1',d).
-att_prop_i(2,8,'AUTONUMBER_FORREPLICATION','-1',d).
-att_prop_i(2,8,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,8,'AttRegEx','',d).
-att_prop_i(2,8,'AttValidationFailedMsg','',d).
-att_prop_i(2,8,'DownloadOffline','0',d).
-att_prop_i(2,8,'FullName','RolesID',v).
+att_prop_i(2,2,'FullName','RolesID',v).
 att_prop_i(2,1,'ExternalName','UsuarioID',d).
-att_prop_i(2,1,'ExternalNamespace','ProyectoGestion',d).
+att_prop_i(2,1,'ExternalNamespace','IS2',d).
 att_prop_i(2,1,'EmptyAsNull','Yes',d).
-att_prop_i(2,1,idBasedOn,71,v).
+att_prop_i(2,1,idBasedOn,73,v).
 att_prop_i(2,1,'AUTONUMBER','-1',d).
 att_prop_i(2,1,'AUTONUMBER_START','1',d).
 att_prop_i(2,1,'AUTONUMBER_STEP','1',d).
@@ -754,21 +755,21 @@ att_prop_i(2,1,'AttValidationFailedMsg','',d).
 att_prop_i(2,1,'DownloadOffline','0',d).
 att_prop_i(2,1,'FullName','UsuarioID',v).
  
-tbl_prop_i(2,1,'AllDirSuper',[ [ 3,[ 8 ] ] ],v).
-tbl_prop_i(2,3,'DirSubor',[ [ 1,[ 8 ] ] ],v).
-tbl_prop_i(2,1,'DirSuper',[ [ 3,[ 8 ] ] ],v).
+tbl_prop_i(2,1,'AllDirSuper',[ [ 2,[ 2 ] ] ],v).
+tbl_prop_i(2,2,'DirSubor',[ [ 1,[ 2 ] ] ],v).
+tbl_prop_i(2,1,'DirSuper',[ [ 2,[ 2 ] ] ],v).
  
 tbl_att_prop_i(2,1,1,'AllowNulls',n).
 tbl_att_prop_i(2,1,1,'AUTONUMBER',y).
+tbl_att_prop_i(2,1,9,'AllowNulls',n).
+tbl_att_prop_i(2,1,10,'AllowNulls',n).
 tbl_att_prop_i(2,1,2,'AllowNulls',n).
-tbl_att_prop_i(2,1,3,'AllowNulls',n).
-tbl_att_prop_i(2,1,8,'AllowNulls',n).
-tbl_att_prop_i(2,3,8,'AllowNulls',n).
-tbl_att_prop_i(2,3,8,'AUTONUMBER',y).
-tbl_att_prop_i(2,3,9,'AllowNulls',n).
+tbl_att_prop_i(2,2,2,'AllowNulls',n).
+tbl_att_prop_i(2,2,2,'AUTONUMBER',y).
+tbl_att_prop_i(2,2,15,'AllowNulls',n).
  
 var_prop_i(2,'Password',idBasedOn,'',v).
-var_prop_i(2,'Usuario',idBasedOn,72,v).
+var_prop_i(2,'Usuario',idBasedOn,74,v).
  
  
  
@@ -780,12 +781,12 @@ var_prop_i(2,'Usuario',idBasedOn,72,v).
  
  
  
-sub_info_i(146,'''Iniciar''',1,14,[ [ 'Usuario','Password',2,3,9 ],[ 'Texterror','Texterror2','Loginerror' ] ]).
+sub_info_i(146,'''Iniciar''',1,14,[ [ 'Usuario','Password',9,10,15 ],[ 'Texterror','Texterror2','Loginerror' ] ]).
  
-pgm_parm_i(web,15,'WWDASBOARD',[ [ char,20,0,0 ] ],[ [ rolUser,in,[] ] ]).
+pgm_parm_i(web,16,'WWDASBOARD',[ [ char,20,0,0 ] ],[ [ rolUser,in,[] ] ]).
  
-pgm_callprotocol_i(web,8,'WLOGIN','INTERNAL','Secure').
-pgm_callprotocol_i(web,15,'WWDASBOARD','INTERNAL','Secure').
+pgm_callprotocol_i(web,15,'WLOGIN','INTERNAL','Secure').
+pgm_callprotocol_i(web,16,'WWDASBOARD','INTERNAL','Secure').
  
  
  

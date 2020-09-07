@@ -1,4 +1,4 @@
-current_obj_i(2,web,11).
+current_obj_i(2,web,9).
  
 current_guid('87ff6662-990c-4153-b23a-0e528d958757').
  
@@ -19,7 +19,7 @@ current_guid('87ff6662-990c-4153-b23a-0e528d958757').
  
  
  
-ij_object_dependency(tabbedview,[],[],[],11).
+ij_object_dependency(tabbedview,[],[],[],9).
  
  
 obj_parms_i([ 'GXBaseCollection<SdtTabOptions_TabOptionsItem> aP0_Tabs','String aP1_TabCode' ],[ [ 'Tabs',in ],[ 'Tabcode',in ] ]).

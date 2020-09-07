@@ -1,0 +1,6 @@
+bc_dt_elem_i([ 0,2,0 ],'Rolesid',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Rolesname',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Modulosid',allownulls,no).
+bc_dt_elem_i([ 0,2,0 ],'Modulosname',readonly,yes).
+bc_dt_elem_i([ 0,2,0 ],'Modulosname',allownulls,no).
+ 

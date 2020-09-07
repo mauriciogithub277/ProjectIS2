@@ -27,7 +27,7 @@ namespace GeneXus.Programs
 {
 	[XmlSerializerFormat]
 	[XmlRoot(ElementName="GridState.FilterValue")]
-	[XmlType(TypeName="GridState.FilterValue" , Namespace="ProyectoGestion" )]
+	[XmlType(TypeName="GridState.FilterValue" , Namespace="IS2" )]
 	[Serializable]
 	public class SdtGridState_FilterValue : GxUserType
 	{
@@ -110,7 +110,7 @@ namespace GeneXus.Programs
 		#endregion
 	}
 	#region Rest interface
-	[DataContract(Name=@"GridState.FilterValue", Namespace="ProyectoGestion")]
+	[DataContract(Name=@"GridState.FilterValue", Namespace="IS2")]
 	public class SdtGridState_FilterValue_RESTInterface : GxGenericCollectionItem<SdtGridState_FilterValue>, System.Web.SessionState.IRequiresSessionState
 	{
 		public SdtGridState_FilterValue_RESTInterface( ) : base()

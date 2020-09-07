@@ -13,7 +13,6 @@
 /r:system.data.dll
 /r:system.data.dll
 /r:bin\GeneXus.Programs.Common.dll
-/r:bin\GeneXus.dll
 /r:GxBaseBuilder.dll
 /out:bin\gx0020.dll
 gx0020.cs

@@ -2,7 +2,7 @@
                File: ListPrograms
         Description: List Programs
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/22/2020 19:15:45.28
+       Generated on: 8/22/2020 15:16:18.48
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -52,7 +52,7 @@ namespace GeneXus.Programs {
 
       public void execute( out GXBaseCollection<SdtProgramNames_ProgramName> aP0_ProgramNames )
       {
-         this.AV9ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "ProyectoGestion") ;
+         this.AV9ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "IS2") ;
          initialize();
          executePrivate();
          aP0_ProgramNames=this.AV9ProgramNames;
@@ -68,7 +68,7 @@ namespace GeneXus.Programs {
       {
          listprograms objlistprograms;
          objlistprograms = new listprograms();
-         objlistprograms.AV9ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "ProyectoGestion") ;
+         objlistprograms.AV9ProgramNames = new GXBaseCollection<SdtProgramNames_ProgramName>( context, "ProgramName", "IS2") ;
          objlistprograms.context.SetSubmitInitialConfig(context);
          objlistprograms.initialize();
          ThreadPool.QueueUserWorkItem( PropagateCulture(new WaitCallback( executePrivateCatch )),objlistprograms);

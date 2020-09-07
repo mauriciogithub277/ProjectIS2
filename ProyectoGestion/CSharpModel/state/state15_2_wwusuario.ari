@@ -1,14 +1,15 @@
-current_obj_i(2,web,18).
+current_obj_i(2,web,10).
  
 current_guid('4b2e1a14-655a-4f49-9a3a-0e29df7a50ed').
  
  
-called_tree_i(13,18,13,10).
-called_tree_i(13,18,13,21).
-called_tree_i(13,18,13,17).
-called_tree_i(13,18,0,1).
-called_tree_i(13,18,1,11).
-called_tree_i(13,18,13,4).
+called_tree_i(13,10,13,17).
+called_tree_i(13,10,13,7).
+called_tree_i(13,10,13,11).
+called_tree_i(13,10,13,19).
+called_tree_i(13,10,0,1).
+called_tree_i(13,10,1,11).
+called_tree_i(13,10,13,49).
  
  
  
@@ -25,7 +26,7 @@ called_tree_i(13,18,13,4).
  
  
  
-ij_object_dependency(wwusuario,[],[],[],18).
+ij_object_dependency(wwusuario,[],[],[],10).
  
  
 obj_parms_i([],[]).

@@ -2,7 +2,7 @@
                File: Modulos
         Description: Modulos
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/22/2020 21:2:9.47
+       Generated on: 8/24/2020 21:27:54.87
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -115,7 +115,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 16_0_7-138086", 0) ;
-            Form.Meta.addItem("description", "Modulos", 0) ;
+            Form.Meta.addItem("description", context.GetMessage( "Modulos", ""), 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -126,7 +126,7 @@ namespace GeneXus.Programs {
          GX_FocusControl = edtModulosID_Internalname;
          AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
          wbErr = false;
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
          if ( ! context.IsLocalStorageSupported( ) )
          {
             context.PushCurrentUrl();
@@ -139,7 +139,7 @@ namespace GeneXus.Programs {
          DataStoreUtil.LoadDataStores( context);
          dsDefault = context.GetDataStore("Default");
          IsMain = true;
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
       }
 
       public modulos( IGxContext context )
@@ -179,7 +179,7 @@ namespace GeneXus.Programs {
          INITTRN( ) ;
          if ( ( GxWebError == 0 ) && ! isAjaxCallMode( ) )
          {
-            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("rwdmasterpage", "GeneXus.Programs.rwdmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
+            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("wwpbaseobjects.workwithplusmasterpage", "GeneXus.Programs.wwpbaseobjects.workwithplusmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
             MasterPageObj.setDataArea(this,false);
             ValidateSpaRequest();
             MasterPageObj.webExecute();
@@ -236,81 +236,57 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "Section", "left", "top", " "+"data-gx-base-lib=\"bootstrapv3\""+" "+"data-abstract-form"+" ", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, divMaintable_Internalname, 1, 0, "px", 0, "px", "WWAdvancedContainer", "left", "top", "", "", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-8 col-sm-offset-2", "left", "top", "", "", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, divTitlecontainer_Internalname, 1, 0, "px", 0, "px", "TableTop", "left", "top", "", "", "div");
+         GxWebStd.gx_div_start( context, divTablemain_Internalname, 1, 0, "px", 0, "px", "Container FormContainer", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Text block */
-         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Modulos", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, "HLP_Modulos.htm");
+         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, context.GetMessage( "Modulos", ""), "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
-         ClassString = "ErrorViewer";
-         StyleString = "";
-         GxWebStd.gx_msg_list( context, "", context.GX_msglist.DisplayMode, StyleString, ClassString, "", "false");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-8 col-sm-offset-2", "left", "top", "", "", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, divFormcontainer_Internalname, 1, 0, "px", 0, "px", "FormContainer", "left", "top", "", "", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-         /* Div Control */
-         GxWebStd.gx_div_start( context, divToolbarcell_Internalname, 1, 0, "px", 0, "px", "col-xs-12 col-sm-9 col-sm-offset-3 ToolbarCellClass", "left", "top", "", "", "div");
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-9 col-sm-offset-3", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-action-group ActionGroup", "left", "top", " "+"data-gx-actiongroup-type=\"toolbar\""+" ", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "btn-group", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 21,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 12,'',false,'',0)\"";
          ClassString = "BtnFirst";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_first_Internalname, "", "", bttBtn_first_Jsonclick, 5, "", "", StyleString, ClassString, bttBtn_first_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"EFIRST."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_first_Internalname, "", context.GetMessage( "GX_BtnFirst", ""), bttBtn_first_Jsonclick, 5, context.GetMessage( "GX_BtnFirst", ""), "", StyleString, ClassString, bttBtn_first_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"EFIRST."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 23,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 14,'',false,'',0)\"";
          ClassString = "BtnPrevious";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_previous_Internalname, "", "", bttBtn_previous_Jsonclick, 5, "", "", StyleString, ClassString, bttBtn_previous_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"EPREVIOUS."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_previous_Internalname, "", context.GetMessage( "GX_BtnPrevious", ""), bttBtn_previous_Jsonclick, 5, context.GetMessage( "GX_BtnPrevious", ""), "", StyleString, ClassString, bttBtn_previous_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"EPREVIOUS."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 25,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 16,'',false,'',0)\"";
          ClassString = "BtnNext";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_next_Internalname, "", "", bttBtn_next_Jsonclick, 5, "", "", StyleString, ClassString, bttBtn_next_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ENEXT."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_next_Internalname, "", context.GetMessage( "GX_BtnNext", ""), bttBtn_next_Jsonclick, 5, context.GetMessage( "GX_BtnNext", ""), "", StyleString, ClassString, bttBtn_next_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ENEXT."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 27,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 18,'',false,'',0)\"";
          ClassString = "BtnLast";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_last_Internalname, "", "", bttBtn_last_Jsonclick, 5, "", "", StyleString, ClassString, bttBtn_last_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ELAST."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_last_Internalname, "", context.GetMessage( "GX_BtnLast", ""), bttBtn_last_Jsonclick, 5, context.GetMessage( "GX_BtnLast", ""), "", StyleString, ClassString, bttBtn_last_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ELAST."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 29,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 20,'',false,'',0)\"";
          ClassString = "BtnSelect";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_select_Internalname, "", "Select", bttBtn_select_Jsonclick, 4, "Select", "", StyleString, ClassString, bttBtn_select_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ESELECT."+"'", TempTags, "gx.popup.openPrompt('"+"gx0060.aspx"+"',["+"{Ctrl:gx.dom.el('"+"MODULOSID"+"'), id:'"+"MODULOSID"+"'"+",IOType:'out',isKey:true,isLastKey:true}"+"],"+"null"+","+"'', false"+","+"true"+");"+"return false;", 2, "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_select_Internalname, "", context.GetMessage( "GX_BtnSelect", ""), bttBtn_select_Jsonclick, 5, context.GetMessage( "GX_BtnSelect", ""), "", StyleString, ClassString, bttBtn_select_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ESELECT."+"'", TempTags, "", 2, "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -319,16 +295,25 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCellAdvanced", "left", "top", "", "", "div");
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-9 col-sm-offset-3", "left", "top", "", "", "div");
+         ClassString = "ErrorViewer";
+         StyleString = "";
+         GxWebStd.gx_msg_list( context, "", context.GX_msglist.DisplayMode, StyleString, ClassString, "", "false");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtModulosID_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtModulosID_Internalname, "ID", "col-sm-3 AttributeLabel", 1, true);
+         GxWebStd.gx_label_element( context, edtModulosID_Internalname, context.GetMessage( "ID", ""), "col-sm-3 AttributeLabel", 1, true);
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 34,'',false,'',0)\"";
-         GxWebStd.gx_single_line_edit( context, edtModulosID_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A13ModulosID), 4, 0, ".", "")), ((edtModulosID_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(A13ModulosID), "ZZZ9")) : context.localUtil.Format( (decimal)(A13ModulosID), "ZZZ9")), TempTags+" onchange=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onblur(this,34);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtModulosID_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtModulosID_Enabled, 0, "number", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 1, -1, 0, true, "ID", "right", false, "", "HLP_Modulos.htm");
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 28,'',false,'',0)\"";
+         GxWebStd.gx_single_line_edit( context, edtModulosID_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A3ModulosID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")), ((edtModulosID_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(A3ModulosID), "ZZZ9")) : context.localUtil.Format( (decimal)(A3ModulosID), "ZZZ9")), TempTags+" onchange=\""+"gx.num.valid_integer( this,gx.thousandSeparator);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,gx.thousandSeparator);"+";gx.evt.onblur(this,28);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtModulosID_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtModulosID_Enabled, 0, "number", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 1, -1, 0, true, "ID", "right", false, "", "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -336,16 +321,16 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtModulosName_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtModulosName_Internalname, "Name", "col-sm-3 AttributeLabel", 1, true);
+         GxWebStd.gx_label_element( context, edtModulosName_Internalname, context.GetMessage( "Name", ""), "col-sm-3 AttributeLabel", 1, true);
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 39,'',false,'',0)\"";
-         GxWebStd.gx_single_line_edit( context, edtModulosName_Internalname, StringUtil.RTrim( A14ModulosName), StringUtil.RTrim( context.localUtil.Format( A14ModulosName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,39);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtModulosName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtModulosName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Modulos.htm");
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 33,'',false,'',0)\"";
+         GxWebStd.gx_single_line_edit( context, edtModulosName_Internalname, StringUtil.RTrim( A18ModulosName), StringUtil.RTrim( context.localUtil.Format( A18ModulosName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,33);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtModulosName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtModulosName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -353,23 +338,20 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtModulosDescripcion_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtModulosDescripcion_Internalname, "Descripcion", "col-sm-3 AttributeLabel", 1, true);
+         GxWebStd.gx_label_element( context, edtModulosDescripcion_Internalname, context.GetMessage( "Descripcion", ""), "col-sm-3 AttributeLabel", 1, true);
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Multiple line edit */
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 44,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 38,'',false,'',0)\"";
          ClassString = "Attribute";
          StyleString = "";
          ClassString = "Attribute";
          StyleString = "";
-         GxWebStd.gx_html_textarea( context, edtModulosDescripcion_Internalname, A15ModulosDescripcion, "http://maps.google.com/maps?q="+GXUtil.UrlEncode( A15ModulosDescripcion), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,44);\"", 0, 1, edtModulosDescripcion_Enabled, 0, 80, "chr", 10, "row", StyleString, ClassString, "", "", "1024", -1, 0, "_blank", "", 0, true, "GeneXus\\Address", "'"+""+"'"+",false,"+"'"+""+"'", 0, "HLP_Modulos.htm");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
-         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_html_textarea( context, edtModulosDescripcion_Internalname, A19ModulosDescripcion, "http://maps.google.com/maps?q="+GXUtil.UrlEncode( A19ModulosDescripcion), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,38);\"", 0, 1, edtModulosDescripcion_Enabled, 0, 80, "chr", 10, "row", StyleString, ClassString, "", "", "1024", -1, 0, "_blank", "", 0, true, "GeneXus\\Address", "'"+""+"'"+",false,"+"'"+""+"'", 0, "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -377,32 +359,32 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "Center", "top", "", "", "div");
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-9 col-sm-offset-3", "left", "top", "", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-action-group Confirm", "left", "top", " "+"data-gx-actiongroup-type=\"toolbar\""+" ", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 49,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 43,'',false,'',0)\"";
          ClassString = "BtnEnter";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_enter_Internalname, "", "Confirm", bttBtn_enter_Jsonclick, 5, "Confirm", "", StyleString, ClassString, bttBtn_enter_Visible, bttBtn_enter_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EENTER."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_enter_Internalname, "", context.GetMessage( "GX_BtnEnter", ""), bttBtn_enter_Jsonclick, 5, context.GetMessage( "GX_BtnEnter", ""), "", StyleString, ClassString, bttBtn_enter_Visible, bttBtn_enter_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EENTER."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 51,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 45,'',false,'',0)\"";
          ClassString = "BtnCancel";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "", "Cancel", bttBtn_cancel_Jsonclick, 1, "Cancel", "", StyleString, ClassString, bttBtn_cancel_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "", context.GetMessage( "GX_BtnCancel", ""), bttBtn_cancel_Jsonclick, 1, context.GetMessage( "GX_BtnCancel", ""), "", StyleString, ClassString, bttBtn_cancel_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 53,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 47,'',false,'',0)\"";
          ClassString = "BtnDelete";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_delete_Internalname, "", "Delete", bttBtn_delete_Jsonclick, 5, "Delete", "", StyleString, ClassString, bttBtn_delete_Visible, bttBtn_delete_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EDELETE."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_delete_Internalname, "", context.GetMessage( "GX_BtnDelete", ""), bttBtn_delete_Jsonclick, 5, context.GetMessage( "GX_BtnDelete", ""), "", StyleString, ClassString, bttBtn_delete_Visible, bttBtn_delete_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EDELETE."+"'", TempTags, "", context.GetButtonType( ), "HLP_Modulos.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
-         GxWebStd.gx_div_end( context, "Center", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -438,33 +420,33 @@ namespace GeneXus.Programs {
          {
             /* Read saved SDTs. */
             /* Read saved values. */
-            Z13ModulosID = (short)(context.localUtil.CToN( cgiGet( "Z13ModulosID"), ".", ","));
-            Z14ModulosName = cgiGet( "Z14ModulosName");
-            Z15ModulosDescripcion = cgiGet( "Z15ModulosDescripcion");
-            IsConfirmed = (short)(context.localUtil.CToN( cgiGet( "IsConfirmed"), ".", ","));
-            IsModified = (short)(context.localUtil.CToN( cgiGet( "IsModified"), ".", ","));
+            Z3ModulosID = (short)(context.localUtil.CToN( cgiGet( "Z3ModulosID"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+            Z18ModulosName = cgiGet( "Z18ModulosName");
+            Z19ModulosDescripcion = cgiGet( "Z19ModulosDescripcion");
+            IsConfirmed = (short)(context.localUtil.CToN( cgiGet( "IsConfirmed"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+            IsModified = (short)(context.localUtil.CToN( cgiGet( "IsModified"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
             Gx_mode = cgiGet( "Mode");
             Gx_mode = cgiGet( "vMODE");
             /* Read variables values. */
-            if ( ( ( context.localUtil.CToN( cgiGet( edtModulosID_Internalname), ".", ",") < Convert.ToDecimal( 0 )) ) || ( ( context.localUtil.CToN( cgiGet( edtModulosID_Internalname), ".", ",") > Convert.ToDecimal( 9999 )) ) )
+            if ( ( ( context.localUtil.CToN( cgiGet( edtModulosID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")) < Convert.ToDecimal( 0 )) ) || ( ( context.localUtil.CToN( cgiGet( edtModulosID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")) > Convert.ToDecimal( 9999 )) ) )
             {
                GX_msglist.addItem(context.GetMessage( "GXM_badnum", ""), 1, "MODULOSID");
                AnyError = 1;
                GX_FocusControl = edtModulosID_Internalname;
                AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
                wbErr = true;
-               A13ModulosID = 0;
-               AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+               A3ModulosID = 0;
+               AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
             }
             else
             {
-               A13ModulosID = (short)(context.localUtil.CToN( cgiGet( edtModulosID_Internalname), ".", ","));
-               AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+               A3ModulosID = (short)(context.localUtil.CToN( cgiGet( edtModulosID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
             }
-            A14ModulosName = cgiGet( edtModulosName_Internalname);
-            AssignAttri("", false, "A14ModulosName", A14ModulosName);
-            A15ModulosDescripcion = cgiGet( edtModulosDescripcion_Internalname);
-            AssignAttri("", false, "A15ModulosDescripcion", A15ModulosDescripcion);
+            A18ModulosName = cgiGet( edtModulosName_Internalname);
+            AssignAttri("", false, "A18ModulosName", A18ModulosName);
+            A19ModulosDescripcion = cgiGet( edtModulosDescripcion_Internalname);
+            AssignAttri("", false, "A19ModulosDescripcion", A19ModulosDescripcion);
             /* Read subfile selected row values. */
             /* Read hidden variables. */
             GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
@@ -477,8 +459,8 @@ namespace GeneXus.Programs {
             {
                Gx_mode = "DSP";
                AssignAttri("", false, "Gx_mode", Gx_mode);
-               A13ModulosID = (short)(NumberUtil.Val( GetNextPar( ), "."));
-               AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+               A3ModulosID = (short)(NumberUtil.Val( GetNextPar( ), "."));
+               AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
                getEqualNoModal( ) ;
                Gx_mode = "DSP";
                AssignAttri("", false, "Gx_mode", Gx_mode);
@@ -576,7 +558,7 @@ namespace GeneXus.Programs {
             if ( IsIns( )  )
             {
                /* Clear variables for new insertion. */
-               InitAll066( ) ;
+               InitAll053( ) ;
                standaloneNotModal( ) ;
                standaloneModal( ) ;
             }
@@ -623,7 +605,7 @@ namespace GeneXus.Programs {
             bttBtn_enter_Visible = 0;
             AssignProp("", false, bttBtn_enter_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(bttBtn_enter_Visible), 5, 0), true);
          }
-         DisableAttributes066( ) ;
+         DisableAttributes053( ) ;
       }
 
       protected void set_caption( )
@@ -641,30 +623,30 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void ResetCaption060( )
+      protected void ResetCaption050( )
       {
       }
 
-      protected void ZM066( short GX_JID )
+      protected void ZM053( short GX_JID )
       {
          if ( ( GX_JID == 1 ) || ( GX_JID == 0 ) )
          {
             if ( ! IsIns( ) )
             {
-               Z14ModulosName = T00063_A14ModulosName[0];
-               Z15ModulosDescripcion = T00063_A15ModulosDescripcion[0];
+               Z18ModulosName = T00053_A18ModulosName[0];
+               Z19ModulosDescripcion = T00053_A19ModulosDescripcion[0];
             }
             else
             {
-               Z14ModulosName = A14ModulosName;
-               Z15ModulosDescripcion = A15ModulosDescripcion;
+               Z18ModulosName = A18ModulosName;
+               Z19ModulosDescripcion = A19ModulosDescripcion;
             }
          }
          if ( GX_JID == -1 )
          {
-            Z13ModulosID = A13ModulosID;
-            Z14ModulosName = A14ModulosName;
-            Z15ModulosDescripcion = A15ModulosDescripcion;
+            Z3ModulosID = A3ModulosID;
+            Z18ModulosName = A18ModulosName;
+            Z19ModulosDescripcion = A19ModulosDescripcion;
          }
       }
 
@@ -696,35 +678,35 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void Load066( )
+      protected void Load053( )
       {
-         /* Using cursor T00064 */
-         pr_default.execute(2, new Object[] {A13ModulosID});
+         /* Using cursor T00054 */
+         pr_default.execute(2, new Object[] {A3ModulosID});
          if ( (pr_default.getStatus(2) != 101) )
          {
-            RcdFound6 = 1;
-            A14ModulosName = T00064_A14ModulosName[0];
-            AssignAttri("", false, "A14ModulosName", A14ModulosName);
-            A15ModulosDescripcion = T00064_A15ModulosDescripcion[0];
-            AssignAttri("", false, "A15ModulosDescripcion", A15ModulosDescripcion);
-            ZM066( -1) ;
+            RcdFound3 = 1;
+            A18ModulosName = T00054_A18ModulosName[0];
+            AssignAttri("", false, "A18ModulosName", A18ModulosName);
+            A19ModulosDescripcion = T00054_A19ModulosDescripcion[0];
+            AssignAttri("", false, "A19ModulosDescripcion", A19ModulosDescripcion);
+            ZM053( -1) ;
          }
          pr_default.close(2);
-         OnLoadActions066( ) ;
+         OnLoadActions053( ) ;
       }
 
-      protected void OnLoadActions066( )
+      protected void OnLoadActions053( )
       {
       }
 
-      protected void CheckExtendedTable066( )
+      protected void CheckExtendedTable053( )
       {
-         nIsDirty_6 = 0;
+         nIsDirty_3 = 0;
          Gx_BScreen = 1;
          standaloneModal( ) ;
       }
 
-      protected void CloseExtendedTableCursors066( )
+      protected void CloseExtendedTableCursors053( )
       {
       }
 
@@ -732,58 +714,58 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void GetKey066( )
+      protected void GetKey053( )
       {
-         /* Using cursor T00065 */
-         pr_default.execute(3, new Object[] {A13ModulosID});
+         /* Using cursor T00055 */
+         pr_default.execute(3, new Object[] {A3ModulosID});
          if ( (pr_default.getStatus(3) != 101) )
          {
-            RcdFound6 = 1;
+            RcdFound3 = 1;
          }
          else
          {
-            RcdFound6 = 0;
+            RcdFound3 = 0;
          }
          pr_default.close(3);
       }
 
       protected void getByPrimaryKey( )
       {
-         /* Using cursor T00063 */
-         pr_default.execute(1, new Object[] {A13ModulosID});
+         /* Using cursor T00053 */
+         pr_default.execute(1, new Object[] {A3ModulosID});
          if ( (pr_default.getStatus(1) != 101) )
          {
-            ZM066( 1) ;
-            RcdFound6 = 1;
-            A13ModulosID = T00063_A13ModulosID[0];
-            AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
-            A14ModulosName = T00063_A14ModulosName[0];
-            AssignAttri("", false, "A14ModulosName", A14ModulosName);
-            A15ModulosDescripcion = T00063_A15ModulosDescripcion[0];
-            AssignAttri("", false, "A15ModulosDescripcion", A15ModulosDescripcion);
-            Z13ModulosID = A13ModulosID;
-            sMode6 = Gx_mode;
+            ZM053( 1) ;
+            RcdFound3 = 1;
+            A3ModulosID = T00053_A3ModulosID[0];
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+            A18ModulosName = T00053_A18ModulosName[0];
+            AssignAttri("", false, "A18ModulosName", A18ModulosName);
+            A19ModulosDescripcion = T00053_A19ModulosDescripcion[0];
+            AssignAttri("", false, "A19ModulosDescripcion", A19ModulosDescripcion);
+            Z3ModulosID = A3ModulosID;
+            sMode3 = Gx_mode;
             Gx_mode = "DSP";
             AssignAttri("", false, "Gx_mode", Gx_mode);
             standaloneModal( ) ;
-            Load066( ) ;
+            Load053( ) ;
             if ( AnyError == 1 )
             {
-               RcdFound6 = 0;
-               InitializeNonKey066( ) ;
+               RcdFound3 = 0;
+               InitializeNonKey053( ) ;
             }
-            Gx_mode = sMode6;
+            Gx_mode = sMode3;
             AssignAttri("", false, "Gx_mode", Gx_mode);
          }
          else
          {
-            RcdFound6 = 0;
-            InitializeNonKey066( ) ;
-            sMode6 = Gx_mode;
+            RcdFound3 = 0;
+            InitializeNonKey053( ) ;
+            sMode3 = Gx_mode;
             Gx_mode = "DSP";
             AssignAttri("", false, "Gx_mode", Gx_mode);
             standaloneModal( ) ;
-            Gx_mode = sMode6;
+            Gx_mode = sMode3;
             AssignAttri("", false, "Gx_mode", Gx_mode);
          }
          pr_default.close(1);
@@ -791,8 +773,8 @@ namespace GeneXus.Programs {
 
       protected void getEqualNoModal( )
       {
-         GetKey066( ) ;
-         if ( RcdFound6 == 0 )
+         GetKey053( ) ;
+         if ( RcdFound3 == 0 )
          {
             Gx_mode = "INS";
             AssignAttri("", false, "Gx_mode", Gx_mode);
@@ -807,20 +789,20 @@ namespace GeneXus.Programs {
 
       protected void move_next( )
       {
-         RcdFound6 = 0;
-         /* Using cursor T00066 */
-         pr_default.execute(4, new Object[] {A13ModulosID});
+         RcdFound3 = 0;
+         /* Using cursor T00056 */
+         pr_default.execute(4, new Object[] {A3ModulosID});
          if ( (pr_default.getStatus(4) != 101) )
          {
-            while ( (pr_default.getStatus(4) != 101) && ( ( T00066_A13ModulosID[0] < A13ModulosID ) ) )
+            while ( (pr_default.getStatus(4) != 101) && ( ( T00056_A3ModulosID[0] < A3ModulosID ) ) )
             {
                pr_default.readNext(4);
             }
-            if ( (pr_default.getStatus(4) != 101) && ( ( T00066_A13ModulosID[0] > A13ModulosID ) ) )
+            if ( (pr_default.getStatus(4) != 101) && ( ( T00056_A3ModulosID[0] > A3ModulosID ) ) )
             {
-               A13ModulosID = T00066_A13ModulosID[0];
-               AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
-               RcdFound6 = 1;
+               A3ModulosID = T00056_A3ModulosID[0];
+               AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+               RcdFound3 = 1;
             }
          }
          pr_default.close(4);
@@ -828,20 +810,20 @@ namespace GeneXus.Programs {
 
       protected void move_previous( )
       {
-         RcdFound6 = 0;
-         /* Using cursor T00067 */
-         pr_default.execute(5, new Object[] {A13ModulosID});
+         RcdFound3 = 0;
+         /* Using cursor T00057 */
+         pr_default.execute(5, new Object[] {A3ModulosID});
          if ( (pr_default.getStatus(5) != 101) )
          {
-            while ( (pr_default.getStatus(5) != 101) && ( ( T00067_A13ModulosID[0] > A13ModulosID ) ) )
+            while ( (pr_default.getStatus(5) != 101) && ( ( T00057_A3ModulosID[0] > A3ModulosID ) ) )
             {
                pr_default.readNext(5);
             }
-            if ( (pr_default.getStatus(5) != 101) && ( ( T00067_A13ModulosID[0] < A13ModulosID ) ) )
+            if ( (pr_default.getStatus(5) != 101) && ( ( T00057_A3ModulosID[0] < A3ModulosID ) ) )
             {
-               A13ModulosID = T00067_A13ModulosID[0];
-               AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
-               RcdFound6 = 1;
+               A3ModulosID = T00057_A3ModulosID[0];
+               AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+               RcdFound3 = 1;
             }
          }
          pr_default.close(5);
@@ -850,13 +832,13 @@ namespace GeneXus.Programs {
       protected void btn_enter( )
       {
          nKeyPressed = 1;
-         GetKey066( ) ;
+         GetKey053( ) ;
          if ( IsIns( ) )
          {
             /* Insert record */
             GX_FocusControl = edtModulosID_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-            Insert066( ) ;
+            Insert053( ) ;
             if ( AnyError == 1 )
             {
                GX_FocusControl = "";
@@ -865,12 +847,12 @@ namespace GeneXus.Programs {
          }
          else
          {
-            if ( RcdFound6 == 1 )
+            if ( RcdFound3 == 1 )
             {
-               if ( A13ModulosID != Z13ModulosID )
+               if ( A3ModulosID != Z3ModulosID )
                {
-                  A13ModulosID = Z13ModulosID;
-                  AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+                  A3ModulosID = Z3ModulosID;
+                  AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
                   GX_msglist.addItem(context.GetMessage( "GXM_getbeforeupd", ""), "CandidateKeyNotFound", 1, "MODULOSID");
                   AnyError = 1;
                   GX_FocusControl = edtModulosID_Internalname;
@@ -888,21 +870,21 @@ namespace GeneXus.Programs {
                   Gx_mode = "UPD";
                   AssignAttri("", false, "Gx_mode", Gx_mode);
                   /* Update record */
-                  Update066( ) ;
+                  Update053( ) ;
                   GX_FocusControl = edtModulosID_Internalname;
                   AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
                }
             }
             else
             {
-               if ( A13ModulosID != Z13ModulosID )
+               if ( A3ModulosID != Z3ModulosID )
                {
                   Gx_mode = "INS";
                   AssignAttri("", false, "Gx_mode", Gx_mode);
                   /* Insert record */
                   GX_FocusControl = edtModulosID_Internalname;
                   AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-                  Insert066( ) ;
+                  Insert053( ) ;
                   if ( AnyError == 1 )
                   {
                      GX_FocusControl = "";
@@ -925,7 +907,7 @@ namespace GeneXus.Programs {
                      /* Insert record */
                      GX_FocusControl = edtModulosID_Internalname;
                      AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-                     Insert066( ) ;
+                     Insert053( ) ;
                      if ( AnyError == 1 )
                      {
                         GX_FocusControl = "";
@@ -940,10 +922,10 @@ namespace GeneXus.Programs {
 
       protected void btn_delete( )
       {
-         if ( A13ModulosID != Z13ModulosID )
+         if ( A3ModulosID != Z3ModulosID )
          {
-            A13ModulosID = Z13ModulosID;
-            AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+            A3ModulosID = Z3ModulosID;
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
             GX_msglist.addItem(context.GetMessage( "GXM_getbeforedlt", ""), 1, "MODULOSID");
             AnyError = 1;
             GX_FocusControl = edtModulosID_Internalname;
@@ -974,7 +956,7 @@ namespace GeneXus.Programs {
          IsConfirmed = 0;
          AssignAttri("", false, "IsConfirmed", StringUtil.LTrimStr( (decimal)(IsConfirmed), 4, 0));
          getEqualNoModal( ) ;
-         if ( RcdFound6 == 0 )
+         if ( RcdFound3 == 0 )
          {
             GX_msglist.addItem(context.GetMessage( "GXM_keynfound", ""), "PrimaryKeyNotFound", 1, "MODULOSID");
             AnyError = 1;
@@ -992,8 +974,8 @@ namespace GeneXus.Programs {
          nKeyPressed = 2;
          IsConfirmed = 0;
          AssignAttri("", false, "IsConfirmed", StringUtil.LTrimStr( (decimal)(IsConfirmed), 4, 0));
-         ScanStart066( ) ;
-         if ( RcdFound6 == 0 )
+         ScanStart053( ) ;
+         if ( RcdFound3 == 0 )
          {
             GX_msglist.addItem(context.GetMessage( "GXM_norectobrow", ""), 0, "", true);
          }
@@ -1004,7 +986,7 @@ namespace GeneXus.Programs {
          }
          GX_FocusControl = edtModulosName_Internalname;
          AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-         ScanEnd066( ) ;
+         ScanEnd053( ) ;
          getByPrimaryKey( ) ;
          standaloneNotModal( ) ;
          standaloneModal( ) ;
@@ -1016,7 +998,7 @@ namespace GeneXus.Programs {
          IsConfirmed = 0;
          AssignAttri("", false, "IsConfirmed", StringUtil.LTrimStr( (decimal)(IsConfirmed), 4, 0));
          move_previous( ) ;
-         if ( RcdFound6 == 0 )
+         if ( RcdFound3 == 0 )
          {
             GX_msglist.addItem(context.GetMessage( "GXM_norectobrow", ""), 0, "", true);
          }
@@ -1038,7 +1020,7 @@ namespace GeneXus.Programs {
          IsConfirmed = 0;
          AssignAttri("", false, "IsConfirmed", StringUtil.LTrimStr( (decimal)(IsConfirmed), 4, 0));
          move_next( ) ;
-         if ( RcdFound6 == 0 )
+         if ( RcdFound3 == 0 )
          {
             GX_msglist.addItem(context.GetMessage( "GXM_norectobrow", ""), 0, "", true);
          }
@@ -1059,23 +1041,23 @@ namespace GeneXus.Programs {
          nKeyPressed = 2;
          IsConfirmed = 0;
          AssignAttri("", false, "IsConfirmed", StringUtil.LTrimStr( (decimal)(IsConfirmed), 4, 0));
-         ScanStart066( ) ;
-         if ( RcdFound6 == 0 )
+         ScanStart053( ) ;
+         if ( RcdFound3 == 0 )
          {
             GX_msglist.addItem(context.GetMessage( "GXM_norectobrow", ""), 0, "", true);
          }
          else
          {
-            while ( RcdFound6 != 0 )
+            while ( RcdFound3 != 0 )
             {
-               ScanNext066( ) ;
+               ScanNext053( ) ;
             }
             Gx_mode = "UPD";
             AssignAttri("", false, "Gx_mode", Gx_mode);
          }
          GX_FocusControl = edtModulosName_Internalname;
          AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-         ScanEnd066( ) ;
+         ScanEnd053( ) ;
          getByPrimaryKey( ) ;
          standaloneNotModal( ) ;
          standaloneModal( ) ;
@@ -1086,31 +1068,31 @@ namespace GeneXus.Programs {
          getEqualNoModal( ) ;
       }
 
-      protected void CheckOptimisticConcurrency066( )
+      protected void CheckOptimisticConcurrency053( )
       {
          if ( ! IsIns( ) )
          {
-            /* Using cursor T00062 */
-            pr_default.execute(0, new Object[] {A13ModulosID});
+            /* Using cursor T00052 */
+            pr_default.execute(0, new Object[] {A3ModulosID});
             if ( (pr_default.getStatus(0) == 103) )
             {
                GX_msglist.addItem(context.GetMessage( "GXM_lock", new   object[]  {"Modulos"}), "RecordIsLocked", 1, "");
                AnyError = 1;
                return  ;
             }
-            if ( (pr_default.getStatus(0) == 101) || ( StringUtil.StrCmp(Z14ModulosName, T00062_A14ModulosName[0]) != 0 ) || ( StringUtil.StrCmp(Z15ModulosDescripcion, T00062_A15ModulosDescripcion[0]) != 0 ) )
+            if ( (pr_default.getStatus(0) == 101) || ( StringUtil.StrCmp(Z18ModulosName, T00052_A18ModulosName[0]) != 0 ) || ( StringUtil.StrCmp(Z19ModulosDescripcion, T00052_A19ModulosDescripcion[0]) != 0 ) )
             {
-               if ( StringUtil.StrCmp(Z14ModulosName, T00062_A14ModulosName[0]) != 0 )
+               if ( StringUtil.StrCmp(Z18ModulosName, T00052_A18ModulosName[0]) != 0 )
                {
                   GXUtil.WriteLog("modulos:[seudo value changed for attri]"+"ModulosName");
-                  GXUtil.WriteLogRaw("Old: ",Z14ModulosName);
-                  GXUtil.WriteLogRaw("Current: ",T00062_A14ModulosName[0]);
+                  GXUtil.WriteLogRaw("Old: ",Z18ModulosName);
+                  GXUtil.WriteLogRaw("Current: ",T00052_A18ModulosName[0]);
                }
-               if ( StringUtil.StrCmp(Z15ModulosDescripcion, T00062_A15ModulosDescripcion[0]) != 0 )
+               if ( StringUtil.StrCmp(Z19ModulosDescripcion, T00052_A19ModulosDescripcion[0]) != 0 )
                {
                   GXUtil.WriteLog("modulos:[seudo value changed for attri]"+"ModulosDescripcion");
-                  GXUtil.WriteLogRaw("Old: ",Z15ModulosDescripcion);
-                  GXUtil.WriteLogRaw("Current: ",T00062_A15ModulosDescripcion[0]);
+                  GXUtil.WriteLogRaw("Old: ",Z19ModulosDescripcion);
+                  GXUtil.WriteLogRaw("Current: ",T00052_A19ModulosDescripcion[0]);
                }
                GX_msglist.addItem(context.GetMessage( "GXM_waschg", new   object[]  {"Modulos"}), "RecordWasChanged", 1, "");
                AnyError = 1;
@@ -1119,29 +1101,29 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void Insert066( )
+      protected void Insert053( )
       {
-         BeforeValidate066( ) ;
+         BeforeValidate053( ) ;
          if ( AnyError == 0 )
          {
-            CheckExtendedTable066( ) ;
+            CheckExtendedTable053( ) ;
          }
          if ( AnyError == 0 )
          {
-            ZM066( 0) ;
-            CheckOptimisticConcurrency066( ) ;
+            ZM053( 0) ;
+            CheckOptimisticConcurrency053( ) ;
             if ( AnyError == 0 )
             {
-               AfterConfirm066( ) ;
+               AfterConfirm053( ) ;
                if ( AnyError == 0 )
                {
-                  BeforeInsert066( ) ;
+                  BeforeInsert053( ) ;
                   if ( AnyError == 0 )
                   {
-                     /* Using cursor T00068 */
-                     pr_default.execute(6, new Object[] {A14ModulosName, A15ModulosDescripcion});
-                     A13ModulosID = T00068_A13ModulosID[0];
-                     AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+                     /* Using cursor T00058 */
+                     pr_default.execute(6, new Object[] {A18ModulosName, A19ModulosDescripcion});
+                     A3ModulosID = T00058_A3ModulosID[0];
+                     AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
                      pr_default.close(6);
                      dsDefault.SmartCacheProvider.SetUpdated("Modulos") ;
                      if ( AnyError == 0 )
@@ -1152,7 +1134,7 @@ namespace GeneXus.Programs {
                         {
                            /* Save values for previous() function. */
                            GX_msglist.addItem(context.GetMessage( "GXM_sucadded", ""), "SuccessfullyAdded", 0, "", true);
-                           ResetCaption060( ) ;
+                           ResetCaption050( ) ;
                         }
                      }
                   }
@@ -1165,33 +1147,33 @@ namespace GeneXus.Programs {
             }
             else
             {
-               Load066( ) ;
+               Load053( ) ;
             }
-            EndLevel066( ) ;
+            EndLevel053( ) ;
          }
-         CloseExtendedTableCursors066( ) ;
+         CloseExtendedTableCursors053( ) ;
       }
 
-      protected void Update066( )
+      protected void Update053( )
       {
-         BeforeValidate066( ) ;
+         BeforeValidate053( ) ;
          if ( AnyError == 0 )
          {
-            CheckExtendedTable066( ) ;
+            CheckExtendedTable053( ) ;
          }
          if ( AnyError == 0 )
          {
-            CheckOptimisticConcurrency066( ) ;
+            CheckOptimisticConcurrency053( ) ;
             if ( AnyError == 0 )
             {
-               AfterConfirm066( ) ;
+               AfterConfirm053( ) ;
                if ( AnyError == 0 )
                {
-                  BeforeUpdate066( ) ;
+                  BeforeUpdate053( ) ;
                   if ( AnyError == 0 )
                   {
-                     /* Using cursor T00069 */
-                     pr_default.execute(7, new Object[] {A14ModulosName, A15ModulosDescripcion, A13ModulosID});
+                     /* Using cursor T00059 */
+                     pr_default.execute(7, new Object[] {A18ModulosName, A19ModulosDescripcion, A3ModulosID});
                      pr_default.close(7);
                      dsDefault.SmartCacheProvider.SetUpdated("Modulos") ;
                      if ( (pr_default.getStatus(7) == 103) )
@@ -1199,7 +1181,7 @@ namespace GeneXus.Programs {
                         GX_msglist.addItem(context.GetMessage( "GXM_lock", new   object[]  {"Modulos"}), "RecordIsLocked", 1, "");
                         AnyError = 1;
                      }
-                     DeferredUpdate066( ) ;
+                     DeferredUpdate053( ) ;
                      if ( AnyError == 0 )
                      {
                         /* Start of After( update) rules */
@@ -1208,7 +1190,7 @@ namespace GeneXus.Programs {
                         {
                            getByPrimaryKey( ) ;
                            GX_msglist.addItem(context.GetMessage( "GXM_sucupdated", ""), "SuccessfullyUpdated", 0, "", true);
-                           ResetCaption060( ) ;
+                           ResetCaption050( ) ;
                         }
                      }
                      else
@@ -1219,12 +1201,12 @@ namespace GeneXus.Programs {
                   }
                }
             }
-            EndLevel066( ) ;
+            EndLevel053( ) ;
          }
-         CloseExtendedTableCursors066( ) ;
+         CloseExtendedTableCursors053( ) ;
       }
 
-      protected void DeferredUpdate066( )
+      protected void DeferredUpdate053( )
       {
       }
 
@@ -1232,23 +1214,23 @@ namespace GeneXus.Programs {
       {
          Gx_mode = "DLT";
          AssignAttri("", false, "Gx_mode", Gx_mode);
-         BeforeValidate066( ) ;
+         BeforeValidate053( ) ;
          if ( AnyError == 0 )
          {
-            CheckOptimisticConcurrency066( ) ;
+            CheckOptimisticConcurrency053( ) ;
          }
          if ( AnyError == 0 )
          {
-            OnDeleteControls066( ) ;
-            AfterConfirm066( ) ;
+            OnDeleteControls053( ) ;
+            AfterConfirm053( ) ;
             if ( AnyError == 0 )
             {
-               BeforeDelete066( ) ;
+               BeforeDelete053( ) ;
                if ( AnyError == 0 )
                {
                   /* No cascading delete specified. */
-                  /* Using cursor T000610 */
-                  pr_default.execute(8, new Object[] {A13ModulosID});
+                  /* Using cursor T000510 */
+                  pr_default.execute(8, new Object[] {A3ModulosID});
                   pr_default.close(8);
                   dsDefault.SmartCacheProvider.SetUpdated("Modulos") ;
                   if ( AnyError == 0 )
@@ -1258,9 +1240,9 @@ namespace GeneXus.Programs {
                      if ( AnyError == 0 )
                      {
                         move_next( ) ;
-                        if ( RcdFound6 == 0 )
+                        if ( RcdFound3 == 0 )
                         {
-                           InitAll066( ) ;
+                           InitAll053( ) ;
                            Gx_mode = "INS";
                            AssignAttri("", false, "Gx_mode", Gx_mode);
                         }
@@ -1271,7 +1253,7 @@ namespace GeneXus.Programs {
                            AssignAttri("", false, "Gx_mode", Gx_mode);
                         }
                         GX_msglist.addItem(context.GetMessage( "GXM_sucdeleted", ""), "SuccessfullyDeleted", 0, "", true);
-                        ResetCaption060( ) ;
+                        ResetCaption050( ) ;
                      }
                   }
                   else
@@ -1282,21 +1264,32 @@ namespace GeneXus.Programs {
                }
             }
          }
-         sMode6 = Gx_mode;
+         sMode3 = Gx_mode;
          Gx_mode = "DLT";
          AssignAttri("", false, "Gx_mode", Gx_mode);
-         EndLevel066( ) ;
-         Gx_mode = sMode6;
+         EndLevel053( ) ;
+         Gx_mode = sMode3;
          AssignAttri("", false, "Gx_mode", Gx_mode);
       }
 
-      protected void OnDeleteControls066( )
+      protected void OnDeleteControls053( )
       {
          standaloneModal( ) ;
          /* No delete mode formulas found. */
+         if ( AnyError == 0 )
+         {
+            /* Using cursor T000511 */
+            pr_default.execute(9, new Object[] {A3ModulosID});
+            if ( (pr_default.getStatus(9) != 101) )
+            {
+               GX_msglist.addItem(context.GetMessage( "GXM_del", new   object[]  {context.GetMessage( "Roles", "")}), "CannotDeleteReferencedRecord", 1, "");
+               AnyError = 1;
+            }
+            pr_default.close(9);
+         }
       }
 
-      protected void EndLevel066( )
+      protected void EndLevel053( )
       {
          if ( ! IsIns( ) )
          {
@@ -1304,7 +1297,7 @@ namespace GeneXus.Programs {
          }
          if ( AnyError == 0 )
          {
-            BeforeComplete066( ) ;
+            BeforeComplete053( ) ;
          }
          if ( AnyError == 0 )
          {
@@ -1312,7 +1305,7 @@ namespace GeneXus.Programs {
             context.CommitDataStores("modulos",pr_default);
             if ( AnyError == 0 )
             {
-               ConfirmValues060( ) ;
+               ConfirmValues050( ) ;
             }
             /* After transaction rules */
             /* Execute 'After Trn' event if defined. */
@@ -1331,69 +1324,69 @@ namespace GeneXus.Programs {
          }
       }
 
-      public void ScanStart066( )
+      public void ScanStart053( )
       {
-         /* Using cursor T000611 */
-         pr_default.execute(9);
-         RcdFound6 = 0;
-         if ( (pr_default.getStatus(9) != 101) )
+         /* Using cursor T000512 */
+         pr_default.execute(10);
+         RcdFound3 = 0;
+         if ( (pr_default.getStatus(10) != 101) )
          {
-            RcdFound6 = 1;
-            A13ModulosID = T000611_A13ModulosID[0];
-            AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+            RcdFound3 = 1;
+            A3ModulosID = T000512_A3ModulosID[0];
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
          }
          /* Load Subordinate Levels */
       }
 
-      protected void ScanNext066( )
+      protected void ScanNext053( )
       {
          /* Scan next routine */
-         pr_default.readNext(9);
-         RcdFound6 = 0;
-         if ( (pr_default.getStatus(9) != 101) )
+         pr_default.readNext(10);
+         RcdFound3 = 0;
+         if ( (pr_default.getStatus(10) != 101) )
          {
-            RcdFound6 = 1;
-            A13ModulosID = T000611_A13ModulosID[0];
-            AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
+            RcdFound3 = 1;
+            A3ModulosID = T000512_A3ModulosID[0];
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
          }
       }
 
-      protected void ScanEnd066( )
+      protected void ScanEnd053( )
       {
-         pr_default.close(9);
+         pr_default.close(10);
       }
 
-      protected void AfterConfirm066( )
+      protected void AfterConfirm053( )
       {
          /* After Confirm Rules */
       }
 
-      protected void BeforeInsert066( )
+      protected void BeforeInsert053( )
       {
          /* Before Insert Rules */
       }
 
-      protected void BeforeUpdate066( )
+      protected void BeforeUpdate053( )
       {
          /* Before Update Rules */
       }
 
-      protected void BeforeDelete066( )
+      protected void BeforeDelete053( )
       {
          /* Before Delete Rules */
       }
 
-      protected void BeforeComplete066( )
+      protected void BeforeComplete053( )
       {
          /* Before Complete Rules */
       }
 
-      protected void BeforeValidate066( )
+      protected void BeforeValidate053( )
       {
          /* Before Validate Rules */
       }
 
-      protected void DisableAttributes066( )
+      protected void DisableAttributes053( )
       {
          edtModulosID_Enabled = 0;
          AssignProp("", false, edtModulosID_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtModulosID_Enabled), 5, 0), true);
@@ -1403,7 +1396,7 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtModulosDescripcion_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtModulosDescripcion_Enabled), 5, 0), true);
       }
 
-      protected void send_integrity_lvl_hashes066( )
+      protected void send_integrity_lvl_hashes053( )
       {
       }
 
@@ -1411,7 +1404,7 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void ConfirmValues060( )
+      protected void ConfirmValues050( )
       {
       }
 
@@ -1445,7 +1438,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?2020322212100", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202082421275531", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1490,11 +1483,11 @@ namespace GeneXus.Programs {
          /* Send hidden variables. */
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
-         GxWebStd.gx_hidden_field( context, "Z13ModulosID", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z13ModulosID), 4, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "Z14ModulosName", StringUtil.RTrim( Z14ModulosName));
-         GxWebStd.gx_hidden_field( context, "Z15ModulosDescripcion", Z15ModulosDescripcion);
-         GxWebStd.gx_hidden_field( context, "IsConfirmed", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsConfirmed), 4, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "IsModified", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsModified), 4, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "Z3ModulosID", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z3ModulosID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "Z18ModulosName", StringUtil.RTrim( Z18ModulosName));
+         GxWebStd.gx_hidden_field( context, "Z19ModulosDescripcion", Z19ModulosDescripcion);
+         GxWebStd.gx_hidden_field( context, "IsConfirmed", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsConfirmed), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "IsModified", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsModified), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
          GxWebStd.gx_hidden_field( context, "Mode", StringUtil.RTrim( Gx_mode));
          GxWebStd.gx_hidden_field( context, "vMODE", StringUtil.RTrim( Gx_mode));
       }
@@ -1518,6 +1511,18 @@ namespace GeneXus.Programs {
             enableOutput();
          }
          include_jscripts( ) ;
+         context.WriteHtmlText( "<script type=\"text/javascript\">") ;
+         context.WriteHtmlText( "gx.setLanguageCode(\""+context.GetLanguageProperty( "code")+"\");") ;
+         if ( ! context.isSpaRequest( ) )
+         {
+            context.WriteHtmlText( "gx.setDateFormat(\""+context.GetLanguageProperty( "date_fmt")+"\");") ;
+            context.WriteHtmlText( "gx.setTimeFormat("+context.GetLanguageProperty( "time_fmt")+");") ;
+            context.WriteHtmlText( "gx.setCenturyFirstYear("+40+");") ;
+            context.WriteHtmlText( "gx.setDecimalPoint(\""+context.GetLanguageProperty( "decimal_point")+"\");") ;
+            context.WriteHtmlText( "gx.setThousandSeparator(\""+context.GetLanguageProperty( "thousand_sep")+"\");") ;
+            context.WriteHtmlText( "gx.StorageTimeZone = "+1+";") ;
+         }
+         context.WriteHtmlText( "</script>") ;
       }
 
       public override short ExecuteStartEvent( )
@@ -1563,24 +1568,24 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Modulos" ;
+         return context.GetMessage( "Modulos", "") ;
       }
 
-      protected void InitializeNonKey066( )
+      protected void InitializeNonKey053( )
       {
-         A14ModulosName = "";
-         AssignAttri("", false, "A14ModulosName", A14ModulosName);
-         A15ModulosDescripcion = "";
-         AssignAttri("", false, "A15ModulosDescripcion", A15ModulosDescripcion);
-         Z14ModulosName = "";
-         Z15ModulosDescripcion = "";
+         A18ModulosName = "";
+         AssignAttri("", false, "A18ModulosName", A18ModulosName);
+         A19ModulosDescripcion = "";
+         AssignAttri("", false, "A19ModulosDescripcion", A19ModulosDescripcion);
+         Z18ModulosName = "";
+         Z19ModulosDescripcion = "";
       }
 
-      protected void InitAll066( )
+      protected void InitAll053( )
       {
-         A13ModulosID = 0;
-         AssignAttri("", false, "A13ModulosID", StringUtil.LTrimStr( (decimal)(A13ModulosID), 4, 0));
-         InitializeNonKey066( ) ;
+         A3ModulosID = 0;
+         AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+         InitializeNonKey053( ) ;
       }
 
       protected void StandaloneModalInsert( )
@@ -1598,7 +1603,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2020322212103", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202082421275534", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1613,35 +1618,32 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("modulos.js", "?2020322212104", false, true);
+         context.AddJavascriptSource("messages."+context.GetLanguageProperty( "code")+".js", "?"+GetCacheInvalidationToken( ), false, true);
+         context.AddJavascriptSource("modulos.js", "?202082421275534", false, true);
          /* End function include_jscripts */
       }
 
       protected void init_default_properties( )
       {
          lblTitle_Internalname = "TITLE";
-         divTitlecontainer_Internalname = "TITLECONTAINER";
          bttBtn_first_Internalname = "BTN_FIRST";
          bttBtn_previous_Internalname = "BTN_PREVIOUS";
          bttBtn_next_Internalname = "BTN_NEXT";
          bttBtn_last_Internalname = "BTN_LAST";
          bttBtn_select_Internalname = "BTN_SELECT";
-         divToolbarcell_Internalname = "TOOLBARCELL";
          edtModulosID_Internalname = "MODULOSID";
          edtModulosName_Internalname = "MODULOSNAME";
          edtModulosDescripcion_Internalname = "MODULOSDESCRIPCION";
-         divFormcontainer_Internalname = "FORMCONTAINER";
          bttBtn_enter_Internalname = "BTN_ENTER";
          bttBtn_cancel_Internalname = "BTN_CANCEL";
          bttBtn_delete_Internalname = "BTN_DELETE";
-         divMaintable_Internalname = "MAINTABLE";
+         divTablemain_Internalname = "TABLEMAIN";
          Form.Internalname = "FORM";
       }
 
       public override void initialize_properties( )
       {
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
          if ( context.isSpaRequest( ) )
          {
             disableJsOutput();
@@ -1651,7 +1653,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Modulos";
+         Form.Caption = context.GetMessage( "Modulos", "");
          bttBtn_delete_Enabled = 1;
          bttBtn_delete_Visible = 1;
          bttBtn_cancel_Visible = 1;
@@ -1724,12 +1726,12 @@ namespace GeneXus.Programs {
          send_integrity_footer_hashes( ) ;
          dynload_actions( ) ;
          /*  Sending validation outputs */
-         AssignAttri("", false, "A14ModulosName", StringUtil.RTrim( A14ModulosName));
-         AssignAttri("", false, "A15ModulosDescripcion", A15ModulosDescripcion);
+         AssignAttri("", false, "A18ModulosName", StringUtil.RTrim( A18ModulosName));
+         AssignAttri("", false, "A19ModulosDescripcion", A19ModulosDescripcion);
          AssignAttri("", false, "Gx_mode", StringUtil.RTrim( Gx_mode));
-         GxWebStd.gx_hidden_field( context, "Z13ModulosID", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z13ModulosID), 4, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "Z14ModulosName", StringUtil.RTrim( Z14ModulosName));
-         GxWebStd.gx_hidden_field( context, "Z15ModulosDescripcion", Z15ModulosDescripcion);
+         GxWebStd.gx_hidden_field( context, "Z3ModulosID", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z3ModulosID), 4, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "Z18ModulosName", StringUtil.RTrim( Z18ModulosName));
+         GxWebStd.gx_hidden_field( context, "Z19ModulosDescripcion", Z19ModulosDescripcion);
          AssignProp("", false, bttBtn_delete_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(bttBtn_delete_Enabled), 5, 0), true);
          AssignProp("", false, bttBtn_enter_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(bttBtn_enter_Enabled), 5, 0), true);
          SendCloseFormHiddens( ) ;
@@ -1746,8 +1748,8 @@ namespace GeneXus.Programs {
          setEventMetadata("ENTER",",oparms:[]}");
          setEventMetadata("REFRESH","{handler:'Refresh',iparms:[]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("VALID_MODULOSID","{handler:'Valid_Modulosid',iparms:[{av:'A13ModulosID',fld:'MODULOSID',pic:'ZZZ9'},{av:'Gx_mode',fld:'vMODE',pic:'@!'}]");
-         setEventMetadata("VALID_MODULOSID",",oparms:[{av:'A14ModulosName',fld:'MODULOSNAME',pic:''},{av:'A15ModulosDescripcion',fld:'MODULOSDESCRIPCION',pic:''},{av:'Gx_mode',fld:'vMODE',pic:'@!'},{av:'Z13ModulosID'},{av:'Z14ModulosName'},{av:'Z15ModulosDescripcion'},{ctrl:'BTN_DELETE',prop:'Enabled'},{ctrl:'BTN_ENTER',prop:'Enabled'}]}");
+         setEventMetadata("VALID_MODULOSID","{handler:'Valid_Modulosid',iparms:[{av:'A3ModulosID',fld:'MODULOSID',pic:'ZZZ9'},{av:'Gx_mode',fld:'vMODE',pic:'@!'}]");
+         setEventMetadata("VALID_MODULOSID",",oparms:[{av:'A18ModulosName',fld:'MODULOSNAME',pic:''},{av:'A19ModulosDescripcion',fld:'MODULOSDESCRIPCION',pic:''},{av:'Gx_mode',fld:'vMODE',pic:'@!'},{av:'Z3ModulosID'},{av:'Z18ModulosName'},{av:'Z19ModulosDescripcion'},{ctrl:'BTN_DELETE',prop:'Enabled'},{ctrl:'BTN_ENTER',prop:'Enabled'}]}");
          return  ;
       }
 
@@ -1769,8 +1771,8 @@ namespace GeneXus.Programs {
       public override void initialize( )
       {
          sPrefix = "";
-         Z14ModulosName = "";
-         Z15ModulosDescripcion = "";
+         Z18ModulosName = "";
+         Z19ModulosDescripcion = "";
          scmdbuf = "";
          gxfirstwebparm = "";
          gxfirstwebparm_bkp = "";
@@ -1780,16 +1782,16 @@ namespace GeneXus.Programs {
          Form = new GXWebForm();
          GX_FocusControl = "";
          lblTitle_Jsonclick = "";
+         TempTags = "";
          ClassString = "";
          StyleString = "";
-         TempTags = "";
          bttBtn_first_Jsonclick = "";
          bttBtn_previous_Jsonclick = "";
          bttBtn_next_Jsonclick = "";
          bttBtn_last_Jsonclick = "";
          bttBtn_select_Jsonclick = "";
-         A14ModulosName = "";
-         A15ModulosDescripcion = "";
+         A18ModulosName = "";
+         A19ModulosDescripcion = "";
          bttBtn_enter_Jsonclick = "";
          bttBtn_cancel_Jsonclick = "";
          bttBtn_delete_Jsonclick = "";
@@ -1798,61 +1800,65 @@ namespace GeneXus.Programs {
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
-         T00064_A13ModulosID = new short[1] ;
-         T00064_A14ModulosName = new String[] {""} ;
-         T00064_A15ModulosDescripcion = new String[] {""} ;
-         T00065_A13ModulosID = new short[1] ;
-         T00063_A13ModulosID = new short[1] ;
-         T00063_A14ModulosName = new String[] {""} ;
-         T00063_A15ModulosDescripcion = new String[] {""} ;
-         sMode6 = "";
-         T00066_A13ModulosID = new short[1] ;
-         T00067_A13ModulosID = new short[1] ;
-         T00062_A13ModulosID = new short[1] ;
-         T00062_A14ModulosName = new String[] {""} ;
-         T00062_A15ModulosDescripcion = new String[] {""} ;
-         T00068_A13ModulosID = new short[1] ;
-         T000611_A13ModulosID = new short[1] ;
+         T00054_A3ModulosID = new short[1] ;
+         T00054_A18ModulosName = new String[] {""} ;
+         T00054_A19ModulosDescripcion = new String[] {""} ;
+         T00055_A3ModulosID = new short[1] ;
+         T00053_A3ModulosID = new short[1] ;
+         T00053_A18ModulosName = new String[] {""} ;
+         T00053_A19ModulosDescripcion = new String[] {""} ;
+         sMode3 = "";
+         T00056_A3ModulosID = new short[1] ;
+         T00057_A3ModulosID = new short[1] ;
+         T00052_A3ModulosID = new short[1] ;
+         T00052_A18ModulosName = new String[] {""} ;
+         T00052_A19ModulosDescripcion = new String[] {""} ;
+         T00058_A3ModulosID = new short[1] ;
+         T000511_A2RolesID = new short[1] ;
+         T000512_A3ModulosID = new short[1] ;
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
-         ZZ14ModulosName = "";
-         ZZ15ModulosDescripcion = "";
+         ZZ18ModulosName = "";
+         ZZ19ModulosDescripcion = "";
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.modulos__default(),
             new Object[][] {
                 new Object[] {
-               T00062_A13ModulosID, T00062_A14ModulosName, T00062_A15ModulosDescripcion
+               T00052_A3ModulosID, T00052_A18ModulosName, T00052_A19ModulosDescripcion
                }
                , new Object[] {
-               T00063_A13ModulosID, T00063_A14ModulosName, T00063_A15ModulosDescripcion
+               T00053_A3ModulosID, T00053_A18ModulosName, T00053_A19ModulosDescripcion
                }
                , new Object[] {
-               T00064_A13ModulosID, T00064_A14ModulosName, T00064_A15ModulosDescripcion
+               T00054_A3ModulosID, T00054_A18ModulosName, T00054_A19ModulosDescripcion
                }
                , new Object[] {
-               T00065_A13ModulosID
+               T00055_A3ModulosID
                }
                , new Object[] {
-               T00066_A13ModulosID
+               T00056_A3ModulosID
                }
                , new Object[] {
-               T00067_A13ModulosID
+               T00057_A3ModulosID
                }
                , new Object[] {
-               T00068_A13ModulosID
+               T00058_A3ModulosID
                }
                , new Object[] {
                }
                , new Object[] {
                }
                , new Object[] {
-               T000611_A13ModulosID
+               T000511_A2RolesID
+               }
+               , new Object[] {
+               T000512_A3ModulosID
                }
             }
          );
       }
 
-      private short Z13ModulosID ;
+      private short Z3ModulosID ;
       private short GxWebError ;
       private short gxcookieaux ;
       private short IsConfirmed ;
@@ -1860,13 +1866,13 @@ namespace GeneXus.Programs {
       private short AnyError ;
       private short nKeyPressed ;
       private short initialized ;
-      private short A13ModulosID ;
+      private short A3ModulosID ;
       private short GX_JID ;
-      private short RcdFound6 ;
-      private short nIsDirty_6 ;
+      private short RcdFound3 ;
+      private short nIsDirty_3 ;
       private short Gx_BScreen ;
       private short gxajaxcallmode ;
-      private short ZZ13ModulosID ;
+      private short ZZ3ModulosID ;
       private int trnEnded ;
       private int bttBtn_first_Visible ;
       private int bttBtn_previous_Visible ;
@@ -1883,7 +1889,7 @@ namespace GeneXus.Programs {
       private int bttBtn_delete_Enabled ;
       private int idxLst ;
       private String sPrefix ;
-      private String Z14ModulosName ;
+      private String Z18ModulosName ;
       private String scmdbuf ;
       private String gxfirstwebparm ;
       private String gxfirstwebparm_bkp ;
@@ -1892,15 +1898,12 @@ namespace GeneXus.Programs {
       private String PreviousCaption ;
       private String GX_FocusControl ;
       private String edtModulosID_Internalname ;
-      private String divMaintable_Internalname ;
-      private String divTitlecontainer_Internalname ;
+      private String divTablemain_Internalname ;
       private String lblTitle_Internalname ;
       private String lblTitle_Jsonclick ;
+      private String TempTags ;
       private String ClassString ;
       private String StyleString ;
-      private String divFormcontainer_Internalname ;
-      private String divToolbarcell_Internalname ;
-      private String TempTags ;
       private String bttBtn_first_Internalname ;
       private String bttBtn_first_Jsonclick ;
       private String bttBtn_previous_Internalname ;
@@ -1913,7 +1916,7 @@ namespace GeneXus.Programs {
       private String bttBtn_select_Jsonclick ;
       private String edtModulosID_Jsonclick ;
       private String edtModulosName_Internalname ;
-      private String A14ModulosName ;
+      private String A18ModulosName ;
       private String edtModulosName_Jsonclick ;
       private String edtModulosDescripcion_Internalname ;
       private String bttBtn_enter_Internalname ;
@@ -1927,33 +1930,34 @@ namespace GeneXus.Programs {
       private String EvtGridId ;
       private String EvtRowId ;
       private String sEvtType ;
-      private String sMode6 ;
+      private String sMode3 ;
       private String sDynURL ;
       private String FormProcess ;
       private String bodyStyle ;
-      private String ZZ14ModulosName ;
+      private String ZZ18ModulosName ;
       private bool entryPointCalled ;
       private bool toggleJsOutput ;
       private bool wbErr ;
-      private String Z15ModulosDescripcion ;
-      private String A15ModulosDescripcion ;
-      private String ZZ15ModulosDescripcion ;
+      private String Z19ModulosDescripcion ;
+      private String A19ModulosDescripcion ;
+      private String ZZ19ModulosDescripcion ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private short[] T00064_A13ModulosID ;
-      private String[] T00064_A14ModulosName ;
-      private String[] T00064_A15ModulosDescripcion ;
-      private short[] T00065_A13ModulosID ;
-      private short[] T00063_A13ModulosID ;
-      private String[] T00063_A14ModulosName ;
-      private String[] T00063_A15ModulosDescripcion ;
-      private short[] T00066_A13ModulosID ;
-      private short[] T00067_A13ModulosID ;
-      private short[] T00062_A13ModulosID ;
-      private String[] T00062_A14ModulosName ;
-      private String[] T00062_A15ModulosDescripcion ;
-      private short[] T00068_A13ModulosID ;
-      private short[] T000611_A13ModulosID ;
+      private short[] T00054_A3ModulosID ;
+      private String[] T00054_A18ModulosName ;
+      private String[] T00054_A19ModulosDescripcion ;
+      private short[] T00055_A3ModulosID ;
+      private short[] T00053_A3ModulosID ;
+      private String[] T00053_A18ModulosName ;
+      private String[] T00053_A19ModulosDescripcion ;
+      private short[] T00056_A3ModulosID ;
+      private short[] T00057_A3ModulosID ;
+      private short[] T00052_A3ModulosID ;
+      private String[] T00052_A18ModulosName ;
+      private String[] T00052_A19ModulosDescripcion ;
+      private short[] T00058_A3ModulosID ;
+      private short[] T000511_A2RolesID ;
+      private short[] T000512_A3ModulosID ;
       private GXWebForm Form ;
    }
 
@@ -1973,6 +1977,7 @@ namespace GeneXus.Programs {
          ,new UpdateCursor(def[7])
          ,new UpdateCursor(def[8])
          ,new ForEachCursor(def[9])
+         ,new ForEachCursor(def[10])
        };
     }
 
@@ -1981,59 +1986,64 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmT00064 ;
-          prmT00064 = new Object[] {
+          Object[] prmT00054 ;
+          prmT00054 = new Object[] {
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00065 ;
-          prmT00065 = new Object[] {
+          Object[] prmT00055 ;
+          prmT00055 = new Object[] {
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00063 ;
-          prmT00063 = new Object[] {
+          Object[] prmT00053 ;
+          prmT00053 = new Object[] {
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00066 ;
-          prmT00066 = new Object[] {
+          Object[] prmT00056 ;
+          prmT00056 = new Object[] {
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00067 ;
-          prmT00067 = new Object[] {
+          Object[] prmT00057 ;
+          prmT00057 = new Object[] {
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00062 ;
-          prmT00062 = new Object[] {
+          Object[] prmT00052 ;
+          prmT00052 = new Object[] {
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00068 ;
-          prmT00068 = new Object[] {
+          Object[] prmT00058 ;
+          prmT00058 = new Object[] {
           new Object[] {"@ModulosName",SqlDbType.NChar,40,0} ,
           new Object[] {"@ModulosDescripcion",SqlDbType.NVarChar,1024,0}
           } ;
-          Object[] prmT00069 ;
-          prmT00069 = new Object[] {
+          Object[] prmT00059 ;
+          prmT00059 = new Object[] {
           new Object[] {"@ModulosName",SqlDbType.NChar,40,0} ,
           new Object[] {"@ModulosDescripcion",SqlDbType.NVarChar,1024,0} ,
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT000610 ;
-          prmT000610 = new Object[] {
+          Object[] prmT000510 ;
+          prmT000510 = new Object[] {
           new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT000611 ;
-          prmT000611 = new Object[] {
+          Object[] prmT000511 ;
+          prmT000511 = new Object[] {
+          new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
+          } ;
+          Object[] prmT000512 ;
+          prmT000512 = new Object[] {
           } ;
           def= new CursorDef[] {
-              new CursorDef("T00062", "SELECT [ModulosID], [ModulosName], [ModulosDescripcion] FROM [Modulos] WITH (UPDLOCK) WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00062,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00063", "SELECT [ModulosID], [ModulosName], [ModulosDescripcion] FROM [Modulos] WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00063,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00064", "SELECT TM1.[ModulosID], TM1.[ModulosName], TM1.[ModulosDescripcion] FROM [Modulos] TM1 WHERE TM1.[ModulosID] = @ModulosID ORDER BY TM1.[ModulosID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT00064,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00065", "SELECT [ModulosID] FROM [Modulos] WHERE [ModulosID] = @ModulosID  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00065,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00066", "SELECT TOP 1 [ModulosID] FROM [Modulos] WHERE ( [ModulosID] > @ModulosID) ORDER BY [ModulosID]  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00066,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T00067", "SELECT TOP 1 [ModulosID] FROM [Modulos] WHERE ( [ModulosID] < @ModulosID) ORDER BY [ModulosID] DESC  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00067,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T00068", "INSERT INTO [Modulos]([ModulosName], [ModulosDescripcion]) VALUES(@ModulosName, @ModulosDescripcion); SELECT SCOPE_IDENTITY()", GxErrorMask.GX_NOMASK,prmT00068)
-             ,new CursorDef("T00069", "UPDATE [Modulos] SET [ModulosName]=@ModulosName, [ModulosDescripcion]=@ModulosDescripcion  WHERE [ModulosID] = @ModulosID", GxErrorMask.GX_NOMASK,prmT00069)
-             ,new CursorDef("T000610", "DELETE FROM [Modulos]  WHERE [ModulosID] = @ModulosID", GxErrorMask.GX_NOMASK,prmT000610)
-             ,new CursorDef("T000611", "SELECT [ModulosID] FROM [Modulos] ORDER BY [ModulosID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000611,100, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("T00052", "SELECT [ModulosID], [ModulosName], [ModulosDescripcion] FROM [Modulos] WITH (UPDLOCK) WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00052,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00053", "SELECT [ModulosID], [ModulosName], [ModulosDescripcion] FROM [Modulos] WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00053,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00054", "SELECT TM1.[ModulosID], TM1.[ModulosName], TM1.[ModulosDescripcion] FROM [Modulos] TM1 WHERE TM1.[ModulosID] = @ModulosID ORDER BY TM1.[ModulosID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT00054,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00055", "SELECT [ModulosID] FROM [Modulos] WHERE [ModulosID] = @ModulosID  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00055,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00056", "SELECT TOP 1 [ModulosID] FROM [Modulos] WHERE ( [ModulosID] > @ModulosID) ORDER BY [ModulosID]  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00056,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T00057", "SELECT TOP 1 [ModulosID] FROM [Modulos] WHERE ( [ModulosID] < @ModulosID) ORDER BY [ModulosID] DESC  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00057,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T00058", "INSERT INTO [Modulos]([ModulosName], [ModulosDescripcion]) VALUES(@ModulosName, @ModulosDescripcion); SELECT SCOPE_IDENTITY()", GxErrorMask.GX_NOMASK,prmT00058)
+             ,new CursorDef("T00059", "UPDATE [Modulos] SET [ModulosName]=@ModulosName, [ModulosDescripcion]=@ModulosDescripcion  WHERE [ModulosID] = @ModulosID", GxErrorMask.GX_NOMASK,prmT00059)
+             ,new CursorDef("T000510", "DELETE FROM [Modulos]  WHERE [ModulosID] = @ModulosID", GxErrorMask.GX_NOMASK,prmT000510)
+             ,new CursorDef("T000511", "SELECT TOP 1 [RolesID] FROM [Roles] WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT000511,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000512", "SELECT [ModulosID] FROM [Modulos] ORDER BY [ModulosID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000512,100, GxCacheFrequency.OFF ,true,false )
           };
        }
     }
@@ -2074,6 +2084,9 @@ namespace GeneXus.Programs {
              case 9 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 return;
+             case 10 :
+                ((short[]) buf[0])[0] = rslt.getShort(1) ;
+                return;
        }
     }
 
@@ -2111,6 +2124,9 @@ namespace GeneXus.Programs {
                 stmt.SetParameter(3, (short)parms[2]);
                 return;
              case 8 :
+                stmt.SetParameter(1, (short)parms[0]);
+                return;
+             case 9 :
                 stmt.SetParameter(1, (short)parms[0]);
                 return;
        }

@@ -2,7 +2,7 @@
                File: Roles
         Description: Roles
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/22/2020 21:2:3.63
+       Generated on: 8/24/2020 21:14:44.57
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -62,6 +62,19 @@ namespace GeneXus.Programs {
             dyncall( GetNextPar( )) ;
             return  ;
          }
+         else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxExecAct_"+"gxLoad_10") == 0 )
+         {
+            A3ModulosID = (short)(NumberUtil.Val( GetNextPar( ), "."));
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+            setAjaxCallMode();
+            if ( ! IsValidAjaxCall( true) )
+            {
+               GxWebError = 1;
+               return  ;
+            }
+            gxLoad_10( A3ModulosID) ;
+            return  ;
+         }
          else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxEvt") == 0 )
          {
             setAjaxEventMode();
@@ -97,9 +110,9 @@ namespace GeneXus.Programs {
             AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
             if ( StringUtil.StrCmp(gxfirstwebparm, "viewer") != 0 )
             {
-               AV7RolesID = (short)(NumberUtil.Val( GetNextPar( ), "."));
-               AssignAttri("", false, "AV7RolesID", StringUtil.LTrimStr( (decimal)(AV7RolesID), 4, 0));
-               AssignAttri("", false, "gxhash_vROLESID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(AV7RolesID), "ZZZ9"), context));
+               AV12RolesID = (short)(NumberUtil.Val( GetNextPar( ), "."));
+               AssignAttri("", false, "AV12RolesID", StringUtil.LTrimStr( (decimal)(AV12RolesID), 4, 0));
+               AssignAttri("", false, "gxhash_vROLESID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(AV12RolesID), "ZZZ9"), context));
             }
          }
          if ( context.isSpaRequest( ) )
@@ -127,7 +140,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 16_0_7-138086", 0) ;
-            Form.Meta.addItem("description", "Roles", 0) ;
+            Form.Meta.addItem("description", context.GetMessage( "Roles", ""), 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -138,7 +151,7 @@ namespace GeneXus.Programs {
          GX_FocusControl = edtRolesName_Internalname;
          AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
          wbErr = false;
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
          if ( ! context.IsLocalStorageSupported( ) )
          {
             context.PushCurrentUrl();
@@ -151,7 +164,7 @@ namespace GeneXus.Programs {
          DataStoreUtil.LoadDataStores( context);
          dsDefault = context.GetDataStore("Default");
          IsMain = true;
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
       }
 
       public roles( IGxContext context )
@@ -169,7 +182,7 @@ namespace GeneXus.Programs {
                            short aP1_RolesID )
       {
          this.Gx_mode = aP0_Gx_mode;
-         this.AV7RolesID = aP1_RolesID;
+         this.AV12RolesID = aP1_RolesID;
          executePrivate();
       }
 
@@ -194,7 +207,7 @@ namespace GeneXus.Programs {
          INITTRN( ) ;
          if ( ( GxWebError == 0 ) && ! isAjaxCallMode( ) )
          {
-            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("rwdmasterpage", "GeneXus.Programs.rwdmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
+            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("wwpbaseobjects.workwithplusmasterpage", "GeneXus.Programs.wwpbaseobjects.workwithplusmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
             MasterPageObj.setDataArea(this,false);
             ValidateSpaRequest();
             MasterPageObj.webExecute();
@@ -263,7 +276,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Text block */
-         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Roles", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, "HLP_Roles.htm");
+         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, context.GetMessage( "Roles", ""), "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
@@ -325,7 +338,7 @@ namespace GeneXus.Programs {
          TempTags = "  onfocus=\"gx.evt.onfocus(this, 29,'',false,'',0)\"";
          ClassString = "BtnSelect";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_select_Internalname, "", "Select", bttBtn_select_Jsonclick, 5, "Select", "", StyleString, ClassString, bttBtn_select_Visible, 0, "standard", "'"+""+"'"+",false,"+"'"+"ESELECT."+"'", TempTags, "", 2, "HLP_Roles.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_select_Internalname, "", context.GetMessage( "GX_BtnSelect", ""), bttBtn_select_Jsonclick, 5, context.GetMessage( "GX_BtnSelect", ""), "", StyleString, ClassString, bttBtn_select_Visible, 0, "standard", "'"+""+"'"+",false,"+"'"+"ESELECT."+"'", TempTags, "", 2, "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -338,11 +351,11 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtRolesID_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtRolesID_Internalname, "ID", "col-sm-3 AttributeLabel", 1, true);
+         GxWebStd.gx_label_element( context, edtRolesID_Internalname, context.GetMessage( "ID", ""), "col-sm-3 AttributeLabel", 1, true);
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         GxWebStd.gx_single_line_edit( context, edtRolesID_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A8RolesID), 4, 0, ".", "")), ((edtRolesID_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(A8RolesID), "ZZZ9")) : context.localUtil.Format( (decimal)(A8RolesID), "ZZZ9")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtRolesID_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtRolesID_Enabled, 0, "number", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 1, -1, 0, true, "ID", "right", false, "", "HLP_Roles.htm");
+         GxWebStd.gx_single_line_edit( context, edtRolesID_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A2RolesID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")), ((edtRolesID_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(A2RolesID), "ZZZ9")) : context.localUtil.Format( (decimal)(A2RolesID), "ZZZ9")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtRolesID_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtRolesID_Enabled, 0, "number", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 1, -1, 0, true, "ID", "right", false, "", "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -354,12 +367,45 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtRolesName_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtRolesName_Internalname, "Name", "col-sm-3 AttributeLabel", 1, true);
+         GxWebStd.gx_label_element( context, edtRolesName_Internalname, context.GetMessage( "Name", ""), "col-sm-3 AttributeLabel", 1, true);
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
          TempTags = "  onfocus=\"gx.evt.onfocus(this, 39,'',false,'',0)\"";
-         GxWebStd.gx_single_line_edit( context, edtRolesName_Internalname, StringUtil.RTrim( A9RolesName), StringUtil.RTrim( context.localUtil.Format( A9RolesName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,39);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtRolesName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtRolesName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Roles.htm");
+         GxWebStd.gx_single_line_edit( context, edtRolesName_Internalname, StringUtil.RTrim( A15RolesName), StringUtil.RTrim( context.localUtil.Format( A15RolesName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,39);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtRolesName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtRolesName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Roles.htm");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtModulosID_Internalname+"\"", "", "div");
+         /* Attribute/Variable Label */
+         GxWebStd.gx_label_element( context, edtModulosID_Internalname, context.GetMessage( "Modulos ID", ""), "col-sm-3 AttributeLabel", 1, true);
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
+         /* Single line edit */
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 44,'',false,'',0)\"";
+         GxWebStd.gx_single_line_edit( context, edtModulosID_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A3ModulosID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")), StringUtil.LTrim( context.localUtil.Format( (decimal)(A3ModulosID), "ZZZ9")), TempTags+" onchange=\""+"gx.num.valid_integer( this,gx.thousandSeparator);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,gx.thousandSeparator);"+";gx.evt.onblur(this,44);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtModulosID_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtModulosID_Enabled, 1, "number", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 1, -1, 0, true, "ID", "right", false, "", "HLP_Roles.htm");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtModulosName_Internalname+"\"", "", "div");
+         /* Attribute/Variable Label */
+         GxWebStd.gx_label_element( context, edtModulosName_Internalname, context.GetMessage( "Modulos Name", ""), "col-sm-3 AttributeLabel", 1, true);
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
+         /* Single line edit */
+         GxWebStd.gx_single_line_edit( context, edtModulosName_Internalname, StringUtil.RTrim( A18ModulosName), StringUtil.RTrim( context.localUtil.Format( A18ModulosName, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtModulosName_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtModulosName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -375,26 +421,36 @@ namespace GeneXus.Programs {
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-action-group Confirm", "left", "top", " "+"data-gx-actiongroup-type=\"toolbar\""+" ", "", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 44,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 54,'',false,'',0)\"";
          ClassString = "BtnEnter";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_enter_Internalname, "", "Confirm", bttBtn_enter_Jsonclick, 5, "Confirm", "", StyleString, ClassString, bttBtn_enter_Visible, bttBtn_enter_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EENTER."+"'", TempTags, "", context.GetButtonType( ), "HLP_Roles.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_enter_Internalname, "", context.GetMessage( "GX_BtnEnter", ""), bttBtn_enter_Jsonclick, 5, context.GetMessage( "GX_BtnEnter", ""), "", StyleString, ClassString, bttBtn_enter_Visible, bttBtn_enter_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EENTER."+"'", TempTags, "", context.GetButtonType( ), "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 46,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 56,'',false,'',0)\"";
          ClassString = "BtnCancel";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "", "Cancel", bttBtn_cancel_Jsonclick, 1, "Cancel", "", StyleString, ClassString, bttBtn_cancel_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Roles.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "", context.GetMessage( "GX_BtnCancel", ""), bttBtn_cancel_Jsonclick, 1, context.GetMessage( "GX_BtnCancel", ""), "", StyleString, ClassString, bttBtn_cancel_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 48,'',false,'',0)\"";
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 58,'',false,'',0)\"";
          ClassString = "BtnDelete";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_delete_Internalname, "", "Delete", bttBtn_delete_Jsonclick, 5, "Delete", "", StyleString, ClassString, bttBtn_delete_Visible, bttBtn_delete_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EDELETE."+"'", TempTags, "", context.GetButtonType( ), "HLP_Roles.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_delete_Internalname, "", context.GetMessage( "GX_BtnDelete", ""), bttBtn_delete_Jsonclick, 5, context.GetMessage( "GX_BtnDelete", ""), "", StyleString, ClassString, bttBtn_delete_Visible, bttBtn_delete_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EDELETE."+"'", TempTags, "", context.GetButtonType( ), "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
+         GxWebStd.gx_div_end( context, "Center", "top", "div");
+         GxWebStd.gx_div_end( context, "left", "top", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+         /* Div Control */
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "Center", "top", "", "", "div");
+         TempTags = "  onfocus=\"gx.evt.onfocus(this, 61,'',false,'',0)\"";
+         ClassString = "BtnBack";
+         StyleString = "";
+         GxWebStd.gx_button_ctrl( context, bttAtras_Internalname, "", context.GetMessage( "ATRAS", ""), bttAtras_Jsonclick, 7, context.GetMessage( "ATRAS", ""), "", StyleString, ClassString, bttAtras_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"e11022_client"+"'", TempTags, "", 2, "HLP_Roles.htm");
          GxWebStd.gx_div_end( context, "Center", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -428,7 +484,7 @@ namespace GeneXus.Programs {
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E11032 ();
+         E12022 ();
          context.wbGlbDoneStart = 1;
          assign_properties_default( ) ;
          if ( AnyError == 0 )
@@ -437,30 +493,50 @@ namespace GeneXus.Programs {
             {
                /* Read saved SDTs. */
                /* Read saved values. */
-               Z8RolesID = (short)(context.localUtil.CToN( cgiGet( "Z8RolesID"), ".", ","));
-               Z9RolesName = cgiGet( "Z9RolesName");
-               IsConfirmed = (short)(context.localUtil.CToN( cgiGet( "IsConfirmed"), ".", ","));
-               IsModified = (short)(context.localUtil.CToN( cgiGet( "IsModified"), ".", ","));
+               Z2RolesID = (short)(context.localUtil.CToN( cgiGet( "Z2RolesID"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               Z15RolesName = cgiGet( "Z15RolesName");
+               Z3ModulosID = (short)(context.localUtil.CToN( cgiGet( "Z3ModulosID"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               IsConfirmed = (short)(context.localUtil.CToN( cgiGet( "IsConfirmed"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               IsModified = (short)(context.localUtil.CToN( cgiGet( "IsModified"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
                Gx_mode = cgiGet( "Mode");
-               AV7RolesID = (short)(context.localUtil.CToN( cgiGet( "vROLESID"), ".", ","));
-               AV11Pgmname = cgiGet( "vPGMNAME");
+               N3ModulosID = (short)(context.localUtil.CToN( cgiGet( "N3ModulosID"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               AV12RolesID = (short)(context.localUtil.CToN( cgiGet( "vROLESID"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               AV10Insert_ModulosID = (short)(context.localUtil.CToN( cgiGet( "vINSERT_MODULOSID"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               AV13Pgmname = cgiGet( "vPGMNAME");
                Gx_mode = cgiGet( "vMODE");
                /* Read variables values. */
-               A8RolesID = (short)(context.localUtil.CToN( cgiGet( edtRolesID_Internalname), ".", ","));
-               AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
-               A9RolesName = cgiGet( edtRolesName_Internalname);
-               AssignAttri("", false, "A9RolesName", A9RolesName);
+               A2RolesID = (short)(context.localUtil.CToN( cgiGet( edtRolesID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+               A15RolesName = cgiGet( edtRolesName_Internalname);
+               AssignAttri("", false, "A15RolesName", A15RolesName);
+               if ( ( ( context.localUtil.CToN( cgiGet( edtModulosID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")) < Convert.ToDecimal( 0 )) ) || ( ( context.localUtil.CToN( cgiGet( edtModulosID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")) > Convert.ToDecimal( 9999 )) ) )
+               {
+                  GX_msglist.addItem(context.GetMessage( "GXM_badnum", ""), 1, "MODULOSID");
+                  AnyError = 1;
+                  GX_FocusControl = edtModulosID_Internalname;
+                  AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
+                  wbErr = true;
+                  A3ModulosID = 0;
+                  AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+               }
+               else
+               {
+                  A3ModulosID = (short)(context.localUtil.CToN( cgiGet( edtModulosID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+                  AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+               }
+               A18ModulosName = cgiGet( edtModulosName_Internalname);
+               AssignAttri("", false, "A18ModulosName", A18ModulosName);
                /* Read subfile selected row values. */
                /* Read hidden variables. */
                GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
                forbiddenHiddens = new GXProperties();
                forbiddenHiddens.Add("hshsalt", "hsh"+"Roles");
-               A8RolesID = (short)(context.localUtil.CToN( cgiGet( edtRolesID_Internalname), ".", ","));
-               AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
-               forbiddenHiddens.Add("RolesID", context.localUtil.Format( (decimal)(A8RolesID), "ZZZ9"));
+               A2RolesID = (short)(context.localUtil.CToN( cgiGet( edtRolesID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+               AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+               forbiddenHiddens.Add("RolesID", context.localUtil.Format( (decimal)(A2RolesID), "ZZZ9"));
                forbiddenHiddens.Add("Gx_mode", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")));
                hsh = cgiGet( "hsh");
-               if ( ( ! ( ( A8RolesID != Z8RolesID ) ) || ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) ) && ! GXUtil.CheckEncryptedHash( forbiddenHiddens.ToString(), hsh, GXKey) )
+               if ( ( ! ( ( A2RolesID != Z2RolesID ) ) || ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) ) && ! GXUtil.CheckEncryptedHash( forbiddenHiddens.ToString(), hsh, GXKey) )
                {
                   GXUtil.WriteLog("roles:[ SecurityCheckFailed value for]"+forbiddenHiddens.ToJSonString());
                   GxWebError = 1;
@@ -483,8 +559,8 @@ namespace GeneXus.Programs {
                   Gx_mode = "DSP";
                   AssignAttri("", false, "Gx_mode", Gx_mode);
                   AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
-                  A8RolesID = (short)(NumberUtil.Val( GetNextPar( ), "."));
-                  AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
+                  A2RolesID = (short)(NumberUtil.Val( GetNextPar( ), "."));
+                  AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
                   getEqualNoModal( ) ;
                   Gx_mode = "DSP";
                   AssignAttri("", false, "Gx_mode", Gx_mode);
@@ -496,11 +572,11 @@ namespace GeneXus.Programs {
                {
                   if ( IsDsp( ) )
                   {
-                     sMode3 = Gx_mode;
+                     sMode2 = Gx_mode;
                      Gx_mode = "UPD";
                      AssignAttri("", false, "Gx_mode", Gx_mode);
                      AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
-                     Gx_mode = sMode3;
+                     Gx_mode = sMode2;
                      AssignAttri("", false, "Gx_mode", Gx_mode);
                      AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
                   }
@@ -508,12 +584,12 @@ namespace GeneXus.Programs {
                   if ( ! IsIns( ) )
                   {
                      getByPrimaryKey( ) ;
-                     if ( RcdFound3 == 1 )
+                     if ( RcdFound2 == 1 )
                      {
                         if ( IsDlt( ) )
                         {
                            /* Confirm record */
-                           CONFIRM_030( ) ;
+                           CONFIRM_020( ) ;
                            if ( AnyError == 0 )
                            {
                               GX_FocusControl = bttBtn_enter_Internalname;
@@ -559,14 +635,14 @@ namespace GeneXus.Programs {
                            context.wbHandled = 1;
                            dynload_actions( ) ;
                            /* Execute user event: Start */
-                           E11032 ();
+                           E12022 ();
                         }
                         else if ( StringUtil.StrCmp(sEvt, "AFTER TRN") == 0 )
                         {
                            context.wbHandled = 1;
                            dynload_actions( ) ;
                            /* Execute user event: After Trn */
-                           E12032 ();
+                           E13022 ();
                         }
                         else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                         {
@@ -593,14 +669,14 @@ namespace GeneXus.Programs {
          if ( trnEnded == 1 )
          {
             /* Execute user event: After Trn */
-            E12032 ();
+            E13022 ();
             trnEnded = 0;
             standaloneNotModal( ) ;
             standaloneModal( ) ;
             if ( IsIns( )  )
             {
                /* Clear variables for new insertion. */
-               InitAll033( ) ;
+               InitAll022( ) ;
                standaloneNotModal( ) ;
                standaloneModal( ) ;
             }
@@ -640,7 +716,7 @@ namespace GeneXus.Programs {
                bttBtn_enter_Visible = 0;
                AssignProp("", false, bttBtn_enter_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(bttBtn_enter_Visible), 5, 0), true);
             }
-            DisableAttributes033( ) ;
+            DisableAttributes022( ) ;
          }
       }
 
@@ -659,19 +735,19 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void CONFIRM_030( )
+      protected void CONFIRM_020( )
       {
-         BeforeValidate033( ) ;
+         BeforeValidate022( ) ;
          if ( AnyError == 0 )
          {
             if ( IsDlt( ) )
             {
-               OnDeleteControls033( ) ;
+               OnDeleteControls022( ) ;
             }
             else
             {
-               CheckExtendedTable033( ) ;
-               CloseExtendedTableCursors033( ) ;
+               CheckExtendedTable022( ) ;
+               CloseExtendedTableCursors022( ) ;
             }
          }
          if ( AnyError == 0 )
@@ -681,25 +757,43 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void ResetCaption030( )
+      protected void ResetCaption020( )
       {
       }
 
-      protected void E11032( )
+      protected void E12022( )
       {
          /* Start Routine */
-         if ( ! new isauthorized(context).executeUdp(  AV11Pgmname) )
+         if ( ! new GeneXus.Programs.wwpbaseobjects.isauthorized(context).executeUdp(  AV13Pgmname) )
          {
-            CallWebObject(formatLink("notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV11Pgmname)));
+            CallWebObject(formatLink("wwpbaseobjects.notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV13Pgmname)));
             context.wjLocDisableFrm = 1;
          }
-         AV9TrnContext.FromXml(AV10WebSession.Get("TrnContext"), null, "TransactionContext", "ProyectoGestion");
+         AV8TrnContext.FromXml(AV9WebSession.Get("TrnContext"), null, "TransactionContext", "IS2");
+         AV10Insert_ModulosID = 0;
+         AssignAttri("", false, "AV10Insert_ModulosID", StringUtil.LTrimStr( (decimal)(AV10Insert_ModulosID), 4, 0));
+         if ( ( StringUtil.StrCmp(AV8TrnContext.gxTpr_Transactionname, AV13Pgmname) == 0 ) && ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) )
+         {
+            AV14GXV1 = 1;
+            AssignAttri("", false, "AV14GXV1", StringUtil.LTrimStr( (decimal)(AV14GXV1), 8, 0));
+            while ( AV14GXV1 <= AV8TrnContext.gxTpr_Attributes.Count )
+            {
+               AV11TrnContextAtt = ((SdtTransactionContext_Attribute)AV8TrnContext.gxTpr_Attributes.Item(AV14GXV1));
+               if ( StringUtil.StrCmp(AV11TrnContextAtt.gxTpr_Attributename, "ModulosID") == 0 )
+               {
+                  AV10Insert_ModulosID = (short)(NumberUtil.Val( AV11TrnContextAtt.gxTpr_Attributevalue, "."));
+                  AssignAttri("", false, "AV10Insert_ModulosID", StringUtil.LTrimStr( (decimal)(AV10Insert_ModulosID), 4, 0));
+               }
+               AV14GXV1 = (int)(AV14GXV1+1);
+               AssignAttri("", false, "AV14GXV1", StringUtil.LTrimStr( (decimal)(AV14GXV1), 8, 0));
+            }
+         }
       }
 
-      protected void E12032( )
+      protected void E13022( )
       {
          /* After Trn Routine */
-         if ( ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) && ! AV9TrnContext.gxTpr_Callerondelete )
+         if ( ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 ) && ! AV8TrnContext.gxTpr_Callerondelete )
          {
             CallWebObject(formatLink("wwroles.aspx") );
             context.wjLocDisableFrm = 1;
@@ -708,27 +802,33 @@ namespace GeneXus.Programs {
          context.setWebReturnParmsMetadata(new Object[] {});
          context.wjLocDisableFrm = 1;
          context.nUserReturn = 1;
+         pr_default.close(1);
+         pr_default.close(2);
          returnInSub = true;
          if (true) return;
       }
 
-      protected void ZM033( short GX_JID )
+      protected void ZM022( short GX_JID )
       {
-         if ( ( GX_JID == 4 ) || ( GX_JID == 0 ) )
+         if ( ( GX_JID == 9 ) || ( GX_JID == 0 ) )
          {
             if ( ! IsIns( ) )
             {
-               Z9RolesName = T00033_A9RolesName[0];
+               Z15RolesName = T00023_A15RolesName[0];
+               Z3ModulosID = T00023_A3ModulosID[0];
             }
             else
             {
-               Z9RolesName = A9RolesName;
+               Z15RolesName = A15RolesName;
+               Z3ModulosID = A3ModulosID;
             }
          }
-         if ( GX_JID == -4 )
+         if ( GX_JID == -9 )
          {
-            Z8RolesID = A8RolesID;
-            Z9RolesName = A9RolesName;
+            Z2RolesID = A2RolesID;
+            Z15RolesName = A15RolesName;
+            Z3ModulosID = A3ModulosID;
+            Z18ModulosName = A18ModulosName;
          }
       }
 
@@ -740,15 +840,30 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtRolesID_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtRolesID_Enabled), 5, 0), true);
          bttBtn_delete_Enabled = 0;
          AssignProp("", false, bttBtn_delete_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(bttBtn_delete_Enabled), 5, 0), true);
-         if ( ! (0==AV7RolesID) )
+         if ( ! (0==AV12RolesID) )
          {
-            A8RolesID = AV7RolesID;
-            AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
+            A2RolesID = AV12RolesID;
+            AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+         }
+         if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) && ! (0==AV10Insert_ModulosID) )
+         {
+            edtModulosID_Enabled = 0;
+            AssignProp("", false, edtModulosID_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtModulosID_Enabled), 5, 0), true);
+         }
+         else
+         {
+            edtModulosID_Enabled = 1;
+            AssignProp("", false, edtModulosID_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtModulosID_Enabled), 5, 0), true);
          }
       }
 
       protected void standaloneModal( )
       {
+         if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) && ! (0==AV10Insert_ModulosID) )
+         {
+            A3ModulosID = AV10Insert_ModulosID;
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+         }
          if ( StringUtil.StrCmp(Gx_mode, "DSP") == 0 )
          {
             bttBtn_enter_Enabled = 0;
@@ -759,105 +874,160 @@ namespace GeneXus.Programs {
             bttBtn_enter_Enabled = 1;
             AssignProp("", false, bttBtn_enter_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(bttBtn_enter_Enabled), 5, 0), true);
          }
-      }
-
-      protected void Load033( )
-      {
-         /* Using cursor T00034 */
-         pr_default.execute(2, new Object[] {A8RolesID});
-         if ( (pr_default.getStatus(2) != 101) )
+         if ( ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) && ( Gx_BScreen == 0 ) )
          {
-            RcdFound3 = 1;
-            A9RolesName = T00034_A9RolesName[0];
-            AssignAttri("", false, "A9RolesName", A9RolesName);
-            ZM033( -4) ;
+            AV13Pgmname = "Roles";
+            AssignAttri("", false, "AV13Pgmname", AV13Pgmname);
+            /* Using cursor T00024 */
+            pr_default.execute(2, new Object[] {A3ModulosID});
+            A18ModulosName = T00024_A18ModulosName[0];
+            AssignAttri("", false, "A18ModulosName", A18ModulosName);
+            pr_default.close(2);
          }
-         pr_default.close(2);
-         OnLoadActions033( ) ;
       }
 
-      protected void OnLoadActions033( )
+      protected void Load022( )
       {
-         AV11Pgmname = "Roles";
-         AssignAttri("", false, "AV11Pgmname", AV11Pgmname);
+         /* Using cursor T00025 */
+         pr_default.execute(3, new Object[] {A2RolesID});
+         if ( (pr_default.getStatus(3) != 101) )
+         {
+            RcdFound2 = 1;
+            A15RolesName = T00025_A15RolesName[0];
+            AssignAttri("", false, "A15RolesName", A15RolesName);
+            A18ModulosName = T00025_A18ModulosName[0];
+            AssignAttri("", false, "A18ModulosName", A18ModulosName);
+            A3ModulosID = T00025_A3ModulosID[0];
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+            ZM022( -9) ;
+         }
+         pr_default.close(3);
+         OnLoadActions022( ) ;
       }
 
-      protected void CheckExtendedTable033( )
+      protected void OnLoadActions022( )
       {
-         nIsDirty_3 = 0;
+         AV13Pgmname = "Roles";
+         AssignAttri("", false, "AV13Pgmname", AV13Pgmname);
+      }
+
+      protected void CheckExtendedTable022( )
+      {
+         nIsDirty_2 = 0;
          Gx_BScreen = 1;
          standaloneModal( ) ;
-         AV11Pgmname = "Roles";
-         AssignAttri("", false, "AV11Pgmname", AV11Pgmname);
-         if ( String.IsNullOrEmpty(StringUtil.RTrim( A9RolesName)) )
+         AV13Pgmname = "Roles";
+         AssignAttri("", false, "AV13Pgmname", AV13Pgmname);
+         if ( String.IsNullOrEmpty(StringUtil.RTrim( A15RolesName)) )
          {
-            GX_msglist.addItem("Campo Obligatorio", 1, "ROLESNAME");
+            GX_msglist.addItem(context.GetMessage( "Campo Obligatorio", ""), 1, "ROLESNAME");
             AnyError = 1;
             GX_FocusControl = edtRolesName_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
          }
+         /* Using cursor T00024 */
+         pr_default.execute(2, new Object[] {A3ModulosID});
+         if ( (pr_default.getStatus(2) == 101) )
+         {
+            GX_msglist.addItem(StringUtil.Format( context.GetMessage( "GXSPC_ForeignKeyNotFound", ""), context.GetMessage( "Modulos", ""), "", "", "", "", "", "", "", ""), "ForeignKeyNotFound", 1, "MODULOSID");
+            AnyError = 1;
+            GX_FocusControl = edtModulosID_Internalname;
+            AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
+         }
+         A18ModulosName = T00024_A18ModulosName[0];
+         AssignAttri("", false, "A18ModulosName", A18ModulosName);
+         pr_default.close(2);
       }
 
-      protected void CloseExtendedTableCursors033( )
+      protected void CloseExtendedTableCursors022( )
       {
+         pr_default.close(2);
       }
 
       protected void enableDisable( )
       {
       }
 
-      protected void GetKey033( )
+      protected void gxLoad_10( short A3ModulosID )
       {
-         /* Using cursor T00035 */
-         pr_default.execute(3, new Object[] {A8RolesID});
-         if ( (pr_default.getStatus(3) != 101) )
+         /* Using cursor T00026 */
+         pr_default.execute(4, new Object[] {A3ModulosID});
+         if ( (pr_default.getStatus(4) == 101) )
          {
-            RcdFound3 = 1;
+            GX_msglist.addItem(StringUtil.Format( context.GetMessage( "GXSPC_ForeignKeyNotFound", ""), context.GetMessage( "Modulos", ""), "", "", "", "", "", "", "", ""), "ForeignKeyNotFound", 1, "MODULOSID");
+            AnyError = 1;
+            GX_FocusControl = edtModulosID_Internalname;
+            AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
+         }
+         A18ModulosName = T00026_A18ModulosName[0];
+         AssignAttri("", false, "A18ModulosName", A18ModulosName);
+         GxWebStd.set_html_headers( context, 0, "", "");
+         AddString( "[[") ;
+         AddString( "\""+GXUtil.EncodeJSConstant( StringUtil.RTrim( A18ModulosName))+"\"") ;
+         AddString( "]") ;
+         if ( (pr_default.getStatus(4) == 101) )
+         {
+            AddString( ",") ;
+            AddString( "101") ;
+         }
+         AddString( "]") ;
+         pr_default.close(4);
+      }
+
+      protected void GetKey022( )
+      {
+         /* Using cursor T00027 */
+         pr_default.execute(5, new Object[] {A2RolesID});
+         if ( (pr_default.getStatus(5) != 101) )
+         {
+            RcdFound2 = 1;
          }
          else
          {
-            RcdFound3 = 0;
+            RcdFound2 = 0;
          }
-         pr_default.close(3);
+         pr_default.close(5);
       }
 
       protected void getByPrimaryKey( )
       {
-         /* Using cursor T00033 */
-         pr_default.execute(1, new Object[] {A8RolesID});
+         /* Using cursor T00023 */
+         pr_default.execute(1, new Object[] {A2RolesID});
          if ( (pr_default.getStatus(1) != 101) )
          {
-            ZM033( 4) ;
-            RcdFound3 = 1;
-            A8RolesID = T00033_A8RolesID[0];
-            AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
-            A9RolesName = T00033_A9RolesName[0];
-            AssignAttri("", false, "A9RolesName", A9RolesName);
-            Z8RolesID = A8RolesID;
-            sMode3 = Gx_mode;
+            ZM022( 9) ;
+            RcdFound2 = 1;
+            A2RolesID = T00023_A2RolesID[0];
+            AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+            A15RolesName = T00023_A15RolesName[0];
+            AssignAttri("", false, "A15RolesName", A15RolesName);
+            A3ModulosID = T00023_A3ModulosID[0];
+            AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+            Z2RolesID = A2RolesID;
+            sMode2 = Gx_mode;
             Gx_mode = "DSP";
             AssignAttri("", false, "Gx_mode", Gx_mode);
             AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
-            Load033( ) ;
+            Load022( ) ;
             if ( AnyError == 1 )
             {
-               RcdFound3 = 0;
-               InitializeNonKey033( ) ;
+               RcdFound2 = 0;
+               InitializeNonKey022( ) ;
             }
-            Gx_mode = sMode3;
+            Gx_mode = sMode2;
             AssignAttri("", false, "Gx_mode", Gx_mode);
             AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
          }
          else
          {
-            RcdFound3 = 0;
-            InitializeNonKey033( ) ;
-            sMode3 = Gx_mode;
+            RcdFound2 = 0;
+            InitializeNonKey022( ) ;
+            sMode2 = Gx_mode;
             Gx_mode = "DSP";
             AssignAttri("", false, "Gx_mode", Gx_mode);
             AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
             standaloneModal( ) ;
-            Gx_mode = sMode3;
+            Gx_mode = sMode2;
             AssignAttri("", false, "Gx_mode", Gx_mode);
             AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
          }
@@ -866,8 +1036,8 @@ namespace GeneXus.Programs {
 
       protected void getEqualNoModal( )
       {
-         GetKey033( ) ;
-         if ( RcdFound3 == 0 )
+         GetKey022( ) ;
+         if ( RcdFound2 == 0 )
          {
          }
          else
@@ -878,56 +1048,56 @@ namespace GeneXus.Programs {
 
       protected void move_next( )
       {
-         RcdFound3 = 0;
-         /* Using cursor T00036 */
-         pr_default.execute(4, new Object[] {A8RolesID});
-         if ( (pr_default.getStatus(4) != 101) )
+         RcdFound2 = 0;
+         /* Using cursor T00028 */
+         pr_default.execute(6, new Object[] {A2RolesID});
+         if ( (pr_default.getStatus(6) != 101) )
          {
-            while ( (pr_default.getStatus(4) != 101) && ( ( T00036_A8RolesID[0] < A8RolesID ) ) )
+            while ( (pr_default.getStatus(6) != 101) && ( ( T00028_A2RolesID[0] < A2RolesID ) ) )
             {
-               pr_default.readNext(4);
+               pr_default.readNext(6);
             }
-            if ( (pr_default.getStatus(4) != 101) && ( ( T00036_A8RolesID[0] > A8RolesID ) ) )
+            if ( (pr_default.getStatus(6) != 101) && ( ( T00028_A2RolesID[0] > A2RolesID ) ) )
             {
-               A8RolesID = T00036_A8RolesID[0];
-               AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
-               RcdFound3 = 1;
+               A2RolesID = T00028_A2RolesID[0];
+               AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+               RcdFound2 = 1;
             }
          }
-         pr_default.close(4);
+         pr_default.close(6);
       }
 
       protected void move_previous( )
       {
-         RcdFound3 = 0;
-         /* Using cursor T00037 */
-         pr_default.execute(5, new Object[] {A8RolesID});
-         if ( (pr_default.getStatus(5) != 101) )
+         RcdFound2 = 0;
+         /* Using cursor T00029 */
+         pr_default.execute(7, new Object[] {A2RolesID});
+         if ( (pr_default.getStatus(7) != 101) )
          {
-            while ( (pr_default.getStatus(5) != 101) && ( ( T00037_A8RolesID[0] > A8RolesID ) ) )
+            while ( (pr_default.getStatus(7) != 101) && ( ( T00029_A2RolesID[0] > A2RolesID ) ) )
             {
-               pr_default.readNext(5);
+               pr_default.readNext(7);
             }
-            if ( (pr_default.getStatus(5) != 101) && ( ( T00037_A8RolesID[0] < A8RolesID ) ) )
+            if ( (pr_default.getStatus(7) != 101) && ( ( T00029_A2RolesID[0] < A2RolesID ) ) )
             {
-               A8RolesID = T00037_A8RolesID[0];
-               AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
-               RcdFound3 = 1;
+               A2RolesID = T00029_A2RolesID[0];
+               AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+               RcdFound2 = 1;
             }
          }
-         pr_default.close(5);
+         pr_default.close(7);
       }
 
       protected void btn_enter( )
       {
          nKeyPressed = 1;
-         GetKey033( ) ;
+         GetKey022( ) ;
          if ( IsIns( ) )
          {
             /* Insert record */
             GX_FocusControl = edtRolesName_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-            Insert033( ) ;
+            Insert022( ) ;
             if ( AnyError == 1 )
             {
                GX_FocusControl = "";
@@ -936,12 +1106,12 @@ namespace GeneXus.Programs {
          }
          else
          {
-            if ( RcdFound3 == 1 )
+            if ( RcdFound2 == 1 )
             {
-               if ( A8RolesID != Z8RolesID )
+               if ( A2RolesID != Z2RolesID )
                {
-                  A8RolesID = Z8RolesID;
-                  AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
+                  A2RolesID = Z2RolesID;
+                  AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
                   GX_msglist.addItem(context.GetMessage( "GXM_getbeforeupd", ""), "CandidateKeyNotFound", 1, "ROLESID");
                   AnyError = 1;
                   GX_FocusControl = edtRolesID_Internalname;
@@ -957,19 +1127,19 @@ namespace GeneXus.Programs {
                else
                {
                   /* Update record */
-                  Update033( ) ;
+                  Update022( ) ;
                   GX_FocusControl = edtRolesName_Internalname;
                   AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
                }
             }
             else
             {
-               if ( A8RolesID != Z8RolesID )
+               if ( A2RolesID != Z2RolesID )
                {
                   /* Insert record */
                   GX_FocusControl = edtRolesName_Internalname;
                   AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-                  Insert033( ) ;
+                  Insert022( ) ;
                   if ( AnyError == 1 )
                   {
                      GX_FocusControl = "";
@@ -990,7 +1160,7 @@ namespace GeneXus.Programs {
                      /* Insert record */
                      GX_FocusControl = edtRolesName_Internalname;
                      AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-                     Insert033( ) ;
+                     Insert022( ) ;
                      if ( AnyError == 1 )
                      {
                         GX_FocusControl = "";
@@ -1012,10 +1182,10 @@ namespace GeneXus.Programs {
 
       protected void btn_delete( )
       {
-         if ( A8RolesID != Z8RolesID )
+         if ( A2RolesID != Z2RolesID )
          {
-            A8RolesID = Z8RolesID;
-            AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
+            A2RolesID = Z2RolesID;
+            AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
             GX_msglist.addItem(context.GetMessage( "GXM_getbeforedlt", ""), 1, "ROLESID");
             AnyError = 1;
             GX_FocusControl = edtRolesID_Internalname;
@@ -1033,25 +1203,31 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void CheckOptimisticConcurrency033( )
+      protected void CheckOptimisticConcurrency022( )
       {
          if ( ! IsIns( ) )
          {
-            /* Using cursor T00032 */
-            pr_default.execute(0, new Object[] {A8RolesID});
+            /* Using cursor T00022 */
+            pr_default.execute(0, new Object[] {A2RolesID});
             if ( (pr_default.getStatus(0) == 103) )
             {
                GX_msglist.addItem(context.GetMessage( "GXM_lock", new   object[]  {"Roles"}), "RecordIsLocked", 1, "");
                AnyError = 1;
                return  ;
             }
-            if ( (pr_default.getStatus(0) == 101) || ( StringUtil.StrCmp(Z9RolesName, T00032_A9RolesName[0]) != 0 ) )
+            if ( (pr_default.getStatus(0) == 101) || ( StringUtil.StrCmp(Z15RolesName, T00022_A15RolesName[0]) != 0 ) || ( Z3ModulosID != T00022_A3ModulosID[0] ) )
             {
-               if ( StringUtil.StrCmp(Z9RolesName, T00032_A9RolesName[0]) != 0 )
+               if ( StringUtil.StrCmp(Z15RolesName, T00022_A15RolesName[0]) != 0 )
                {
                   GXUtil.WriteLog("roles:[seudo value changed for attri]"+"RolesName");
-                  GXUtil.WriteLogRaw("Old: ",Z9RolesName);
-                  GXUtil.WriteLogRaw("Current: ",T00032_A9RolesName[0]);
+                  GXUtil.WriteLogRaw("Old: ",Z15RolesName);
+                  GXUtil.WriteLogRaw("Current: ",T00022_A15RolesName[0]);
+               }
+               if ( Z3ModulosID != T00022_A3ModulosID[0] )
+               {
+                  GXUtil.WriteLog("roles:[seudo value changed for attri]"+"ModulosID");
+                  GXUtil.WriteLogRaw("Old: ",Z3ModulosID);
+                  GXUtil.WriteLogRaw("Current: ",T00022_A3ModulosID[0]);
                }
                GX_msglist.addItem(context.GetMessage( "GXM_waschg", new   object[]  {"Roles"}), "RecordWasChanged", 1, "");
                AnyError = 1;
@@ -1060,30 +1236,30 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void Insert033( )
+      protected void Insert022( )
       {
-         BeforeValidate033( ) ;
+         BeforeValidate022( ) ;
          if ( AnyError == 0 )
          {
-            CheckExtendedTable033( ) ;
+            CheckExtendedTable022( ) ;
          }
          if ( AnyError == 0 )
          {
-            ZM033( 0) ;
-            CheckOptimisticConcurrency033( ) ;
+            ZM022( 0) ;
+            CheckOptimisticConcurrency022( ) ;
             if ( AnyError == 0 )
             {
-               AfterConfirm033( ) ;
+               AfterConfirm022( ) ;
                if ( AnyError == 0 )
                {
-                  BeforeInsert033( ) ;
+                  BeforeInsert022( ) ;
                   if ( AnyError == 0 )
                   {
-                     /* Using cursor T00038 */
-                     pr_default.execute(6, new Object[] {A9RolesName});
-                     A8RolesID = T00038_A8RolesID[0];
-                     AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
-                     pr_default.close(6);
+                     /* Using cursor T000210 */
+                     pr_default.execute(8, new Object[] {A15RolesName, A3ModulosID});
+                     A2RolesID = T000210_A2RolesID[0];
+                     AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+                     pr_default.close(8);
                      dsDefault.SmartCacheProvider.SetUpdated("Roles") ;
                      if ( AnyError == 0 )
                      {
@@ -1093,7 +1269,7 @@ namespace GeneXus.Programs {
                         {
                            /* Save values for previous() function. */
                            GX_msglist.addItem(context.GetMessage( "GXM_sucadded", ""), "SuccessfullyAdded", 0, "", true);
-                           ResetCaption030( ) ;
+                           ResetCaption020( ) ;
                         }
                      }
                   }
@@ -1106,41 +1282,41 @@ namespace GeneXus.Programs {
             }
             else
             {
-               Load033( ) ;
+               Load022( ) ;
             }
-            EndLevel033( ) ;
+            EndLevel022( ) ;
          }
-         CloseExtendedTableCursors033( ) ;
+         CloseExtendedTableCursors022( ) ;
       }
 
-      protected void Update033( )
+      protected void Update022( )
       {
-         BeforeValidate033( ) ;
+         BeforeValidate022( ) ;
          if ( AnyError == 0 )
          {
-            CheckExtendedTable033( ) ;
+            CheckExtendedTable022( ) ;
          }
          if ( AnyError == 0 )
          {
-            CheckOptimisticConcurrency033( ) ;
+            CheckOptimisticConcurrency022( ) ;
             if ( AnyError == 0 )
             {
-               AfterConfirm033( ) ;
+               AfterConfirm022( ) ;
                if ( AnyError == 0 )
                {
-                  BeforeUpdate033( ) ;
+                  BeforeUpdate022( ) ;
                   if ( AnyError == 0 )
                   {
-                     /* Using cursor T00039 */
-                     pr_default.execute(7, new Object[] {A9RolesName, A8RolesID});
-                     pr_default.close(7);
+                     /* Using cursor T000211 */
+                     pr_default.execute(9, new Object[] {A15RolesName, A3ModulosID, A2RolesID});
+                     pr_default.close(9);
                      dsDefault.SmartCacheProvider.SetUpdated("Roles") ;
-                     if ( (pr_default.getStatus(7) == 103) )
+                     if ( (pr_default.getStatus(9) == 103) )
                      {
                         GX_msglist.addItem(context.GetMessage( "GXM_lock", new   object[]  {"Roles"}), "RecordIsLocked", 1, "");
                         AnyError = 1;
                      }
-                     DeferredUpdate033( ) ;
+                     DeferredUpdate022( ) ;
                      if ( AnyError == 0 )
                      {
                         /* Start of After( update) rules */
@@ -1164,35 +1340,35 @@ namespace GeneXus.Programs {
                   }
                }
             }
-            EndLevel033( ) ;
+            EndLevel022( ) ;
          }
-         CloseExtendedTableCursors033( ) ;
+         CloseExtendedTableCursors022( ) ;
       }
 
-      protected void DeferredUpdate033( )
+      protected void DeferredUpdate022( )
       {
       }
 
       protected void delete( )
       {
-         BeforeValidate033( ) ;
+         BeforeValidate022( ) ;
          if ( AnyError == 0 )
          {
-            CheckOptimisticConcurrency033( ) ;
+            CheckOptimisticConcurrency022( ) ;
          }
          if ( AnyError == 0 )
          {
-            OnDeleteControls033( ) ;
-            AfterConfirm033( ) ;
+            OnDeleteControls022( ) ;
+            AfterConfirm022( ) ;
             if ( AnyError == 0 )
             {
-               BeforeDelete033( ) ;
+               BeforeDelete022( ) ;
                if ( AnyError == 0 )
                {
                   /* No cascading delete specified. */
-                  /* Using cursor T000310 */
-                  pr_default.execute(8, new Object[] {A8RolesID});
-                  pr_default.close(8);
+                  /* Using cursor T000212 */
+                  pr_default.execute(10, new Object[] {A2RolesID});
+                  pr_default.close(10);
                   dsDefault.SmartCacheProvider.SetUpdated("Roles") ;
                   if ( AnyError == 0 )
                   {
@@ -1217,39 +1393,44 @@ namespace GeneXus.Programs {
                }
             }
          }
-         sMode3 = Gx_mode;
+         sMode2 = Gx_mode;
          Gx_mode = "DLT";
          AssignAttri("", false, "Gx_mode", Gx_mode);
          AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
-         EndLevel033( ) ;
-         Gx_mode = sMode3;
+         EndLevel022( ) ;
+         Gx_mode = sMode2;
          AssignAttri("", false, "Gx_mode", Gx_mode);
          AssignAttri("", false, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
       }
 
-      protected void OnDeleteControls033( )
+      protected void OnDeleteControls022( )
       {
          standaloneModal( ) ;
          if ( AnyError == 0 )
          {
             /* Delete mode formulas */
-            AV11Pgmname = "Roles";
-            AssignAttri("", false, "AV11Pgmname", AV11Pgmname);
+            AV13Pgmname = "Roles";
+            AssignAttri("", false, "AV13Pgmname", AV13Pgmname);
+            /* Using cursor T000213 */
+            pr_default.execute(11, new Object[] {A3ModulosID});
+            A18ModulosName = T000213_A18ModulosName[0];
+            AssignAttri("", false, "A18ModulosName", A18ModulosName);
+            pr_default.close(11);
          }
          if ( AnyError == 0 )
          {
-            /* Using cursor T000311 */
-            pr_default.execute(9, new Object[] {A8RolesID});
-            if ( (pr_default.getStatus(9) != 101) )
+            /* Using cursor T000214 */
+            pr_default.execute(12, new Object[] {A2RolesID});
+            if ( (pr_default.getStatus(12) != 101) )
             {
-               GX_msglist.addItem(context.GetMessage( "GXM_del", new   object[]  {"Usuario"}), "CannotDeleteReferencedRecord", 1, "");
+               GX_msglist.addItem(context.GetMessage( "GXM_del", new   object[]  {context.GetMessage( "Usuario", "")}), "CannotDeleteReferencedRecord", 1, "");
                AnyError = 1;
             }
-            pr_default.close(9);
+            pr_default.close(12);
          }
       }
 
-      protected void EndLevel033( )
+      protected void EndLevel022( )
       {
          if ( ! IsIns( ) )
          {
@@ -1257,15 +1438,16 @@ namespace GeneXus.Programs {
          }
          if ( AnyError == 0 )
          {
-            BeforeComplete033( ) ;
+            BeforeComplete022( ) ;
          }
          if ( AnyError == 0 )
          {
             pr_default.close(1);
+            pr_default.close(11);
             context.CommitDataStores("roles",pr_default);
             if ( AnyError == 0 )
             {
-               ConfirmValues030( ) ;
+               ConfirmValues020( ) ;
             }
             /* After transaction rules */
             /* Execute 'After Trn' event if defined. */
@@ -1274,6 +1456,7 @@ namespace GeneXus.Programs {
          else
          {
             pr_default.close(1);
+            pr_default.close(11);
             context.RollbackDataStores("roles",pr_default);
          }
          IsModified = 0;
@@ -1284,78 +1467,82 @@ namespace GeneXus.Programs {
          }
       }
 
-      public void ScanStart033( )
+      public void ScanStart022( )
       {
          /* Scan By routine */
-         /* Using cursor T000312 */
-         pr_default.execute(10);
-         RcdFound3 = 0;
-         if ( (pr_default.getStatus(10) != 101) )
+         /* Using cursor T000215 */
+         pr_default.execute(13);
+         RcdFound2 = 0;
+         if ( (pr_default.getStatus(13) != 101) )
          {
-            RcdFound3 = 1;
-            A8RolesID = T000312_A8RolesID[0];
-            AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
+            RcdFound2 = 1;
+            A2RolesID = T000215_A2RolesID[0];
+            AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
          }
          /* Load Subordinate Levels */
       }
 
-      protected void ScanNext033( )
+      protected void ScanNext022( )
       {
          /* Scan next routine */
-         pr_default.readNext(10);
-         RcdFound3 = 0;
-         if ( (pr_default.getStatus(10) != 101) )
+         pr_default.readNext(13);
+         RcdFound2 = 0;
+         if ( (pr_default.getStatus(13) != 101) )
          {
-            RcdFound3 = 1;
-            A8RolesID = T000312_A8RolesID[0];
-            AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
+            RcdFound2 = 1;
+            A2RolesID = T000215_A2RolesID[0];
+            AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
          }
       }
 
-      protected void ScanEnd033( )
+      protected void ScanEnd022( )
       {
-         pr_default.close(10);
+         pr_default.close(13);
       }
 
-      protected void AfterConfirm033( )
+      protected void AfterConfirm022( )
       {
          /* After Confirm Rules */
       }
 
-      protected void BeforeInsert033( )
+      protected void BeforeInsert022( )
       {
          /* Before Insert Rules */
       }
 
-      protected void BeforeUpdate033( )
+      protected void BeforeUpdate022( )
       {
          /* Before Update Rules */
       }
 
-      protected void BeforeDelete033( )
+      protected void BeforeDelete022( )
       {
          /* Before Delete Rules */
       }
 
-      protected void BeforeComplete033( )
+      protected void BeforeComplete022( )
       {
          /* Before Complete Rules */
       }
 
-      protected void BeforeValidate033( )
+      protected void BeforeValidate022( )
       {
          /* Before Validate Rules */
       }
 
-      protected void DisableAttributes033( )
+      protected void DisableAttributes022( )
       {
          edtRolesID_Enabled = 0;
          AssignProp("", false, edtRolesID_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtRolesID_Enabled), 5, 0), true);
          edtRolesName_Enabled = 0;
          AssignProp("", false, edtRolesName_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtRolesName_Enabled), 5, 0), true);
+         edtModulosID_Enabled = 0;
+         AssignProp("", false, edtModulosID_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtModulosID_Enabled), 5, 0), true);
+         edtModulosName_Enabled = 0;
+         AssignProp("", false, edtModulosName_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtModulosName_Enabled), 5, 0), true);
       }
 
-      protected void send_integrity_lvl_hashes033( )
+      protected void send_integrity_lvl_hashes022( )
       {
       }
 
@@ -1363,7 +1550,7 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void ConfirmValues030( )
+      protected void ConfirmValues020( )
       {
       }
 
@@ -1397,7 +1584,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202032221241", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20208242114458", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1419,7 +1606,7 @@ namespace GeneXus.Programs {
          context.WriteHtmlText( " "+"class=\"form-horizontal Form\""+" "+ "style='"+bodyStyle+"'") ;
          context.WriteHtmlText( FormProcess+">") ;
          context.skipLines(1);
-         context.WriteHtmlTextNl( "<form id=\"MAINFORM\" autocomplete=\"off\" name=\"MAINFORM\" method=\"post\" tabindex=-1  class=\"form-horizontal Form\" data-gx-class=\"form-horizontal Form\" novalidate action=\""+formatLink("roles.aspx") + "?" + UrlEncode(StringUtil.RTrim(Gx_mode)) + "," + UrlEncode("" +AV7RolesID)+"\">") ;
+         context.WriteHtmlTextNl( "<form id=\"MAINFORM\" autocomplete=\"off\" name=\"MAINFORM\" method=\"post\" tabindex=-1  class=\"form-horizontal Form\" data-gx-class=\"form-horizontal Form\" novalidate action=\""+formatLink("roles.aspx") + "?" + UrlEncode(StringUtil.RTrim(Gx_mode)) + "," + UrlEncode("" +AV12RolesID)+"\">") ;
          GxWebStd.gx_hidden_field( context, "_EventName", "");
          GxWebStd.gx_hidden_field( context, "_EventGridId", "");
          GxWebStd.gx_hidden_field( context, "_EventRowId", "");
@@ -1437,7 +1624,7 @@ namespace GeneXus.Programs {
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
          forbiddenHiddens = new GXProperties();
          forbiddenHiddens.Add("hshsalt", "hsh"+"Roles");
-         forbiddenHiddens.Add("RolesID", context.localUtil.Format( (decimal)(A8RolesID), "ZZZ9"));
+         forbiddenHiddens.Add("RolesID", context.localUtil.Format( (decimal)(A2RolesID), "ZZZ9"));
          forbiddenHiddens.Add("Gx_mode", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")));
          GxWebStd.gx_hidden_field( context, "hsh", GetEncryptedHash( forbiddenHiddens.ToString(), GXKey));
          GXUtil.WriteLog("roles:[ SendSecurityCheck value for]"+forbiddenHiddens.ToJSonString());
@@ -1448,24 +1635,27 @@ namespace GeneXus.Programs {
          /* Send hidden variables. */
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
-         GxWebStd.gx_hidden_field( context, "Z8RolesID", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z8RolesID), 4, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "Z9RolesName", StringUtil.RTrim( Z9RolesName));
-         GxWebStd.gx_hidden_field( context, "IsConfirmed", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsConfirmed), 4, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "IsModified", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsModified), 4, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "Z2RolesID", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z2RolesID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "Z15RolesName", StringUtil.RTrim( Z15RolesName));
+         GxWebStd.gx_hidden_field( context, "Z3ModulosID", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z3ModulosID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "IsConfirmed", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsConfirmed), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "IsModified", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsModified), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
          GxWebStd.gx_hidden_field( context, "Mode", StringUtil.RTrim( Gx_mode));
          GxWebStd.gx_hidden_field( context, "gxhash_Mode", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
+         GxWebStd.gx_hidden_field( context, "N3ModulosID", StringUtil.LTrim( StringUtil.NToC( (decimal)(A3ModulosID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
          if ( context.isAjaxRequest( ) )
          {
-            context.httpAjaxContext.ajax_rsp_assign_sdt_attri("", false, "vTRNCONTEXT", AV9TrnContext);
+            context.httpAjaxContext.ajax_rsp_assign_sdt_attri("", false, "vTRNCONTEXT", AV8TrnContext);
          }
          else
          {
-            context.httpAjaxContext.ajax_rsp_assign_hidden_sdt("vTRNCONTEXT", AV9TrnContext);
+            context.httpAjaxContext.ajax_rsp_assign_hidden_sdt("vTRNCONTEXT", AV8TrnContext);
          }
-         GxWebStd.gx_hidden_field( context, "gxhash_vTRNCONTEXT", GetSecureSignedToken( "", AV9TrnContext, context));
-         GxWebStd.gx_hidden_field( context, "vROLESID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV7RolesID), 4, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "gxhash_vROLESID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(AV7RolesID), "ZZZ9"), context));
-         GxWebStd.gx_hidden_field( context, "vPGMNAME", StringUtil.RTrim( AV11Pgmname));
+         GxWebStd.gx_hidden_field( context, "gxhash_vTRNCONTEXT", GetSecureSignedToken( "", AV8TrnContext, context));
+         GxWebStd.gx_hidden_field( context, "vROLESID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV12RolesID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "gxhash_vROLESID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(AV12RolesID), "ZZZ9"), context));
+         GxWebStd.gx_hidden_field( context, "vINSERT_MODULOSID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV10Insert_ModulosID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "vPGMNAME", StringUtil.RTrim( AV13Pgmname));
          GxWebStd.gx_hidden_field( context, "vMODE", StringUtil.RTrim( Gx_mode));
          GxWebStd.gx_hidden_field( context, "gxhash_vMODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")), context));
       }
@@ -1489,6 +1679,18 @@ namespace GeneXus.Programs {
             enableOutput();
          }
          include_jscripts( ) ;
+         context.WriteHtmlText( "<script type=\"text/javascript\">") ;
+         context.WriteHtmlText( "gx.setLanguageCode(\""+context.GetLanguageProperty( "code")+"\");") ;
+         if ( ! context.isSpaRequest( ) )
+         {
+            context.WriteHtmlText( "gx.setDateFormat(\""+context.GetLanguageProperty( "date_fmt")+"\");") ;
+            context.WriteHtmlText( "gx.setTimeFormat("+context.GetLanguageProperty( "time_fmt")+");") ;
+            context.WriteHtmlText( "gx.setCenturyFirstYear("+40+");") ;
+            context.WriteHtmlText( "gx.setDecimalPoint(\""+context.GetLanguageProperty( "decimal_point")+"\");") ;
+            context.WriteHtmlText( "gx.setThousandSeparator(\""+context.GetLanguageProperty( "thousand_sep")+"\");") ;
+            context.WriteHtmlText( "gx.StorageTimeZone = "+1+";") ;
+         }
+         context.WriteHtmlText( "</script>") ;
       }
 
       public override short ExecuteStartEvent( )
@@ -1524,7 +1726,7 @@ namespace GeneXus.Programs {
 
       public override String GetSelfLink( )
       {
-         return formatLink("roles.aspx") + "?" + UrlEncode(StringUtil.RTrim(Gx_mode)) + "," + UrlEncode("" +AV7RolesID) ;
+         return formatLink("roles.aspx") + "?" + UrlEncode(StringUtil.RTrim(Gx_mode)) + "," + UrlEncode("" +AV12RolesID) ;
       }
 
       public override String GetPgmname( )
@@ -1534,21 +1736,26 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Roles" ;
+         return context.GetMessage( "Roles", "") ;
       }
 
-      protected void InitializeNonKey033( )
+      protected void InitializeNonKey022( )
       {
-         A9RolesName = "";
-         AssignAttri("", false, "A9RolesName", A9RolesName);
-         Z9RolesName = "";
+         A3ModulosID = 0;
+         AssignAttri("", false, "A3ModulosID", StringUtil.LTrimStr( (decimal)(A3ModulosID), 4, 0));
+         A15RolesName = "";
+         AssignAttri("", false, "A15RolesName", A15RolesName);
+         A18ModulosName = "";
+         AssignAttri("", false, "A18ModulosName", A18ModulosName);
+         Z15RolesName = "";
+         Z3ModulosID = 0;
       }
 
-      protected void InitAll033( )
+      protected void InitAll022( )
       {
-         A8RolesID = 0;
-         AssignAttri("", false, "A8RolesID", StringUtil.LTrimStr( (decimal)(A8RolesID), 4, 0));
-         InitializeNonKey033( ) ;
+         A2RolesID = 0;
+         AssignAttri("", false, "A2RolesID", StringUtil.LTrimStr( (decimal)(A2RolesID), 4, 0));
+         InitializeNonKey022( ) ;
       }
 
       protected void StandaloneModalInsert( )
@@ -1566,7 +1773,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202032221245", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202082421144512", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1581,8 +1788,8 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("roles.js", "?202032221245", false, true);
+         context.AddJavascriptSource("messages."+context.GetLanguageProperty( "code")+".js", "?"+GetCacheInvalidationToken( ), false, true);
+         context.AddJavascriptSource("roles.js", "?202082421144512", false, true);
          /* End function include_jscripts */
       }
 
@@ -1598,17 +1805,20 @@ namespace GeneXus.Programs {
          divToolbarcell_Internalname = "TOOLBARCELL";
          edtRolesID_Internalname = "ROLESID";
          edtRolesName_Internalname = "ROLESNAME";
+         edtModulosID_Internalname = "MODULOSID";
+         edtModulosName_Internalname = "MODULOSNAME";
          divFormcontainer_Internalname = "FORMCONTAINER";
          bttBtn_enter_Internalname = "BTN_ENTER";
          bttBtn_cancel_Internalname = "BTN_CANCEL";
          bttBtn_delete_Internalname = "BTN_DELETE";
+         bttAtras_Internalname = "ATRAS";
          divMaintable_Internalname = "MAINTABLE";
          Form.Internalname = "FORM";
       }
 
       public override void initialize_properties( )
       {
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
          if ( context.isSpaRequest( ) )
          {
             disableJsOutput();
@@ -1618,12 +1828,17 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Roles";
+         Form.Caption = context.GetMessage( "Roles", "");
+         bttAtras_Visible = 1;
          bttBtn_delete_Enabled = 0;
          bttBtn_delete_Visible = 1;
          bttBtn_cancel_Visible = 1;
          bttBtn_enter_Enabled = 1;
          bttBtn_enter_Visible = 1;
+         edtModulosName_Jsonclick = "";
+         edtModulosName_Enabled = 0;
+         edtModulosID_Jsonclick = "";
+         edtModulosID_Enabled = 1;
          edtRolesName_Jsonclick = "";
          edtRolesName_Enabled = 1;
          edtRolesID_Jsonclick = "";
@@ -1670,6 +1885,23 @@ namespace GeneXus.Programs {
          return ((StringUtil.StrCmp(Gx_mode, "DSP")==0) ? true : false) ;
       }
 
+      public void Valid_Modulosid( )
+      {
+         /* Using cursor T000213 */
+         pr_default.execute(11, new Object[] {A3ModulosID});
+         if ( (pr_default.getStatus(11) == 101) )
+         {
+            GX_msglist.addItem(StringUtil.Format( context.GetMessage( "GXSPC_ForeignKeyNotFound", ""), context.GetMessage( "Modulos", ""), "", "", "", "", "", "", "", ""), "ForeignKeyNotFound", 1, "MODULOSID");
+            AnyError = 1;
+            GX_FocusControl = edtModulosID_Internalname;
+         }
+         A18ModulosName = T000213_A18ModulosName[0];
+         pr_default.close(11);
+         dynload_actions( ) ;
+         /*  Sending validation outputs */
+         AssignAttri("", false, "A18ModulosName", StringUtil.RTrim( A18ModulosName));
+      }
+
       public override bool SupportAjaxEvent( )
       {
          return true ;
@@ -1677,16 +1909,20 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("ENTER","{handler:'UserMainFullajax',iparms:[{postForm:true},{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV7RolesID',fld:'vROLESID',pic:'ZZZ9',hsh:true}]");
+         setEventMetadata("ENTER","{handler:'UserMainFullajax',iparms:[{postForm:true},{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV12RolesID',fld:'vROLESID',pic:'ZZZ9',hsh:true}]");
          setEventMetadata("ENTER",",oparms:[]}");
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV9TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true},{av:'AV7RolesID',fld:'vROLESID',pic:'ZZZ9',hsh:true},{av:'A8RolesID',fld:'ROLESID',pic:'ZZZ9'}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV8TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true},{av:'AV12RolesID',fld:'vROLESID',pic:'ZZZ9',hsh:true},{av:'A2RolesID',fld:'ROLESID',pic:'ZZZ9'}]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("AFTER TRN","{handler:'E12032',iparms:[{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV9TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true}]");
+         setEventMetadata("AFTER TRN","{handler:'E13022',iparms:[{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV8TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true}]");
          setEventMetadata("AFTER TRN",",oparms:[]}");
+         setEventMetadata("'ATRAS'","{handler:'E11022',iparms:[]");
+         setEventMetadata("'ATRAS'",",oparms:[]}");
          setEventMetadata("VALID_ROLESID","{handler:'Valid_Rolesid',iparms:[]");
          setEventMetadata("VALID_ROLESID",",oparms:[]}");
          setEventMetadata("VALID_ROLESNAME","{handler:'Valid_Rolesname',iparms:[]");
          setEventMetadata("VALID_ROLESNAME",",oparms:[]}");
+         setEventMetadata("VALID_MODULOSID","{handler:'Valid_Modulosid',iparms:[{av:'A3ModulosID',fld:'MODULOSID',pic:'ZZZ9'},{av:'A18ModulosName',fld:'MODULOSNAME',pic:''}]");
+         setEventMetadata("VALID_MODULOSID",",oparms:[{av:'A18ModulosName',fld:'MODULOSNAME',pic:''}]}");
          return  ;
       }
 
@@ -1703,13 +1939,14 @@ namespace GeneXus.Programs {
       protected void CloseOpenCursors( )
       {
          pr_default.close(1);
+         pr_default.close(11);
       }
 
       public override void initialize( )
       {
          sPrefix = "";
          wcpOGx_mode = "";
-         Z9RolesName = "";
+         Z15RolesName = "";
          scmdbuf = "";
          gxfirstwebparm = "";
          gxfirstwebparm_bkp = "";
@@ -1727,88 +1964,112 @@ namespace GeneXus.Programs {
          bttBtn_next_Jsonclick = "";
          bttBtn_last_Jsonclick = "";
          bttBtn_select_Jsonclick = "";
-         A9RolesName = "";
+         A15RolesName = "";
+         A18ModulosName = "";
          bttBtn_enter_Jsonclick = "";
          bttBtn_cancel_Jsonclick = "";
          bttBtn_delete_Jsonclick = "";
-         AV11Pgmname = "";
+         bttAtras_Jsonclick = "";
+         AV13Pgmname = "";
          forbiddenHiddens = new GXProperties();
          hsh = "";
-         sMode3 = "";
+         sMode2 = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
-         AV9TrnContext = new SdtTransactionContext(context);
-         AV10WebSession = context.GetSession();
-         T00034_A8RolesID = new short[1] ;
-         T00034_A9RolesName = new String[] {""} ;
-         T00035_A8RolesID = new short[1] ;
-         T00033_A8RolesID = new short[1] ;
-         T00033_A9RolesName = new String[] {""} ;
-         T00036_A8RolesID = new short[1] ;
-         T00037_A8RolesID = new short[1] ;
-         T00032_A8RolesID = new short[1] ;
-         T00032_A9RolesName = new String[] {""} ;
-         T00038_A8RolesID = new short[1] ;
-         T000311_A1UsuarioID = new short[1] ;
-         T000312_A8RolesID = new short[1] ;
+         AV8TrnContext = new SdtTransactionContext(context);
+         AV9WebSession = context.GetSession();
+         AV11TrnContextAtt = new SdtTransactionContext_Attribute(context);
+         Z18ModulosName = "";
+         T00024_A18ModulosName = new String[] {""} ;
+         T00025_A2RolesID = new short[1] ;
+         T00025_A15RolesName = new String[] {""} ;
+         T00025_A18ModulosName = new String[] {""} ;
+         T00025_A3ModulosID = new short[1] ;
+         T00026_A18ModulosName = new String[] {""} ;
+         T00027_A2RolesID = new short[1] ;
+         T00023_A2RolesID = new short[1] ;
+         T00023_A15RolesName = new String[] {""} ;
+         T00023_A3ModulosID = new short[1] ;
+         T00028_A2RolesID = new short[1] ;
+         T00029_A2RolesID = new short[1] ;
+         T00022_A2RolesID = new short[1] ;
+         T00022_A15RolesName = new String[] {""} ;
+         T00022_A3ModulosID = new short[1] ;
+         T000210_A2RolesID = new short[1] ;
+         T000213_A18ModulosName = new String[] {""} ;
+         T000214_A1UsuarioID = new short[1] ;
+         T000215_A2RolesID = new short[1] ;
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.roles__default(),
             new Object[][] {
                 new Object[] {
-               T00032_A8RolesID, T00032_A9RolesName
+               T00022_A2RolesID, T00022_A15RolesName, T00022_A3ModulosID
                }
                , new Object[] {
-               T00033_A8RolesID, T00033_A9RolesName
+               T00023_A2RolesID, T00023_A15RolesName, T00023_A3ModulosID
                }
                , new Object[] {
-               T00034_A8RolesID, T00034_A9RolesName
+               T00024_A18ModulosName
                }
                , new Object[] {
-               T00035_A8RolesID
+               T00025_A2RolesID, T00025_A15RolesName, T00025_A18ModulosName, T00025_A3ModulosID
                }
                , new Object[] {
-               T00036_A8RolesID
+               T00026_A18ModulosName
                }
                , new Object[] {
-               T00037_A8RolesID
+               T00027_A2RolesID
                }
                , new Object[] {
-               T00038_A8RolesID
+               T00028_A2RolesID
+               }
+               , new Object[] {
+               T00029_A2RolesID
+               }
+               , new Object[] {
+               T000210_A2RolesID
                }
                , new Object[] {
                }
                , new Object[] {
                }
                , new Object[] {
-               T000311_A1UsuarioID
+               T000213_A18ModulosName
                }
                , new Object[] {
-               T000312_A8RolesID
+               T000214_A1UsuarioID
+               }
+               , new Object[] {
+               T000215_A2RolesID
                }
             }
          );
-         AV11Pgmname = "Roles";
+         AV13Pgmname = "Roles";
       }
 
-      private short wcpOAV7RolesID ;
-      private short Z8RolesID ;
+      private short wcpOAV12RolesID ;
+      private short Z2RolesID ;
+      private short Z3ModulosID ;
+      private short N3ModulosID ;
       private short GxWebError ;
-      private short AV7RolesID ;
+      private short A3ModulosID ;
+      private short AV12RolesID ;
       private short gxcookieaux ;
       private short IsConfirmed ;
       private short IsModified ;
       private short AnyError ;
       private short nKeyPressed ;
       private short initialized ;
-      private short A8RolesID ;
-      private short RcdFound3 ;
+      private short A2RolesID ;
+      private short AV10Insert_ModulosID ;
+      private short RcdFound2 ;
       private short GX_JID ;
-      private short nIsDirty_3 ;
       private short Gx_BScreen ;
+      private short nIsDirty_2 ;
       private short gxajaxcallmode ;
       private int trnEnded ;
       private int bttBtn_first_Visible ;
@@ -1818,15 +2079,19 @@ namespace GeneXus.Programs {
       private int bttBtn_select_Visible ;
       private int edtRolesID_Enabled ;
       private int edtRolesName_Enabled ;
+      private int edtModulosID_Enabled ;
+      private int edtModulosName_Enabled ;
       private int bttBtn_enter_Visible ;
       private int bttBtn_enter_Enabled ;
       private int bttBtn_cancel_Visible ;
       private int bttBtn_delete_Visible ;
       private int bttBtn_delete_Enabled ;
+      private int bttAtras_Visible ;
+      private int AV14GXV1 ;
       private int idxLst ;
       private String sPrefix ;
       private String wcpOGx_mode ;
-      private String Z9RolesName ;
+      private String Z15RolesName ;
       private String scmdbuf ;
       private String gxfirstwebparm ;
       private String gxfirstwebparm_bkp ;
@@ -1857,21 +2122,29 @@ namespace GeneXus.Programs {
       private String bttBtn_select_Jsonclick ;
       private String edtRolesID_Internalname ;
       private String edtRolesID_Jsonclick ;
-      private String A9RolesName ;
+      private String A15RolesName ;
       private String edtRolesName_Jsonclick ;
+      private String edtModulosID_Internalname ;
+      private String edtModulosID_Jsonclick ;
+      private String edtModulosName_Internalname ;
+      private String A18ModulosName ;
+      private String edtModulosName_Jsonclick ;
       private String bttBtn_enter_Internalname ;
       private String bttBtn_enter_Jsonclick ;
       private String bttBtn_cancel_Internalname ;
       private String bttBtn_cancel_Jsonclick ;
       private String bttBtn_delete_Internalname ;
       private String bttBtn_delete_Jsonclick ;
-      private String AV11Pgmname ;
+      private String bttAtras_Internalname ;
+      private String bttAtras_Jsonclick ;
+      private String AV13Pgmname ;
       private String hsh ;
-      private String sMode3 ;
+      private String sMode2 ;
       private String sEvt ;
       private String EvtGridId ;
       private String EvtRowId ;
       private String sEvtType ;
+      private String Z18ModulosName ;
       private String sDynURL ;
       private String FormProcess ;
       private String bodyStyle ;
@@ -1879,24 +2152,32 @@ namespace GeneXus.Programs {
       private bool toggleJsOutput ;
       private bool wbErr ;
       private bool returnInSub ;
-      private IGxSession AV10WebSession ;
+      private IGxSession AV9WebSession ;
       private GXProperties forbiddenHiddens ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private short[] T00034_A8RolesID ;
-      private String[] T00034_A9RolesName ;
-      private short[] T00035_A8RolesID ;
-      private short[] T00033_A8RolesID ;
-      private String[] T00033_A9RolesName ;
-      private short[] T00036_A8RolesID ;
-      private short[] T00037_A8RolesID ;
-      private short[] T00032_A8RolesID ;
-      private String[] T00032_A9RolesName ;
-      private short[] T00038_A8RolesID ;
-      private short[] T000311_A1UsuarioID ;
-      private short[] T000312_A8RolesID ;
+      private String[] T00024_A18ModulosName ;
+      private short[] T00025_A2RolesID ;
+      private String[] T00025_A15RolesName ;
+      private String[] T00025_A18ModulosName ;
+      private short[] T00025_A3ModulosID ;
+      private String[] T00026_A18ModulosName ;
+      private short[] T00027_A2RolesID ;
+      private short[] T00023_A2RolesID ;
+      private String[] T00023_A15RolesName ;
+      private short[] T00023_A3ModulosID ;
+      private short[] T00028_A2RolesID ;
+      private short[] T00029_A2RolesID ;
+      private short[] T00022_A2RolesID ;
+      private String[] T00022_A15RolesName ;
+      private short[] T00022_A3ModulosID ;
+      private short[] T000210_A2RolesID ;
+      private String[] T000213_A18ModulosName ;
+      private short[] T000214_A1UsuarioID ;
+      private short[] T000215_A2RolesID ;
       private GXWebForm Form ;
-      private SdtTransactionContext AV9TrnContext ;
+      private SdtTransactionContext AV8TrnContext ;
+      private SdtTransactionContext_Attribute AV11TrnContextAtt ;
    }
 
    public class roles__default : DataStoreHelperBase, IDataStoreHelper
@@ -1912,10 +2193,13 @@ namespace GeneXus.Programs {
          ,new ForEachCursor(def[4])
          ,new ForEachCursor(def[5])
          ,new ForEachCursor(def[6])
-         ,new UpdateCursor(def[7])
-         ,new UpdateCursor(def[8])
-         ,new ForEachCursor(def[9])
-         ,new ForEachCursor(def[10])
+         ,new ForEachCursor(def[7])
+         ,new ForEachCursor(def[8])
+         ,new UpdateCursor(def[9])
+         ,new UpdateCursor(def[10])
+         ,new ForEachCursor(def[11])
+         ,new ForEachCursor(def[12])
+         ,new ForEachCursor(def[13])
        };
     }
 
@@ -1924,62 +2208,79 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmT00034 ;
-          prmT00034 = new Object[] {
+          Object[] prmT00025 ;
+          prmT00025 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00035 ;
-          prmT00035 = new Object[] {
+          Object[] prmT00024 ;
+          prmT00024 = new Object[] {
+          new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
+          } ;
+          Object[] prmT00026 ;
+          prmT00026 = new Object[] {
+          new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
+          } ;
+          Object[] prmT00027 ;
+          prmT00027 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00033 ;
-          prmT00033 = new Object[] {
+          Object[] prmT00023 ;
+          prmT00023 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00036 ;
-          prmT00036 = new Object[] {
+          Object[] prmT00028 ;
+          prmT00028 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00037 ;
-          prmT00037 = new Object[] {
+          Object[] prmT00029 ;
+          prmT00029 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00032 ;
-          prmT00032 = new Object[] {
+          Object[] prmT00022 ;
+          prmT00022 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT00038 ;
-          prmT00038 = new Object[] {
-          new Object[] {"@RolesName",SqlDbType.NChar,40,0}
-          } ;
-          Object[] prmT00039 ;
-          prmT00039 = new Object[] {
+          Object[] prmT000210 ;
+          prmT000210 = new Object[] {
           new Object[] {"@RolesName",SqlDbType.NChar,40,0} ,
+          new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
+          } ;
+          Object[] prmT000211 ;
+          prmT000211 = new Object[] {
+          new Object[] {"@RolesName",SqlDbType.NChar,40,0} ,
+          new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0} ,
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT000310 ;
-          prmT000310 = new Object[] {
+          Object[] prmT000212 ;
+          prmT000212 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT000311 ;
-          prmT000311 = new Object[] {
+          Object[] prmT000214 ;
+          prmT000214 = new Object[] {
           new Object[] {"@RolesID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmT000312 ;
-          prmT000312 = new Object[] {
+          Object[] prmT000215 ;
+          prmT000215 = new Object[] {
+          } ;
+          Object[] prmT000213 ;
+          prmT000213 = new Object[] {
+          new Object[] {"@ModulosID",SqlDbType.SmallInt,4,0}
           } ;
           def= new CursorDef[] {
-              new CursorDef("T00032", "SELECT [RolesID], [RolesName] FROM [Roles] WITH (UPDLOCK) WHERE [RolesID] = @RolesID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00032,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00033", "SELECT [RolesID], [RolesName] FROM [Roles] WHERE [RolesID] = @RolesID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00033,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00034", "SELECT TM1.[RolesID], TM1.[RolesName] FROM [Roles] TM1 WHERE TM1.[RolesID] = @RolesID ORDER BY TM1.[RolesID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT00034,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00035", "SELECT [RolesID] FROM [Roles] WHERE [RolesID] = @RolesID  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00035,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T00036", "SELECT TOP 1 [RolesID] FROM [Roles] WHERE ( [RolesID] > @RolesID) ORDER BY [RolesID]  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00036,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T00037", "SELECT TOP 1 [RolesID] FROM [Roles] WHERE ( [RolesID] < @RolesID) ORDER BY [RolesID] DESC  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00037,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T00038", "INSERT INTO [Roles]([RolesName]) VALUES(@RolesName); SELECT SCOPE_IDENTITY()", GxErrorMask.GX_NOMASK,prmT00038)
-             ,new CursorDef("T00039", "UPDATE [Roles] SET [RolesName]=@RolesName  WHERE [RolesID] = @RolesID", GxErrorMask.GX_NOMASK,prmT00039)
-             ,new CursorDef("T000310", "DELETE FROM [Roles]  WHERE [RolesID] = @RolesID", GxErrorMask.GX_NOMASK,prmT000310)
-             ,new CursorDef("T000311", "SELECT TOP 1 [UsuarioID] FROM [Usuario] WHERE [RolesID] = @RolesID ",true, GxErrorMask.GX_NOMASK, false, this,prmT000311,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T000312", "SELECT [RolesID] FROM [Roles] ORDER BY [RolesID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000312,100, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("T00022", "SELECT [RolesID], [RolesName], [ModulosID] FROM [Roles] WITH (UPDLOCK) WHERE [RolesID] = @RolesID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00022,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00023", "SELECT [RolesID], [RolesName], [ModulosID] FROM [Roles] WHERE [RolesID] = @RolesID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00023,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00024", "SELECT [ModulosName] FROM [Modulos] WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00024,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00025", "SELECT TM1.[RolesID], TM1.[RolesName], T2.[ModulosName], TM1.[ModulosID] FROM ([Roles] TM1 INNER JOIN [Modulos] T2 ON T2.[ModulosID] = TM1.[ModulosID]) WHERE TM1.[RolesID] = @RolesID ORDER BY TM1.[RolesID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT00025,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00026", "SELECT [ModulosName] FROM [Modulos] WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT00026,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00027", "SELECT [RolesID] FROM [Roles] WHERE [RolesID] = @RolesID  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00027,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T00028", "SELECT TOP 1 [RolesID] FROM [Roles] WHERE ( [RolesID] > @RolesID) ORDER BY [RolesID]  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00028,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T00029", "SELECT TOP 1 [RolesID] FROM [Roles] WHERE ( [RolesID] < @RolesID) ORDER BY [RolesID] DESC  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT00029,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000210", "INSERT INTO [Roles]([RolesName], [ModulosID]) VALUES(@RolesName, @ModulosID); SELECT SCOPE_IDENTITY()", GxErrorMask.GX_NOMASK,prmT000210)
+             ,new CursorDef("T000211", "UPDATE [Roles] SET [RolesName]=@RolesName, [ModulosID]=@ModulosID  WHERE [RolesID] = @RolesID", GxErrorMask.GX_NOMASK,prmT000211)
+             ,new CursorDef("T000212", "DELETE FROM [Roles]  WHERE [RolesID] = @RolesID", GxErrorMask.GX_NOMASK,prmT000212)
+             ,new CursorDef("T000213", "SELECT [ModulosName] FROM [Modulos] WHERE [ModulosID] = @ModulosID ",true, GxErrorMask.GX_NOMASK, false, this,prmT000213,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000214", "SELECT TOP 1 [UsuarioID] FROM [Usuario] WHERE [RolesID] = @RolesID ",true, GxErrorMask.GX_NOMASK, false, this,prmT000214,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000215", "SELECT [RolesID] FROM [Roles] ORDER BY [RolesID]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000215,100, GxCacheFrequency.OFF ,true,false )
           };
        }
     }
@@ -1993,20 +2294,24 @@ namespace GeneXus.Programs {
              case 0 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
+                ((short[]) buf[2])[0] = rslt.getShort(3) ;
                 return;
              case 1 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
+                ((short[]) buf[2])[0] = rslt.getShort(3) ;
                 return;
              case 2 :
-                ((short[]) buf[0])[0] = rslt.getShort(1) ;
-                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
+                ((String[]) buf[0])[0] = rslt.getString(1, 40) ;
                 return;
              case 3 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
+                ((String[]) buf[1])[0] = rslt.getString(2, 40) ;
+                ((String[]) buf[2])[0] = rslt.getString(3, 40) ;
+                ((short[]) buf[3])[0] = rslt.getShort(4) ;
                 return;
              case 4 :
-                ((short[]) buf[0])[0] = rslt.getShort(1) ;
+                ((String[]) buf[0])[0] = rslt.getString(1, 40) ;
                 return;
              case 5 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
@@ -2014,10 +2319,19 @@ namespace GeneXus.Programs {
              case 6 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 return;
-             case 9 :
+             case 7 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 return;
-             case 10 :
+             case 8 :
+                ((short[]) buf[0])[0] = rslt.getShort(1) ;
+                return;
+             case 11 :
+                ((String[]) buf[0])[0] = rslt.getString(1, 40) ;
+                return;
+             case 12 :
+                ((short[]) buf[0])[0] = rslt.getShort(1) ;
+                return;
+             case 13 :
                 ((short[]) buf[0])[0] = rslt.getShort(1) ;
                 return;
        }
@@ -2048,16 +2362,27 @@ namespace GeneXus.Programs {
                 stmt.SetParameter(1, (short)parms[0]);
                 return;
              case 6 :
-                stmt.SetParameter(1, (String)parms[0]);
+                stmt.SetParameter(1, (short)parms[0]);
                 return;
              case 7 :
+                stmt.SetParameter(1, (short)parms[0]);
+                return;
+             case 8 :
                 stmt.SetParameter(1, (String)parms[0]);
                 stmt.SetParameter(2, (short)parms[1]);
                 return;
-             case 8 :
+             case 9 :
+                stmt.SetParameter(1, (String)parms[0]);
+                stmt.SetParameter(2, (short)parms[1]);
+                stmt.SetParameter(3, (short)parms[2]);
+                return;
+             case 10 :
                 stmt.SetParameter(1, (short)parms[0]);
                 return;
-             case 9 :
+             case 11 :
+                stmt.SetParameter(1, (short)parms[0]);
+                return;
+             case 12 :
                 stmt.SetParameter(1, (short)parms[0]);
                 return;
        }

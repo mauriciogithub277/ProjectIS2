@@ -18,4 +18,4 @@
 /r:GxBaseBuilder.dll
 /out:bin\rolesgeneral.dll
 rolesgeneral.cs
-isauthorized.cs
+wwpbaseobjects\isauthorized.cs

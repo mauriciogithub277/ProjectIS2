@@ -1,0 +1,636 @@
+spec_i([ mnproc,6,l('Menu Options Data'),'WWPBaseObjects\MenuOptionsData',0,eng,'16_0_7-138086' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','WWPBaseObjects.MenuOptionsData')).
+rule_i(0,prop('Folder',o(8,'WWPBaseObjects\MenuData'))).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop('OutputCollectionName','MenuOptionsData')).
+rule_i(0,prop('OutputCollection','0')).
+rule_i(0,prop('OutputSDT',o(26,'WWPBaseObjects\DVelop_Menu'))).
+rule_i(0,prop(idINFER_SDT,idINFER_STRUCTURE_NO)).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
+rule_i(0,prop(idISWEBSERVICE,'0')).
+rule_i(0,prop('ObjDesc','Menu Options Data')).
+rule_i(0,prop('ObjName','MenuOptionsData')).
+rule_i(0,rule([ a(22,[ 'Rfr',[ t('getmessagetext(',1),t('"GX_BtnRefresh"',3),t(')',4) ],'5' ]) ],[],[],[])).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'Gxm2rootcol' ],[])).
+rule_i(0,parmio([ [ 'Gxm2rootcol',out ] ])).
+ 
+a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,3,[]).
+v_i(f,o,3,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('GXV2',[ 'GXV2',int,8,0,'',0,'','',15 ]).
+attri_i('GXV1',[ 'GXV1',o(objectcollection('WWPBaseObjects\ProgramNames.ProgramName')),0,0,'',0,'','',14 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',13 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',12 ]).
+attri_i('Gxm4dvelop_menu_subitems_subitems',[ 'Gxm4dvelop_menu_subitems_subitems',o('WWPBaseObjects\DVelop_Menu.Item'),0,0,'',0,'Gxm4dvelop_menu_subitems_subitems','',11 ]).
+attri_i('Gxm3dvelop_menu_subitems',[ 'Gxm3dvelop_menu_subitems',o('WWPBaseObjects\DVelop_Menu.Item'),0,0,'',0,'Gxm3dvelop_menu_subitems','',10 ]).
+attri_i('Gxm1dvelop_menu',[ 'Gxm1dvelop_menu',o('WWPBaseObjects\DVelop_Menu.Item'),0,0,'',0,'Gxm1dvelop_menu','',9 ]).
+attri_i('Gxm2rootcol',[ 'Gxm2rootcol',o(objectcollection('WWPBaseObjects\DVelop_Menu.Item')),0,0,'',0,'Gxm2rootcol','',8 ]).
+attri_i('Gxv5skipcount',[ 'Gxv5skipcount',int,8,0,'',1,'Gxv5skipcount','',7 ]).
+attri_i('Programname',[ 'ProgramName',o('WWPBaseObjects\ProgramNames.ProgramName'),0,0,'',0,l('Program Name'),'',6 ]).
+attri_i('Id',[ id,int,4,0,'ZZZ9',0,l(id),'',5 ]).
+ 
+ 
+ 
+ 
+ 
+function_i(1,'GXV1',yes,udp,o(1,'WWPBaseObjects\ListWWPPrograms'),[],174,'GXV1',[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(4,1,1,cmd,4,[ t('',107,4,0),t('Id',23,4,0),t(=,10,4,0),t('0',3,4,0) ]).
+b_line_i(6,1,1,cmd,4,[ t('',107,4,0),t('Gxm1dvelop_menu',23,4,0),t(=,10,4,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,6,0),t(')',4,6,0) ],n ],46,4,0) ]).
+b_line_i([ 6,1 ],1,1,cmd,4,[ t('',107,4,0),t([ t('Gxm2rootcol',23,6,0),t('add(',1,6,0) ],31,6,0),t('Gxm1dvelop_menu',23,4,0),t(')',4,4,0) ]).
+b_line_i(8,1,1,cmd,6,[ t('',107,6,0),t('Id',23,6,0),t(=,10,6,0),t('Id',23,6,0),t(+,5,6,0),t('1',3,6,0) ]).
+b_line_i(9,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Id',3,6,0) ],29,6,0),t(=,10,6,0),t('str(',1,6,0),t('Id',23,6,0),t(',',7,6,0),t(4,3,6,0),t(',',7,6,0),t(0,3,6,0),t(')',4,6,0) ]).
+b_line_i(10,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Tooltip',3,6,0) ],29,6,0),t(=,10,6,0),t('""',3,6,0) ]).
+b_line_i(11,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Link',3,6,0) ],29,6,0),t(=,10,6,0),t('link(',1,6,0),t(o(13,'WWPBaseObjects\Home'),28,6,0),t(')',4,6,0) ]).
+b_line_i(12,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Linktarget',3,6,0) ],29,6,0),t(=,10,6,0),t('""',3,6,0) ]).
+b_line_i(13,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Iconclass',3,6,0) ],29,6,0),t(=,10,6,0),t('"menu-icon fa fa-home"',3,6,0) ]).
+b_line_i(14,1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm1dvelop_menu',23,6,0),t('Caption',3,6,0) ],29,6,0),t(=,10,6,0),t('"Home"',3,6,0) ]).
+b_line_i(17,1,1,cmd,6,[ t('',107,6,0),t('Gxm1dvelop_menu',23,6,0),t(=,10,6,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,17,0),t(')',4,17,0) ],n ],46,6,0) ]).
+b_line_i([ 17,1 ],1,1,cmd,6,[ t('',107,6,0),t([ t('Gxm2rootcol',23,17,0),t('add(',1,17,0) ],31,17,0),t('Gxm1dvelop_menu',23,6,0),t(')',4,6,0) ]).
+b_line_i(19,1,1,cmd,8,[ t('',107,8,0),t('Id',23,8,0),t(=,10,8,0),t('Id',23,8,0),t(+,5,8,0),t('1',3,8,0) ]).
+b_line_i(20,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Id',3,8,0) ],29,8,0),t(=,10,8,0),t('str(',1,8,0),t('Id',23,8,0),t(',',7,8,0),t(4,3,8,0),t(',',7,8,0),t(0,3,8,0),t(')',4,8,0) ]).
+b_line_i(21,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Tooltip',3,8,0) ],29,8,0),t(=,10,8,0),t('""',3,8,0) ]).
+b_line_i(22,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Link',3,8,0) ],29,8,0),t(=,10,8,0),t('""',3,8,0) ]).
+b_line_i(23,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Linktarget',3,8,0) ],29,8,0),t(=,10,8,0),t('""',3,8,0) ]).
+b_line_i(24,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Iconclass',3,8,0) ],29,8,0),t(=,10,8,0),t('"menu-icon fa fa-tasks"',3,8,0) ]).
+b_line_i(25,1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,8,0),t('Caption',3,8,0) ],29,8,0),t(=,10,8,0),t('"Menu Option 1"',3,8,0) ]).
+b_line_i(29,1,1,cmd,8,[ t('',107,8,0),t('Gxm3dvelop_menu_subitems',23,8,0),t(=,10,8,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,29,0),t(')',4,29,0) ],n ],46,8,0) ]).
+b_line_i([ 29,1 ],1,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1dvelop_menu',23,29,0),t('Subitems',3,29,0),t('add(',1,29,0) ],31,29,0),t('Gxm3dvelop_menu_subitems',23,8,0),t(')',4,8,0) ]).
+b_line_i(31,1,1,cmd,10,[ t('',107,10,0),t('Id',23,10,0),t(=,10,10,0),t('Id',23,10,0),t(+,5,10,0),t('1',3,10,0) ]).
+b_line_i(32,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm3dvelop_menu_subitems',23,10,0),t('Id',3,10,0) ],29,10,0),t(=,10,10,0),t('str(',1,10,0),t('Id',23,10,0),t(',',7,10,0),t(4,3,10,0),t(',',7,10,0),t(0,3,10,0),t(')',4,10,0) ]).
+b_line_i(33,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm3dvelop_menu_subitems',23,10,0),t('Tooltip',3,10,0) ],29,10,0),t(=,10,10,0),t('""',3,10,0) ]).
+b_line_i(34,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm3dvelop_menu_subitems',23,10,0),t('Link',3,10,0) ],29,10,0),t(=,10,10,0),t('""',3,10,0) ]).
+b_line_i(35,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm3dvelop_menu_subitems',23,10,0),t('Linktarget',3,10,0) ],29,10,0),t(=,10,10,0),t('""',3,10,0) ]).
+b_line_i(36,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm3dvelop_menu_subitems',23,10,0),t('Caption',3,10,0) ],29,10,0),t(=,10,10,0),t('"Menu Option 1.1"',3,10,0) ]).
+b_line_i(37,1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm3dvelop_menu_subitems',23,10,0),t('Authorizationkey',3,10,0) ],29,10,0),t(=,10,10,0),t('""',3,10,0) ]).
+b_line_i(40,1,1,cmd,10,[ t('',107,10,0),t('Gxm3dvelop_menu_subitems',23,10,0),t(=,10,10,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,40,0),t(')',4,40,0) ],n ],46,10,0) ]).
+b_line_i([ 40,1 ],1,1,cmd,10,[ t('',107,10,0),t([ t('Gxm1dvelop_menu',23,40,0),t('Subitems',3,40,0),t('add(',1,40,0) ],31,40,0),t('Gxm3dvelop_menu_subitems',23,10,0),t(')',4,10,0) ]).
+b_line_i(42,1,1,cmd,12,[ t('',107,12,0),t('Id',23,12,0),t(=,10,12,0),t('Id',23,12,0),t(+,5,12,0),t('1',3,12,0) ]).
+b_line_i(43,1,1,cmd,12,[ t('',107,12,0),t([ t('Gxm3dvelop_menu_subitems',23,12,0),t('Id',3,12,0) ],29,12,0),t(=,10,12,0),t('str(',1,12,0),t('Id',23,12,0),t(',',7,12,0),t(4,3,12,0),t(',',7,12,0),t(0,3,12,0),t(')',4,12,0) ]).
+b_line_i(44,1,1,cmd,12,[ t('',107,12,0),t([ t('Gxm3dvelop_menu_subitems',23,12,0),t('Tooltip',3,12,0) ],29,12,0),t(=,10,12,0),t('""',3,12,0) ]).
+b_line_i(45,1,1,cmd,12,[ t('',107,12,0),t([ t('Gxm3dvelop_menu_subitems',23,12,0),t('Link',3,12,0) ],29,12,0),t(=,10,12,0),t('""',3,12,0) ]).
+b_line_i(46,1,1,cmd,12,[ t('',107,12,0),t([ t('Gxm3dvelop_menu_subitems',23,12,0),t('Linktarget',3,12,0) ],29,12,0),t(=,10,12,0),t('""',3,12,0) ]).
+b_line_i(47,1,1,cmd,12,[ t('',107,12,0),t([ t('Gxm3dvelop_menu_subitems',23,12,0),t('Caption',3,12,0) ],29,12,0),t(=,10,12,0),t('"Menu Option 1.2"',3,12,0) ]).
+b_line_i(48,1,1,cmd,12,[ t('',107,12,0),t([ t('Gxm3dvelop_menu_subitems',23,12,0),t('Authorizationkey',3,12,0) ],29,12,0),t(=,10,12,0),t('""',3,12,0) ]).
+b_line_i(51,1,1,cmd,12,[ t('',107,12,0),t('Gxm3dvelop_menu_subitems',23,12,0),t(=,10,12,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,51,0),t(')',4,51,0) ],n ],46,12,0) ]).
+b_line_i([ 51,1 ],1,1,cmd,12,[ t('',107,12,0),t([ t('Gxm1dvelop_menu',23,51,0),t('Subitems',3,51,0),t('add(',1,51,0) ],31,51,0),t('Gxm3dvelop_menu_subitems',23,12,0),t(')',4,12,0) ]).
+b_line_i(53,1,1,cmd,14,[ t('',107,14,0),t('Id',23,14,0),t(=,10,14,0),t('Id',23,14,0),t(+,5,14,0),t('1',3,14,0) ]).
+b_line_i(54,1,1,cmd,14,[ t('',107,14,0),t([ t('Gxm3dvelop_menu_subitems',23,14,0),t('Id',3,14,0) ],29,14,0),t(=,10,14,0),t('str(',1,14,0),t('Id',23,14,0),t(',',7,14,0),t(4,3,14,0),t(',',7,14,0),t(0,3,14,0),t(')',4,14,0) ]).
+b_line_i(55,1,1,cmd,14,[ t('',107,14,0),t([ t('Gxm3dvelop_menu_subitems',23,14,0),t('Tooltip',3,14,0) ],29,14,0),t(=,10,14,0),t('""',3,14,0) ]).
+b_line_i(56,1,1,cmd,14,[ t('',107,14,0),t([ t('Gxm3dvelop_menu_subitems',23,14,0),t('Link',3,14,0) ],29,14,0),t(=,10,14,0),t('""',3,14,0) ]).
+b_line_i(57,1,1,cmd,14,[ t('',107,14,0),t([ t('Gxm3dvelop_menu_subitems',23,14,0),t('Linktarget',3,14,0) ],29,14,0),t(=,10,14,0),t('""',3,14,0) ]).
+b_line_i(58,1,1,cmd,14,[ t('',107,14,0),t([ t('Gxm3dvelop_menu_subitems',23,14,0),t('Caption',3,14,0) ],29,14,0),t(=,10,14,0),t('"Menu Option 1.3"',3,14,0) ]).
+b_line_i(59,1,1,cmd,14,[ t('',107,14,0),t([ t('Gxm3dvelop_menu_subitems',23,14,0),t('Authorizationkey',3,14,0) ],29,14,0),t(=,10,14,0),t('""',3,14,0) ]).
+b_line_i(64,1,1,cmd,14,[ t('',107,14,0),t('Gxm1dvelop_menu',23,14,0),t(=,10,14,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,64,0),t(')',4,64,0) ],n ],46,14,0) ]).
+b_line_i([ 64,1 ],1,1,cmd,14,[ t('',107,14,0),t([ t('Gxm2rootcol',23,64,0),t('add(',1,64,0) ],31,64,0),t('Gxm1dvelop_menu',23,14,0),t(')',4,14,0) ]).
+b_line_i(66,1,1,cmd,16,[ t('',107,16,0),t('Id',23,16,0),t(=,10,16,0),t('Id',23,16,0),t(+,5,16,0),t('1',3,16,0) ]).
+b_line_i(67,1,1,cmd,16,[ t('',107,16,0),t([ t('Gxm1dvelop_menu',23,16,0),t('Id',3,16,0) ],29,16,0),t(=,10,16,0),t('str(',1,16,0),t('Id',23,16,0),t(',',7,16,0),t(4,3,16,0),t(',',7,16,0),t(0,3,16,0),t(')',4,16,0) ]).
+b_line_i(68,1,1,cmd,16,[ t('',107,16,0),t([ t('Gxm1dvelop_menu',23,16,0),t('Tooltip',3,16,0) ],29,16,0),t(=,10,16,0),t('""',3,16,0) ]).
+b_line_i(69,1,1,cmd,16,[ t('',107,16,0),t([ t('Gxm1dvelop_menu',23,16,0),t('Link',3,16,0) ],29,16,0),t(=,10,16,0),t('""',3,16,0) ]).
+b_line_i(70,1,1,cmd,16,[ t('',107,16,0),t([ t('Gxm1dvelop_menu',23,16,0),t('Linktarget',3,16,0) ],29,16,0),t(=,10,16,0),t('""',3,16,0) ]).
+b_line_i(71,1,1,cmd,16,[ t('',107,16,0),t([ t('Gxm1dvelop_menu',23,16,0),t('Iconclass',3,16,0) ],29,16,0),t(=,10,16,0),t('"menu-icon fa fa-key"',3,16,0) ]).
+b_line_i(72,1,1,cmd,16,[ t('',107,16,0),t([ t('Gxm1dvelop_menu',23,16,0),t('Caption',3,16,0) ],29,16,0),t(=,10,16,0),t('"Menu Option 2"',3,16,0) ]).
+b_line_i(76,1,1,cmd,16,[ t('',107,16,0),t('Gxm3dvelop_menu_subitems',23,16,0),t(=,10,16,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,76,0),t(')',4,76,0) ],n ],46,16,0) ]).
+b_line_i([ 76,1 ],1,1,cmd,16,[ t('',107,16,0),t([ t('Gxm1dvelop_menu',23,76,0),t('Subitems',3,76,0),t('add(',1,76,0) ],31,76,0),t('Gxm3dvelop_menu_subitems',23,16,0),t(')',4,16,0) ]).
+b_line_i(78,1,1,cmd,18,[ t('',107,18,0),t('Id',23,18,0),t(=,10,18,0),t('Id',23,18,0),t(+,5,18,0),t('1',3,18,0) ]).
+b_line_i(79,1,1,cmd,18,[ t('',107,18,0),t([ t('Gxm3dvelop_menu_subitems',23,18,0),t('Id',3,18,0) ],29,18,0),t(=,10,18,0),t('str(',1,18,0),t('Id',23,18,0),t(',',7,18,0),t(4,3,18,0),t(',',7,18,0),t(0,3,18,0),t(')',4,18,0) ]).
+b_line_i(80,1,1,cmd,18,[ t('',107,18,0),t([ t('Gxm3dvelop_menu_subitems',23,18,0),t('Tooltip',3,18,0) ],29,18,0),t(=,10,18,0),t('""',3,18,0) ]).
+b_line_i(81,1,1,cmd,18,[ t('',107,18,0),t([ t('Gxm3dvelop_menu_subitems',23,18,0),t('Link',3,18,0) ],29,18,0),t(=,10,18,0),t('""',3,18,0) ]).
+b_line_i(82,1,1,cmd,18,[ t('',107,18,0),t([ t('Gxm3dvelop_menu_subitems',23,18,0),t('Linktarget',3,18,0) ],29,18,0),t(=,10,18,0),t('""',3,18,0) ]).
+b_line_i(83,1,1,cmd,18,[ t('',107,18,0),t([ t('Gxm3dvelop_menu_subitems',23,18,0),t('Iconclass',3,18,0) ],29,18,0),t(=,10,18,0),t('""',3,18,0) ]).
+b_line_i(84,1,1,cmd,18,[ t('',107,18,0),t([ t('Gxm3dvelop_menu_subitems',23,18,0),t('Caption',3,18,0) ],29,18,0),t(=,10,18,0),t('getmessagetext(',1,18,0),t('"Menu Option 2.1"',3,18,0),t(')',4,18,0) ]).
+b_line_i(88,1,1,cmd,18,[ t('',107,18,0),t('Gxm4dvelop_menu_subitems_subitems',23,18,0),t(=,10,18,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,88,0),t(')',4,88,0) ],n ],46,18,0) ]).
+b_line_i([ 88,1 ],1,1,cmd,18,[ t('',107,18,0),t([ t('Gxm3dvelop_menu_subitems',23,88,0),t('Subitems',3,88,0),t('add(',1,88,0) ],31,88,0),t('Gxm4dvelop_menu_subitems_subitems',23,18,0),t(')',4,18,0) ]).
+b_line_i(90,1,1,cmd,20,[ t('',107,20,0),t('Id',23,20,0),t(=,10,20,0),t('Id',23,20,0),t(+,5,20,0),t('1',3,20,0) ]).
+b_line_i(91,1,1,cmd,20,[ t('',107,20,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t('Id',3,20,0) ],29,20,0),t(=,10,20,0),t('str(',1,20,0),t('Id',23,20,0),t(',',7,20,0),t(4,3,20,0),t(',',7,20,0),t(0,3,20,0),t(')',4,20,0) ]).
+b_line_i(92,1,1,cmd,20,[ t('',107,20,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t('Tooltip',3,20,0) ],29,20,0),t(=,10,20,0),t('""',3,20,0) ]).
+b_line_i(93,1,1,cmd,20,[ t('',107,20,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t('Link',3,20,0) ],29,20,0),t(=,10,20,0),t('""',3,20,0) ]).
+b_line_i(94,1,1,cmd,20,[ t('',107,20,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t('Linktarget',3,20,0) ],29,20,0),t(=,10,20,0),t('""',3,20,0) ]).
+b_line_i(95,1,1,cmd,20,[ t('',107,20,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t('Caption',3,20,0) ],29,20,0),t(=,10,20,0),t('getmessagetext(',1,20,0),t('"Menu Option 2.1.1"',3,20,0),t(')',4,20,0) ]).
+b_line_i(96,1,1,cmd,20,[ t('',107,20,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t('Authorizationkey',3,20,0) ],29,20,0),t(=,10,20,0),t('""',3,20,0) ]).
+b_line_i(98,1,1,cmd,20,[ t('',107,20,0),t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t(=,10,20,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,98,0),t(')',4,98,0) ],n ],46,20,0) ]).
+b_line_i([ 98,1 ],1,1,cmd,20,[ t('',107,20,0),t([ t('Gxm3dvelop_menu_subitems',23,98,0),t('Subitems',3,98,0),t('add(',1,98,0) ],31,98,0),t('Gxm4dvelop_menu_subitems_subitems',23,20,0),t(')',4,20,0) ]).
+b_line_i(100,1,1,cmd,22,[ t('',107,22,0),t('Id',23,22,0),t(=,10,22,0),t('Id',23,22,0),t(+,5,22,0),t('1',3,22,0) ]).
+b_line_i(101,1,1,cmd,22,[ t('',107,22,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t('Id',3,22,0) ],29,22,0),t(=,10,22,0),t('str(',1,22,0),t('Id',23,22,0),t(',',7,22,0),t(4,3,22,0),t(',',7,22,0),t(0,3,22,0),t(')',4,22,0) ]).
+b_line_i(102,1,1,cmd,22,[ t('',107,22,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t('Tooltip',3,22,0) ],29,22,0),t(=,10,22,0),t('""',3,22,0) ]).
+b_line_i(103,1,1,cmd,22,[ t('',107,22,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t('Link',3,22,0) ],29,22,0),t(=,10,22,0),t('""',3,22,0) ]).
+b_line_i(104,1,1,cmd,22,[ t('',107,22,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t('Linktarget',3,22,0) ],29,22,0),t(=,10,22,0),t('""',3,22,0) ]).
+b_line_i(105,1,1,cmd,22,[ t('',107,22,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t('Caption',3,22,0) ],29,22,0),t(=,10,22,0),t('getmessagetext(',1,22,0),t('"Menu Option 2.1.2"',3,22,0),t(')',4,22,0) ]).
+b_line_i(106,1,1,cmd,22,[ t('',107,22,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t('Authorizationkey',3,22,0) ],29,22,0),t(=,10,22,0),t('""',3,22,0) ]).
+b_line_i(108,1,1,cmd,22,[ t('',107,22,0),t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t(=,10,22,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,108,0),t(')',4,108,0) ],n ],46,22,0) ]).
+b_line_i([ 108,1 ],1,1,cmd,22,[ t('',107,22,0),t([ t('Gxm3dvelop_menu_subitems',23,108,0),t('Subitems',3,108,0),t('add(',1,108,0) ],31,108,0),t('Gxm4dvelop_menu_subitems_subitems',23,22,0),t(')',4,22,0) ]).
+b_line_i(110,1,1,cmd,24,[ t('',107,24,0),t('Id',23,24,0),t(=,10,24,0),t('Id',23,24,0),t(+,5,24,0),t('1',3,24,0) ]).
+b_line_i(111,1,1,cmd,24,[ t('',107,24,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,24,0),t('Id',3,24,0) ],29,24,0),t(=,10,24,0),t('str(',1,24,0),t('Id',23,24,0),t(',',7,24,0),t(4,3,24,0),t(',',7,24,0),t(0,3,24,0),t(')',4,24,0) ]).
+b_line_i(112,1,1,cmd,24,[ t('',107,24,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,24,0),t('Tooltip',3,24,0) ],29,24,0),t(=,10,24,0),t('""',3,24,0) ]).
+b_line_i(113,1,1,cmd,24,[ t('',107,24,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,24,0),t('Link',3,24,0) ],29,24,0),t(=,10,24,0),t('""',3,24,0) ]).
+b_line_i(114,1,1,cmd,24,[ t('',107,24,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,24,0),t('Linktarget',3,24,0) ],29,24,0),t(=,10,24,0),t('""',3,24,0) ]).
+b_line_i(115,1,1,cmd,24,[ t('',107,24,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,24,0),t('Caption',3,24,0) ],29,24,0),t(=,10,24,0),t('getmessagetext(',1,24,0),t('"Menu Option 2.1.3"',3,24,0),t(')',4,24,0) ]).
+b_line_i(116,1,1,cmd,24,[ t('',107,24,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,24,0),t('Authorizationkey',3,24,0) ],29,24,0),t(=,10,24,0),t('""',3,24,0) ]).
+b_line_i(121,1,1,cmd,24,[ t('',107,24,0),t('Gxm3dvelop_menu_subitems',23,24,0),t(=,10,24,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,121,0),t(')',4,121,0) ],n ],46,24,0) ]).
+b_line_i([ 121,1 ],1,1,cmd,24,[ t('',107,24,0),t([ t('Gxm1dvelop_menu',23,121,0),t('Subitems',3,121,0),t('add(',1,121,0) ],31,121,0),t('Gxm3dvelop_menu_subitems',23,24,0),t(')',4,24,0) ]).
+b_line_i(123,1,1,cmd,26,[ t('',107,26,0),t('Id',23,26,0),t(=,10,26,0),t('Id',23,26,0),t(+,5,26,0),t('1',3,26,0) ]).
+b_line_i(124,1,1,cmd,26,[ t('',107,26,0),t([ t('Gxm3dvelop_menu_subitems',23,26,0),t('Id',3,26,0) ],29,26,0),t(=,10,26,0),t('str(',1,26,0),t('Id',23,26,0),t(',',7,26,0),t(4,3,26,0),t(',',7,26,0),t(0,3,26,0),t(')',4,26,0) ]).
+b_line_i(125,1,1,cmd,26,[ t('',107,26,0),t([ t('Gxm3dvelop_menu_subitems',23,26,0),t('Tooltip',3,26,0) ],29,26,0),t(=,10,26,0),t('""',3,26,0) ]).
+b_line_i(126,1,1,cmd,26,[ t('',107,26,0),t([ t('Gxm3dvelop_menu_subitems',23,26,0),t('Link',3,26,0) ],29,26,0),t(=,10,26,0),t('""',3,26,0) ]).
+b_line_i(127,1,1,cmd,26,[ t('',107,26,0),t([ t('Gxm3dvelop_menu_subitems',23,26,0),t('Linktarget',3,26,0) ],29,26,0),t(=,10,26,0),t('""',3,26,0) ]).
+b_line_i(128,1,1,cmd,26,[ t('',107,26,0),t([ t('Gxm3dvelop_menu_subitems',23,26,0),t('Iconclass',3,26,0) ],29,26,0),t(=,10,26,0),t('""',3,26,0) ]).
+b_line_i(129,1,1,cmd,26,[ t('',107,26,0),t([ t('Gxm3dvelop_menu_subitems',23,26,0),t('Caption',3,26,0) ],29,26,0),t(=,10,26,0),t('getmessagetext(',1,26,0),t('"Menu Option 2.2"',3,26,0),t(')',4,26,0) ]).
+b_line_i(133,1,1,cmd,26,[ t('',107,26,0),t('Gxm4dvelop_menu_subitems_subitems',23,26,0),t(=,10,26,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,133,0),t(')',4,133,0) ],n ],46,26,0) ]).
+b_line_i([ 133,1 ],1,1,cmd,26,[ t('',107,26,0),t([ t('Gxm3dvelop_menu_subitems',23,133,0),t('Subitems',3,133,0),t('add(',1,133,0) ],31,133,0),t('Gxm4dvelop_menu_subitems_subitems',23,26,0),t(')',4,26,0) ]).
+b_line_i(135,1,1,cmd,28,[ t('',107,28,0),t('Id',23,28,0),t(=,10,28,0),t('Id',23,28,0),t(+,5,28,0),t('1',3,28,0) ]).
+b_line_i(136,1,1,cmd,28,[ t('',107,28,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,28,0),t('Id',3,28,0) ],29,28,0),t(=,10,28,0),t('str(',1,28,0),t('Id',23,28,0),t(',',7,28,0),t(4,3,28,0),t(',',7,28,0),t(0,3,28,0),t(')',4,28,0) ]).
+b_line_i(137,1,1,cmd,28,[ t('',107,28,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,28,0),t('Tooltip',3,28,0) ],29,28,0),t(=,10,28,0),t('""',3,28,0) ]).
+b_line_i(138,1,1,cmd,28,[ t('',107,28,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,28,0),t('Link',3,28,0) ],29,28,0),t(=,10,28,0),t('""',3,28,0) ]).
+b_line_i(139,1,1,cmd,28,[ t('',107,28,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,28,0),t('Linktarget',3,28,0) ],29,28,0),t(=,10,28,0),t('""',3,28,0) ]).
+b_line_i(140,1,1,cmd,28,[ t('',107,28,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,28,0),t('Caption',3,28,0) ],29,28,0),t(=,10,28,0),t('getmessagetext(',1,28,0),t('"Menu Option 2.2.1"',3,28,0),t(')',4,28,0) ]).
+b_line_i(141,1,1,cmd,28,[ t('',107,28,0),t([ t('Gxm4dvelop_menu_subitems_subitems',23,28,0),t('Authorizationkey',3,28,0) ],29,28,0),t(=,10,28,0),t('""',3,28,0) ]).
+b_line_i(148,1,1,cmd,28,[ t('',107,28,0),t('Gxm1dvelop_menu',23,28,0),t(=,10,28,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,148,0),t(')',4,148,0) ],n ],46,28,0) ]).
+b_line_i([ 148,1 ],1,1,cmd,28,[ t('',107,28,0),t([ t('Gxm2rootcol',23,148,0),t('add(',1,148,0) ],31,148,0),t('Gxm1dvelop_menu',23,28,0),t(')',4,28,0) ]).
+b_line_i(150,1,1,cmd,30,[ t('',107,30,0),t('Id',23,30,0),t(=,10,30,0),t('Id',23,30,0),t(+,5,30,0),t('1',3,30,0) ]).
+b_line_i(151,1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Id',3,30,0) ],29,30,0),t(=,10,30,0),t('str(',1,30,0),t('Id',23,30,0),t(',',7,30,0),t(4,3,30,0),t(',',7,30,0),t(0,3,30,0),t(')',4,30,0) ]).
+b_line_i(152,1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Tooltip',3,30,0) ],29,30,0),t(=,10,30,0),t('""',3,30,0) ]).
+b_line_i(153,1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Link',3,30,0) ],29,30,0),t(=,10,30,0),t('""',3,30,0) ]).
+b_line_i(154,1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Linktarget',3,30,0) ],29,30,0),t(=,10,30,0),t('""',3,30,0) ]).
+b_line_i(155,1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Iconclass',3,30,0) ],29,30,0),t(=,10,30,0),t('"menu-icon fa fa-briefcase"',3,30,0) ]).
+b_line_i(156,1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Caption',3,30,0) ],29,30,0),t(=,10,30,0),t('"Menu Option 3"',3,30,0) ]).
+b_line_i(157,1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm1dvelop_menu',23,30,0),t('Authorizationkey',3,30,0) ],29,30,0),t(=,10,30,0),t('""',3,30,0) ]).
+b_line_i(161,1,1,cmd,30,[ t('',107,30,0),t('Gxm1dvelop_menu',23,30,0),t(=,10,30,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,161,0),t(')',4,161,0) ],n ],46,30,0) ]).
+b_line_i([ 161,1 ],1,1,cmd,30,[ t('',107,30,0),t([ t('Gxm2rootcol',23,161,0),t('add(',1,161,0) ],31,161,0),t('Gxm1dvelop_menu',23,30,0),t(')',4,30,0) ]).
+b_line_i(163,1,1,cmd,32,[ t('',107,32,0),t('Id',23,32,0),t(=,10,32,0),t('Id',23,32,0),t(+,5,32,0),t('1',3,32,0) ]).
+b_line_i(164,1,1,cmd,32,[ t('',107,32,0),t([ t('Gxm1dvelop_menu',23,32,0),t('Id',3,32,0) ],29,32,0),t(=,10,32,0),t('str(',1,32,0),t('Id',23,32,0),t(',',7,32,0),t(4,3,32,0),t(',',7,32,0),t(0,3,32,0),t(')',4,32,0) ]).
+b_line_i(165,1,1,cmd,32,[ t('',107,32,0),t([ t('Gxm1dvelop_menu',23,32,0),t('Tooltip',3,32,0) ],29,32,0),t(=,10,32,0),t('""',3,32,0) ]).
+b_line_i(166,1,1,cmd,32,[ t('',107,32,0),t([ t('Gxm1dvelop_menu',23,32,0),t('Link',3,32,0) ],29,32,0),t(=,10,32,0),t('""',3,32,0) ]).
+b_line_i(167,1,1,cmd,32,[ t('',107,32,0),t([ t('Gxm1dvelop_menu',23,32,0),t('Linktarget',3,32,0) ],29,32,0),t(=,10,32,0),t('""',3,32,0) ]).
+b_line_i(168,1,1,cmd,32,[ t('',107,32,0),t([ t('Gxm1dvelop_menu',23,32,0),t('Iconclass',3,32,0) ],29,32,0),t(=,10,32,0),t('"menu-icon fa fa-edit"',3,32,0) ]).
+b_line_i(169,1,1,cmd,32,[ t('',107,32,0),t([ t('Gxm1dvelop_menu',23,32,0),t('Caption',3,32,0) ],29,32,0),t(=,10,32,0),t('"Developer Menu"',3,32,0) ]).
+b_line_i(174,1,1,cmd,32,[ t('',107,32,0),t('Gxv5skipcount',23,32,0),t(=,10,32,0),t(0,3,32,0) ]).
+b_line_i([ 174,1 ],1,1,cmd,32,[ t('',107,32,0),t('GXV2',23,32,0),t(=,10,32,0),t(1,3,32,0) ]).
+b_line_i([ [ 174,1 ],1 ],1,1,cmd,32,[ t('',107,32,0),t('GXV1',23,32,0),t(=,10,32,0),t('udp(',1,32,0),t('GXV1',3,32,0),t(174,3,32,0),t(')',4,32,0) ]).
+b_line_i([ [ 174,1 ],2 ],1,1,cmd,32,[ t('',114,32,0),t('GXV2',23,32,0),t(<=,10,32,0),t([ t('GXV1',23,[ 174,1 ],0),t('Count',3,[ 174,1 ],0) ],29,[ 174,1 ],0) ]).
+b_line_i([ [ 174,1 ],3 ],1,1,cmd,32,[ t('',107,32,0),t('Programname',23,32,0),t(=,10,32,0),t([ t('GXV1',23,32,0),t('item(',1,32,0) ],31,32,0),t('GXV2',23,32,0),t(')',4,32,0) ]).
+b_line_i([ 174,5 ],1,1,cmd,32,[ t('',107,32,0),t('Gxv5skipcount',23,32,0),t(=,10,32,0),t('Gxv5skipcount',23,32,0),t(+,5,32,0),t(1,3,32,0) ]).
+b_line_i([ 174,6 ],1,1,cmd,32,[ t('',107,32,0),t('Gxm3dvelop_menu_subitems',23,32,0),t(=,10,32,0),t([ 'WWPBaseObjects\DVelop_Menu.Item',[ t('(',0,174,0),t(')',4,174,0) ],n ],46,32,0) ]).
+b_line_i([ 174,7 ],1,1,cmd,32,[ t('',107,32,0),t([ t('Gxm1dvelop_menu',23,174,0),t('Subitems',3,174,0),t('add(',1,174,0) ],31,174,0),t('Gxm3dvelop_menu_subitems',23,32,0),t(')',4,32,0) ]).
+b_line_i(176,1,1,cmd,34,[ t('',107,34,0),t('Id',23,34,0),t(=,10,34,0),t('Id',23,34,0),t(+,5,34,0),t('1',3,34,0) ]).
+b_line_i(177,1,1,cmd,34,[ t('',107,34,0),t([ t('Gxm3dvelop_menu_subitems',23,34,0),t('Id',3,34,0) ],29,34,0),t(=,10,34,0),t('str(',1,34,0),t('Id',23,34,0),t(',',7,34,0),t(4,3,34,0),t(',',7,34,0),t(0,3,34,0),t(')',4,34,0) ]).
+b_line_i(178,1,1,cmd,34,[ t('',107,34,0),t([ t('Gxm3dvelop_menu_subitems',23,34,0),t('Tooltip',3,34,0) ],29,34,0),t(=,10,34,0),t('""',3,34,0) ]).
+b_line_i(179,1,1,cmd,34,[ t('',107,34,0),t([ t('Gxm3dvelop_menu_subitems',23,34,0),t('Link',3,34,0) ],29,34,0),t(=,10,34,0),t([ t('Programname',23,34,0),t('Link',3,34,0) ],29,34,0) ]).
+b_line_i(180,1,1,cmd,34,[ t('',107,34,0),t([ t('Gxm3dvelop_menu_subitems',23,34,0),t('Linktarget',3,34,0) ],29,34,0),t(=,10,34,0),t('""',3,34,0) ]).
+b_line_i(181,1,1,cmd,34,[ t('',107,34,0),t([ t('Gxm3dvelop_menu_subitems',23,34,0),t('Iconclass',3,34,0) ],29,34,0),t(=,10,34,0),t('""',3,34,0) ]).
+b_line_i(182,1,1,cmd,34,[ t('',107,34,0),t([ t('Gxm3dvelop_menu_subitems',23,34,0),t('Caption',3,34,0) ],29,34,0),t(=,10,34,0),t([ t('Programname',23,34,0),t('Description',3,34,0) ],29,34,0) ]).
+b_line_i(183,1,1,cmd,34,[ t('',109,34,0),t('20',3,34,16),t(<>,10,34,0),t(0,3,34,0),t('.AND.',9,34,0),t('Gxv5skipcount',23,34,0),t(>=,10,34,0),t('20',3,34,16) ]).
+b_line_i([ 183,1 ],1,1,cmd,34,[ t('',139,34,0) ]).
+b_line_i([ 183,2 ],1,1,cmd,34,[ t('',111,34,0) ]).
+b_line_i([ [ 183,3 ],1 ],1,1,cmd,34,[ t('',107,34,0),t('GXV2',23,34,0),t(=,10,34,0),t('GXV2',23,34,0),t(+,5,34,0),t(1,3,34,0) ]).
+b_line_i([ [ 183,3 ],2 ],1,1,cmd,34,[ t('',115,34,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(13,8).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,48,0 ],name,'WWPBaseObjects\ProgramNames').
+struct_dt_i([ 26,48,0 ],namespace,'IS2').
+struct_dt_i([ 26,48,0 ],'ObjName','ProgramNames').
+struct_dt_i([ 26,48,0 ],'ObjDesc','Program Names').
+struct_dt_i([ 26,48,0 ],'ExternalName','ProgramNames').
+struct_dt_i([ 26,48,0 ],'ExternalNamespace','IS2').
+struct_dt_i([ 26,48,0 ],collection,'True').
+struct_dt_i([ 26,48,0 ],datatype,[ 26,48,75 ]).
+struct_dt_i([ 26,48,0 ],'CollectionItemName','ProgramName').
+struct_dt_i([ 26,48,0 ],'XmlName','').
+struct_dt_i([ 26,48,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,48,0 ],'XmlNamespace','').
+struct_dt_i([ 26,48,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,48,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,48,0 ],'JsonName','').
+struct_dt_i([ 26,48,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,48,75 ],name,'ProgramName').
+struct_dt_i([ 26,48,75 ],namespace,'IS2.ProgramNames').
+struct_dt_i([ 26,67,0 ],name,'WWPBaseObjects\DVelop_Menu').
+struct_dt_i([ 26,67,0 ],namespace,'IS2').
+struct_dt_i([ 26,67,0 ],'ObjName','DVelop_Menu').
+struct_dt_i([ 26,67,0 ],'ObjDesc','DVelop Menu').
+struct_dt_i([ 26,67,0 ],'ExternalName','DVelop_Menu').
+struct_dt_i([ 26,67,0 ],'ExternalNamespace','IS2').
+struct_dt_i([ 26,67,0 ],collection,'True').
+struct_dt_i([ 26,67,0 ],datatype,[ 26,67,103 ]).
+struct_dt_i([ 26,67,0 ],'CollectionItemName','Item').
+struct_dt_i([ 26,67,0 ],'XmlName','').
+struct_dt_i([ 26,67,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,67,0 ],'XmlNamespace','').
+struct_dt_i([ 26,67,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,67,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,67,0 ],'JsonName','').
+struct_dt_i([ 26,67,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,67,103 ],name,'Item').
+struct_dt_i([ 26,67,103 ],namespace,'IS2.DVelop_Menu').
+struct_dt_i([ 26,48,0 ],fullname,'WWPBaseObjects\ProgramNames').
+struct_dt_i([ 26,48,75 ],fullname,'WWPBaseObjects\ProgramNames.ProgramName').
+struct_dt_i([ 26,67,0 ],fullname,'WWPBaseObjects\DVelop_Menu').
+struct_dt_i([ 26,67,103 ],fullname,'WWPBaseObjects\DVelop_Menu.Item').
+struct_dt_i([ 26,48,0 ],camelname,'Wwpbaseobjects\programnames').
+struct_dt_i([ 26,48,75 ],camelname,'Programname').
+struct_dt_i([ 26,67,0 ],camelname,'Wwpbaseobjects\dvelop_menu').
+struct_dt_i([ 26,67,103 ],camelname,'Item').
+struct_dt_i([ 26,48,0 ],modified,yes).
+struct_dt_i([ 26,48,75 ],modified,yes).
+struct_dt_i([ 26,67,0 ],modified,yes).
+struct_dt_i([ 26,67,103 ],modified,yes).
+ 
+struct_dt_elem_i([ 26,48,75 ],1,name,'Name').
+struct_dt_elem_i([ 26,48,75 ],1,camelname,'Name').
+struct_dt_elem_i([ 26,48,75 ],1,basedon,41).
+struct_dt_elem_i([ 26,48,75 ],1,length,256).
+struct_dt_elem_i([ 26,48,75 ],1,decimals,0).
+struct_dt_elem_i([ 26,48,75 ],1,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,48,75 ],1,pic,'').
+struct_dt_elem_i([ 26,48,75 ],1,collection,'False').
+struct_dt_elem_i([ 26,48,75 ],1,'ExternalName','Name').
+struct_dt_elem_i([ 26,48,75 ],1,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,48,75 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,48,75 ],1,'XmlName','').
+struct_dt_elem_i([ 26,48,75 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,48,75 ],1,soaptype,'').
+struct_dt_elem_i([ 26,48,75 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,48,75 ],1,'JsonName','').
+struct_dt_elem_i([ 26,48,75 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,48,75 ],2,name,'Description').
+struct_dt_elem_i([ 26,48,75 ],2,camelname,'Description').
+struct_dt_elem_i([ 26,48,75 ],2,length,255).
+struct_dt_elem_i([ 26,48,75 ],2,decimals,0).
+struct_dt_elem_i([ 26,48,75 ],2,type,[ 13,255,0 ]).
+struct_dt_elem_i([ 26,48,75 ],2,pic,'').
+struct_dt_elem_i([ 26,48,75 ],2,collection,'False').
+struct_dt_elem_i([ 26,48,75 ],2,'ExternalName','Description').
+struct_dt_elem_i([ 26,48,75 ],2,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,48,75 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,48,75 ],2,'XmlName','').
+struct_dt_elem_i([ 26,48,75 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,48,75 ],2,soaptype,'').
+struct_dt_elem_i([ 26,48,75 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,48,75 ],2,'JsonName','').
+struct_dt_elem_i([ 26,48,75 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,48,75 ],3,name,'Link').
+struct_dt_elem_i([ 26,48,75 ],3,camelname,'Link').
+struct_dt_elem_i([ 26,48,75 ],3,basedon,20).
+struct_dt_elem_i([ 26,48,75 ],3,length,1000).
+struct_dt_elem_i([ 26,48,75 ],3,decimals,0).
+struct_dt_elem_i([ 26,48,75 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,48,75 ],3,pic,'').
+struct_dt_elem_i([ 26,48,75 ],3,collection,'False').
+struct_dt_elem_i([ 26,48,75 ],3,'ExternalName','Link').
+struct_dt_elem_i([ 26,48,75 ],3,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,48,75 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,48,75 ],3,'XmlName','').
+struct_dt_elem_i([ 26,48,75 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,48,75 ],3,soaptype,'').
+struct_dt_elem_i([ 26,48,75 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,48,75 ],3,'JsonName','').
+struct_dt_elem_i([ 26,48,75 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],1,name,'Id').
+struct_dt_elem_i([ 26,67,103 ],1,camelname,id).
+struct_dt_elem_i([ 26,67,103 ],1,length,40).
+struct_dt_elem_i([ 26,67,103 ],1,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],1,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],1,pic,'').
+struct_dt_elem_i([ 26,67,103 ],1,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],1,'ExternalName',id).
+struct_dt_elem_i([ 26,67,103 ],1,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],1,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],1,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],1,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],2,name,'Tooltip').
+struct_dt_elem_i([ 26,67,103 ],2,camelname,tooltip).
+struct_dt_elem_i([ 26,67,103 ],2,length,40).
+struct_dt_elem_i([ 26,67,103 ],2,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],2,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],2,pic,'').
+struct_dt_elem_i([ 26,67,103 ],2,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],2,'ExternalName',tooltip).
+struct_dt_elem_i([ 26,67,103 ],2,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],2,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],2,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],2,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],3,name,'Link').
+struct_dt_elem_i([ 26,67,103 ],3,camelname,link).
+struct_dt_elem_i([ 26,67,103 ],3,length,40).
+struct_dt_elem_i([ 26,67,103 ],3,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],3,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],3,pic,'').
+struct_dt_elem_i([ 26,67,103 ],3,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],3,'ExternalName',link).
+struct_dt_elem_i([ 26,67,103 ],3,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],3,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],3,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],3,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],4,name,'Linktarget').
+struct_dt_elem_i([ 26,67,103 ],4,camelname,linkTarget).
+struct_dt_elem_i([ 26,67,103 ],4,length,40).
+struct_dt_elem_i([ 26,67,103 ],4,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],4,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],4,pic,'').
+struct_dt_elem_i([ 26,67,103 ],4,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],4,'ExternalName',linkTarget).
+struct_dt_elem_i([ 26,67,103 ],4,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],4,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],4,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],4,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],5,name,'Iconclass').
+struct_dt_elem_i([ 26,67,103 ],5,camelname,iconClass).
+struct_dt_elem_i([ 26,67,103 ],5,length,40).
+struct_dt_elem_i([ 26,67,103 ],5,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],5,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],5,pic,'').
+struct_dt_elem_i([ 26,67,103 ],5,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],5,'ExternalName',iconClass).
+struct_dt_elem_i([ 26,67,103 ],5,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],5,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],5,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],5,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],5,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],5,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],6,name,'Caption').
+struct_dt_elem_i([ 26,67,103 ],6,camelname,caption).
+struct_dt_elem_i([ 26,67,103 ],6,length,40).
+struct_dt_elem_i([ 26,67,103 ],6,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],6,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],6,pic,'').
+struct_dt_elem_i([ 26,67,103 ],6,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],6,'ExternalName',caption).
+struct_dt_elem_i([ 26,67,103 ],6,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],6,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],6,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],6,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],6,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],6,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],6,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],6,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],7,name,'Authorizationkey').
+struct_dt_elem_i([ 26,67,103 ],7,camelname,authorizationKey).
+struct_dt_elem_i([ 26,67,103 ],7,length,40).
+struct_dt_elem_i([ 26,67,103 ],7,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],7,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],7,pic,'').
+struct_dt_elem_i([ 26,67,103 ],7,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],7,'ExternalName',authorizationKey).
+struct_dt_elem_i([ 26,67,103 ],7,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],7,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],7,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],7,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],7,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],7,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],7,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],7,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],8,name,'Additionaldata').
+struct_dt_elem_i([ 26,67,103 ],8,camelname,additionalData).
+struct_dt_elem_i([ 26,67,103 ],8,length,40).
+struct_dt_elem_i([ 26,67,103 ],8,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],8,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 26,67,103 ],8,pic,'').
+struct_dt_elem_i([ 26,67,103 ],8,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],8,'ExternalName',additionalData).
+struct_dt_elem_i([ 26,67,103 ],8,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],8,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],8,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],8,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],8,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],8,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],8,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],8,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],9,name,'Submenuimage').
+struct_dt_elem_i([ 26,67,103 ],9,camelname,submenuImage).
+struct_dt_elem_i([ 26,67,103 ],9,length,4).
+struct_dt_elem_i([ 26,67,103 ],9,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],9,type,[ 7,4,0 ]).
+struct_dt_elem_i([ 26,67,103 ],9,pic,'').
+struct_dt_elem_i([ 26,67,103 ],9,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],9,'ExternalName',submenuImage).
+struct_dt_elem_i([ 26,67,103 ],9,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],9,'XmlType','Element').
+struct_dt_elem_i([ 26,67,103 ],9,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],9,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],9,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],9,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],9,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],9,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,103 ],10,name,'Submenuimage_gxi').
+struct_dt_elem_i([ 26,67,103 ],10,camelname,submenuImage_GXI).
+struct_dt_elem_i([ 26,67,103 ],10,collection,'False').
+struct_dt_elem_i([ 26,67,103 ],10,isadd,'True').
+struct_dt_elem_i([ 26,67,103 ],10,length,2048).
+struct_dt_elem_i([ 26,67,103 ],10,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],10,type,[ 13,2048,0 ]).
+struct_dt_elem_i([ 26,67,103 ],11,name,'Subitems').
+struct_dt_elem_i([ 26,67,103 ],11,camelname,subItems).
+struct_dt_elem_i([ 26,67,103 ],11,length,4).
+struct_dt_elem_i([ 26,67,103 ],11,decimals,0).
+struct_dt_elem_i([ 26,67,103 ],11,type,[ [ 26,67,0 ],4,0 ]).
+struct_dt_elem_i([ 26,67,103 ],11,pic,'').
+struct_dt_elem_i([ 26,67,103 ],11,collection,'True').
+struct_dt_elem_i([ 26,67,103 ],11,'ExternalName',subItems).
+struct_dt_elem_i([ 26,67,103 ],11,'ExternalNamespace','IS2').
+struct_dt_elem_i([ 26,67,103 ],11,'CollectionItemName','Item').
+struct_dt_elem_i([ 26,67,103 ],11,'XmlName','').
+struct_dt_elem_i([ 26,67,103 ],11,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,67,103 ],11,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,103 ],11,soaptype,'').
+struct_dt_elem_i([ 26,67,103 ],11,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,103 ],11,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,67,103 ],11,'JsonName','').
+struct_dt_elem_i([ 26,67,103 ],11,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,48,75 ],1,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,16,'WWPBASEOBJECTS\LISTWWPPROGRAMS',[ [ o(objectcollection('WWPBaseObjects\ProgramNames.ProgramName')),0,0,0 ] ],[ [ 'ProgramNames',out,[] ] ]).
+pgm_parm_i(web,8,'WWPBASEOBJECTS\HOME',[],[]).
+ 
+pgm_callprotocol_i(mnproc,6,'WWPBASEOBJECTS\MENUOPTIONSDATA','INTERNAL','').
+pgm_callprotocol_i(proc,16,'WWPBASEOBJECTS\LISTWWPPROGRAMS','INTERNAL','Secure').
+pgm_callprotocol_i(web,8,'WWPBASEOBJECTS\HOME','INTERNAL','Secure').
+ 
+ 
+pgm_main_info_i(web,8,'WWPBASEOBJECTS\HOME',[ 15,'WWPBASEOBJECTS\HOME','','','','','INTERNAL' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

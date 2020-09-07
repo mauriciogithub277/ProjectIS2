@@ -1,0 +1,35 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_7-138086</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>38</ObjId>
+<ObjName>WWPBaseObjects.WizardStepsBulletWC</ObjName>
+<ObjDesc>Wizard Steps Bullet WC.</ObjDesc>
+<ObjPgmName>WWPBaseObjects.WizardStepsBulletWC</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>specfailed</Result>
+<Warnings></Warnings>
+<Errors>
+<Error>
+<MsgCode>src0216</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>72</Line></Location>
+<Message>
+<Token>'Visible' invalid property.</Token></Message></Error>
+<Error>
+<MsgCode>src0216</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>83</Line></Location>
+<Message>
+<Token>'Visible' invalid property.</Token></Message></Error>
+<Error>
+<MsgCode>src0216</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>90</Line></Location>
+<Message>
+<Token>'Visible' invalid property.</Token></Message></Error></Errors></ObjectSpec>

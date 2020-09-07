@@ -2,7 +2,14 @@
 Starting copy...
 1000 rows successfully bulk-copied to host-file. Total received: 1000
 1000 rows successfully bulk-copied to host-file. Total received: 2000
+1000 rows successfully bulk-copied to host-file. Total received: 3000
+1000 rows successfully bulk-copied to host-file. Total received: 4000
+1000 rows successfully bulk-copied to host-file. Total received: 5000
+1000 rows successfully bulk-copied to host-file. Total received: 6000
+1000 rows successfully bulk-copied to host-file. Total received: 7000
+1000 rows successfully bulk-copied to host-file. Total received: 8000
+1000 rows successfully bulk-copied to host-file. Total received: 9000
 
-2190 rows copied.
+9982 rows copied.
 Network packet size (bytes): 4096
-Clock Time (ms.) Total     : 16     Average : (136875.00 rows per sec.)
+Clock Time (ms.) Total     : 281    Average : (35523.13 rows per sec.)

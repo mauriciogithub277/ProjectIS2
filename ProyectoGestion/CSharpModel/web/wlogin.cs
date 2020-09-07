@@ -2,7 +2,7 @@
                File: Wlogin
         Description: Wlogin
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/23/2020 19:47:16.25
+       Generated on: 8/24/2020 21:27:55.57
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -38,7 +38,7 @@ namespace GeneXus.Programs {
          DataStoreUtil.LoadDataStores( context);
          dsDefault = context.GetDataStore("Default");
          IsMain = true;
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
       }
 
       public wlogin( IGxContext context )
@@ -141,7 +141,7 @@ namespace GeneXus.Programs {
          if ( ! isAjaxCallMode( ) )
          {
             ValidateSpaRequest();
-            PA082( ) ;
+            PA0F2( ) ;
             if ( ( GxWebError == 0 ) && ! isAjaxCallMode( ) )
             {
                /* GeneXus formulas. */
@@ -152,10 +152,10 @@ namespace GeneXus.Programs {
                AssignProp("", false, edtavTexterror2_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavTexterror2_Enabled), 5, 0), true);
                edtavLoginerror_Enabled = 0;
                AssignProp("", false, edtavLoginerror_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavLoginerror_Enabled), 5, 0), true);
-               WS082( ) ;
+               WS0F2( ) ;
                if ( ! isAjaxCallMode( ) )
                {
-                  WE082( ) ;
+                  WE0F2( ) ;
                }
             }
             if ( ( GxWebError == 0 ) && context.isAjaxRequest( ) )
@@ -196,7 +196,7 @@ namespace GeneXus.Programs {
             enableOutput();
          }
          context.WriteHtmlText( "<title>") ;
-         context.SendWebValue( "Wlogin") ;
+         context.SendWebValue( context.GetMessage( "Wlogin", "")) ;
          context.WriteHtmlTextNl( "</title>") ;
          if ( context.isSpaRequest( ) )
          {
@@ -213,7 +213,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202032319471628", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202082421275560", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -248,8 +248,8 @@ namespace GeneXus.Programs {
 
       protected void send_integrity_footer_hashes( )
       {
-         GxWebStd.gx_hidden_field( context, "gxhash_NAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A2Name, "")), context));
-         GxWebStd.gx_hidden_field( context, "gxhash_PASSWORD", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A3Password, "")), context));
+         GxWebStd.gx_hidden_field( context, "gxhash_NAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A9Name, "")), context));
+         GxWebStd.gx_hidden_field( context, "gxhash_PASSWORD", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A10Password, "")), context));
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
       }
 
@@ -258,14 +258,14 @@ namespace GeneXus.Programs {
          /* Send hidden variables. */
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
-         GxWebStd.gx_hidden_field( context, "NAME", StringUtil.RTrim( A2Name));
-         GxWebStd.gx_hidden_field( context, "gxhash_NAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A2Name, "")), context));
-         GxWebStd.gx_hidden_field( context, "PASSWORD", StringUtil.RTrim( A3Password));
-         GxWebStd.gx_hidden_field( context, "gxhash_PASSWORD", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A3Password, "")), context));
-         GxWebStd.gx_hidden_field( context, "ROLESNAME", StringUtil.RTrim( A9RolesName));
+         GxWebStd.gx_hidden_field( context, "NAME", StringUtil.RTrim( A9Name));
+         GxWebStd.gx_hidden_field( context, "gxhash_NAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A9Name, "")), context));
+         GxWebStd.gx_hidden_field( context, "PASSWORD", StringUtil.RTrim( A10Password));
+         GxWebStd.gx_hidden_field( context, "gxhash_PASSWORD", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A10Password, "")), context));
+         GxWebStd.gx_hidden_field( context, "ROLESNAME", StringUtil.RTrim( A15RolesName));
       }
 
-      protected void RenderHtmlCloseForm082( )
+      protected void RenderHtmlCloseForm0F2( )
       {
          SendCloseFormHiddens( ) ;
          GxWebStd.gx_hidden_field( context, "GX_FocusControl", GX_FocusControl);
@@ -284,6 +284,18 @@ namespace GeneXus.Programs {
             enableOutput();
          }
          include_jscripts( ) ;
+         context.WriteHtmlText( "<script type=\"text/javascript\">") ;
+         context.WriteHtmlText( "gx.setLanguageCode(\""+context.GetLanguageProperty( "code")+"\");") ;
+         if ( ! context.isSpaRequest( ) )
+         {
+            context.WriteHtmlText( "gx.setDateFormat(\""+context.GetLanguageProperty( "date_fmt")+"\");") ;
+            context.WriteHtmlText( "gx.setTimeFormat("+context.GetLanguageProperty( "time_fmt")+");") ;
+            context.WriteHtmlText( "gx.setCenturyFirstYear("+40+");") ;
+            context.WriteHtmlText( "gx.setDecimalPoint(\""+context.GetLanguageProperty( "decimal_point")+"\");") ;
+            context.WriteHtmlText( "gx.setThousandSeparator(\""+context.GetLanguageProperty( "thousand_sep")+"\");") ;
+            context.WriteHtmlText( "gx.StorageTimeZone = "+1+";") ;
+         }
+         context.WriteHtmlText( "</script>") ;
          context.WriteHtmlTextNl( "</body>") ;
          context.WriteHtmlTextNl( "</html>") ;
          if ( context.isSpaRequest( ) )
@@ -299,10 +311,10 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Wlogin" ;
+         return context.GetMessage( "Wlogin", "") ;
       }
 
-      protected void WB080( )
+      protected void WB0F0( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -321,16 +333,16 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "Center", "top", "", "", "div");
-            wb_table1_6_082( true) ;
+            wb_table1_6_0F2( true) ;
          }
          else
          {
-            wb_table1_6_082( false) ;
+            wb_table1_6_0F2( false) ;
          }
          return  ;
       }
 
-      protected void wb_table1_6_082e( bool wbgen )
+      protected void wb_table1_6_0F2e( bool wbgen )
       {
          if ( wbgen )
          {
@@ -343,7 +355,7 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 30,'',false,'',0)\"";
             ClassString = "BtnEnter";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttIniciar_Internalname, "", "Iniciar", bttIniciar_Jsonclick, 5, "Iniciar", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'INICIAR\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_Wlogin.htm");
+            GxWebStd.gx_button_ctrl( context, bttIniciar_Internalname, "", context.GetMessage( "Iniciar", ""), bttIniciar_Jsonclick, 5, context.GetMessage( "Iniciar", ""), "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'INICIAR\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_Wlogin.htm");
             GxWebStd.gx_div_end( context, "Center", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -356,7 +368,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 35,'',false,'',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavLoginerror_Internalname, StringUtil.RTrim( AV14LoginError), StringUtil.RTrim( context.localUtil.Format( AV14LoginError, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,35);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavLoginerror_Jsonclick, 0, "TextActionAttribute", "", "", "", "", 1, edtavLoginerror_Enabled, 0, "text", "", 30, "chr", 1, "row", 30, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
+            GxWebStd.gx_single_line_edit( context, edtavLoginerror_Internalname, StringUtil.RTrim( AV5LoginError), StringUtil.RTrim( context.localUtil.Format( AV5LoginError, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,35);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavLoginerror_Jsonclick, 0, "TextActionAttribute", "", "", "", "", 1, edtavLoginerror_Enabled, 0, "text", "", 30, "chr", 1, "row", 30, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "Center", "top", "div");
@@ -367,7 +379,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START082( )
+      protected void START0F2( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -375,7 +387,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 16_0_7-138086", 0) ;
-            Form.Meta.addItem("description", "Wlogin", 0) ;
+            Form.Meta.addItem("description", context.GetMessage( "Wlogin", ""), 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -384,16 +396,16 @@ namespace GeneXus.Programs {
          {
          }
          wbErr = false;
-         STRUP080( ) ;
+         STRUP0F0( ) ;
       }
 
-      protected void WS082( )
+      protected void WS0F2( )
       {
-         START082( ) ;
-         EVT082( ) ;
+         START0F2( ) ;
+         EVT0F2( ) ;
       }
 
-      protected void EVT082( )
+      protected void EVT0F2( )
       {
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
@@ -423,14 +435,14 @@ namespace GeneXus.Programs {
                            context.wbHandled = 1;
                            dynload_actions( ) ;
                            /* Execute user event: 'Iniciar' */
-                           E11082 ();
+                           E110F2 ();
                         }
                         else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                         {
                            context.wbHandled = 1;
                            dynload_actions( ) ;
                            /* Execute user event: Load */
-                           E12082 ();
+                           E120F2 ();
                         }
                         else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                         {
@@ -462,7 +474,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE082( )
+      protected void WE0F2( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -470,12 +482,12 @@ namespace GeneXus.Programs {
             Refresh( ) ;
             if ( ! GxWebStd.gx_redirect( context) )
             {
-               RenderHtmlCloseForm082( ) ;
+               RenderHtmlCloseForm0F2( ) ;
             }
          }
       }
 
-      protected void PA082( )
+      protected void PA0F2( )
       {
          if ( nDonePA == 0 )
          {
@@ -530,7 +542,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF082( ) ;
+         RF0F2( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -549,7 +561,7 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtavLoginerror_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavLoginerror_Enabled), 5, 0), true);
       }
 
-      protected void RF082( )
+      protected void RF0F2( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -559,20 +571,20 @@ namespace GeneXus.Programs {
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
             /* Execute user event: Load */
-            E12082 ();
-            WB080( ) ;
+            E120F2 ();
+            WB0F0( ) ;
          }
       }
 
-      protected void send_integrity_lvl_hashes082( )
+      protected void send_integrity_lvl_hashes0F2( )
       {
-         GxWebStd.gx_hidden_field( context, "NAME", StringUtil.RTrim( A2Name));
-         GxWebStd.gx_hidden_field( context, "gxhash_NAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A2Name, "")), context));
-         GxWebStd.gx_hidden_field( context, "PASSWORD", StringUtil.RTrim( A3Password));
-         GxWebStd.gx_hidden_field( context, "gxhash_PASSWORD", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A3Password, "")), context));
+         GxWebStd.gx_hidden_field( context, "NAME", StringUtil.RTrim( A9Name));
+         GxWebStd.gx_hidden_field( context, "gxhash_NAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A9Name, "")), context));
+         GxWebStd.gx_hidden_field( context, "PASSWORD", StringUtil.RTrim( A10Password));
+         GxWebStd.gx_hidden_field( context, "gxhash_PASSWORD", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( A10Password, "")), context));
       }
 
-      protected void STRUP080( )
+      protected void STRUP0F0( )
       {
          /* Before Start, stand alone formulas. */
          context.Gx_err = 0;
@@ -589,16 +601,16 @@ namespace GeneXus.Programs {
             /* Read saved SDTs. */
             /* Read saved values. */
             /* Read variables values. */
-            AV5usuario = cgiGet( edtavUsuario_Internalname);
-            AssignAttri("", false, "AV5usuario", AV5usuario);
-            AV10textError = cgiGet( edtavTexterror_Internalname);
-            AssignAttri("", false, "AV10textError", AV10textError);
-            AV9password = cgiGet( edtavPassword_Internalname);
-            AssignAttri("", false, "AV9password", AV9password);
-            AV11textError2 = cgiGet( edtavTexterror2_Internalname);
-            AssignAttri("", false, "AV11textError2", AV11textError2);
-            AV14LoginError = cgiGet( edtavLoginerror_Internalname);
-            AssignAttri("", false, "AV14LoginError", AV14LoginError);
+            AV10usuario = cgiGet( edtavUsuario_Internalname);
+            AssignAttri("", false, "AV10usuario", AV10usuario);
+            AV8textError = cgiGet( edtavTexterror_Internalname);
+            AssignAttri("", false, "AV8textError", AV8textError);
+            AV6password = cgiGet( edtavPassword_Internalname);
+            AssignAttri("", false, "AV6password", AV6password);
+            AV9textError2 = cgiGet( edtavTexterror2_Internalname);
+            AssignAttri("", false, "AV9textError2", AV9textError2);
+            AV5LoginError = cgiGet( edtavLoginerror_Internalname);
+            AssignAttri("", false, "AV5LoginError", AV5LoginError);
             /* Read subfile selected row values. */
             /* Read hidden variables. */
             GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
@@ -609,39 +621,39 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E11082( )
+      protected void E110F2( )
       {
          /* 'Iniciar' Routine */
-         if ( String.IsNullOrEmpty(StringUtil.RTrim( AV5usuario)) && String.IsNullOrEmpty(StringUtil.RTrim( AV9password)) )
+         if ( String.IsNullOrEmpty(StringUtil.RTrim( AV10usuario)) && String.IsNullOrEmpty(StringUtil.RTrim( AV6password)) )
          {
-            AV10textError = "Campo Obligatorio";
-            AssignAttri("", false, "AV10textError", AV10textError);
-            AV11textError2 = "Campo Obligatorio ";
-            AssignAttri("", false, "AV11textError2", AV11textError2);
+            AV8textError = context.GetMessage( "Campo Obligatorio", "");
+            AssignAttri("", false, "AV8textError", AV8textError);
+            AV9textError2 = context.GetMessage( "Campo Obligatorio ", "");
+            AssignAttri("", false, "AV9textError2", AV9textError2);
          }
          else
          {
-            AV18GXLvl6 = 0;
-            /* Using cursor H00082 */
-            pr_default.execute(0, new Object[] {AV5usuario, AV9password});
+            AV14GXLvl6 = 0;
+            /* Using cursor H000F2 */
+            pr_default.execute(0, new Object[] {AV10usuario, AV6password});
             while ( (pr_default.getStatus(0) != 101) )
             {
-               A8RolesID = H00082_A8RolesID[0];
-               A3Password = H00082_A3Password[0];
-               A2Name = H00082_A2Name[0];
-               A9RolesName = H00082_A9RolesName[0];
-               A9RolesName = H00082_A9RolesName[0];
-               AV18GXLvl6 = 1;
-               AV15idUser = A9RolesName;
-               CallWebObject(formatLink("wwdasboard.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV15idUser)));
+               A2RolesID = H000F2_A2RolesID[0];
+               A10Password = H000F2_A10Password[0];
+               A9Name = H000F2_A9Name[0];
+               A15RolesName = H000F2_A15RolesName[0];
+               A15RolesName = H000F2_A15RolesName[0];
+               AV14GXLvl6 = 1;
+               AV11idUser = A15RolesName;
+               CallWebObject(formatLink("wwdasboard.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV11idUser)));
                context.wjLocDisableFrm = 1;
                pr_default.readNext(0);
             }
             pr_default.close(0);
-            if ( AV18GXLvl6 == 0 )
+            if ( AV14GXLvl6 == 0 )
             {
-               AV14LoginError = "Error-Credenciales";
-               AssignAttri("", false, "AV14LoginError", AV14LoginError);
+               AV5LoginError = context.GetMessage( "Error-Credenciales", "");
+               AssignAttri("", false, "AV5LoginError", AV5LoginError);
             }
          }
          /*  Sending Event outputs  */
@@ -651,12 +663,12 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void E12082( )
+      protected void E120F2( )
       {
          /* Load Routine */
       }
 
-      protected void wb_table1_6_082( bool wbgen )
+      protected void wb_table1_6_0F2( bool wbgen )
       {
          if ( wbgen )
          {
@@ -666,7 +678,7 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<tr>") ;
             context.WriteHtmlText( "<td>") ;
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblTextblock1_Internalname, "Iniciar Sesion", "", "", lblTextblock1_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BigTitle", 0, "", 1, 1, 0, "HLP_Wlogin.htm");
+            GxWebStd.gx_label_ctrl( context, lblTextblock1_Internalname, context.GetMessage( "Iniciar Sesion", ""), "", "", lblTextblock1_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BigTitle", 0, "", 1, 1, 0, "HLP_Wlogin.htm");
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "</tr>") ;
             context.WriteHtmlText( "<tr>") ;
@@ -674,12 +686,12 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtavUsuario_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavUsuario_Internalname, "Usuario", "col-sm-3 AttributeLabel", 1, true);
+            GxWebStd.gx_label_element( context, edtavUsuario_Internalname, context.GetMessage( "Usuario", ""), "col-sm-3 AttributeLabel", 1, true);
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 14,'',false,'',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavUsuario_Internalname, StringUtil.RTrim( AV5usuario), StringUtil.RTrim( context.localUtil.Format( AV5usuario, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,14);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavUsuario_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtavUsuario_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Wlogin.htm");
+            GxWebStd.gx_single_line_edit( context, edtavUsuario_Internalname, StringUtil.RTrim( AV10usuario), StringUtil.RTrim( context.localUtil.Format( AV10usuario, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,14);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavUsuario_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtavUsuario_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_Wlogin.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             context.WriteHtmlText( "</td>") ;
@@ -690,7 +702,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 18,'',false,'',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavTexterror_Internalname, StringUtil.RTrim( AV10textError), StringUtil.RTrim( context.localUtil.Format( AV10textError, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,18);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavTexterror_Jsonclick, 0, "ErrorAttribute", "", "", "", "", 1, edtavTexterror_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
+            GxWebStd.gx_single_line_edit( context, edtavTexterror_Internalname, StringUtil.RTrim( AV8textError), StringUtil.RTrim( context.localUtil.Format( AV8textError, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,18);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavTexterror_Jsonclick, 0, "ErrorAttribute", "", "", "", "", 1, edtavTexterror_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             context.WriteHtmlText( "</td>") ;
@@ -700,12 +712,12 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtavPassword_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavPassword_Internalname, "Contraseña", "col-sm-3 AttributeLabel", 1, true);
+            GxWebStd.gx_label_element( context, edtavPassword_Internalname, context.GetMessage( "Contraseña", ""), "col-sm-3 AttributeLabel", 1, true);
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 23,'',false,'',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavPassword_Internalname, StringUtil.RTrim( AV9password), StringUtil.RTrim( context.localUtil.Format( AV9password, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,23);\""+" "+"data-gx-password-reveal"+" ", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavPassword_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtavPassword_Enabled, 0, "text", "", 40, "chr", 1, "row", 20, -1, 0, 0, 1, 0, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
+            GxWebStd.gx_single_line_edit( context, edtavPassword_Internalname, StringUtil.RTrim( AV6password), StringUtil.RTrim( context.localUtil.Format( AV6password, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,23);\""+" "+"data-gx-password-reveal"+" ", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavPassword_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtavPassword_Enabled, 0, "text", "", 40, "chr", 1, "row", 20, -1, 0, 0, 1, 0, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             context.WriteHtmlText( "</td>") ;
@@ -716,18 +728,18 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 27,'',false,'',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavTexterror2_Internalname, StringUtil.RTrim( AV11textError2), StringUtil.RTrim( context.localUtil.Format( AV11textError2, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,27);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavTexterror2_Jsonclick, 0, "ErrorAttribute", "", "", "", "", 1, edtavTexterror2_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
+            GxWebStd.gx_single_line_edit( context, edtavTexterror2_Internalname, StringUtil.RTrim( AV9textError2), StringUtil.RTrim( context.localUtil.Format( AV9textError2, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,27);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavTexterror2_Jsonclick, 0, "ErrorAttribute", "", "", "", "", 1, edtavTexterror2_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Wlogin.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "</tr>") ;
             /* End of table */
             context.WriteHtmlText( "</table>") ;
-            wb_table1_6_082e( true) ;
+            wb_table1_6_0F2e( true) ;
          }
          else
          {
-            wb_table1_6_082e( false) ;
+            wb_table1_6_0F2e( false) ;
          }
       }
 
@@ -746,9 +758,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA082( ) ;
-         WS082( ) ;
-         WE082( ) ;
+         PA0F2( ) ;
+         WS0F2( ) ;
+         WE0F2( ) ;
          this.cleanup();
          context.SetWrapped(false);
          context.GX_msglist = BackMsgLst;
@@ -770,7 +782,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202032319471639", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202082421275576", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -785,8 +797,8 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("wlogin.js", "?202032319471639", false, true);
+         context.AddJavascriptSource("messages."+context.GetLanguageProperty( "code")+".js", "?"+GetCacheInvalidationToken( ), false, true);
+         context.AddJavascriptSource("wlogin.js", "?202082421275576", false, true);
          /* End function include_jscripts */
       }
 
@@ -811,7 +823,7 @@ namespace GeneXus.Programs {
 
       public override void initialize_properties( )
       {
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
          if ( context.isSpaRequest( ) )
          {
             disableJsOutput();
@@ -840,10 +852,10 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A2Name',fld:'NAME',pic:'',hsh:true},{av:'A3Password',fld:'PASSWORD',pic:'',hsh:true}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A9Name',fld:'NAME',pic:'',hsh:true},{av:'A10Password',fld:'PASSWORD',pic:'',hsh:true}]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("'INICIAR'","{handler:'E11082',iparms:[{av:'AV5usuario',fld:'vUSUARIO',pic:''},{av:'AV9password',fld:'vPASSWORD',pic:''},{av:'A2Name',fld:'NAME',pic:'',hsh:true},{av:'A3Password',fld:'PASSWORD',pic:'',hsh:true},{av:'A9RolesName',fld:'ROLESNAME',pic:''}]");
-         setEventMetadata("'INICIAR'",",oparms:[{av:'AV10textError',fld:'vTEXTERROR',pic:''},{av:'AV11textError2',fld:'vTEXTERROR2',pic:''},{av:'AV14LoginError',fld:'vLOGINERROR',pic:''}]}");
+         setEventMetadata("'INICIAR'","{handler:'E110F2',iparms:[{av:'AV10usuario',fld:'vUSUARIO',pic:''},{av:'AV6password',fld:'vPASSWORD',pic:''},{av:'A9Name',fld:'NAME',pic:'',hsh:true},{av:'A10Password',fld:'PASSWORD',pic:'',hsh:true},{av:'A15RolesName',fld:'ROLESNAME',pic:''}]");
+         setEventMetadata("'INICIAR'",",oparms:[{av:'AV8textError',fld:'vTEXTERROR',pic:''},{av:'AV9textError2',fld:'vTEXTERROR2',pic:''},{av:'AV5LoginError',fld:'vLOGINERROR',pic:''}]}");
          return  ;
       }
 
@@ -868,33 +880,33 @@ namespace GeneXus.Programs {
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
-         A2Name = "";
-         A3Password = "";
+         A9Name = "";
+         A10Password = "";
          GXKey = "";
-         A9RolesName = "";
+         A15RolesName = "";
          GX_FocusControl = "";
          sPrefix = "";
          TempTags = "";
          ClassString = "";
          StyleString = "";
          bttIniciar_Jsonclick = "";
-         AV14LoginError = "";
+         AV5LoginError = "";
          Form = new GXWebForm();
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
-         AV5usuario = "";
-         AV10textError = "";
-         AV9password = "";
-         AV11textError2 = "";
+         AV10usuario = "";
+         AV8textError = "";
+         AV6password = "";
+         AV9textError2 = "";
          scmdbuf = "";
-         H00082_A1UsuarioID = new short[1] ;
-         H00082_A8RolesID = new short[1] ;
-         H00082_A3Password = new String[] {""} ;
-         H00082_A2Name = new String[] {""} ;
-         H00082_A9RolesName = new String[] {""} ;
-         AV15idUser = "";
+         H000F2_A1UsuarioID = new short[1] ;
+         H000F2_A2RolesID = new short[1] ;
+         H000F2_A10Password = new String[] {""} ;
+         H000F2_A9Name = new String[] {""} ;
+         H000F2_A15RolesName = new String[] {""} ;
+         AV11idUser = "";
          sStyleString = "";
          lblTextblock1_Jsonclick = "";
          BackMsgLst = new msglist();
@@ -902,7 +914,7 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.wlogin__default(),
             new Object[][] {
                 new Object[] {
-               H00082_A1UsuarioID, H00082_A8RolesID, H00082_A3Password, H00082_A2Name, H00082_A9RolesName
+               H000F2_A1UsuarioID, H000F2_A2RolesID, H000F2_A10Password, H000F2_A9Name, H000F2_A15RolesName
                }
             }
          );
@@ -922,8 +934,8 @@ namespace GeneXus.Programs {
       private short wbStart ;
       private short nDonePA ;
       private short gxcookieaux ;
-      private short AV18GXLvl6 ;
-      private short A8RolesID ;
+      private short AV14GXLvl6 ;
+      private short A2RolesID ;
       private short nGXWrapped ;
       private int edtavTexterror_Enabled ;
       private int edtavTexterror2_Enabled ;
@@ -939,10 +951,10 @@ namespace GeneXus.Programs {
       private String sDynURL ;
       private String FormProcess ;
       private String bodyStyle ;
-      private String A2Name ;
-      private String A3Password ;
+      private String A9Name ;
+      private String A10Password ;
       private String GXKey ;
-      private String A9RolesName ;
+      private String A15RolesName ;
       private String GX_FocusControl ;
       private String sPrefix ;
       private String divMaintable_Internalname ;
@@ -951,20 +963,20 @@ namespace GeneXus.Programs {
       private String StyleString ;
       private String bttIniciar_Internalname ;
       private String bttIniciar_Jsonclick ;
-      private String AV14LoginError ;
+      private String AV5LoginError ;
       private String edtavLoginerror_Jsonclick ;
       private String sEvt ;
       private String EvtGridId ;
       private String EvtRowId ;
       private String sEvtType ;
       private String edtavUsuario_Internalname ;
-      private String AV5usuario ;
-      private String AV10textError ;
-      private String AV9password ;
+      private String AV10usuario ;
+      private String AV8textError ;
+      private String AV6password ;
       private String edtavPassword_Internalname ;
-      private String AV11textError2 ;
+      private String AV9textError2 ;
       private String scmdbuf ;
-      private String AV15idUser ;
+      private String AV11idUser ;
       private String sStyleString ;
       private String tblTable1_Internalname ;
       private String lblTextblock1_Internalname ;
@@ -982,11 +994,11 @@ namespace GeneXus.Programs {
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private short[] H00082_A1UsuarioID ;
-      private short[] H00082_A8RolesID ;
-      private String[] H00082_A3Password ;
-      private String[] H00082_A2Name ;
-      private String[] H00082_A9RolesName ;
+      private short[] H000F2_A1UsuarioID ;
+      private short[] H000F2_A2RolesID ;
+      private String[] H000F2_A10Password ;
+      private String[] H000F2_A9Name ;
+      private String[] H000F2_A15RolesName ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
    }
@@ -1006,13 +1018,13 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmH00082 ;
-          prmH00082 = new Object[] {
-          new Object[] {"@AV5usuario",SqlDbType.NChar,40,0} ,
-          new Object[] {"@AV9password",SqlDbType.NChar,20,0}
+          Object[] prmH000F2 ;
+          prmH000F2 = new Object[] {
+          new Object[] {"@AV10usuario",SqlDbType.NChar,40,0} ,
+          new Object[] {"@AV6password",SqlDbType.NChar,20,0}
           } ;
           def= new CursorDef[] {
-              new CursorDef("H00082", "SELECT T1.[UsuarioID], T1.[RolesID], T1.[Password], T1.[Name], T2.[RolesName] FROM ([Usuario] T1 INNER JOIN [Roles] T2 ON T2.[RolesID] = T1.[RolesID]) WHERE (T1.[Name] = @AV5usuario) AND (T1.[Password] = @AV9password) ORDER BY T1.[UsuarioID] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH00082,100, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("H000F2", "SELECT T1.[UsuarioID], T1.[RolesID], T1.[Password], T1.[Name], T2.[RolesName] FROM ([Usuario] T1 INNER JOIN [Roles] T2 ON T2.[RolesID] = T1.[RolesID]) WHERE (T1.[Name] = @AV10usuario) AND (T1.[Password] = @AV6password) ORDER BY T1.[UsuarioID] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000F2,100, GxCacheFrequency.OFF ,true,false )
           };
        }
     }

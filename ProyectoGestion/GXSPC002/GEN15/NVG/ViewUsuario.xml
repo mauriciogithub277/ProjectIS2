@@ -4,7 +4,7 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>17</ObjId>
+<ObjId>19</ObjId>
 <ObjName>ViewUsuario</ObjName>
 <ObjDesc>View Usuario</ObjDesc>
 <ObjPgmName>ViewUsuario</ObjPgmName>
@@ -34,9 +34,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>10</ObjId>
-<ObjName>NotAuthorized</ObjName>
-<ObjPgmName>NotAuthorized</ObjPgmName>
+<ObjId>7</ObjId>
+<ObjName>WWPBaseObjects.NotAuthorized</ObjName>
+<ObjPgmName>WWPBaseObjects.NotAuthorized</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters>
 <Variable>

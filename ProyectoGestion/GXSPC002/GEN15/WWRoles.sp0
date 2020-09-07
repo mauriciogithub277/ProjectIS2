@@ -1,36 +1,36 @@
-spec_i([ web,22,'Roles','WWRoles',0,eng,'16_0_7-138086' ]).
+spec_i([ web,12,l('Work With Roles'),'WWRoles',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
-level_i(2,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 9,8 ] ] ],[ [ [ 3 ],[] ] ],[ 9 ],'',[],[] ]).
+level_i(2,[ 2,[ [ 2,many ] ],[],[],[ [ [ 2 ],[ 15,2 ] ] ],[ [ [ 2 ],[] ] ],[ 15 ],'',[],[] ]).
  
 tw_i(2,[]).
  
 lwi_i(2,[ [] ]).
  
-cond_constraint_i(2,[ [ t(9,2),t('.LIKE.',10),t('Rolesname',23) ],[ 9 ],[ t('.NOT.',8),t('null(',1),t('Rolesname',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(15,2),t('.LIKE.',10),t('Rolesname',23) ],[ 15 ],[ t('.NOT.',8),t('null(',1),t('Rolesname',23),t(')',4) ],[] ]).
  
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 3,9 ],[ 3,8 ] ] ]).
+ta_i(2,[ [ [ 2,15 ],[ 2,2 ] ] ]).
  
-las_i(2,[ [ 'Rolesname','Update','Delete',9,8 ] ]).
+las_i(2,[ [ 'Rolesname','Update','Delete',15,2 ] ]).
  
 lac_i(2,[ [ 'Rolesname','Update','Delete' ] ]).
  
  
-lits_i('Roles',5,10).
+lits_i(l('Roles'),5,10).
  
 cls_i([ 0,0 ],[ 5,86 ]).
  
 pos_i('Rolesname',[ 0,0,0 ]).
-pos_i(8,[ 1,2,0 ]).
-pos_i(9,[ 1,2,5 ]).
+pos_i(2,[ 1,2,0 ]).
+pos_i(15,[ 1,2,5 ]).
 pos_i('Update',[ 1,2,46 ]).
 pos_i('Delete',[ 1,2,67 ]).
  
-repeat_i(2,[ 1,2,[ 8,9,'Update','Delete' ],[ 'Update','Delete' ] ]).
+repeat_i(2,[ 1,2,[ 2,15,'Update','Delete' ],[ 'Update','Delete' ] ]).
  
 default_i(e('Pgmname',2,2,'"WWRoles"')).
  
@@ -51,9 +51,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -65,13 +66,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -120,17 +121,18 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
-rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('MasterPage',o(13,'WWPBaseObjects.WorkWithPlusMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Roles')).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
+rule_i(0,prop('ObjDesc','Work With Roles')).
 rule_i(0,prop('ObjName','WWRoles')).
 rule_i(0,maingen(15)).
-rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''DoInsert''',[ t('getmessagetext(',1),t('"DoInsert"',3),t(')',4) ],'' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''ATRAS''',[ t('getmessagetext(',1),t('"ATRAS"',3),t(')',4) ],'' ]) ],[],[],[])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"WWRoles"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,2,t,3,[],[ [],'',[] ]).
+a_i(3,2,t,2,[],[ [],'',[] ]).
 a_i(4,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(5,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
@@ -139,8 +141,8 @@ v_i(f,o,1,'Pgmname').
 v_i(f,i,2,[]).
 v_i(f,o,2,'Err').
 v_i(t,i,3,[]).
-v_i(t,o,3,9).
-v_i(t,o,3,8).
+v_i(t,o,3,15).
+v_i(t,o,3,2).
 v_i(f,i,4,[]).
 v_i(f,o,4,[ t('&Update',23),t('Enabled',3) ]).
 v_i(f,i,5,[]).
@@ -151,30 +153,28 @@ v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
  
  
  
-attri_i(9,[ 'RolesName',char,40,0,'',0,'Roles Name','',0 ]).
-attri_i(8,[ 'RolesID',int,4,0,'ZZZ9',0,'Roles ID','',0 ]).
-attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',19 ]).
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',18 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',17 ]).
-attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',16 ]).
-attri_i('Delete',[ 'Delete',char,20,0,'',0,'Delete','',15 ]).
-attri_i('Update',[ 'Update',char,20,0,'',0,'Update','',14 ]).
-attri_i('Rolesname',[ 'RolesName',char,40,0,'',0,'Roles Name','',13 ]).
-attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,'Trn Context Att','',12 ]).
-attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',11 ]).
-attri_i('Gridpagecount',[ 'GridPageCount',int,8,0,'ZZZZZZZ9',1,'Grid Page Count','',10 ]).
-attri_i('Gridstatefiltervalue',[ 'GridStateFilterValue',o('GridState.FilterValue'),0,0,'',0,'Grid State Filter Value','',9 ]).
-attri_i('Gridstate',[ 'GridState',o('GridState'),0,0,'',0,'Grid State','',8 ]).
-attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,'HTTPRequest','',7 ]).
-attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',6 ]).
-attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
+attri_i(15,[ 'RolesName',char,40,0,'',0,l('Roles Name'),'',0 ]).
+attri_i(2,[ 'RolesID',int,4,0,'ZZZ9',0,l('Roles ID'),'',0 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,l('Program name'),'',19 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',18 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',17 ]).
+attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,l('ADVANCED_LABEL_TEMPLATE'),'',16 ]).
+attri_i('Delete',[ 'Delete',char,20,0,'',0,l('Delete'),'',15 ]).
+attri_i('Update',[ 'Update',char,20,0,'',0,l('Update'),'',14 ]).
+attri_i('Rolesname',[ 'RolesName',char,40,0,'',0,l('Roles Name'),'',13 ]).
+attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,l('Trn Context Att'),'',12 ]).
+attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,l('Trn Context'),'',11 ]).
+attri_i('Gridpagecount',[ 'GridPageCount',int,8,0,'ZZZZZZZ9',1,l('Grid Page Count'),'',10 ]).
+attri_i('Gridstatefiltervalue',[ 'GridStateFilterValue',o('GridState.FilterValue'),0,0,'',0,l('Grid State Filter Value'),'',9 ]).
+attri_i('Gridstate',[ 'GridState',o('GridState'),0,0,'',0,l('Grid State'),'',8 ]).
+attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,l('HTTPRequest'),'',7 ]).
+attri_i('Session',[ 'Session',o(websession),4,0,'',0,l('Session'),'',6 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,l('Is Authorized'),'',5 ]).
  
-table_i(3,[ 'Roles',[ 8,9 ],'Roles','Roles' ]).
+table_i(2,[ 'Roles',[ 2,15 ],l('Roles'),'Roles' ]).
  
-index_i(3,[ '',a,[ 9 ],'' ]).
-index_i(3,[ 'IROLES',u,[ 8 ],'IRoles' ]).
- 
- 
+index_i(2,[ '',a,[ 15 ],'' ]).
+index_i(2,[ 'IROLES',u,[ 2 ],'IRoles' ]).
  
  
  
@@ -195,19 +195,21 @@ index_i(3,[ 'IROLES',u,[ 8 ],'IRoles' ]).
  
  
  
-enum_value_i(2,30,'"INS"','Insert','"Insert"',[ none ]).
-enum_value_i(2,30,'"UPD"','Update','"Update"',[ none ]).
-enum_value_i(2,30,'"DLT"','Delete','"Delete"',[ none ]).
-enum_value_i(2,30,'"DSP"','Display','"Display"',[ none ]).
-enum_value_i(2,60,'"GET"','Get','"Get"',[ none ]).
-enum_value_i(2,60,'"POST"','Post','"Post"',[ none ]).
-enum_value_i(2,60,'"PUT"','Put','"Put"',[ none ]).
-enum_value_i(2,60,'"DELETE"','Delete','"Delete"',[ none ]).
-enum_value_i(2,60,'"OPTIONS"','Options','"Options"',[ none ]).
-enum_value_i(2,60,'"HEAD"','Head','"Head"',[ none ]).
-enum_value_i(2,60,'"TRACE"','Trace','"Trace"',[ none ]).
-enum_value_i(2,60,'"CONNECT"','Connect','"Connect"',[ none ]).
-enum_value_i(2,60,'"PATCH"','Patch','"Patch"',[ none ]).
+ 
+ 
+enum_value_i(2,30,'"INS"','Insert',l('Insert'),[ none ]).
+enum_value_i(2,30,'"UPD"','Update',l('Update'),[ none ]).
+enum_value_i(2,30,'"DLT"','Delete',l('Delete'),[ none ]).
+enum_value_i(2,30,'"DSP"','Display',l('Display'),[ none ]).
+enum_value_i(2,60,'"GET"','Get',l('Get'),[ none ]).
+enum_value_i(2,60,'"POST"','Post',l('Post'),[ none ]).
+enum_value_i(2,60,'"PUT"','Put',l('Put'),[ none ]).
+enum_value_i(2,60,'"DELETE"','Delete',l('Delete'),[ none ]).
+enum_value_i(2,60,'"OPTIONS"','Options',l('Options'),[ none ]).
+enum_value_i(2,60,'"HEAD"','Head',l('Head'),[ none ]).
+enum_value_i(2,60,'"TRACE"','Trace',l('Trace'),[ none ]).
+enum_value_i(2,60,'"CONNECT"','Connect',l('Connect'),[ none ]).
+enum_value_i(2,60,'"PATCH"','Patch',l('Patch'),[ none ]).
  
 enum_value_info_i(2,30,'GeneXus\TrnMode').
 enum_value_info_i(2,60,'GeneXus\HttpMethod').
@@ -215,11 +217,11 @@ enum_value_info_i(2,60,'GeneXus\HttpMethod').
 enum_type_i(2,30,char,3,0).
 enum_type_i(2,60,char,7,0).
  
-dom_info_i(71,[ 'ID' ]).
-dom_info_i(72,[ 'Name' ]).
+dom_info_i(73,[ 'ID' ]).
+dom_info_i(74,[ 'Name' ]).
  
  
-break_i(2,nvg,1,[ 9 ],[ [ 8,9 ],[],[] ]).
+break_i(2,nvg,1,[ 15 ],[ [ 2,15 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,15).
@@ -228,16 +230,17 @@ b_group_i(2,4,lit,0,20,25).
 b_group_i(2,5,lit,0,26,31).
 b_group_i(2,6,lit,0,32,51).
 b_group_i(2,7,lit,0,52,64).
-b_group_i(2,8,lit,0,65,0).
+b_group_i(2,8,lit,0,65,75).
+b_group_i(2,9,lit,0,76,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
-b_line_i(2,2,2,cmd,1,[ t('',109,1,0),t('.NOT.',8,1,5),t('udp(',1,2,23),t(o(1,'IsAuthorized'),28,2,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
-b_line_i(3,2,2,cmd,1,[ t('',104,1,0),t(o(13,'NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
+b_line_i(2,2,2,cmd,1,[ t('',109,1,0),t('.NOT.',8,1,5),t('udp(',1,2,23),t(o(1,'WWPBaseObjects\IsAuthorized'),28,2,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
+b_line_i(3,2,2,cmd,1,[ t('',104,1,0),t(o(13,'WWPBaseObjects\NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
 b_line_i(4,2,2,cmd,1,[ t('',111,1,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',107,1,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
-b_line_i(7,2,2,cmd,1,[ t('',107,1,0),t('Update',23,1,0),t(=,10,1,0),t('"Update"',3,1,0) ]).
-b_line_i(8,2,2,cmd,1,[ t('',107,1,0),t('Delete',23,1,0),t(=,10,1,0),t('"Delete"',3,1,0) ]).
-b_line_i(9,2,2,cmd,1,[ t('',107,1,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Roles''',3,1,0) ]).
+b_line_i(7,2,2,cmd,1,[ t('',107,1,0),t('Update',23,1,0),t(=,10,1,0),t('getmessagetext(',1,1,0),t('"GXM_update"',3,1,0),t(')',4,1,0) ]).
+b_line_i(8,2,2,cmd,1,[ t('',107,1,0),t('Delete',23,1,0),t(=,10,1,0),t('getmessagetext(',1,1,0),t('"GX_BtnDelete"',3,1,0),t(')',4,1,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',107,1,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('getmessagetext(',1,1,0),t('"Roles"',3,1,0),t(')',4,1,0) ]).
 b_line_i(11,2,2,cmd,1,[ t('',145,1,0),t('''PREPARETRANSACTION''',3,11,5) ]).
 b_line_i(12,2,2,cmd,1,[ t('',145,1,0),t('''LOADGRIDSTATE''',3,12,5) ]).
 b_line_i(13,2,2,cmd,1,[ t('',147,1,0) ]).
@@ -245,13 +248,13 @@ b_line_i(15,2,2,cmd,1,[ t('',146,1,0),t('Refresh',3,15,7) ]).
 b_line_i(16,2,3,cmd,1,[ t('',145,1,0),t('''SAVEGRIDSTATE''',3,16,5) ]).
 b_line_i(17,2,3,cmd,1,[ t('',147,1,0) ]).
 b_line_i(19,2,3,cmd,1,[ t('',146,1,0),t([ t('Grid',3,19,7),t('Load',3,19,12) ],29,19,12) ]).
-b_line_i(20,2,4,cmd,1,[ t('',107,1,0),t([ t('Update',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Roles'),28,1,0),t(',',7,1,0),t([ 30,'Update' ],44,1,0),t(',',7,1,0),t(8,2,1,0),t(')',4,1,0) ]).
-b_line_i(21,2,4,cmd,1,[ t('',107,1,0),t([ t('Delete',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Roles'),28,1,0),t(',',7,1,0),t([ 30,'Delete' ],44,1,0),t(',',7,1,0),t(8,2,1,0),t(')',4,1,0) ]).
-b_line_i(22,2,4,cmd,1,[ t('',107,1,0),t([ t(9,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewRoles'),28,1,0),t(',',7,1,0),t(8,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
+b_line_i(20,2,4,cmd,1,[ t('',107,1,0),t([ t('Update',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Roles'),28,1,0),t(',',7,1,0),t([ 30,'Update' ],44,1,0),t(',',7,1,0),t(2,2,1,0),t(')',4,1,0) ]).
+b_line_i(21,2,4,cmd,1,[ t('',107,1,0),t([ t('Delete',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Roles'),28,1,0),t(',',7,1,0),t([ 30,'Delete' ],44,1,0),t(',',7,1,0),t(2,2,1,0),t(')',4,1,0) ]).
+b_line_i(22,2,4,cmd,1,[ t('',107,1,0),t([ t(15,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewRoles'),28,1,0),t(',',7,1,0),t(2,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
 b_line_i(23,2,4,cmd,1,[ t('',107,0,0),t([ t('Grid',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
 b_line_i(23,2,4,cmd,1,[ t('',147,1,0) ]).
 b_line_i(25,2,4,cmd,1,[ t('',146,1,0),t('''DoInsert''',3,25,7) ]).
-b_line_i(26,2,5,cmd,1,[ t('',104,1,0),t(o(0,'Roles'),28,1,2),t([ 30,'Insert' ],44,26,8),t(',',7,1,0),t('nullvalue(',1,26,24),t(8,2,26,35),t(')',4,1,42) ]).
+b_line_i(26,2,5,cmd,1,[ t('',104,1,0),t(o(0,'Roles'),28,1,2),t([ 30,'Insert' ],44,26,8),t(',',7,1,0),t('nullvalue(',1,26,24),t(2,2,26,35),t(')',4,1,42) ]).
 b_line_i(27,2,5,cmd,1,[ t('',147,1,0) ]).
 b_line_i(31,2,5,cmd,1,[ t('',143,1,0),t('''LOADGRIDSTATE''',3,31,5) ]).
 b_line_i(32,2,6,cmd,1,[ t('',109,1,0),t('(',0,1,5),t([ t('Httprequest',23,32,6),t('Method',3,32,19) ],29,32,19),t(=,10,1,26),t([ 60,'Get' ],44,32,28),t(')',4,1,42) ]).
@@ -286,6 +289,9 @@ b_line_i(68,2,8,cmd,1,[ t('',107,1,0),t([ t('Trncontext',23,1,0),t('Callerurl',3
 b_line_i(69,2,8,cmd,1,[ t('',107,1,0),t([ t('Trncontext',23,1,0),t('Transactionname',3,1,0) ],29,1,0),t(=,10,1,0),t('"Roles"',3,1,0) ]).
 b_line_i(71,2,8,cmd,1,[ t('',107,1,0),t([ t('Session',23,71,2),t('set(',1,71,11) ],31,71,2),t('"TrnContext"',3,71,16),t(',',7,1,29),t([ t('Trncontext',23,71,31),t('toxml(',1,71,43) ],31,71,43),t(')',4,1,50),t(')',4,1,51) ]).
 b_line_i(72,2,8,cmd,1,[ t('',144,1,0) ]).
+b_line_i(75,2,8,cmd,1,[ t('',146,1,0),t('''ATRAS''',3,75,7) ]).
+b_line_i(76,2,9,cmd,1,[ t('',104,1,0),t(o(13,'WWAdmin'),28,1,2) ]).
+b_line_i(77,2,9,cmd,1,[ t('',147,1,0) ]).
  
 sf_break_i(25,2).
  
@@ -309,7 +315,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Roles',3))).
+html_sub_i(8,9,html_i(0,t(l('Roles'),3))).
 html_sub_i(7,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -326,6 +332,9 @@ html_sub_i(21,22,html_i(0,comp(errview))).
 html_sub_i(19,23,html_i(1,div(23))).
 html_sub_i(23,24,html_i(0,div(24))).
 html_sub_i(24,25,html_i(0,s(25))).
+html_sub_i(3,30,html_i(2,div(30))).
+html_sub_i(30,31,html_i(0,div(31))).
+html_sub_i(31,32,html_i(0,button('''ATRAS'''))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',bootstrapv3).
@@ -391,7 +400,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Roles',d,[ str ]).
+html_comp_i(9,'Caption',l('Roles'),d,[ str ]).
 html_comp_i(9,'Id','Titletext',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -400,8 +409,8 @@ html_comp_i(9,'Gxformat',0,d,[ num ]).
 html_comp_i(9,'Title','',d,[ str ]).
 html_comp_i(9,'Fill',-1,d,[ bool ]).
 html_comp_i(9,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(9,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(9,'Font',font('Arial',14,[]),d,[ font ]).
+html_comp_i(9,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(9,'Font',font('Microsoft Sans Serif',9,[]),d,[ font ]).
 html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(10,'Class','col-xs-5 col-sm-3 col-sm-push-6 WWActionsCell',v,[ str ]).
 html_comp_i(10,'Id','',d,[ str ]).
@@ -430,12 +439,12 @@ html_comp_i(13,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(13,'Controlname','Btninsert',v,[ str ]).
 html_comp_i(13,'Class','BtnAdd',v,[ str ]).
 html_comp_i(13,'Event','''DoInsert''',v,[ str ]).
-html_comp_i(13,'Caption','Insert',d,[ str ]).
-html_comp_i(13,'Title','Insert',d,[ str ]).
-html_comp_i(13,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(13,'Caption',l('GXM_insert'),d,[ str ]).
+html_comp_i(13,'Title',l('GXM_insert'),d,[ str ]).
+html_comp_i(13,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(13,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(13,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(13,'Border','0',d,[ str ]).
+html_comp_i(13,'Border','1',d,[ str ]).
 html_comp_i(13,'Bordercolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(13,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -462,7 +471,7 @@ html_comp_i(16,'Controlname','&Rolesname',d,[ str ]).
 html_comp_i(16,'Returnonclick',0,v,[ bool ]).
 html_comp_i(16,'Captionclass','col-sm-3 FilterSearchAttributeLabel',v,[ str ]).
 html_comp_i(16,'Captionposition','None',v,[ str ]).
-html_comp_i(16,'Captionvalue','Roles Name',d,[ str ]).
+html_comp_i(16,'Captionvalue',l('Roles Name'),d,[ str ]).
 html_comp_i(16,'Layoutclass','',v,[ str ]).
 html_comp_i(16,'Controltype',2,d,[ num ]).
 html_comp_i(16,'Inputtype',0,d,[ num ]).
@@ -480,13 +489,13 @@ html_comp_i(16,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(16,'Ismultiline',0,d,[ bool ]).
 html_comp_i(16,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(16,'Fill',-1,d,[ bool ]).
-html_comp_i(16,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(16,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(16,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(16,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(16,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(16,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(16,'Gxformat',0,d,[ num ]).
 html_comp_i(16,'Title','',d,[ str ]).
-html_comp_i(16,'Invitemsg','Name',v,[ str ]).
+html_comp_i(16,'Invitemsg',l('Name'),v,[ str ]).
 html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(17,'Class',row,v,[ str ]).
 html_comp_i(17,'Id','',d,[ str ]).
@@ -531,8 +540,8 @@ html_comp_i(22,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(22,'Controlname','Errorviewer',v,[ str ]).
 html_comp_i(22,'Class','ErrorViewer',v,[ str ]).
 html_comp_i(22,'Displaymode',1,d,[ num ]).
-html_comp_i(22,'Forecolor',rgb(255,0,0),d,[ color ]).
-html_comp_i(22,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(22,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(22,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(22,'Fill',-1,d,[ bool ]).
 html_comp_i(23,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(23,'Class',row,v,[ str ]).
@@ -552,7 +561,7 @@ html_comp_i(24,'Align',left,d,[ str ]).
 html_comp_i(24,'Valign',top,d,[ str ]).
 html_comp_i(25,'Isabstractlayoutcontrol',-1,v,[ bool ]).
 html_comp_i(25,'Controlname','Grid',v,[ str ]).
-html_comp_i(25,'Controlorder','''.''(''.''(t($ORDER$,39),''.''(t(9,2),$[]$)),$[]$)',v,[ str ]).
+html_comp_i(25,'Controlorder','''.''(''.''(t($ORDER$,39),''.''(t(15,2),$[]$)),$[]$)',v,[ str ]).
 html_comp_i(25,'Controlwhere','',d,[ str ]).
 html_comp_i(25,'Controlunique','',d,[ str ]).
 html_comp_i(25,'Iddataselector','',d,[ str ]).
@@ -567,10 +576,10 @@ html_comp_i(25,'Maxrows',10,v,[ num ]).
 html_comp_i(25,'Header','',d,[ str ]).
 html_comp_i(25,'Title','',d,[ str ]).
 html_comp_i(25,'Infinitescrolling',0,v,[ num ]).
-html_comp_i(25,'Linescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(25,'Linesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(25,'Titlecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(25,'Titlefont',font('Arial',10,[]),d,[ font ]).
+html_comp_i(25,'Linescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(25,'Linesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(25,'Titlecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(25,'Titlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
 html_comp_i(25,'Align',left,d,[ str ]).
 html_comp_i(25,'Cellpadding','1',d,[ str ]).
 html_comp_i(25,'Cellspacing','2',d,[ str ]).
@@ -582,7 +591,7 @@ html_comp_i(25,'Allowcollapsing',0,d,[ bool ]).
 html_comp_i(25,'Allowselection',0,d,[ bool ]).
 html_comp_i(26,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(26,'Colcount',4,d,[ num ]).
-html_comp_i(26,'Colattid',8,v,[ num ]).
+html_comp_i(26,'Colattid',2,v,[ num ]).
 html_comp_i(26,'Controlname','Rolesid',d,[ str ]).
 html_comp_i(26,'Class','Attribute',v,[ str ]).
 html_comp_i(26,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
@@ -598,11 +607,11 @@ html_comp_i(26,'Ispassword',0,d,[ bool ]).
 html_comp_i(26,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(26,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(26,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(26,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(26,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(26,'Coltitle','ID',d,[ str ]).
-html_comp_i(26,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(26,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(26,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(26,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(26,'Coltitle',l('ID'),d,[ str ]).
+html_comp_i(26,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(26,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(26,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(26,'Gxformat',0,d,[ num ]).
 html_comp_i(26,'Colvisible',-1,v,[ bool ]).
@@ -610,7 +619,7 @@ html_comp_i(26,'Title','',d,[ str ]).
 html_comp_i(26,'Invitemsg','',d,[ str ]).
 html_comp_i(27,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(27,'Colcount',40,d,[ num ]).
-html_comp_i(27,'Colattid',9,v,[ num ]).
+html_comp_i(27,'Colattid',15,v,[ num ]).
 html_comp_i(27,'Controlname','Rolesname',d,[ str ]).
 html_comp_i(27,'Class','DescriptionAttribute',v,[ str ]).
 html_comp_i(27,'Columnclass','WWColumn',v,[ str ]).
@@ -629,11 +638,11 @@ html_comp_i(27,'Ispassword',0,d,[ bool ]).
 html_comp_i(27,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(27,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(27,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Coltitle','Nombre',d,[ str ]).
-html_comp_i(27,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(27,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(27,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(27,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(27,'Coltitle',l('Nombre'),d,[ str ]).
+html_comp_i(27,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(27,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(27,'Gxformat',0,d,[ num ]).
 html_comp_i(27,'Colvisible',-1,v,[ bool ]).
@@ -660,11 +669,11 @@ html_comp_i(28,'Ispassword',0,d,[ bool ]).
 html_comp_i(28,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(28,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(28,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(28,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(28,'Collinescolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(28,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(28,'Collinescolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(28,'Coltitle','',d,[ str ]).
-html_comp_i(28,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(28,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(28,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(28,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(28,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(28,'Gxformat',0,d,[ num ]).
 html_comp_i(28,'Colvisible',-1,d,[ bool ]).
@@ -691,25 +700,53 @@ html_comp_i(29,'Ispassword',0,d,[ bool ]).
 html_comp_i(29,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(29,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(29,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(29,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(29,'Collinescolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(29,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(29,'Collinescolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(29,'Coltitle','',d,[ str ]).
-html_comp_i(29,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(29,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(29,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(29,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(29,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(29,'Gxformat',0,d,[ num ]).
 html_comp_i(29,'Colvisible',-1,d,[ bool ]).
 html_comp_i(29,'Title','',d,[ str ]).
 html_comp_i(29,'Invitemsg','',d,[ str ]).
+html_comp_i(30,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(30,'Class',row,v,[ str ]).
+html_comp_i(30,'Id','',d,[ str ]).
+html_comp_i(30,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(30,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(30,'Semanticcontent',div,d,[ str ]).
+html_comp_i(30,'Align',left,d,[ str ]).
+html_comp_i(30,'Valign',top,d,[ str ]).
+html_comp_i(31,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(31,'Class','col-xs-12',v,[ str ]).
+html_comp_i(31,'Id','',d,[ str ]).
+html_comp_i(31,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(31,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(31,'Semanticcontent',div,d,[ str ]).
+html_comp_i(31,'Align','Center',v,[ str ]).
+html_comp_i(31,'Valign',top,d,[ str ]).
+html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(32,'Controlname','Atras',v,[ str ]).
+html_comp_i(32,'Class','BtnBack',v,[ str ]).
+html_comp_i(32,'Event','''ATRAS''',v,[ str ]).
+html_comp_i(32,'Caption',l('ATRAS'),d,[ str ]).
+html_comp_i(32,'Title',l('ATRAS'),d,[ str ]).
+html_comp_i(32,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(32,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(32,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(32,'Border','1',d,[ str ]).
+html_comp_i(32,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(32,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
  
  
  
-warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,9) ],'; poor performance may be noticed',[ ' in grid ''','Grid','''' ],'.' ])).
+warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,15) ],'; poor performance may be noticed',[ ' in grid ''','Grid','''' ],'.' ])).
  
-lit_i(9,1,t('Roles',3),[ ctlname('Titletext') ]).
+lit_i(9,1,t(l('Roles'),3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(13,1,button('''DoInsert'''),[ ctlname('Btninsert'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).
@@ -725,16 +762,19 @@ lit_i(4,1,div(4),[ ctlname('') ]).
 lit_i(22,1,comp(errview),[ ctlname('Errorviewer'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
-lit_i(26,1,s(t(8,2),25),[ ctlname(8),ctrltype(edit,26),pos(26),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(27,1,s(t(9,2),25),[ ctlname(9),ctrltype(edit,27),pos(27),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(26,1,s(t(2,2),25),[ ctlname(2),ctrltype(edit,26),pos(26),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(27,1,s(t(15,2),25),[ ctlname(15),ctrltype(edit,27),pos(27),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(28,1,s(t('Update',23),25),[ ctlname('&Update'),ctrltype(edit,28),pos(28),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(29,1,s(t('Delete',23),25),[ ctlname('&Delete'),ctrltype(edit,29),pos(29),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(8,2),t(9,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(2,2),t(15,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(24,1,div(24),[ ctlname('') ]).
 lit_i(23,1,div(23),[ ctlname('') ]).
 lit_i(19,1,div(19),[ ctlname('Gridtable') ]).
 lit_i(18,1,div(18),[ ctlname('Gridcell') ]).
 lit_i(17,1,div(17),[ ctlname('') ]).
+lit_i(32,1,button('''ATRAS'''),[ ctlname('Atras'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(31,1,div(31),[ ctlname('') ]).
+lit_i(30,1,div(30),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
 lit_i(2,1,div(2),[ ctlname('') ]).
 lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
@@ -747,34 +787,34 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-att_prop_i(2,8,'ExternalName','RolesID',d).
-att_prop_i(2,8,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,8,'EmptyAsNull','Yes',d).
-att_prop_i(2,8,idBasedOn,71,v).
-att_prop_i(2,8,'AUTONUMBER','-1',d).
-att_prop_i(2,8,'AUTONUMBER_START','1',d).
-att_prop_i(2,8,'AUTONUMBER_STEP','1',d).
-att_prop_i(2,8,'AUTONUMBER_FORREPLICATION','-1',d).
-att_prop_i(2,8,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,8,'AttRegEx','',d).
-att_prop_i(2,8,'AttValidationFailedMsg','',d).
-att_prop_i(2,8,'DownloadOffline','0',d).
-att_prop_i(2,8,'FullName','RolesID',v).
-att_prop_i(2,9,'ExternalName','RolesName',d).
-att_prop_i(2,9,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,9,'EmptyAsNull','Yes',d).
-att_prop_i(2,9,idBasedOn,72,v).
-att_prop_i(2,9,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,9,'DB_NLS_SUPPORT','Yes',d).
-att_prop_i(2,9,'AttRegEx','',d).
-att_prop_i(2,9,'AttValidationFailedMsg','',d).
-att_prop_i(2,9,'DownloadOffline','0',d).
-att_prop_i(2,9,'FullName','RolesName',v).
+att_prop_i(2,2,'ExternalName','RolesID',d).
+att_prop_i(2,2,'ExternalNamespace','IS2',d).
+att_prop_i(2,2,'EmptyAsNull','Yes',d).
+att_prop_i(2,2,idBasedOn,73,v).
+att_prop_i(2,2,'AUTONUMBER','-1',d).
+att_prop_i(2,2,'AUTONUMBER_START','1',d).
+att_prop_i(2,2,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,2,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,2,'AttRegEx','',d).
+att_prop_i(2,2,'AttValidationFailedMsg','',d).
+att_prop_i(2,2,'DownloadOffline','0',d).
+att_prop_i(2,2,'FullName','RolesID',v).
+att_prop_i(2,15,'ExternalName','RolesName',d).
+att_prop_i(2,15,'ExternalNamespace','IS2',d).
+att_prop_i(2,15,'EmptyAsNull','Yes',d).
+att_prop_i(2,15,idBasedOn,74,v).
+att_prop_i(2,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,15,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,15,'AttRegEx','',d).
+att_prop_i(2,15,'AttValidationFailedMsg','',d).
+att_prop_i(2,15,'DownloadOffline','0',d).
+att_prop_i(2,15,'FullName','RolesName',v).
  
  
-tbl_att_prop_i(2,3,8,'AllowNulls',n).
-tbl_att_prop_i(2,3,8,'AUTONUMBER',y).
-tbl_att_prop_i(2,3,9,'AllowNulls',n).
+tbl_att_prop_i(2,2,2,'AllowNulls',n).
+tbl_att_prop_i(2,2,2,'AUTONUMBER',y).
+tbl_att_prop_i(2,2,15,'AllowNulls',n).
  
 var_prop_i(2,'Rolesname',idBasedOn,'',v).
  
@@ -783,21 +823,21 @@ var_prop_i(2,'Rolesname',idBasedOn,'',v).
  
  
 struct_dt_i([ 26,47,0 ],name,'GridState').
-struct_dt_i([ 26,47,0 ],namespace,'ProyectoGestion').
+struct_dt_i([ 26,47,0 ],namespace,'IS2').
 struct_dt_i([ 26,47,0 ],'ObjName','GridState').
 struct_dt_i([ 26,47,0 ],'ObjDesc','Grid State').
 struct_dt_i([ 26,47,0 ],'ExternalName','GridState').
-struct_dt_i([ 26,47,0 ],'ExternalNamespace','ProyectoGestion').
+struct_dt_i([ 26,47,0 ],'ExternalNamespace','IS2').
 struct_dt_i([ 26,47,74 ],name,'FilterValue').
-struct_dt_i([ 26,47,74 ],namespace,'ProyectoGestion.GridState').
+struct_dt_i([ 26,47,74 ],namespace,'IS2.GridState').
 struct_dt_i([ 26,50,0 ],name,'TransactionContext').
-struct_dt_i([ 26,50,0 ],namespace,'ProyectoGestion').
+struct_dt_i([ 26,50,0 ],namespace,'IS2').
 struct_dt_i([ 26,50,0 ],'ObjName','TransactionContext').
 struct_dt_i([ 26,50,0 ],'ObjDesc','Transaction Context').
 struct_dt_i([ 26,50,0 ],'ExternalName','TransactionContext').
-struct_dt_i([ 26,50,0 ],'ExternalNamespace','ProyectoGestion').
+struct_dt_i([ 26,50,0 ],'ExternalNamespace','IS2').
 struct_dt_i([ 26,50,78 ],name,'Attribute').
-struct_dt_i([ 26,50,78 ],namespace,'ProyectoGestion.TransactionContext').
+struct_dt_i([ 26,50,78 ],namespace,'IS2.TransactionContext').
 struct_dt_i([ 26,47,0 ],fullname,'GridState').
 struct_dt_i([ 26,47,74 ],fullname,'GridState.FilterValue').
 struct_dt_i([ 26,50,0 ],fullname,'TransactionContext').
@@ -812,7 +852,7 @@ struct_dt_elem_i([ 26,47,0 ],1,type,[ 4,4,0 ]).
 struct_dt_elem_i([ 26,47,0 ],1,pic,'ZZZ9').
 struct_dt_elem_i([ 26,47,0 ],1,collection,'False').
 struct_dt_elem_i([ 26,47,0 ],1,'ExternalName','CurrentPage').
-struct_dt_elem_i([ 26,47,0 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,0 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,0 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,47,0 ],1,'XmlName','').
 struct_dt_elem_i([ 26,47,0 ],1,'XmlNamespace','').
@@ -829,7 +869,7 @@ struct_dt_elem_i([ 26,47,0 ],2,type,[ 4,4,0 ]).
 struct_dt_elem_i([ 26,47,0 ],2,pic,'ZZZ9').
 struct_dt_elem_i([ 26,47,0 ],2,collection,'False').
 struct_dt_elem_i([ 26,47,0 ],2,'ExternalName','OrderedBy').
-struct_dt_elem_i([ 26,47,0 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,0 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,0 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,47,0 ],2,'XmlName','').
 struct_dt_elem_i([ 26,47,0 ],2,'XmlNamespace','').
@@ -846,7 +886,7 @@ struct_dt_elem_i([ 26,47,0 ],3,type,[ 4,1,0 ]).
 struct_dt_elem_i([ 26,47,0 ],3,pic,'9').
 struct_dt_elem_i([ 26,47,0 ],3,collection,'False').
 struct_dt_elem_i([ 26,47,0 ],3,'ExternalName','HidingSearch').
-struct_dt_elem_i([ 26,47,0 ],3,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,0 ],3,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,0 ],3,'XmlType','Element').
 struct_dt_elem_i([ 26,47,0 ],3,'XmlName','').
 struct_dt_elem_i([ 26,47,0 ],3,'XmlNamespace','').
@@ -877,7 +917,7 @@ struct_dt_elem_i([ 26,47,74 ],1,type,[ 13,100,0 ]).
 struct_dt_elem_i([ 26,47,74 ],1,pic,'').
 struct_dt_elem_i([ 26,47,74 ],1,collection,'False').
 struct_dt_elem_i([ 26,47,74 ],1,'ExternalName','Value').
-struct_dt_elem_i([ 26,47,74 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,74 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,74 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,47,74 ],1,'XmlName','').
 struct_dt_elem_i([ 26,47,74 ],1,'XmlNamespace','').
@@ -894,7 +934,7 @@ struct_dt_elem_i([ 26,50,0 ],1,type,[ 13,256,0 ]).
 struct_dt_elem_i([ 26,50,0 ],1,pic,'').
 struct_dt_elem_i([ 26,50,0 ],1,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],1,'ExternalName','CallerObject').
-struct_dt_elem_i([ 26,50,0 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],1,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],1,'XmlNamespace','').
@@ -910,7 +950,7 @@ struct_dt_elem_i([ 26,50,0 ],2,type,[ 15,4,0 ]).
 struct_dt_elem_i([ 26,50,0 ],2,pic,'').
 struct_dt_elem_i([ 26,50,0 ],2,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],2,'ExternalName','CallerOnDelete').
-struct_dt_elem_i([ 26,50,0 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],2,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],2,'XmlNamespace','').
@@ -927,7 +967,7 @@ struct_dt_elem_i([ 26,50,0 ],3,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,50,0 ],3,pic,'').
 struct_dt_elem_i([ 26,50,0 ],3,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],3,'ExternalName','CallerURL').
-struct_dt_elem_i([ 26,50,0 ],3,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],3,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],3,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],3,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],3,'XmlNamespace','').
@@ -944,7 +984,7 @@ struct_dt_elem_i([ 26,50,0 ],4,type,[ 13,256,0 ]).
 struct_dt_elem_i([ 26,50,0 ],4,pic,'').
 struct_dt_elem_i([ 26,50,0 ],4,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],4,'ExternalName','TransactionName').
-struct_dt_elem_i([ 26,50,0 ],4,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],4,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],4,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],4,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],4,'XmlNamespace','').
@@ -975,7 +1015,7 @@ struct_dt_elem_i([ 26,50,78 ],1,type,[ 13,128,0 ]).
 struct_dt_elem_i([ 26,50,78 ],1,pic,'').
 struct_dt_elem_i([ 26,50,78 ],1,collection,'False').
 struct_dt_elem_i([ 26,50,78 ],1,'ExternalName','AttributeName').
-struct_dt_elem_i([ 26,50,78 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,78 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,78 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,50,78 ],1,'XmlName','').
 struct_dt_elem_i([ 26,50,78 ],1,'XmlNamespace','').
@@ -991,7 +1031,7 @@ struct_dt_elem_i([ 26,50,78 ],2,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,50,78 ],2,pic,'').
 struct_dt_elem_i([ 26,50,78 ],2,collection,'False').
 struct_dt_elem_i([ 26,50,78 ],2,'ExternalName','AttributeValue').
-struct_dt_elem_i([ 26,50,78 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,78 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlName','').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlNamespace','').
@@ -999,6 +1039,8 @@ struct_dt_elem_i([ 26,50,78 ],2,soaptype,'').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,50,78 ],2,'JsonName','').
 struct_dt_elem_i([ 26,50,78 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,50,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,50,0 ],4,pic,'ZZZ9').
  
  
  
@@ -1006,19 +1048,22 @@ struct_dt_elem_i([ 26,50,78 ],2,'JsonInclude',idJsonEmpty).
  
 sub_info_i(146,'Start',1,13,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',3) ],[ t('Httprequest',23),t('Scriptname',3) ],[ t('Httprequest',23),t('Method',3) ],'Session',[ t('Grid',3),t('Pagecount',3) ] ],[ [ t('Grid',3),t('Rows',3) ],'Update','Delete',[ t('Form',3),t('Caption',3) ],'Session','Rolesname',[ t('Grid',3),t('Currentpage',3) ] ] ]).
 sub_info_i(146,'Refresh',15,17,[ [ 'Session','Pgmname',[ t('Grid',3),t('Currentpage',3) ],'Rolesname' ],[ 'Session' ] ]).
-sub_info_i(146,[ t('Grid',3,19,7),t('Load',3,19,12) ],19,23,[ [ 8 ],[ [ t('Update',23),t('Link',3) ],[ t('Delete',23),t('Link',3) ],[ t(9,2),t('Link',3) ] ] ]).
-sub_info_i(146,'''DoInsert''',25,27,[ [ 8 ],[] ]).
+sub_info_i(146,[ t('Grid',3,19,7),t('Load',3,19,12) ],19,23,[ [ 2 ],[ [ t('Update',23),t('Link',3) ],[ t('Delete',23),t('Link',3) ],[ t(15,2),t('Link',3) ] ] ]).
+sub_info_i(146,'''DoInsert''',25,27,[ [ 2 ],[] ]).
+sub_info_i(146,'''ATRAS''',75,77,[ [],[] ]).
  
-pgm_parm_i(web,10,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,21,'VIEWROLES',[ [ int,4,0,0 ],[ char,50,0,0 ] ],[ [ 'RolesID',in,[] ],[ 'TabCode',in,[] ] ]).
-pgm_parm_i(trn,3,'ROLES',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'RolesID',in,[] ] ]).
-pgm_parm_i(proc,11,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
+pgm_parm_i(web,17,'WWADMIN',[],[]).
+pgm_parm_i(web,7,'WWPBASEOBJECTS\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(web,11,'VIEWROLES',[ [ int,4,0,0 ],[ char,50,0,0 ] ],[ [ 'RolesID',in,[] ],[ 'TabCode',in,[] ] ]).
+pgm_parm_i(trn,2,'ROLES',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'RolesID',in,[] ] ]).
+pgm_parm_i(proc,11,'WWPBASEOBJECTS\ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
-pgm_callprotocol_i(web,22,'WWROLES','INTERNAL','Secure').
-pgm_callprotocol_i(web,10,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,21,'VIEWROLES','INTERNAL','Secure').
-pgm_callprotocol_i(trn,3,'ROLES','INTERNAL','Secure').
-pgm_callprotocol_i(proc,11,'ISAUTHORIZED','INTERNAL','Secure').
+pgm_callprotocol_i(web,12,'WWROLES','INTERNAL','Secure').
+pgm_callprotocol_i(web,17,'WWADMIN','INTERNAL','Secure').
+pgm_callprotocol_i(web,7,'WWPBASEOBJECTS\NOTAUTHORIZED','INTERNAL','Secure').
+pgm_callprotocol_i(web,11,'VIEWROLES','INTERNAL','Secure').
+pgm_callprotocol_i(trn,2,'ROLES','INTERNAL','Secure').
+pgm_callprotocol_i(proc,11,'WWPBASEOBJECTS\ISAUTHORIZED','INTERNAL','Secure').
  
  
  

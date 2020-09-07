@@ -1,36 +1,64 @@
  
  
  
-pgm_main_i(web,9,'HOME',[ 15,'HOME','Home','','','','' ]).
+pgm_main_i(web,40,'WWPBASEOBJECTS\EXPORTOPTIONS',[ 15,'WWPBASEOBJECTS\EXPORTOPTIONS','WWP_ExportOptionsDescription','','','','' ]).
+pgm_main_i(web,8,'WWPBASEOBJECTS\HOME',[ 15,'WWPBASEOBJECTS\HOME','WWP_HomeTitle','','','','' ]).
  
-pgm_prop_i(web,5,'RWDRECENTLINKS','WEB_COMP','Yes').
-pgm_prop_i(web,5,'RWDRECENTLINKS','URLAccess','No').
+pgm_prop_i(web,44,'WWPBASEOBJECTS\WWPTABBEDVIEW','WEB_COMP','Yes').
+pgm_prop_i(web,44,'WWPBASEOBJECTS\WWPTABBEDVIEW','URLAccess','No').
+pgm_prop_i(web,46,'WWPBASEOBJECTS\HOMEPROGRESSBARWC','WEB_COMP','Yes').
+pgm_prop_i(web,46,'WWPBASEOBJECTS\HOMEPROGRESSBARWC','URLAccess','No').
+pgm_prop_i(web,38,'WWPBASEOBJECTS\WIZARDSTEPSBULLETWC','WEB_COMP','Yes').
+pgm_prop_i(web,38,'WWPBASEOBJECTS\WIZARDSTEPSBULLETWC','URLAccess','No').
+pgm_prop_i(web,37,'WWPBASEOBJECTS\WIZARDSTEPSARROWWC','WEB_COMP','Yes').
+pgm_prop_i(web,37,'WWPBASEOBJECTS\WIZARDSTEPSARROWWC','URLAccess','No').
+pgm_prop_i(web,2,'RECENTLINKS','WEB_COMP','Yes').
+pgm_prop_i(web,2,'RECENTLINKS','URLAccess','No').
+pgm_prop_i(mnproc,1,'WWPBASEOBJECTS\GETHOMESAMPLEDATA',idISWEBSERVICE,'-1').
+pgm_prop_i(mnproc,1,'WWPBASEOBJECTS\GETHOMESAMPLEDATA','DPRV_WSPROTOCOL','SOAP').
+pgm_prop_i(mnproc,1,'WWPBASEOBJECTS\GETHOMESAMPLEDATA','OutputSDT',o(26,'WWPBaseObjects\HomeSampleData')).
+pgm_prop_i(mnproc,5,'WWPBASEOBJECTS\GETHOMESAMPLENAMEVALUEDATA',idISWEBSERVICE,'-1').
+pgm_prop_i(mnproc,5,'WWPBASEOBJECTS\GETHOMESAMPLENAMEVALUEDATA','DPRV_WSPROTOCOL','SOAP').
+pgm_prop_i(mnproc,5,'WWPBASEOBJECTS\GETHOMESAMPLENAMEVALUEDATA','OutputSDT',o(26,'WWPBaseObjects\HomeSampleNameValueData')).
+pgm_prop_i(mnproc,6,'WWPBASEOBJECTS\MENUOPTIONSDATA','OutputSDT',o(26,'WWPBaseObjects\DVelop_Menu')).
+pgm_prop_i(web,45,'WWPBASEOBJECTS\HOMEPROGRESSBARCIRCLEWC','WEB_COMP','Yes').
+pgm_prop_i(web,45,'WWPBASEOBJECTS\HOMEPROGRESSBARCIRCLEWC','URLAccess','No').
+pgm_prop_i(web,9,'TABBEDVIEW','WEB_COMP','Yes').
+pgm_prop_i(web,9,'TABBEDVIEW','URLAccess','No').
+pgm_prop_i(proc,32,'WWPBASEOBJECTS\EXPORTREPORTTEMPLATE_STYLE1','GENERATE','No').
+pgm_prop_i(proc,33,'WWPBASEOBJECTS\EXPORTREPORTTEMPLATE_STYLE2','GENERATE','No').
+pgm_prop_i(proc,34,'WWPBASEOBJECTS\EXPORTREPORTTEMPLATE_STYLE3','GENERATE','No').
+pgm_prop_i(proc,35,'ESTADOPROYECTOWWGETFILTERDATA',idISPRCWEBSERVICE,'-1').
+pgm_prop_i(proc,35,'ESTADOPROYECTOWWGETFILTERDATA','SOAP','0').
+pgm_prop_i(proc,37,'ESTADOPROYECTOWWEXPORTREPORT','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,20,'USUARIOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,20,'USUARIOGENERAL','URLAccess','No').
+pgm_prop_i(web,21,'ROLESGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,21,'ROLESGENERAL','URLAccess','No').
+pgm_prop_i(web,25,'PROYECTOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,25,'PROYECTOGENERAL','URLAccess','No').
+pgm_prop_i(trn,2,'ROLES',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,28,'TAREAGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,28,'TAREAGENERAL','URLAccess','No').
+pgm_prop_i(web,53,'ESTADOPROYECTOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,53,'ESTADOPROYECTOGENERAL','URLAccess','No').
 pgm_prop_i(web,1,'APPMASTERPAGE','WEB_COMP','Master').
 pgm_prop_i(web,3,'PROMPTMASTERPAGE','WEB_COMP','Master').
 pgm_prop_i(web,6,'RWDPROMPTMASTERPAGE','WEB_COMP','Master').
-pgm_prop_i(web,2,'RECENTLINKS','WEB_COMP','Yes').
-pgm_prop_i(web,2,'RECENTLINKS','URLAccess','No').
-pgm_prop_i(web,11,'TABBEDVIEW','WEB_COMP','Yes').
-pgm_prop_i(web,11,'TABBEDVIEW','URLAccess','No').
 pgm_prop_i(web,4,'RWDMASTERPAGE','WEB_COMP','Master').
-pgm_prop_i(web,24,'ATTRACTIONATTRACTIONSUPPLIERWC','WEB_COMP','Yes').
-pgm_prop_i(web,24,'ATTRACTIONATTRACTIONSUPPLIERWC','URLAccess','No').
-pgm_prop_i(web,14,'ATTRACTIONGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,14,'ATTRACTIONGENERAL','URLAccess','No').
-pgm_prop_i(web,19,'USUARIOGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,19,'USUARIOGENERAL','URLAccess','No').
-pgm_prop_i(web,25,'ROLESUSUARIOWC','WEB_COMP','Yes').
-pgm_prop_i(web,25,'ROLESUSUARIOWC','URLAccess','No').
-pgm_prop_i(web,23,'ROLESGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,23,'ROLESGENERAL','URLAccess','No').
-pgm_prop_i(web,36,'PROYECTOGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,36,'PROYECTOGENERAL','URLAccess','No').
-pgm_prop_i(web,39,'TAREAGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,39,'TAREAGENERAL','URLAccess','No').
+pgm_prop_i(web,47,'WWPBASEOBJECTS\MASTERPAGEFRAME','WEB_COMP','Master').
+pgm_prop_i(web,49,'WWPBASEOBJECTS\WORKWITHPLUSMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,48,'WWPBASEOBJECTS\WORKWITHPLUSMASTERPAGEPROMPT','WEB_COMP','Master').
+pgm_prop_i(web,5,'RWDRECENTLINKS','WEB_COMP','Yes').
+pgm_prop_i(web,5,'RWDRECENTLINKS','URLAccess','No').
+pgm_prop_i(web,22,'ROLESUSUARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,22,'ROLESUSUARIOWC','URLAccess','No').
+pgm_prop_i(web,26,'PROYECTOGESTIONPROYECTWC','WEB_COMP','Yes').
+pgm_prop_i(web,26,'PROYECTOGESTIONPROYECTWC','URLAccess','No').
  
 model_wrkinfo_i([ '.Net Environment','CSharpModel' ]).
  
-model_info_i([ 'Design','CSharpModel',1 ]).
+model_info_i([ 'Design','CSharpModel',2 ]).
  
 datastore_i(1,'DS_LAST_CHANGE','').
 datastore_i(1,'LOCK_RETRY','10').
@@ -49,9 +77,10 @@ datastore_i(1,'JRN400','QSQJRN').
 datastore_i(1,'CREATE_SAVF','Yes').
 datastore_i(1,'PGMLIB','').
 datastore_i(1,'DTALIB','').
-datastore_i(1,'CC_USER_ID',uN8OI0h0iFtlMKMP).
+datastore_i(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV').
+datastore_i(1,'CC_USER_ID',uTZyOHVcEiFngpRF).
 datastore_i(1,'CC_SERVER','trialapps3.genexus.com').
-datastore_i(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476').
+datastore_i(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181').
 datastore_i(1,'RecycleRWMin','30').
 datastore_i(1,'RecycleRWType','1').
 datastore_i(1,'RecycleRW','-1').
@@ -63,13 +92,13 @@ datastore_i(1,'CS_RPCPGML','').
 datastore_i(1,'JDBC_DATASOURCE','').
 datastore_i(1,'USE_JDBC_DATASOURCE','0').
 datastore_i(1,'DS_DBMS_ADDINFO','').
-datastore_i(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J').
-datastore_i(1,'USER_ID',uN8OI0h0iFtlMKMP).
+datastore_i(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH').
+datastore_i(1,'USER_ID',uTZyOHVcEiFngpRF).
 datastore_i(1,'TRUSTED_CONNECTION','No').
 datastore_i(1,'CS_CONNECT','First').
 datastore_i(1,'DBMS_PORT','').
 datastore_i(1,'CS_SERVER','trialapps3.genexus.com').
-datastore_i(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476').
+datastore_i(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181').
 datastore_i(1,'CS_FLEDSNAME','').
 datastore_i(1,'CS_DRVNAME','sql server').
 datastore_i(1,'CS_DSNAME','').
@@ -85,23 +114,25 @@ datastore_i(1,'HelpKeyword','20').
 datastore_i(1,'DBMS',12).
 datastore_i(1,'NAME','Default').
  
+subview_i(2,509,5).
  
+subtype_group_i(2,1,[ 'TareaPadre',[ [ 6,5 ] ] ]).
  
 culture_id_i(eng).
  
-lng_i(1,[ 'English','English',eng ]).
+lng_i(2,[ 'English','English',eng ]).
  
-lng_prop_i(1,'IsRightToLeft','0',d).
-lng_prop_i(1,'ISOLangCode','EN',v).
-lng_prop_i(1,'ISOCountryCode','US',v).
-lng_prop_i(1,'Codepage','1252',v).
-lng_prop_i(1,'LanguageLocalization','',d).
-lng_prop_i(1,'LangDateFormat','ENG',v).
-lng_prop_i(1,'LangTimeFormat','12',v).
-lng_prop_i(1,'LangDecimalPoint','.',v).
-lng_prop_i(1,'FullyQualifiedName','English',d).
+lng_prop_i(2,'IsRightToLeft','0',d).
+lng_prop_i(2,'ISOLangCode','EN',v).
+lng_prop_i(2,'ISOCountryCode','US',v).
+lng_prop_i(2,'Codepage','1252',v).
+lng_prop_i(2,'LanguageLocalization','',d).
+lng_prop_i(2,'LangDateFormat','ENG',v).
+lng_prop_i(2,'LangTimeFormat','12',v).
+lng_prop_i(2,'LangDecimalPoint','.',v).
+lng_prop_i(2,'FullyQualifiedName','English',d).
  
-ver_stamp('20200323.010058').
+ver_stamp('20200825.000830').
  
-ver_stamp(date(2020,3,22),time(21,1,12,92)).
+ver_stamp(date(2020,8,24),time(21,12,58,56)).
  

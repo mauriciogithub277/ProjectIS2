@@ -4,7 +4,7 @@
 <Object>
 <ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
 <ObjCls>0</ObjCls>
-<ObjId>7</ObjId>
+<ObjId>3</ObjId>
 <ObjName>Proyecto</ObjName>
 <ObjDesc>Proyecto</ObjDesc>
 <ObjPgmName>Proyecto</ObjPgmName>
@@ -30,22 +30,22 @@
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
-<LevelNumber>7</LevelNumber>
+<LevelNumber>4</LevelNumber>
 <BaseTable>
 <Table>
-<TableId>7</TableId>
+<TableId>4</TableId>
 <TableName>Proyecto</TableName>
 <Description>Proyecto</Description></Table></BaseTable>
 <NavigationTree>
 <Table>
-<TableId>7</TableId>
+<TableId>4</TableId>
 <TableName>Proyecto</TableName>
 <Description>Proyecto</Description>
 <Updated>Yes</Updated>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>16</AttriId>
+<AttriId>4</AttriId>
 <AttriName>ProyectoID</AttriName>
 <Description>Proyecto ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
@@ -59,69 +59,69 @@
 <TablesToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>7</TableId>
+<TableId>4</TableId>
 <TableName>Proyecto</TableName>
 <Description>Proyecto</Description></Table>
 <TableAction>insert</TableAction>
 <AttrisToUpdate>
 <Attribute>
-<AttriId>17</AttriId>
+<AttriId>20</AttriId>
 <AttriName>ProyectoName</AttriName>
 <Description>Proyecto Name</Description></Attribute>
 <Attribute>
-<AttriId>30</AttriId>
+<AttriId>32</AttriId>
 <AttriName>ProyectoNombre</AttriName>
 <Description>Proyecto Nombre</Description></Attribute>
 <Attribute>
-<AttriId>18</AttriId>
+<AttriId>21</AttriId>
 <AttriName>ProyectoFecInicio</AttriName>
 <Description>Proyecto Fec Inicio</Description></Attribute>
 <Attribute>
-<AttriId>22</AttriId>
+<AttriId>25</AttriId>
 <AttriName>ProyectoDescription</AttriName>
 <Description>Proyecto Description</Description></Attribute>
 <Attribute>
-<AttriId>19</AttriId>
+<AttriId>22</AttriId>
 <AttriName>ProyectoFecFin</AttriName>
 <Description>Proyecto Fec Fin</Description></Attribute>
 <Attribute>
-<AttriId>20</AttriId>
+<AttriId>23</AttriId>
 <AttriName>ProyectoEstado</AttriName>
 <Description>Proyecto Estado</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>7</TableId>
+<TableId>4</TableId>
 <TableName>Proyecto</TableName>
 <Description>Proyecto</Description></Table>
 <TableAction>update</TableAction>
 <AttrisToUpdate>
 <Attribute>
-<AttriId>17</AttriId>
+<AttriId>20</AttriId>
 <AttriName>ProyectoName</AttriName>
 <Description>Proyecto Name</Description></Attribute>
 <Attribute>
-<AttriId>30</AttriId>
+<AttriId>32</AttriId>
 <AttriName>ProyectoNombre</AttriName>
 <Description>Proyecto Nombre</Description></Attribute>
 <Attribute>
-<AttriId>18</AttriId>
+<AttriId>21</AttriId>
 <AttriName>ProyectoFecInicio</AttriName>
 <Description>Proyecto Fec Inicio</Description></Attribute>
 <Attribute>
-<AttriId>22</AttriId>
+<AttriId>25</AttriId>
 <AttriName>ProyectoDescription</AttriName>
 <Description>Proyecto Description</Description></Attribute>
 <Attribute>
-<AttriId>19</AttriId>
+<AttriId>22</AttriId>
 <AttriName>ProyectoFecFin</AttriName>
 <Description>Proyecto Fec Fin</Description></Attribute>
 <Attribute>
-<AttriId>20</AttriId>
+<AttriId>23</AttriId>
 <AttriName>ProyectoEstado</AttriName>
 <Description>Proyecto Estado</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>7</TableId>
+<TableId>4</TableId>
 <TableName>Proyecto</TableName>
 <Description>Proyecto</Description></Table>
 <TableAction>delete</TableAction>
@@ -129,7 +129,17 @@
 <AfterInsertRules></AfterInsertRules>
 <AfterUpdateRules></AfterUpdateRules>
 <AfterDeleteRules></AfterDeleteRules>
-<TablesToControlOnDelete></TablesToControlOnDelete>
+<TablesToControlOnDelete>
+<Table>
+<TableId>7</TableId>
+<TableName>GestionProyect</TableName>
+<Description>Gestion Proyect</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>ProyectoID</AttriName>
+<Description>Proyecto ID</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
 <Levels></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>

@@ -1,13 +1,13 @@
-current_obj_i(2,web,17).
+current_obj_i(2,web,19).
  
 current_guid('cb0b4f1c-e764-467f-bc89-697b4bbc7a35').
  
  
-called_tree_i(13,17,13,10).
-called_tree_i(13,17,13,19).
-called_tree_i(13,17,13,18).
-called_tree_i(13,17,1,11).
-called_tree_i(13,17,13,4).
+called_tree_i(13,19,13,7).
+called_tree_i(13,19,13,20).
+called_tree_i(13,19,13,10).
+called_tree_i(13,19,1,11).
+called_tree_i(13,19,13,49).
  
  
  
@@ -24,7 +24,7 @@ called_tree_i(13,17,13,4).
  
  
  
-ij_object_dependency(viewusuario,[],[],[],17).
+ij_object_dependency(viewusuario,[],[],[],19).
  
  
 obj_parms_i([ 'short aP0_UsuarioID','String aP1_TabCode' ],[ [ 'Usuarioid',in ],[ 'Tabcode',in ] ]).

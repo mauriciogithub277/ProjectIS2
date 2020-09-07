@@ -1,4 +1,4 @@
-spec_i([ web,11,'Tabbed View','TabbedView',0,eng,'16_0_7-138086' ]).
+spec_i([ web,9,l('Tabbed View'),'TabbedView',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[],[]).
  
@@ -18,7 +18,7 @@ las_i(2,[ [ 'Tabs','Tabcode' ] ]).
 lac_i(2,[ [] ]).
  
  
-lits_i('Tabs',5,10).
+lits_i(l('Tabs'),5,10).
  
 cls_i([ 5,10 ],[ 5,13 ]).
  
@@ -42,9 +42,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -56,13 +57,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -113,7 +114,7 @@ rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('URLAccess','No')).
 rule_i(0,prop('WEB_COMP','Yes')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
 rule_i(0,prop('Folder',o(8,'Web'))).
 rule_i(0,prop('ObjDesc','Tabbed View')).
 rule_i(0,prop('ObjName','TabbedView')).
@@ -131,27 +132,27 @@ v_i(f,o,1,'Err').
  
  
  
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',25 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',24 ]).
-attri_i('Urlchangedevent',[ 'URLChangedEvent',boolean,4,0,'',0,'URLChanged Event','',23 ]).
-attri_i('Urlhash',[ 'URLHash',char,20,0,'',0,'URLHash','',22 ]).
-attri_i('Webcomponenturl',[ 'WebComponentUrl',svchar,1000,0,'',0,'Web Component Url','',21 ]).
-attri_i('Tabtemplate',[ 'TabTemplate',char,20,0,'',0,'Tab Template','',20 ]).
-attri_i('Tabsmarkup',[ 'TabsMarkup',char,20,0,'',0,'Tabs Markup','',19 ]).
-attri_i('Tabs',[ 'Tabs',o(objectcollection('TabOptions.TabOptionsItem')),0,0,'',0,'Tabs','',18 ]).
-attri_i('Tabrightcls',[ 'TabRightCls',char,20,0,'',0,'Tab Right Cls','',17 ]).
-attri_i('Tableftcls',[ 'TabLeftCls',char,20,0,'',0,'Tab Left Cls','',16 ]).
-attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',15 ]).
-attri_i('Tab',[ 'Tab',o('TabOptions.TabOptionsItem'),0,0,'',0,'Tab','',14 ]).
-attri_i('Selectedtab',[ 'SelectedTab',int,4,0,'ZZZ9',0,'Selected Tab','',13 ]).
-attri_i('Onclicktemplate',[ 'OnClickTemplate',char,20,0,'',0,'On Click Template','',12 ]).
-attri_i('Lasttab',[ 'LastTab',int,4,0,'ZZZ9',0,'Last Tab','',11 ]).
-attri_i('Isselectedtab',[ 'IsSelectedTab',boolean,4,0,'',0,'Is Selected Tab','',10 ]).
-attri_i('Isfirsttab',[ 'IsFirstTab',boolean,4,0,'',0,'Is First Tab','',9 ]).
-attri_i('Index',[ 'Index',int,4,0,'ZZZ9',0,'Index','',8 ]).
-attri_i('Httprequest',[ 'HttpRequest',o(httprequest),4,0,'',0,'Http Request','',7 ]).
-attri_i('Found',[ 'Found',boolean,4,0,'',0,'Found','',6 ]).
-attri_i('Firsttab',[ 'FirstTab',int,4,0,'ZZZ9',0,'First Tab','',5 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',25 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',24 ]).
+attri_i('Urlchangedevent',[ 'URLChangedEvent',boolean,4,0,'',0,l('URLChanged Event'),'',23 ]).
+attri_i('Urlhash',[ 'URLHash',char,20,0,'',0,l('URLHash'),'',22 ]).
+attri_i('Webcomponenturl',[ 'WebComponentUrl',svchar,1000,0,'',0,l('Web Component Url'),'',21 ]).
+attri_i('Tabtemplate',[ 'TabTemplate',char,20,0,'',0,l('Tab Template'),'',20 ]).
+attri_i('Tabsmarkup',[ 'TabsMarkup',char,20,0,'',0,l('Tabs Markup'),'',19 ]).
+attri_i('Tabs',[ 'Tabs',o(objectcollection('TabOptions.TabOptionsItem')),0,0,'',0,l('Tabs'),'',18 ]).
+attri_i('Tabrightcls',[ 'TabRightCls',char,20,0,'',0,l('Tab Right Cls'),'',17 ]).
+attri_i('Tableftcls',[ 'TabLeftCls',char,20,0,'',0,l('Tab Left Cls'),'',16 ]).
+attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,l('Tab Code'),'',15 ]).
+attri_i('Tab',[ 'Tab',o('TabOptions.TabOptionsItem'),0,0,'',0,l('Tab'),'',14 ]).
+attri_i('Selectedtab',[ 'SelectedTab',int,4,0,'ZZZ9',0,l('Selected Tab'),'',13 ]).
+attri_i('Onclicktemplate',[ 'OnClickTemplate',char,20,0,'',0,l('On Click Template'),'',12 ]).
+attri_i('Lasttab',[ 'LastTab',int,4,0,'ZZZ9',0,l('Last Tab'),'',11 ]).
+attri_i('Isselectedtab',[ 'IsSelectedTab',boolean,4,0,'',0,l('Is Selected Tab'),'',10 ]).
+attri_i('Isfirsttab',[ 'IsFirstTab',boolean,4,0,'',0,l('Is First Tab'),'',9 ]).
+attri_i('Index',[ 'Index',int,4,0,'ZZZ9',0,l('Index'),'',8 ]).
+attri_i('Httprequest',[ 'HttpRequest',o(httprequest),4,0,'',0,l('Http Request'),'',7 ]).
+attri_i('Found',[ 'Found',boolean,4,0,'',0,l('Found'),'',6 ]).
+attri_i('Firsttab',[ 'FirstTab',int,4,0,'ZZZ9',0,l('First Tab'),'',5 ]).
  
  
  
@@ -179,7 +180,7 @@ attri_i('Firsttab',[ 'FirstTab',int,4,0,'ZZZ9',0,'First Tab','',5 ]).
  
  
  
-dom_info_i(75,[ 'TabCode' ]).
+dom_info_i(72,[ 'TabCode' ]).
 dom_info_i(20,[ 'GeneXus\Url' ]).
  
  
@@ -295,7 +296,7 @@ html_sub_i(2,0,html_i(0,html('<tbody>'))).
 html_sub_i(2,3,html_i(1,row(3))).
 html_sub_i(3,4,html_i(0,cell(4))).
 html_sub_i(4,5,html_i(0,div(5))).
-html_sub_i(5,6,html_i(0,t('Tabs',3))).
+html_sub_i(5,6,html_i(0,t(l('Tabs'),3))).
 html_sub_i(5,7,html_i(1,bitmap('(none)'))).
 html_sub_i(5,8,html_i(2,bitmap('(none)'))).
 html_sub_i(2,9,html_i(2,row(9))).
@@ -337,7 +338,7 @@ html_comp_i(5,'Semanticcontent',div,d,[ str ]).
 html_comp_i(5,'Align',left,d,[ str ]).
 html_comp_i(5,'Valign',top,d,[ str ]).
 html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(6,'Caption','Tabs',d,[ str ]).
+html_comp_i(6,'Caption',l('Tabs'),d,[ str ]).
 html_comp_i(6,'Id','Tabs',v,[ str ]).
 html_comp_i(6,'Class','',v,[ str ]).
 html_comp_i(6,'Event','',d,[ str ]).
@@ -359,7 +360,7 @@ html_comp_i(7,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(7,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(7,'Border','0',d,[ str ]).
 html_comp_i(7,'Alt','',d,[ str ]).
-html_comp_i(7,'Title','Previous Tab',v,[ str ]).
+html_comp_i(7,'Title',l('Previous Tab'),v,[ str ]).
 html_comp_i(7,'Hspace',0,v,[ num ]).
 html_comp_i(7,'Vspace',0,d,[ num ]).
 html_comp_i(7,'Align',left,d,[ str ]).
@@ -375,7 +376,7 @@ html_comp_i(8,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(8,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(8,'Border','0',d,[ str ]).
 html_comp_i(8,'Alt','',d,[ str ]).
-html_comp_i(8,'Title','Next Tab',v,[ str ]).
+html_comp_i(8,'Title',l('Next Tab'),v,[ str ]).
 html_comp_i(8,'Hspace',0,v,[ num ]).
 html_comp_i(8,'Vspace',0,d,[ num ]).
 html_comp_i(8,'Align',left,d,[ str ]).
@@ -417,7 +418,7 @@ html_comp_i(15,'Jssharedsupportfiles',[ [ t('''Shared/HistoryManager\HistoryMana
  
  
  
-lit_i(6,1,t('Tabs',3),[ ctlname('Tabs') ]).
+lit_i(6,1,t(l('Tabs'),3),[ ctlname('Tabs') ]).
 lit_i(7,1,bitmap('(none)'),[ ctlname('Tabprevious') ]).
 lit_i(8,1,bitmap('(none)'),[ ctlname('Tabnext') ]).
 lit_i(5,1,div(5),[ ctlname('Tabcontainer') ]).
@@ -438,7 +439,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-var_prop_i(2,'Tabcode',idBasedOn,75,v).
+var_prop_i(2,'Tabcode',idBasedOn,72,v).
 var_prop_i(2,'Webcomponenturl',idBasedOn,20,v).
 var_prop_i(2,'Webcomponenturl','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
 var_prop_i(2,'Webcomponenturl','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
@@ -448,11 +449,11 @@ var_prop_i(2,'Webcomponenturl','AttValidationFailedMsg','GXM_DoesNotMatchRegExp'
  
  
 struct_dt_i([ 26,49,0 ],name,'TabOptions').
-struct_dt_i([ 26,49,0 ],namespace,'ProyectoGestion').
+struct_dt_i([ 26,49,0 ],namespace,'IS2').
 struct_dt_i([ 26,49,0 ],'ObjName','TabOptions').
 struct_dt_i([ 26,49,0 ],'ObjDesc','Tab Options').
 struct_dt_i([ 26,49,0 ],'ExternalName','TabOptions').
-struct_dt_i([ 26,49,0 ],'ExternalNamespace','ProyectoGestion').
+struct_dt_i([ 26,49,0 ],'ExternalNamespace','IS2').
 struct_dt_i([ 26,49,0 ],collection,'True').
 struct_dt_i([ 26,49,0 ],datatype,[ 26,49,76 ]).
 struct_dt_i([ 26,49,0 ],'CollectionItemName','TabOptionsItem').
@@ -464,7 +465,7 @@ struct_dt_i([ 26,49,0 ],'XmlInclude',idXmlIncludeAlways).
 struct_dt_i([ 26,49,0 ],'JsonName','').
 struct_dt_i([ 26,49,0 ],'JsonInclude',idJsonNoProperty).
 struct_dt_i([ 26,49,76 ],name,'TabOptionsItem').
-struct_dt_i([ 26,49,76 ],namespace,'ProyectoGestion.TabOptions').
+struct_dt_i([ 26,49,76 ],namespace,'IS2.TabOptions').
 struct_dt_i([ 26,49,0 ],fullname,'TabOptions').
 struct_dt_i([ 26,49,76 ],fullname,'TabOptions.TabOptionsItem').
 struct_dt_i([ 26,49,0 ],modified,yes).
@@ -472,14 +473,14 @@ struct_dt_i([ 26,49,76 ],modified,yes).
  
 struct_dt_elem_i([ 26,49,76 ],1,name,'Code').
 struct_dt_elem_i([ 26,49,76 ],1,camelname,'Code').
-struct_dt_elem_i([ 26,49,76 ],1,basedon,75).
+struct_dt_elem_i([ 26,49,76 ],1,basedon,72).
 struct_dt_elem_i([ 26,49,76 ],1,length,50).
 struct_dt_elem_i([ 26,49,76 ],1,decimals,0).
 struct_dt_elem_i([ 26,49,76 ],1,type,[ 5,50,0 ]).
 struct_dt_elem_i([ 26,49,76 ],1,pic,'').
 struct_dt_elem_i([ 26,49,76 ],1,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],1,'ExternalName','Code').
-struct_dt_elem_i([ 26,49,76 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],1,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],1,'XmlNamespace','').
@@ -495,7 +496,7 @@ struct_dt_elem_i([ 26,49,76 ],2,type,[ 13,255,0 ]).
 struct_dt_elem_i([ 26,49,76 ],2,pic,'').
 struct_dt_elem_i([ 26,49,76 ],2,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],2,'ExternalName','Description').
-struct_dt_elem_i([ 26,49,76 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],2,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],2,'XmlNamespace','').
@@ -512,7 +513,7 @@ struct_dt_elem_i([ 26,49,76 ],3,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,49,76 ],3,pic,'').
 struct_dt_elem_i([ 26,49,76 ],3,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],3,'ExternalName','Link').
-struct_dt_elem_i([ 26,49,76 ],3,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],3,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],3,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],3,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],3,'XmlNamespace','').
@@ -529,7 +530,7 @@ struct_dt_elem_i([ 26,49,76 ],4,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,49,76 ],4,pic,'').
 struct_dt_elem_i([ 26,49,76 ],4,collection,'False').
 struct_dt_elem_i([ 26,49,76 ],4,'ExternalName','WebComponent').
-struct_dt_elem_i([ 26,49,76 ],4,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,49,76 ],4,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,49,76 ],4,'XmlType','Element').
 struct_dt_elem_i([ 26,49,76 ],4,'XmlName','').
 struct_dt_elem_i([ 26,49,76 ],4,'XmlNamespace','').
@@ -547,7 +548,7 @@ sub_info_i(146,[ t('Historymanager',3,5,7),t('Urlchanged',3,5,22) ],5,8,[ [ 'Fir
 sub_info_i(146,'Refresh',10,14,[ [ 'Urlchangedevent','Firsttab','Lasttab','Tabs','Tabcode',[ t('Historymanager',3),t('Hash',3) ],'Index','Selectedtab','Tab','Tabsmarkup','Tabtemplate' ],[ 'Tabsmarkup','Index','Tab',[ t('Tabs',3),t('Caption',3) ],'Selectedtab','Firsttab','Lasttab',[ t('Tabprevious',3),t('Visible',3) ],[ t('Tabnext',3),t('Visible',3) ],[ t('Component',3),t('Object',3) ] ] ]).
  
  
-pgm_callprotocol_i(web,11,'TABBEDVIEW','INTERNAL','Secure').
+pgm_callprotocol_i(web,9,'TABBEDVIEW','INTERNAL','Secure').
  
  
  

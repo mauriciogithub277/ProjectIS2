@@ -1,11 +1,9 @@
-current_obj_i(2,web,30).
+current_obj_i(2,web,36).
  
-current_guid('38550f7c-50a5-4c36-bef0-d11f6b1b258e').
- 
- 
-called_tree_i(13,30,13,6).
+current_guid('05246aa4-007b-45c1-9c30-4697792ea53d').
  
  
+called_tree_i(13,36,13,6).
  
  
  
@@ -20,15 +18,15 @@ called_tree_i(13,30,13,6).
  
  
  
-ij_object_dependency(gx0060,[],[],[],30).
  
  
-obj_parms_i([ 'short aP0_pModulosID' ],[ [ 'Pmodulosid',out ] ]).
+ij_object_dependency(gx0060,[],[],[],36).
+ 
+ 
+obj_parms_i([ 'short aP0_pEstadoProyectoID' ],[ [ 'Pestadoproyectoid',out ] ]).
  
  
  
  
  
-module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
-module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  

@@ -9,27 +9,20 @@
 <ObjDesc>Recent Links web component</ObjDesc>
 <ObjPgmName>RecentLinks</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>specfailed</Result>
 <Warnings></Warnings>
-<Errors></Errors>
-<Generator>
-<GenId>15</GenId>
-<GenName>Default (C#)</GenName></Generator>
-<FormClass>HTML</FormClass>
-<Parameters>
-<Parameter>
-<IO>in</IO>
-<Variable>
-<VarId>Formcaption</VarId>
-<VarName>&amp;FormCaption</VarName></Variable></Parameter>
-<Parameter>
-<IO>in</IO>
-<Variable>
-<VarId>Formpgmname</VarId>
-<VarName>&amp;FormPgmName</VarName></Variable></Parameter></Parameters>
-<StandAloneRules></StandAloneRules>
-<Event>
-<EventName>Start</EventName></Event>
-<Event>
-<EventName>Links.Load</EventName></Event>
-<Suggests></Suggests></ObjectSpec>
+<Errors>
+<Error>
+<MsgCode>src0216</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>42</Line></Location>
+<Message>
+<Token>'Link' invalid property.</Token></Message></Error>
+<Error>
+<MsgCode>src0216</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>44</Line></Location>
+<Message>
+<Token>'Link' invalid property.</Token></Message></Error></Errors></ObjectSpec>

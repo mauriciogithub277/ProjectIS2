@@ -9,19 +9,15 @@
 <ObjDesc>List Programs</ObjDesc>
 <ObjPgmName>ListPrograms</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
-<Result>genreq</Result>
-<Warnings></Warnings>
+<Result>nogenspc</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0217</MsgCode>
+<Message>
+<Token>Object is unreachable.</Token></Message></Warning></Warnings>
 <Errors></Errors>
-<OutputDevices>
-<Device>None</Device></OutputDevices>
 <Generator>
 <GenId>15</GenId>
 <GenName>Default (C#)</GenName></Generator>
-<FormClass>Graphic</FormClass>
-<Parameters>
-<Parameter>
-<IO>out</IO>
-<Variable>
-<VarId>Programnames</VarId>
-<VarName>&amp;ProgramNames</VarName></Variable></Parameter></Parameters>
-<Levels></Levels></ObjectSpec>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters></ObjectSpec>

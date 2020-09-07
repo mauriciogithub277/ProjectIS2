@@ -1,4 +1,4 @@
-spec_i([ web,33,'WWProyect','WWProyect',0,eng,'16_0_7-138086' ]).
+spec_i([ web,14,l('WWProyect'),'WWProyect',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[],[]).
  
@@ -18,7 +18,7 @@ las_i(2,[ [] ]).
 lac_i(2,[ [] ]).
  
  
-lits_i('Menu Desarrollo',5,10).
+lits_i(l('Menu Desarrollo'),5,10).
  
 cls_i([ 5,10 ],[ 5,24 ]).
  
@@ -42,9 +42,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -56,13 +57,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -111,15 +112,17 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
-rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('MasterPage',o(13,'WWPBaseObjects.WorkWithPlusMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
 rule_i(0,prop('ObjDesc','WWProyect')).
 rule_i(0,prop('ObjName','WWProyect')).
 rule_i(0,maingen(15)).
-rule_i(0,rule([ a(22,[ '''GestionProyectos''','''GestionProyectos''','' ]) ],[],[],[])).
-rule_i(0,rule([ a(22,[ '''Modulo Tareas''','''Modulo Tareas''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Modulo Tareas''',[ t('getmessagetext(',1),t('"Modulo Tareas"',3),t(')',4) ],'' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Atras''',[ t('getmessagetext(',1),t('"Atras"',3),t(')',4) ],'' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Modulo Proyectos''',[ t('getmessagetext(',1),t('"Modulo Proyectos"',3),t(')',4) ],'' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Gesion Proyecto''',[ t('getmessagetext(',1),t('"Gesion Proyecto"',3),t(')',4) ],'' ]) ],[],[],[])).
  
 a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
  
@@ -131,8 +134,8 @@ v_i(f,o,1,'Err').
  
  
  
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',3 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',2 ]).
  
  
  
@@ -166,17 +169,25 @@ break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,2).
 b_group_i(2,2,lit,0,3,6).
-b_group_i(2,3,lit,0,7,0).
+b_group_i(2,3,lit,0,7,10).
+b_group_i(2,4,lit,0,11,14).
+b_group_i(2,5,lit,0,15,0).
  
-b_line_i(2,2,1,cmd,2,[ t('',146,2,0),t('''GestionProyectos''',3,2,7) ]).
-b_line_i(3,2,2,cmd,2,[ t('',104,2,0),t(o(13,'WWProyecto'),28,2,2) ]).
+b_line_i(2,2,1,cmd,2,[ t('',146,2,0),t('''Modulo Tareas''',3,2,7) ]).
+b_line_i(3,2,2,cmd,2,[ t('',104,2,0),t(o(13,'WWTarea'),28,2,2) ]).
 b_line_i(4,2,2,cmd,2,[ t('',147,2,0) ]).
-b_line_i(6,2,2,cmd,2,[ t('',146,2,0),t('''Modulo Tareas''',3,6,7) ]).
-b_line_i(7,2,3,cmd,2,[ t('',104,2,0),t(o(13,'WWTarea'),28,2,2) ]).
+b_line_i(6,2,2,cmd,2,[ t('',146,2,0),t('''Atras''',3,6,7) ]).
+b_line_i(7,2,3,cmd,2,[ t('',104,2,0),t(o(13,'WWDasboard'),28,2,2) ]).
 b_line_i(8,2,3,cmd,2,[ t('',147,2,0) ]).
-b_line_i(1000,2,3,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
-b_line_i(1001,2,3,cmd,0,[ t('',155,0,0) ]).
-b_line_i(1002,2,3,cmd,0,[ t('',147,0,0) ]).
+b_line_i(10,2,3,cmd,2,[ t('',146,2,0),t('''Modulo Proyectos''',3,10,7) ]).
+b_line_i(11,2,4,cmd,2,[ t('',104,2,0),t(o(13,'WWProyecto'),28,2,2) ]).
+b_line_i(12,2,4,cmd,2,[ t('',147,2,0) ]).
+b_line_i(14,2,4,cmd,2,[ t('',146,2,0),t('''Gesion Proyecto''',3,14,7) ]).
+b_line_i(15,2,5,cmd,2,[ t('',104,2,0),t(o(0,'GestionProyect'),28,2,2) ]).
+b_line_i(16,2,5,cmd,2,[ t('',147,2,0) ]).
+b_line_i(1000,2,5,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,5,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,5,cmd,0,[ t('',147,0,0) ]).
  
  
  
@@ -199,28 +210,35 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,table(6))).
 html_sub_i(6,7,html_i(0,row(7))).
 html_sub_i(7,8,html_i(0,cell(8))).
-html_sub_i(8,9,html_i(0,t('Menu Desarrollo',3))).
+html_sub_i(8,9,html_i(0,t(l('Menu Desarrollo'),3))).
 html_sub_i(6,10,html_i(1,row(10))).
 html_sub_i(6,11,html_i(2,row(11))).
 html_sub_i(11,12,html_i(0,cell(12))).
-html_sub_i(12,13,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-28'))).
+html_sub_i(12,13,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-26'))).
 html_sub_i(11,14,html_i(1,cell(14))).
-html_sub_i(14,15,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-29'))).
-html_sub_i(6,16,html_i(3,row(16))).
-html_sub_i(16,17,html_i(0,cell(17))).
-html_sub_i(17,18,html_i(0,button('''GestionProyectos'''))).
-html_sub_i(16,19,html_i(1,cell(19))).
-html_sub_i(19,20,html_i(0,button('''Modulo Tareas'''))).
+html_sub_i(14,15,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-27'))).
+html_sub_i(11,16,html_i(2,cell(16))).
+html_sub_i(16,17,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-28'))).
+html_sub_i(6,18,html_i(3,row(18))).
+html_sub_i(18,19,html_i(0,cell(19))).
+html_sub_i(19,20,html_i(0,button('''Modulo Proyectos'''))).
+html_sub_i(18,21,html_i(1,cell(21))).
+html_sub_i(21,22,html_i(0,button('''Modulo Tareas'''))).
+html_sub_i(18,23,html_i(2,cell(23))).
+html_sub_i(23,24,html_i(0,button('''Gesion Proyecto'''))).
+html_sub_i(3,25,html_i(1,div(25))).
+html_sub_i(25,26,html_i(0,div(26))).
+html_sub_i(26,27,html_i(0,button('''Atras'''))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',bootstrapv3).
 html_tags_i(2,'data-abstract-form','').
 html_tags_i(13,'data-gx-image','').
 html_tags_i(15,'data-gx-image','').
+html_tags_i(17,'data-gx-image','').
  
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(2,'Class','Section',d,[ str ]).
-html_comp_i(2,'Id','',d,[ str ]).
 html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(2,'Semanticcontent',div,d,[ str ]).
@@ -228,7 +246,6 @@ html_comp_i(2,'Align',left,d,[ str ]).
 html_comp_i(2,'Valign',top,d,[ str ]).
 html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(3,'Class','Table',v,[ str ]).
-html_comp_i(3,'Id','Maintable',v,[ str ]).
 html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(3,'Semanticcontent',div,d,[ str ]).
@@ -236,7 +253,6 @@ html_comp_i(3,'Align',left,d,[ str ]).
 html_comp_i(3,'Valign',top,d,[ str ]).
 html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(4,'Class',row,v,[ str ]).
-html_comp_i(4,'Id','',d,[ str ]).
 html_comp_i(4,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(4,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(4,'Semanticcontent',div,d,[ str ]).
@@ -244,14 +260,12 @@ html_comp_i(4,'Align',left,d,[ str ]).
 html_comp_i(4,'Valign',top,d,[ str ]).
 html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(5,'Class','col-xs-12',v,[ str ]).
-html_comp_i(5,'Id','',d,[ str ]).
 html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(5,'Semanticcontent',div,d,[ str ]).
 html_comp_i(5,'Align','Center',v,[ str ]).
 html_comp_i(5,'Valign',top,d,[ str ]).
 html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(6,'Id','Table1',v,[ str ]).
 html_comp_i(6,'Class','Table',v,[ str ]).
 html_comp_i(6,'Title','',d,[ str ]).
 html_comp_i(6,'Header','',d,[ str ]).
@@ -266,88 +280,118 @@ html_comp_i(6,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(6,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(6,'Rules',none,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Menu Desarrollo',d,[ str ]).
-html_comp_i(9,'Id','Textblock1',v,[ str ]).
+html_comp_i(9,'Caption',l('Menu Desarrollo'),d,[ str ]).
 html_comp_i(9,'Class','BigTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
-html_comp_i(9,'Returnonclick',0,d,[ bool ]).
 html_comp_i(9,'Gxformat',0,d,[ num ]).
 html_comp_i(9,'Title','',d,[ str ]).
-html_comp_i(9,'Fill',-1,d,[ bool ]).
 html_comp_i(9,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(9,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(9,'Font',font('Arial',30,[]),d,[ font ]).
+html_comp_i(9,'Forecolor',rgb(0,4,68),d,[ color ]).
 html_comp_i(13,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(13,'Id','Image1',v,[ str ]).
 html_comp_i(13,'Class','Image',v,[ str ]).
 html_comp_i(13,src,i(98,'eac1dc67-7006-47fe-97fc-257bde3903c9'),v,[ image ]).
 html_comp_i(13,lowsrc,'',d,[ str ]).
-html_comp_i(13,'Returnonclick',0,d,[ bool ]).
-html_comp_i(13,'Eventgx','',d,[ str ]).
-html_comp_i(13,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(13,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(13,'Border','0',d,[ str ]).
 html_comp_i(13,'Alt','',d,[ str ]).
 html_comp_i(13,'Title','',d,[ str ]).
 html_comp_i(13,'Hspace',0,d,[ num ]).
 html_comp_i(13,'Vspace',0,d,[ num ]).
 html_comp_i(13,'Align',left,d,[ str ]).
-html_comp_i(13,'Usemap','',d,[ str ]).
 html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(15,'Id','Image2',v,[ str ]).
 html_comp_i(15,'Class','Image',v,[ str ]).
 html_comp_i(15,src,i(98,'fb75beaa-d16e-4ddd-8200-2616223af0c5'),v,[ image ]).
 html_comp_i(15,lowsrc,'',d,[ str ]).
-html_comp_i(15,'Returnonclick',0,d,[ bool ]).
-html_comp_i(15,'Eventgx','',d,[ str ]).
-html_comp_i(15,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(15,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(15,'Border','0',d,[ str ]).
 html_comp_i(15,'Alt','',d,[ str ]).
 html_comp_i(15,'Title','',d,[ str ]).
 html_comp_i(15,'Hspace',0,d,[ num ]).
 html_comp_i(15,'Vspace',0,d,[ num ]).
 html_comp_i(15,'Align',left,d,[ str ]).
-html_comp_i(15,'Usemap','',d,[ str ]).
-html_comp_i(18,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(18,'Controlname','Gestionproyectos',v,[ str ]).
-html_comp_i(18,'Class','Button',v,[ str ]).
-html_comp_i(18,'Event','''GestionProyectos''',v,[ str ]).
-html_comp_i(18,'Caption','Gestion Proyectos',d,[ str ]).
-html_comp_i(18,'Title','Gestion Proyectos',d,[ str ]).
-html_comp_i(18,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
-html_comp_i(18,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(18,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(18,'Border','2',d,[ str ]).
-html_comp_i(18,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(18,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(17,'Class','Image',v,[ str ]).
+html_comp_i(17,src,i(98,'435409d5-f2e6-47ce-a8a9-df929eac5c51'),v,[ image ]).
+html_comp_i(17,lowsrc,'',d,[ str ]).
+html_comp_i(17,'Border','0',d,[ str ]).
+html_comp_i(17,'Alt','',d,[ str ]).
+html_comp_i(17,'Title','',d,[ str ]).
+html_comp_i(17,'Hspace',0,d,[ num ]).
+html_comp_i(17,'Vspace',0,d,[ num ]).
+html_comp_i(17,'Align',left,d,[ str ]).
 html_comp_i(20,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(20,'Controlname','Modulotareas',v,[ str ]).
+html_comp_i(20,'Controlname','Moduloproyectos',v,[ str ]).
 html_comp_i(20,'Class','Button',v,[ str ]).
-html_comp_i(20,'Event','''Modulo Tareas''',v,[ str ]).
-html_comp_i(20,'Caption','Modulo Tareas',d,[ str ]).
-html_comp_i(20,'Title','Modulo Tareas',d,[ str ]).
-html_comp_i(20,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(20,'Caption',l('Modulo Proyectos'),d,[ str ]).
+html_comp_i(20,'Title',l('Modulo Proyectos'),d,[ str ]).
 html_comp_i(20,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(20,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(20,'Border','2',d,[ str ]).
+html_comp_i(20,'Border','1',d,[ str ]).
 html_comp_i(20,'Bordercolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(20,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(22,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(22,'Controlname','Modulotareas',v,[ str ]).
+html_comp_i(22,'Class','Button',v,[ str ]).
+html_comp_i(22,'Caption',l('Modulo Tareas'),d,[ str ]).
+html_comp_i(22,'Title',l('Modulo Tareas'),d,[ str ]).
+html_comp_i(22,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(22,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(22,'Border','1',d,[ str ]).
+html_comp_i(22,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(22,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(24,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(24,'Controlname','Gesionproyecto',v,[ str ]).
+html_comp_i(24,'Class','Button',v,[ str ]).
+html_comp_i(24,'Caption',l('Gesion Proyecto'),d,[ str ]).
+html_comp_i(24,'Title',l('Gesion Proyecto'),d,[ str ]).
+html_comp_i(24,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(24,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(24,'Border','1',d,[ str ]).
+html_comp_i(24,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(24,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(25,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(25,'Class',row,v,[ str ]).
+html_comp_i(25,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(25,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(25,'Semanticcontent',div,d,[ str ]).
+html_comp_i(25,'Align',left,d,[ str ]).
+html_comp_i(25,'Valign',top,d,[ str ]).
+html_comp_i(26,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(26,'Class','col-xs-12',v,[ str ]).
+html_comp_i(26,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(26,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(26,'Semanticcontent',div,d,[ str ]).
+html_comp_i(26,'Align','Center',v,[ str ]).
+html_comp_i(26,'Valign',top,d,[ str ]).
+html_comp_i(27,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(27,'Controlname','Atras',v,[ str ]).
+html_comp_i(27,'Class','BtnCancel',v,[ str ]).
+html_comp_i(27,'Caption',l('Atras'),d,[ str ]).
+html_comp_i(27,'Title',l('Atras'),d,[ str ]).
+html_comp_i(27,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(27,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(27,'Border','1',d,[ str ]).
+html_comp_i(27,'Bordercolor',rgb(200,200,200),d,[ color ]).
+html_comp_i(27,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
  
  
  
+warn_gen_i(msg(events(7,[]),spc0024,[ 'Not enough parameters ',calling,' ','WWDasboard','.' ])).
  
-lit_i(9,1,t('Menu Desarrollo',3),[ ctlname('Textblock1') ]).
-lit_i(13,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-28'),[ ctlname('Image1') ]).
-lit_i(15,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-29'),[ ctlname('Image2') ]).
-lit_i(18,1,button('''GestionProyectos'''),[ ctlname('Gestionproyectos'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(20,1,button('''Modulo Tareas'''),[ ctlname('Modulotareas'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(9,1,t(l('Menu Desarrollo'),3),[ ctlname('Textblock1') ]).
+lit_i(13,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-26'),[ ctlname('Image1') ]).
+lit_i(15,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-27'),[ ctlname('Image2') ]).
+lit_i(17,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-28'),[ ctlname('Image3') ]).
+lit_i(20,1,button('''Modulo Proyectos'''),[ ctlname('Moduloproyectos'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(22,1,button('''Modulo Tareas'''),[ ctlname('Modulotareas'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(24,1,button('''Gesion Proyecto'''),[ ctlname('Gesionproyecto'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(6,1,table(6),[ ctlname('Table1') ]).
 lit_i(5,1,div(5),[ ctlname('') ]).
 lit_i(4,1,div(4),[ ctlname('') ]).
+lit_i(27,1,button('''Atras'''),[ ctlname('Atras'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(26,1,div(26),[ ctlname('') ]).
+lit_i(25,1,div(25),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
 lit_i(2,1,div(2),[ ctlname('') ]).
 lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
@@ -374,15 +418,21 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-sub_info_i(146,'''GestionProyectos''',2,4,[ [],[] ]).
-sub_info_i(146,'''Modulo Tareas''',6,8,[ [],[] ]).
+sub_info_i(146,'''Modulo Tareas''',2,4,[ [],[] ]).
+sub_info_i(146,'''Atras''',6,8,[ [],[] ]).
+sub_info_i(146,'''Modulo Proyectos''',10,12,[ [],[] ]).
+sub_info_i(146,'''Gesion Proyecto''',14,16,[ [],[] ]).
  
-pgm_parm_i(web,38,'WWTAREA',[],[]).
-pgm_parm_i(web,35,'WWPROYECTO',[],[]).
+pgm_parm_i(trn,4,'GESTIONPROYECT',[],[]).
+pgm_parm_i(web,13,'WWPROYECTO',[],[]).
+pgm_parm_i(web,16,'WWDASBOARD',[ [ char,20,0,0 ] ],[ [ rolUser,in,[] ] ]).
+pgm_parm_i(web,23,'WWTAREA',[],[]).
  
-pgm_callprotocol_i(web,33,'WWPROYECT','INTERNAL','Secure').
-pgm_callprotocol_i(web,38,'WWTAREA','INTERNAL','Secure').
-pgm_callprotocol_i(web,35,'WWPROYECTO','INTERNAL','Secure').
+pgm_callprotocol_i(web,14,'WWPROYECT','INTERNAL','Secure').
+pgm_callprotocol_i(trn,4,'GESTIONPROYECT','INTERNAL','Secure').
+pgm_callprotocol_i(web,13,'WWPROYECTO','INTERNAL','Secure').
+pgm_callprotocol_i(web,16,'WWDASBOARD','INTERNAL','Secure').
+pgm_callprotocol_i(web,23,'WWTAREA','INTERNAL','Secure').
  
  
  

@@ -4,14 +4,30 @@
 <Object>
 <ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
 <ObjCls>0</ObjCls>
-<ObjId>3</ObjId>
+<ObjId>2</ObjId>
 <ObjName>Roles</ObjName>
 <ObjDesc>Roles</ObjDesc>
 <ObjPgmName>Roles</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>specfailed</Result>
 <Warnings></Warnings>
-<Errors></Errors>
+<Errors>
+<Error>
+<MsgCode>spc0058</MsgCode>
+<Location>
+<Type>Source</Type>
+<Line>13</Line></Location>
+<Message>
+<Token>'</Token>
+<Variable>
+<VarId>Trncontext</VarId>
+<VarName>&amp;TrnContext</VarName></Variable>
+<Sp></Sp>
+<Token>.</Token>
+<Token>Attributes</Token>
+<Token>' must be an array or collection</Token>
+<Token></Token>
+<Token>.</Token></Message></Error></Errors>
 <Generator>
 <GenId>15</GenId>
 <GenName>Default (C#)</GenName></Generator>
@@ -30,25 +46,36 @@
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
-<LevelNumber>3</LevelNumber>
+<LevelNumber>2</LevelNumber>
 <BaseTable>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description></Table></BaseTable>
 <NavigationTree>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description>
 <Updated>Yes</Updated>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></NavigationTree>
+<Tables>
+<Table>
+<TableId>3</TableId>
+<TableName>Modulos</TableName>
+<Description>Modulos</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ModulosID</AttriName>
+<Description>Modulos ID</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
 <AggSelFormulas></AggSelFormulas></Formulas>
@@ -59,29 +86,37 @@
 <TablesToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description></Table>
 <TableAction>insert</TableAction>
 <AttrisToUpdate>
 <Attribute>
-<AttriId>9</AttriId>
+<AttriId>15</AttriId>
 <AttriName>RolesName</AttriName>
-<Description>Roles Name</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Roles Name</Description></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ModulosID</AttriName>
+<Description>Modulos ID</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description></Table>
 <TableAction>update</TableAction>
 <AttrisToUpdate>
 <Attribute>
-<AttriId>9</AttriId>
+<AttriId>15</AttriId>
 <AttriName>RolesName</AttriName>
-<Description>Roles Name</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Roles Name</Description></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ModulosID</AttriName>
+<Description>Modulos ID</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description></Table>
 <TableAction>delete</TableAction>
@@ -97,10 +132,11 @@
 <RecordsToRead>one</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
 <Levels></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts></Prompts>
 <Suggests></Suggests></ObjectSpec>

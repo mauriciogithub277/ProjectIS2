@@ -1,10 +1,5 @@
-ALTER TABLE [Usuario] ALTER COLUMN [Name] nchar(40) NOT NULL
-
-ALTER TABLE [Roles] ALTER COLUMN [RolesName] nchar(40) NOT NULL
-
-ALTER TABLE [Modulos] ALTER COLUMN [ModulosName] nchar(40) NOT NULL
-
-ALTER TABLE [Proyecto] ALTER COLUMN [ProyectoNombre] nchar(40) NOT NULL
-
-ALTER TABLE [Tarea] ALTER COLUMN [TareaName] nchar(40) NOT NULL
+ALTER TABLE [EstadoProyecto] ADD [EstadoProyectoLugarNacimeinto] smallint NOT NULL CONSTRAINT EstadoProyectoLugarNacimeintoEstadoProyecto_DEFAULT DEFAULT convert(int, 0), [EstadoProyectoDireccion] smallint NOT NULL CONSTRAINT EstadoProyectoDireccionEstadoProyecto_DEFAULT DEFAULT convert(int, 0), [EstadoProyectoApellido] smallint NOT NULL CONSTRAINT EstadoProyectoApellidoEstadoProyecto_DEFAULT DEFAULT convert(int, 0)
+ALTER TABLE [EstadoProyecto] DROP CONSTRAINT EstadoProyectoLugarNacimeintoEstadoProyecto_DEFAULT
+ALTER TABLE [EstadoProyecto] DROP CONSTRAINT EstadoProyectoDireccionEstadoProyecto_DEFAULT
+ALTER TABLE [EstadoProyecto] DROP CONSTRAINT EstadoProyectoApellidoEstadoProyecto_DEFAULT
 

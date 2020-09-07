@@ -1,8 +1,8 @@
-spec_i([ web,15,'WWDasboard','WWDasboard',0,eng,'16_0_7-138086' ]).
+spec_i([ web,16,l('WWDasboard'),'WWDasboard',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[],[]).
  
-level_i(2,[ 7,[ [ 7,many ] ],[],[],[ [ [ 7 ],[ 20,19,18,17,16 ] ] ],[ [ [ 7 ],[] ] ],[ 16 ],'IPROYECTO',[],[] ]).
+level_i(2,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 23,22,21,20,4 ] ] ],[ [ [ 4 ],[] ] ],[ 4 ],'IPROYECTO',[],[] ]).
  
 tw_i(2,[]).
  
@@ -11,25 +11,25 @@ lwi_i(2,[ [] ]).
  
  
  
-ta_i(2,[ [ [ 7,20 ],[ 7,19 ],[ 7,18 ],[ 7,17 ],[ 7,16 ] ] ]).
+ta_i(2,[ [ [ 4,23 ],[ 4,22 ],[ 4,21 ],[ 4,20 ],[ 4,4 ] ] ]).
  
-las_i(2,[ [ 'Roluser','Errorperfil',20,19,18,17,16 ] ]).
+las_i(2,[ [ 'Roluser','Errorperfil',23,22,21,20,4 ] ]).
  
 lac_i(2,[ [ 'Errorperfil' ] ]).
  
  
-lits_i('Proyecto',5,10).
+lits_i(l('Proyecto'),5,10).
  
 cls_i([ 0,0 ],[ 5,93 ]).
  
 pos_i('Errorperfil',[ 0,0,0 ]).
-pos_i(16,[ 1,2,0 ]).
-pos_i(17,[ 1,2,5 ]).
-pos_i(18,[ 1,2,46 ]).
-pos_i(19,[ 1,2,55 ]).
-pos_i(20,[ 1,2,64 ]).
+pos_i(4,[ 1,2,0 ]).
+pos_i(20,[ 1,2,5 ]).
+pos_i(21,[ 1,2,46 ]).
+pos_i(22,[ 1,2,55 ]).
+pos_i(23,[ 1,2,64 ]).
  
-repeat_i(2,[ 1,2,[ 16,17,18,19,20 ],[] ]).
+repeat_i(2,[ 1,2,[ 4,20,21,22,23 ],[] ]).
  
  
 rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
@@ -49,9 +49,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -63,13 +64,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -118,30 +119,31 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
-rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('MasterPage',o(13,'WWPBaseObjects.WorkWithPlusMasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
 rule_i(0,prop('ObjDesc','WWDasboard')).
 rule_i(0,prop('ObjName','WWDasboard')).
 rule_i(0,maingen(15)).
 rule_i(0,parm([ 'Roluser' ],[])).
 rule_i(0,parmio([ [ 'Roluser',in ] ])).
-rule_i(0,rule([ a(22,[ '''Administración''','''Administración''','' ]) ],[],[],[])).
-rule_i(0,rule([ a(22,[ '''Modulo Desarrollo''','''Modulo Desarrollo''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Administración''',[ t('getmessagetext(',1),t('"Administración"',3),t(')',4) ],'' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Modulo Desarrollo''',[ t('getmessagetext(',1),t('"Modulo Desarrollo"',3),t(')',4) ],'' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Modulo Configuracion''',[ t('getmessagetext(',1),t('"Modulo Configuracion"',3),t(')',4) ],'' ]) ],[],[],[])).
  
 a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(2,2,t,7,[],[ [],'IPROYECTO',[] ]).
+a_i(2,2,t,4,[],[ [],'IPROYECTO',[] ]).
 a_i(3,1,f,[ t('&Errorperfil',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
 v_i(f,i,1,[]).
 v_i(f,o,1,'Err').
 v_i(t,i,2,[]).
+v_i(t,o,2,23).
+v_i(t,o,2,22).
+v_i(t,o,2,21).
 v_i(t,o,2,20).
-v_i(t,o,2,19).
-v_i(t,o,2,18).
-v_i(t,o,2,17).
-v_i(t,o,2,16).
+v_i(t,o,2,4).
 v_i(f,i,3,[]).
 v_i(f,o,3,[ t('&Errorperfil',23),t('Enabled',3) ]).
  
@@ -150,36 +152,34 @@ v_i(f,o,3,[ t('&Errorperfil',23),t('Enabled',3) ]).
  
  
  
-attri_i(20,[ 'ProyectoEstado',char,30,0,'',0,'Proyecto Estado','',0 ]).
-attri_i(19,[ 'ProyectoFecFin',date,8,0,'99/99/99',0,'Proyecto Fec Fin','',0 ]).
-attri_i(18,[ 'ProyectoFecInicio',date,8,0,'99/99/99',0,'Proyecto Fec Inicio','',0 ]).
-attri_i(17,[ 'ProyectoName',char,40,0,'',0,'Proyecto Name','',0 ]).
-attri_i(16,[ 'ProyectoID',int,4,0,'ZZZ9',0,'Proyecto ID','',0 ]).
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',27 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',26 ]).
-attri_i('Roluser',[ rolUser,char,20,0,'',0,'rol User','',25 ]).
-attri_i('Update',[ 'Update',char,20,0,'',0,'Update','',14 ]).
-attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,'Trn Context Att','',12 ]).
-attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',11 ]).
-attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',6 ]).
-attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
-attri_i('Iduser',[ idUser,int,4,0,'ZZZ9',0,'id User','',23 ]).
-attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,'HTTPRequest','',7 ]).
-attri_i('Gridstatefiltervalue',[ 'GridStateFilterValue',o('GridState.FilterValue'),0,0,'',0,'Grid State Filter Value','',9 ]).
-attri_i('Gridstate',[ 'GridState',o('GridState'),0,0,'',0,'Grid State','',8 ]).
-attri_i('Gridpagecount',[ 'GridPageCount',int,8,0,'ZZZZZZZ9',1,'Grid Page Count','',10 ]).
-attri_i('Faseproyect',[ 'FaseProyect',char,20,0,'',0,'Fase Proyect','',17 ]).
-attri_i('Estado',[ 'Estado',char,20,0,'',0,'Estado','',19 ]).
-attri_i('Errorperfil',[ 'ErrorPerfil',char,30,0,'',0,'Error Perfil','',24 ]).
-attri_i('Delete',[ 'Delete',char,20,0,'',0,'Delete','',15 ]).
-attri_i('Attractionname',[ 'AttractionName',char,40,0,'',0,'Attraction Name','',20 ]).
-attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',16 ]).
+attri_i(23,[ 'ProyectoEstado',char,30,0,'',0,l('Proyecto Estado'),'',0 ]).
+attri_i(22,[ 'ProyectoFecFin',date,8,0,'99/99/99',0,l('Proyecto Fec Fin'),'',0 ]).
+attri_i(21,[ 'ProyectoFecInicio',date,8,0,'99/99/99',0,l('Proyecto Fec Inicio'),'',0 ]).
+attri_i(20,[ 'ProyectoName',char,40,0,'',0,l('Proyecto Name'),'',0 ]).
+attri_i(4,[ 'ProyectoID',int,4,0,'ZZZ9',0,l('Proyecto ID'),'',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',23 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',22 ]).
+attri_i('Roluser',[ rolUser,char,20,0,'',0,l('rol User'),'',21 ]).
+attri_i('Update',[ 'Update',char,20,0,'',0,l('Update'),'',20 ]).
+attri_i('Trncontextatt',[ 'TrnContextAtt',o('TransactionContext.Attribute'),0,0,'',0,l('Trn Context Att'),'',19 ]).
+attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,l('Trn Context'),'',18 ]).
+attri_i('Session',[ 'Session',o(websession),4,0,'',0,l('Session'),'',17 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,l('Is Authorized'),'',16 ]).
+attri_i('Iduser',[ idUser,int,4,0,'ZZZ9',0,l('id User'),'',15 ]).
+attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,l('HTTPRequest'),'',14 ]).
+attri_i('Gridstatefiltervalue',[ 'GridStateFilterValue',o('GridState.FilterValue'),0,0,'',0,l('Grid State Filter Value'),'',13 ]).
+attri_i('Gridstate',[ 'GridState',o('GridState'),0,0,'',0,l('Grid State'),'',12 ]).
+attri_i('Gridpagecount',[ 'GridPageCount',int,8,0,'ZZZZZZZ9',1,l('Grid Page Count'),'',11 ]).
+attri_i('Faseproyect',[ 'FaseProyect',char,20,0,'',0,l('Fase Proyect'),'',10 ]).
+attri_i('Estado',[ 'Estado',char,20,0,'',0,l('Estado'),'',9 ]).
+attri_i('Errorperfil',[ 'ErrorPerfil',char,30,0,'',0,l('Error Perfil'),'',8 ]).
+attri_i('Delete',[ 'Delete',char,20,0,'',0,l('Delete'),'',7 ]).
+attri_i('Attractionname',[ 'AttractionName',char,40,0,'',0,l('Attraction Name'),'',6 ]).
+attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,l('ADVANCED_LABEL_TEMPLATE'),'',5 ]).
  
-table_i(7,[ 'Proyecto',[ 16,17,18,19,20 ],'Proyecto','Proyecto' ]).
+table_i(4,[ 'Proyecto',[ 4,20,21,22,23 ],l('Proyecto'),'Proyecto' ]).
  
-index_i(7,[ 'IPROYECTO',u,[ 16 ],'IProyecto' ]).
- 
- 
+index_i(4,[ 'IPROYECTO',u,[ 4 ],'IProyecto' ]).
  
  
  
@@ -203,32 +203,38 @@ index_i(7,[ 'IPROYECTO',u,[ 16 ],'IProyecto' ]).
  
  
  
-dom_info_i(71,[ 'ID' ]).
+ 
+ 
+dom_info_i(73,[ 'ID' ]).
 dom_info_i(77,[ 'NameProyect' ]).
 dom_info_i(76,[ 'Estado' ]).
+dom_info_i(74,[ 'Name' ]).
 dom_info_i(31,[ 'GeneXus\Address' ]).
-dom_info_i(72,[ 'Name' ]).
  
  
-break_i(2,nvg,1,[],[ [ 16,17,18,19,20 ],[],[] ]).
+break_i(2,nvg,1,[],[ [ 4,20,21,22,23 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,2).
 b_group_i(2,2,lit,0,3,10).
-b_group_i(2,3,lit,0,11,0).
+b_group_i(2,3,lit,0,11,14).
+b_group_i(2,4,lit,0,15,0).
  
 b_line_i(2,2,1,cmd,2,[ t('',146,2,0),t('''Administración''',3,2,7) ]).
-b_line_i(3,2,2,cmd,2,[ t('',109,2,0),t('Roluser',23,2,5),t(=,10,2,14),t('"Administrador"',3,3,16) ]).
+b_line_i(3,2,2,cmd,2,[ t('',109,2,0),t('Roluser',23,2,5),t(=,10,2,14),t('getmessagetext(',1,3,16),t('"Administrador"',3,3,16),t(')',4,3,16) ]).
 b_line_i(4,2,2,cmd,2,[ t('',104,2,0),t(o(13,'WWAdmin'),28,2,3) ]).
 b_line_i(5,2,2,cmd,2,[ t('',110,2,0) ]).
-b_line_i(6,2,2,cmd,2,[ t('',107,2,0),t('Errorperfil',23,2,0),t(=,10,2,0),t('"Bloquedo"',3,2,0) ]).
+b_line_i(6,2,2,cmd,2,[ t('',107,2,0),t('Errorperfil',23,2,0),t(=,10,2,0),t('getmessagetext(',1,2,0),t('"Bloquedo"',3,2,0),t(')',4,2,0) ]).
 b_line_i(7,2,2,cmd,2,[ t('',111,2,0) ]).
 b_line_i(8,2,2,cmd,2,[ t('',147,2,0) ]).
 b_line_i(10,2,2,cmd,2,[ t('',146,2,0),t('''Modulo Desarrollo''',3,10,7) ]).
 b_line_i(11,2,3,cmd,2,[ t('',104,2,0),t(o(13,'WWProyect'),28,2,2) ]).
 b_line_i(12,2,3,cmd,2,[ t('',147,2,0) ]).
-b_line_i(1000,2,3,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
-b_line_i(1001,2,3,cmd,0,[ t('',155,0,0) ]).
-b_line_i(1002,2,3,cmd,0,[ t('',147,0,0) ]).
+b_line_i(14,2,3,cmd,2,[ t('',146,2,0),t('''Modulo Configuracion''',3,14,7) ]).
+b_line_i(15,2,4,cmd,2,[ t('',104,2,0),t(o(13,'WConfig'),28,2,2) ]).
+b_line_i(16,2,4,cmd,2,[ t('',147,2,0) ]).
+b_line_i(1000,2,4,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,4,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,4,cmd,0,[ t('',147,0,0) ]).
  
 sf_break_i(37,2).
  
@@ -252,7 +258,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Proyecto',3))).
+html_sub_i(8,9,html_i(0,t(l('Proyecto'),3))).
 html_sub_i(3,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -285,8 +291,8 @@ html_sub_i(36,37,html_i(0,s(37))).
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',bootstrapv3).
 html_tags_i(2,'data-abstract-form','').
-html_tags_i(12,'data-gx-att','var:24').
-html_tags_i(14,'data-gx-att','var:24').
+html_tags_i(12,'data-gx-att','var:8').
+html_tags_i(14,'data-gx-att','var:8').
  
 html_comp_i(20,'Backcolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -346,7 +352,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Proyecto',d,[ str ]).
+html_comp_i(9,'Caption',l('Proyecto'),d,[ str ]).
 html_comp_i(9,'Id','Titletext',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -355,8 +361,8 @@ html_comp_i(9,'Gxformat',0,d,[ num ]).
 html_comp_i(9,'Title','',d,[ str ]).
 html_comp_i(9,'Fill',-1,d,[ bool ]).
 html_comp_i(9,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(9,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(9,'Font',font('Arial',14,[]),d,[ font ]).
+html_comp_i(9,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(9,'Font',font('Microsoft Sans Serif',9,[]),d,[ font ]).
 html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(10,'Class',row,v,[ str ]).
 html_comp_i(10,'Id','',d,[ str ]).
@@ -391,7 +397,7 @@ html_comp_i(13,'Align',left,d,[ str ]).
 html_comp_i(13,'Valign',top,d,[ str ]).
 html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(14,'Colcount',30,d,[ num ]).
-html_comp_i(14,'Attid',-24,v,[ num ]).
+html_comp_i(14,'Attid',-8,v,[ num ]).
 html_comp_i(14,'Class','TextActionAttribute',v,[ str ]).
 html_comp_i(14,'Controlname','&Errorperfil',d,[ str ]).
 html_comp_i(14,'Returnonclick',0,v,[ bool ]).
@@ -416,9 +422,9 @@ html_comp_i(14,'Gxheight',measure(3,row),v,[ measure ]).
 html_comp_i(14,'Ismultiline',-1,d,[ bool ]).
 html_comp_i(14,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(14,'Fill',-1,d,[ bool ]).
-html_comp_i(14,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(14,'Backcolor',name_argb('Transparent',0,255,255,255),d,[ color ]).
 html_comp_i(14,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(14,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(14,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(14,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(14,'Gxformat',0,d,[ num ]).
 html_comp_i(14,'Title','',d,[ str ]).
@@ -467,8 +473,8 @@ html_comp_i(20,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(20,'Controlname','Errorviewer',v,[ str ]).
 html_comp_i(20,'Class','ErrorViewer',v,[ str ]).
 html_comp_i(20,'Displaymode',1,d,[ num ]).
-html_comp_i(20,'Forecolor',rgb(255,0,0),d,[ color ]).
-html_comp_i(20,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(20,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(20,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(20,'Fill',-1,d,[ bool ]).
 html_comp_i(21,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(21,'Class',row,v,[ str ]).
@@ -520,36 +526,36 @@ html_comp_i(29,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(29,'Controlname','Administracion',v,[ str ]).
 html_comp_i(29,'Class','HideFiltersButton',v,[ str ]).
 html_comp_i(29,'Event','''Administración''',v,[ str ]).
-html_comp_i(29,'Caption','Modulo Administración',d,[ str ]).
-html_comp_i(29,'Title','Modulo Administración',d,[ str ]).
-html_comp_i(29,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(29,'Caption',l('Modulo Administración'),d,[ str ]).
+html_comp_i(29,'Title',l('Modulo Administración'),d,[ str ]).
+html_comp_i(29,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(29,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(29,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(29,'Border','0',d,[ str ]).
+html_comp_i(29,'Border','1',d,[ str ]).
 html_comp_i(29,'Bordercolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(29,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(32,'Controlname','Modulodesarrollo',v,[ str ]).
 html_comp_i(32,'Class','HideFiltersButton',v,[ str ]).
 html_comp_i(32,'Event','''Modulo Desarrollo''',v,[ str ]).
-html_comp_i(32,'Caption','Modulo Desarrollo',d,[ str ]).
-html_comp_i(32,'Title','Modulo Desarrollo',d,[ str ]).
-html_comp_i(32,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(32,'Caption',l('Modulo Desarrollo'),d,[ str ]).
+html_comp_i(32,'Title',l('Modulo Desarrollo'),d,[ str ]).
+html_comp_i(32,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(32,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(32,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(32,'Border','0',d,[ str ]).
+html_comp_i(32,'Border','1',d,[ str ]).
 html_comp_i(32,'Bordercolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(32,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(35,'Controlname','Moduloconfiguracion',v,[ str ]).
 html_comp_i(35,'Class','HideFiltersButton',v,[ str ]).
 html_comp_i(35,'Event','''Modulo Configuracion''',v,[ str ]).
-html_comp_i(35,'Caption','Modulo Configuracion',d,[ str ]).
-html_comp_i(35,'Title','Modulo Configuracion',d,[ str ]).
-html_comp_i(35,'Font',font('Arial',9,[]),d,[ font ]).
+html_comp_i(35,'Caption',l('Modulo Configuracion'),d,[ str ]).
+html_comp_i(35,'Title',l('Modulo Configuracion'),d,[ str ]).
+html_comp_i(35,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(35,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(35,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(35,'Border','0',d,[ str ]).
+html_comp_i(35,'Border','1',d,[ str ]).
 html_comp_i(35,'Bordercolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(35,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(37,'Isabstractlayoutcontrol',-1,v,[ bool ]).
@@ -568,10 +574,10 @@ html_comp_i(37,'Maxcols',1,d,[ num ]).
 html_comp_i(37,'Maxrows',0,d,[ num ]).
 html_comp_i(37,'Header','',d,[ str ]).
 html_comp_i(37,'Title','',d,[ str ]).
-html_comp_i(37,'Linescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(37,'Linesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(37,'Titlecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(37,'Titlefont',font('Arial',10,[]),d,[ font ]).
+html_comp_i(37,'Linescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(37,'Linesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(37,'Titlecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(37,'Titlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
 html_comp_i(37,'Align',left,d,[ str ]).
 html_comp_i(37,'Cellpadding','1',d,[ str ]).
 html_comp_i(37,'Cellspacing','2',d,[ str ]).
@@ -583,7 +589,7 @@ html_comp_i(37,'Allowcollapsing',0,d,[ bool ]).
 html_comp_i(37,'Allowselection',0,d,[ bool ]).
 html_comp_i(38,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(38,'Colcount',4,d,[ num ]).
-html_comp_i(38,'Colattid',16,v,[ num ]).
+html_comp_i(38,'Colattid',4,v,[ num ]).
 html_comp_i(38,'Controlname','Proyectoid',d,[ str ]).
 html_comp_i(38,'Class','Attribute',v,[ str ]).
 html_comp_i(38,'Columnclass','',d,[ str ]).
@@ -599,11 +605,11 @@ html_comp_i(38,'Ispassword',0,d,[ bool ]).
 html_comp_i(38,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(38,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(38,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(38,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(38,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(38,'Coltitle','Proyecto ID',d,[ str ]).
-html_comp_i(38,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(38,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(38,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(38,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(38,'Coltitle',l('Proyecto ID'),d,[ str ]).
+html_comp_i(38,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(38,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(38,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(38,'Gxformat',0,d,[ num ]).
 html_comp_i(38,'Colvisible',-1,d,[ bool ]).
@@ -611,7 +617,7 @@ html_comp_i(38,'Title','',d,[ str ]).
 html_comp_i(38,'Invitemsg','',d,[ str ]).
 html_comp_i(39,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(39,'Colcount',40,d,[ num ]).
-html_comp_i(39,'Colattid',17,v,[ num ]).
+html_comp_i(39,'Colattid',20,v,[ num ]).
 html_comp_i(39,'Controlname','Proyectoname',d,[ str ]).
 html_comp_i(39,'Class','Attribute',v,[ str ]).
 html_comp_i(39,'Columnclass','',d,[ str ]).
@@ -630,11 +636,11 @@ html_comp_i(39,'Ispassword',0,d,[ bool ]).
 html_comp_i(39,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(39,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(39,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(39,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(39,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(39,'Coltitle','Nombre Proyecto',d,[ str ]).
-html_comp_i(39,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(39,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(39,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(39,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(39,'Coltitle',l('Nombre Proyecto'),d,[ str ]).
+html_comp_i(39,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(39,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(39,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(39,'Gxformat',0,d,[ num ]).
 html_comp_i(39,'Colvisible',-1,d,[ bool ]).
@@ -642,7 +648,7 @@ html_comp_i(39,'Title','',d,[ str ]).
 html_comp_i(39,'Invitemsg','',d,[ str ]).
 html_comp_i(40,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(40,'Colcount',8,d,[ num ]).
-html_comp_i(40,'Colattid',18,v,[ num ]).
+html_comp_i(40,'Colattid',21,v,[ num ]).
 html_comp_i(40,'Controlname','Proyectofecinicio',d,[ str ]).
 html_comp_i(40,'Class','Attribute',v,[ str ]).
 html_comp_i(40,'Columnclass','',d,[ str ]).
@@ -658,11 +664,11 @@ html_comp_i(40,'Ispassword',0,d,[ bool ]).
 html_comp_i(40,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(40,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(40,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(40,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(40,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(40,'Coltitle','Fecha Inicio',d,[ str ]).
-html_comp_i(40,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(40,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(40,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(40,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(40,'Coltitle',l('Fecha Inicio'),d,[ str ]).
+html_comp_i(40,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(40,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(40,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(40,'Gxformat',0,d,[ num ]).
 html_comp_i(40,'Colvisible',-1,d,[ bool ]).
@@ -671,7 +677,7 @@ html_comp_i(40,'Use_datepicker',-1,d,[ bool ]).
 html_comp_i(40,'Flat_datepicker',0,d,[ bool ]).
 html_comp_i(41,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(41,'Colcount',8,d,[ num ]).
-html_comp_i(41,'Colattid',19,v,[ num ]).
+html_comp_i(41,'Colattid',22,v,[ num ]).
 html_comp_i(41,'Controlname','Proyectofecfin',d,[ str ]).
 html_comp_i(41,'Class','Attribute',v,[ str ]).
 html_comp_i(41,'Columnclass','',d,[ str ]).
@@ -687,11 +693,11 @@ html_comp_i(41,'Ispassword',0,d,[ bool ]).
 html_comp_i(41,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(41,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(41,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(41,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(41,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(41,'Coltitle','Fecha Fin',d,[ str ]).
-html_comp_i(41,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(41,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(41,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(41,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(41,'Coltitle',l('Fecha Fin'),d,[ str ]).
+html_comp_i(41,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(41,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(41,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(41,'Gxformat',0,d,[ num ]).
 html_comp_i(41,'Colvisible',-1,d,[ bool ]).
@@ -700,7 +706,7 @@ html_comp_i(41,'Use_datepicker',-1,d,[ bool ]).
 html_comp_i(41,'Flat_datepicker',0,d,[ bool ]).
 html_comp_i(42,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(42,'Colcount',30,d,[ num ]).
-html_comp_i(42,'Colattid',20,v,[ num ]).
+html_comp_i(42,'Colattid',23,v,[ num ]).
 html_comp_i(42,'Controlname','Proyectoestado',d,[ str ]).
 html_comp_i(42,'Class','Attribute',v,[ str ]).
 html_comp_i(42,'Columnclass','',d,[ str ]).
@@ -719,11 +725,11 @@ html_comp_i(42,'Ispassword',0,d,[ bool ]).
 html_comp_i(42,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(42,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(42,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(42,'Collinesfont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(42,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(42,'Coltitle','Estado',d,[ str ]).
-html_comp_i(42,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
-html_comp_i(42,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(42,'Collinesfont',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(42,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(42,'Coltitle',l('Estado'),d,[ str ]).
+html_comp_i(42,'Coltitlefont',font('Microsoft Sans Serif',10,[ bold ]),d,[ font ]).
+html_comp_i(42,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(42,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(42,'Gxformat',0,d,[ num ]).
 html_comp_i(42,'Colvisible',-1,d,[ bool ]).
@@ -735,9 +741,8 @@ html_comp_i(42,'Invitemsg','',d,[ str ]).
  
  
  
-warn_gen_i(msg([],spc0156,[ 'Event ','''Modulo Configuracion''',' for control ''','Moduloconfiguracion',''' is not defined.' ])).
  
-lit_i(9,1,t('Proyecto',3),[ ctlname('Titletext') ]).
+lit_i(9,1,t(l('Proyecto'),3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).
@@ -755,12 +760,12 @@ lit_i(29,1,button('''Administración'''),[ ctlname('Administracion'),width(0),rec
 lit_i(32,1,button('''Modulo Desarrollo'''),[ ctlname('Modulodesarrollo'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(35,1,button('''Modulo Configuracion'''),[ ctlname('Moduloconfiguracion'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(26,1,table(26),[ ctlname('Table1') ]).
-lit_i(38,1,s(t(16,2),37),[ ctlname(16),ctrltype(edit,38),pos(38),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(39,1,s(t(17,2),37),[ ctlname(17),ctrltype(edit,39),pos(39),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(40,1,s(t(18,2),37),[ ctlname(18),ctrltype(edit,40),pos(40),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(41,1,s(t(19,2),37),[ ctlname(19),ctrltype(edit,41),pos(41),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(42,1,s(t(20,2),37),[ ctlname(20),ctrltype(edit,42),pos(42),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(37,1,s(37),[ ctlname('Grid1'),el([ t(16,2),t(17,2),t(18,2),t(19,2),t(20,2) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(38,1,s(t(4,2),37),[ ctlname(4),ctrltype(edit,38),pos(38),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(39,1,s(t(20,2),37),[ ctlname(20),ctrltype(edit,39),pos(39),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(40,1,s(t(21,2),37),[ ctlname(21),ctrltype(edit,40),pos(40),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(41,1,s(t(22,2),37),[ ctlname(22),ctrltype(edit,41),pos(41),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(42,1,s(t(23,2),37),[ ctlname(23),ctrltype(edit,42),pos(42),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(37,1,s(37),[ ctlname('Grid1'),el([ t(4,2),t(20,2),t(21,2),t(22,2),t(23,2) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(23,1,table(23),[ ctlname('Table2') ]).
 lit_i(22,1,div(22),[ ctlname('') ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
@@ -779,67 +784,67 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-att_prop_i(2,16,'ExternalName','ProyectoID',d).
-att_prop_i(2,16,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,16,'EmptyAsNull','Yes',d).
-att_prop_i(2,16,idBasedOn,71,v).
-att_prop_i(2,16,'AUTONUMBER','-1',d).
-att_prop_i(2,16,'AUTONUMBER_START','1',d).
-att_prop_i(2,16,'AUTONUMBER_STEP','1',d).
-att_prop_i(2,16,'AUTONUMBER_FORREPLICATION','-1',d).
-att_prop_i(2,16,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,16,'AttRegEx','',d).
-att_prop_i(2,16,'AttValidationFailedMsg','',d).
-att_prop_i(2,16,'DownloadOffline','0',d).
-att_prop_i(2,16,'FullName','ProyectoID',v).
-att_prop_i(2,17,'ExternalName','ProyectoName',d).
-att_prop_i(2,17,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,17,'EmptyAsNull','Yes',d).
-att_prop_i(2,17,idBasedOn,77,v).
-att_prop_i(2,17,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,17,'DB_NLS_SUPPORT','Yes',d).
-att_prop_i(2,17,'AttRegEx','',d).
-att_prop_i(2,17,'AttValidationFailedMsg','',d).
-att_prop_i(2,17,'DownloadOffline','0',d).
-att_prop_i(2,17,'FullName','ProyectoName',v).
-att_prop_i(2,18,'ExternalName','ProyectoFecInicio',d).
-att_prop_i(2,18,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,18,'EmptyAsNull','Yes',d).
-att_prop_i(2,18,idBasedOn,'',d).
-att_prop_i(2,18,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,18,'AttRegEx','',d).
-att_prop_i(2,18,'AttValidationFailedMsg','',d).
-att_prop_i(2,18,idDATEFORMAT,idDATEFORMAT_SHORT,d).
-att_prop_i(2,18,'DownloadOffline','0',d).
-att_prop_i(2,18,'FullName','ProyectoFecInicio',v).
-att_prop_i(2,19,'ExternalName','ProyectoFecFin',d).
-att_prop_i(2,19,'ExternalNamespace','ProyectoGestion',d).
-att_prop_i(2,19,'EmptyAsNull','Yes',d).
-att_prop_i(2,19,idBasedOn,'',d).
-att_prop_i(2,19,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,19,'AttRegEx','',d).
-att_prop_i(2,19,'AttValidationFailedMsg','',d).
-att_prop_i(2,19,idDATEFORMAT,idDATEFORMAT_SHORT,d).
-att_prop_i(2,19,'DownloadOffline','0',d).
-att_prop_i(2,19,'FullName','ProyectoFecFin',v).
-att_prop_i(2,20,'ExternalName','ProyectoEstado',d).
-att_prop_i(2,20,'ExternalNamespace','ProyectoGestion',d).
+att_prop_i(2,4,'ExternalName','ProyectoID',d).
+att_prop_i(2,4,'ExternalNamespace','IS2',d).
+att_prop_i(2,4,'EmptyAsNull','Yes',d).
+att_prop_i(2,4,idBasedOn,73,v).
+att_prop_i(2,4,'AUTONUMBER','-1',d).
+att_prop_i(2,4,'AUTONUMBER_START','1',d).
+att_prop_i(2,4,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,4,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,4,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,4,'AttRegEx','',d).
+att_prop_i(2,4,'AttValidationFailedMsg','',d).
+att_prop_i(2,4,'DownloadOffline','0',d).
+att_prop_i(2,4,'FullName','ProyectoID',v).
+att_prop_i(2,20,'ExternalName','ProyectoName',d).
+att_prop_i(2,20,'ExternalNamespace','IS2',d).
 att_prop_i(2,20,'EmptyAsNull','Yes',d).
-att_prop_i(2,20,idBasedOn,76,v).
+att_prop_i(2,20,idBasedOn,77,v).
 att_prop_i(2,20,'ATT_INITIAL_VALUE','',d).
 att_prop_i(2,20,'DB_NLS_SUPPORT','Yes',d).
 att_prop_i(2,20,'AttRegEx','',d).
 att_prop_i(2,20,'AttValidationFailedMsg','',d).
 att_prop_i(2,20,'DownloadOffline','0',d).
-att_prop_i(2,20,'FullName','ProyectoEstado',v).
+att_prop_i(2,20,'FullName','ProyectoName',v).
+att_prop_i(2,21,'ExternalName','ProyectoFecInicio',d).
+att_prop_i(2,21,'ExternalNamespace','IS2',d).
+att_prop_i(2,21,'EmptyAsNull','Yes',d).
+att_prop_i(2,21,idBasedOn,'',d).
+att_prop_i(2,21,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,21,'AttRegEx','',d).
+att_prop_i(2,21,'AttValidationFailedMsg','',d).
+att_prop_i(2,21,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,21,'DownloadOffline','0',d).
+att_prop_i(2,21,'FullName','ProyectoFecInicio',v).
+att_prop_i(2,22,'ExternalName','ProyectoFecFin',d).
+att_prop_i(2,22,'ExternalNamespace','IS2',d).
+att_prop_i(2,22,'EmptyAsNull','Yes',d).
+att_prop_i(2,22,idBasedOn,'',d).
+att_prop_i(2,22,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,22,'AttRegEx','',d).
+att_prop_i(2,22,'AttValidationFailedMsg','',d).
+att_prop_i(2,22,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,22,'DownloadOffline','0',d).
+att_prop_i(2,22,'FullName','ProyectoFecFin',v).
+att_prop_i(2,23,'ExternalName','ProyectoEstado',d).
+att_prop_i(2,23,'ExternalNamespace','IS2',d).
+att_prop_i(2,23,'EmptyAsNull','Yes',d).
+att_prop_i(2,23,idBasedOn,76,v).
+att_prop_i(2,23,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,23,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,23,'AttRegEx','',d).
+att_prop_i(2,23,'AttValidationFailedMsg','',d).
+att_prop_i(2,23,'DownloadOffline','0',d).
+att_prop_i(2,23,'FullName','ProyectoEstado',v).
  
  
-tbl_att_prop_i(2,7,16,'AllowNulls',n).
-tbl_att_prop_i(2,7,16,'AUTONUMBER',y).
-tbl_att_prop_i(2,7,17,'AllowNulls',n).
-tbl_att_prop_i(2,7,18,'AllowNulls',n).
-tbl_att_prop_i(2,7,19,'AllowNulls',n).
-tbl_att_prop_i(2,7,20,'AllowNulls',n).
+tbl_att_prop_i(2,4,4,'AllowNulls',n).
+tbl_att_prop_i(2,4,4,'AUTONUMBER',y).
+tbl_att_prop_i(2,4,20,'AllowNulls',n).
+tbl_att_prop_i(2,4,21,'AllowNulls',n).
+tbl_att_prop_i(2,4,22,'AllowNulls',n).
+tbl_att_prop_i(2,4,23,'AllowNulls',n).
  
 var_prop_i(2,'Attractionname',idBasedOn,'',v).
  
@@ -848,21 +853,21 @@ var_prop_i(2,'Attractionname',idBasedOn,'',v).
  
  
 struct_dt_i([ 26,47,0 ],name,'GridState').
-struct_dt_i([ 26,47,0 ],namespace,'ProyectoGestion').
+struct_dt_i([ 26,47,0 ],namespace,'IS2').
 struct_dt_i([ 26,47,0 ],'ObjName','GridState').
 struct_dt_i([ 26,47,0 ],'ObjDesc','Grid State').
 struct_dt_i([ 26,47,0 ],'ExternalName','GridState').
-struct_dt_i([ 26,47,0 ],'ExternalNamespace','ProyectoGestion').
+struct_dt_i([ 26,47,0 ],'ExternalNamespace','IS2').
 struct_dt_i([ 26,47,74 ],name,'FilterValue').
-struct_dt_i([ 26,47,74 ],namespace,'ProyectoGestion.GridState').
+struct_dt_i([ 26,47,74 ],namespace,'IS2.GridState').
 struct_dt_i([ 26,50,0 ],name,'TransactionContext').
-struct_dt_i([ 26,50,0 ],namespace,'ProyectoGestion').
+struct_dt_i([ 26,50,0 ],namespace,'IS2').
 struct_dt_i([ 26,50,0 ],'ObjName','TransactionContext').
 struct_dt_i([ 26,50,0 ],'ObjDesc','Transaction Context').
 struct_dt_i([ 26,50,0 ],'ExternalName','TransactionContext').
-struct_dt_i([ 26,50,0 ],'ExternalNamespace','ProyectoGestion').
+struct_dt_i([ 26,50,0 ],'ExternalNamespace','IS2').
 struct_dt_i([ 26,50,78 ],name,'Attribute').
-struct_dt_i([ 26,50,78 ],namespace,'ProyectoGestion.TransactionContext').
+struct_dt_i([ 26,50,78 ],namespace,'IS2.TransactionContext').
 struct_dt_i([ 26,47,0 ],fullname,'GridState').
 struct_dt_i([ 26,47,74 ],fullname,'GridState.FilterValue').
 struct_dt_i([ 26,50,0 ],fullname,'TransactionContext').
@@ -877,7 +882,7 @@ struct_dt_elem_i([ 26,47,0 ],1,type,[ 4,4,0 ]).
 struct_dt_elem_i([ 26,47,0 ],1,pic,'ZZZ9').
 struct_dt_elem_i([ 26,47,0 ],1,collection,'False').
 struct_dt_elem_i([ 26,47,0 ],1,'ExternalName','CurrentPage').
-struct_dt_elem_i([ 26,47,0 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,0 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,0 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,47,0 ],1,'XmlName','').
 struct_dt_elem_i([ 26,47,0 ],1,'XmlNamespace','').
@@ -894,7 +899,7 @@ struct_dt_elem_i([ 26,47,0 ],2,type,[ 4,4,0 ]).
 struct_dt_elem_i([ 26,47,0 ],2,pic,'ZZZ9').
 struct_dt_elem_i([ 26,47,0 ],2,collection,'False').
 struct_dt_elem_i([ 26,47,0 ],2,'ExternalName','OrderedBy').
-struct_dt_elem_i([ 26,47,0 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,0 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,0 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,47,0 ],2,'XmlName','').
 struct_dt_elem_i([ 26,47,0 ],2,'XmlNamespace','').
@@ -911,7 +916,7 @@ struct_dt_elem_i([ 26,47,0 ],3,type,[ 4,1,0 ]).
 struct_dt_elem_i([ 26,47,0 ],3,pic,'9').
 struct_dt_elem_i([ 26,47,0 ],3,collection,'False').
 struct_dt_elem_i([ 26,47,0 ],3,'ExternalName','HidingSearch').
-struct_dt_elem_i([ 26,47,0 ],3,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,0 ],3,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,0 ],3,'XmlType','Element').
 struct_dt_elem_i([ 26,47,0 ],3,'XmlName','').
 struct_dt_elem_i([ 26,47,0 ],3,'XmlNamespace','').
@@ -942,7 +947,7 @@ struct_dt_elem_i([ 26,47,74 ],1,type,[ 13,100,0 ]).
 struct_dt_elem_i([ 26,47,74 ],1,pic,'').
 struct_dt_elem_i([ 26,47,74 ],1,collection,'False').
 struct_dt_elem_i([ 26,47,74 ],1,'ExternalName','Value').
-struct_dt_elem_i([ 26,47,74 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,47,74 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,47,74 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,47,74 ],1,'XmlName','').
 struct_dt_elem_i([ 26,47,74 ],1,'XmlNamespace','').
@@ -959,7 +964,7 @@ struct_dt_elem_i([ 26,50,0 ],1,type,[ 13,256,0 ]).
 struct_dt_elem_i([ 26,50,0 ],1,pic,'').
 struct_dt_elem_i([ 26,50,0 ],1,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],1,'ExternalName','CallerObject').
-struct_dt_elem_i([ 26,50,0 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],1,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],1,'XmlNamespace','').
@@ -975,7 +980,7 @@ struct_dt_elem_i([ 26,50,0 ],2,type,[ 15,4,0 ]).
 struct_dt_elem_i([ 26,50,0 ],2,pic,'').
 struct_dt_elem_i([ 26,50,0 ],2,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],2,'ExternalName','CallerOnDelete').
-struct_dt_elem_i([ 26,50,0 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],2,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],2,'XmlNamespace','').
@@ -992,7 +997,7 @@ struct_dt_elem_i([ 26,50,0 ],3,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,50,0 ],3,pic,'').
 struct_dt_elem_i([ 26,50,0 ],3,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],3,'ExternalName','CallerURL').
-struct_dt_elem_i([ 26,50,0 ],3,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],3,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],3,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],3,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],3,'XmlNamespace','').
@@ -1009,7 +1014,7 @@ struct_dt_elem_i([ 26,50,0 ],4,type,[ 13,256,0 ]).
 struct_dt_elem_i([ 26,50,0 ],4,pic,'').
 struct_dt_elem_i([ 26,50,0 ],4,collection,'False').
 struct_dt_elem_i([ 26,50,0 ],4,'ExternalName','TransactionName').
-struct_dt_elem_i([ 26,50,0 ],4,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,0 ],4,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,0 ],4,'XmlType','Element').
 struct_dt_elem_i([ 26,50,0 ],4,'XmlName','').
 struct_dt_elem_i([ 26,50,0 ],4,'XmlNamespace','').
@@ -1040,7 +1045,7 @@ struct_dt_elem_i([ 26,50,78 ],1,type,[ 13,128,0 ]).
 struct_dt_elem_i([ 26,50,78 ],1,pic,'').
 struct_dt_elem_i([ 26,50,78 ],1,collection,'False').
 struct_dt_elem_i([ 26,50,78 ],1,'ExternalName','AttributeName').
-struct_dt_elem_i([ 26,50,78 ],1,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,78 ],1,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,78 ],1,'XmlType','Element').
 struct_dt_elem_i([ 26,50,78 ],1,'XmlName','').
 struct_dt_elem_i([ 26,50,78 ],1,'XmlNamespace','').
@@ -1056,7 +1061,7 @@ struct_dt_elem_i([ 26,50,78 ],2,type,[ 13,1000,0 ]).
 struct_dt_elem_i([ 26,50,78 ],2,pic,'').
 struct_dt_elem_i([ 26,50,78 ],2,collection,'False').
 struct_dt_elem_i([ 26,50,78 ],2,'ExternalName','AttributeValue').
-struct_dt_elem_i([ 26,50,78 ],2,'ExternalNamespace','ProyectoGestion').
+struct_dt_elem_i([ 26,50,78 ],2,'ExternalNamespace','IS2').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlType','Element').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlName','').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlNamespace','').
@@ -1064,6 +1069,8 @@ struct_dt_elem_i([ 26,50,78 ],2,soaptype,'').
 struct_dt_elem_i([ 26,50,78 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,50,78 ],2,'JsonName','').
 struct_dt_elem_i([ 26,50,78 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,50,0 ],1,pic,'ZZZ9').
+struct_dt_elem_i([ 26,50,0 ],4,pic,'ZZZ9').
  
  
  
@@ -1071,13 +1078,16 @@ struct_dt_elem_i([ 26,50,78 ],2,'JsonInclude',idJsonEmpty).
  
 sub_info_i(146,'''Administración''',2,8,[ [ 'Roluser' ],[ 'Errorperfil' ] ]).
 sub_info_i(146,'''Modulo Desarrollo''',10,12,[ [],[] ]).
+sub_info_i(146,'''Modulo Configuracion''',14,16,[ [],[] ]).
  
-pgm_parm_i(web,33,'WWPROYECT',[],[]).
-pgm_parm_i(web,16,'WWADMIN',[],[]).
+pgm_parm_i(web,18,'WCONFIG',[],[]).
+pgm_parm_i(web,14,'WWPROYECT',[],[]).
+pgm_parm_i(web,17,'WWADMIN',[],[]).
  
-pgm_callprotocol_i(web,15,'WWDASBOARD','INTERNAL','Secure').
-pgm_callprotocol_i(web,33,'WWPROYECT','INTERNAL','Secure').
-pgm_callprotocol_i(web,16,'WWADMIN','INTERNAL','Secure').
+pgm_callprotocol_i(web,16,'WWDASBOARD','INTERNAL','Secure').
+pgm_callprotocol_i(web,18,'WCONFIG','INTERNAL','Secure').
+pgm_callprotocol_i(web,14,'WWPROYECT','INTERNAL','Secure').
+pgm_callprotocol_i(web,17,'WWADMIN','INTERNAL','Secure').
  
  
  

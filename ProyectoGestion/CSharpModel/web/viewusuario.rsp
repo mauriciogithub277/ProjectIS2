@@ -17,4 +17,4 @@
 /r:GxBaseBuilder.dll
 /out:bin\viewusuario.dll
 viewusuario.cs
-isauthorized.cs
+wwpbaseobjects\isauthorized.cs

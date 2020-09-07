@@ -10,7 +10,18 @@
 <ObjPgmName>RwdMasterPage</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
-<Warnings></Warnings>
+<Warnings>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>63</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>WWDasboard</Token>
+<Token>.</Token></Message></Warning></Warnings>
 <Errors></Errors>
 <Generator>
 <GenId>15</GenId>
@@ -22,6 +33,30 @@
 <EventName>Start</EventName></Event>
 <Event>
 <EventName>Refresh</EventName></Event>
+<Event>
+<EventName>'CerrarSession'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>15</ObjId>
+<ObjName>Wlogin</ObjName>
+<ObjPgmName>Wlogin</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'Inicio'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>16</ObjId>
+<ObjName>WWDasboard</ObjName>
+<ObjPgmName>WWDasboard</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
 <Event>
 <EventName>Load</EventName></Event>
 <Suggests></Suggests></ObjectSpec>

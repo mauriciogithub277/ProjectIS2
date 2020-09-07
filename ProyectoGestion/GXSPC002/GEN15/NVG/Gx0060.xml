@@ -4,9 +4,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>30</ObjId>
+<ObjId>36</ObjId>
 <ObjName>Gx0060</ObjName>
-<ObjDesc>Selection List Modulos</ObjDesc>
+<ObjDesc>Selection List Estado Proyecto</ObjDesc>
 <ObjPgmName>Gx0060</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
@@ -20,17 +20,17 @@
 <Parameter>
 <IO>out</IO>
 <Variable>
-<VarId>Pmodulosid</VarId>
-<VarName>&amp;pModulosID</VarName></Variable></Parameter></Parameters>
+<VarId>Pestadoproyectoid</VarId>
+<VarName>&amp;pEstadoProyectoID</VarName></Variable></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
 <Event>
 <EventName>Start</EventName></Event>
 <Event>
 <EventName>'Toggle'</EventName></Event>
 <Event>
-<EventName>Lblmodulosidfilter.Click</EventName></Event>
+<EventName>Lblestadoproyectoidfilter.Click</EventName></Event>
 <Event>
-<EventName>Lblmodulosnamefilter.Click</EventName></Event>
+<EventName>Lblestadoproyectonombrefilter.Click</EventName></Event>
 <Event>
 <EventName>Load</EventName>
 <LoadMethod>Auto</LoadMethod>
@@ -40,15 +40,15 @@
 <BaseTable>
 <Table>
 <TableId>6</TableId>
-<TableName>Modulos</TableName>
-<Description>Modulos</Description></Table></BaseTable>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>13</AttriId>
-<AttriName>ModulosID</AttriName>
-<Description>Modulos ID</Description></Attribute></Order>
+<AttriId>7</AttriId>
+<AttriName>EstadoProyectoID</AttriName>
+<Description>Estado Proyecto ID</Description></Attribute></Order>
 <Condition></Condition>
-<IndexName>IMODULOS</IndexName>
+<IndexName>IESTADOPROYECTO</IndexName>
 <LevelOptions></LevelOptions>
 <Optimizations>
 <Optimization>
@@ -57,15 +57,15 @@
 <StartFrom>
 <Condition>
 <Attribute>
-<AttriId>13</AttriId>
-<AttriName>ModulosID</AttriName>
-<Description>Modulos ID</Description></Attribute>
+<AttriId>7</AttriId>
+<AttriName>EstadoProyectoID</AttriName>
+<Description>Estado Proyecto ID</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Cmodulosid</VarId>
-<VarName>&amp;cModulosID</VarName></Variable></Condition></StartFrom>
+<VarId>Cestadoproyectoid</VarId>
+<VarName>&amp;cEstadoProyectoID</VarName></Variable></Condition></StartFrom>
 <LoopWhile>
 <Condition>
 <Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
@@ -73,35 +73,35 @@
 <ConditionalConstraint>
 <Constraint>
 <Attribute>
-<AttriId>14</AttriId>
-<AttriName>ModulosName</AttriName>
-<Description>Modulos Name</Description></Attribute>
+<AttriId>34</AttriId>
+<AttriName>EstadoProyectoNombre</AttriName>
+<Description>Estado Proyecto Nombre</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Cmodulosname</VarId>
-<VarName>&amp;cModulosName</VarName></Variable></Constraint>
+<VarId>Cestadoproyectonombre</VarId>
+<VarName>&amp;cEstadoProyectoNombre</VarName></Variable></Constraint>
 <Condition>
 <Token>not</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Cmodulosname</VarId>
-<VarName>&amp;cModulosName</VarName></Variable>
+<VarId>Cestadoproyectonombre</VarId>
+<VarName>&amp;cEstadoProyectoNombre</VarName></Variable>
 <Token>.</Token>
 <Token>isempty(</Token>
 <Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
 <NavigationTree>
 <Table>
 <TableId>6</TableId>
-<TableName>Modulos</TableName>
-<Description>Modulos</Description>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>13</AttriId>
-<AttriName>ModulosID</AttriName>
-<Description>Modulos ID</Description></Attribute></KeyAttributes>
+<AttriId>7</AttriId>
+<AttriName>EstadoProyectoID</AttriName>
+<Description>Estado Proyecto ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

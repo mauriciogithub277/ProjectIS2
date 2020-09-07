@@ -4,9 +4,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>31</ObjId>
+<ObjId>34</ObjId>
 <ObjName>Gx0070</ObjName>
-<ObjDesc>Selection List Proyecto</ObjDesc>
+<ObjDesc>Selection List Gestion Proyect</ObjDesc>
 <ObjPgmName>Gx0070</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
@@ -20,25 +20,17 @@
 <Parameter>
 <IO>out</IO>
 <Variable>
-<VarId>Pproyectoid</VarId>
-<VarName>&amp;pProyectoID</VarName></Variable></Parameter></Parameters>
+<VarId>Pgestionproyectid</VarId>
+<VarName>&amp;pGestionProyectID</VarName></Variable></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
 <Event>
 <EventName>Start</EventName></Event>
 <Event>
 <EventName>'Toggle'</EventName></Event>
 <Event>
+<EventName>Lblgestionproyectidfilter.Click</EventName></Event>
+<Event>
 <EventName>Lblproyectoidfilter.Click</EventName></Event>
-<Event>
-<EventName>Lblproyectonamefilter.Click</EventName></Event>
-<Event>
-<EventName>Lblproyectofeciniciofilter.Click</EventName></Event>
-<Event>
-<EventName>Lblproyectofecfinfilter.Click</EventName></Event>
-<Event>
-<EventName>Lblproyectoestadofilter.Click</EventName></Event>
-<Event>
-<EventName>Lblproyectonombrefilter.Click</EventName></Event>
 <Event>
 <EventName>Load</EventName>
 <LoadMethod>Auto</LoadMethod>
@@ -48,15 +40,15 @@
 <BaseTable>
 <Table>
 <TableId>7</TableId>
-<TableName>Proyecto</TableName>
-<Description>Proyecto</Description></Table></BaseTable>
+<TableName>GestionProyect</TableName>
+<Description>Gestion Proyect</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>16</AttriId>
-<AttriName>ProyectoID</AttriName>
-<Description>Proyecto ID</Description></Attribute></Order>
+<AttriId>8</AttriId>
+<AttriName>GestionProyectID</AttriName>
+<Description>Gestion Proyect ID</Description></Attribute></Order>
 <Condition></Condition>
-<IndexName>IPROYECTO</IndexName>
+<IndexName>IGESTIONPROYECT</IndexName>
 <LevelOptions></LevelOptions>
 <Optimizations>
 <Optimization>
@@ -65,15 +57,15 @@
 <StartFrom>
 <Condition>
 <Attribute>
-<AttriId>16</AttriId>
-<AttriName>ProyectoID</AttriName>
-<Description>Proyecto ID</Description></Attribute>
+<AttriId>8</AttriId>
+<AttriName>GestionProyectID</AttriName>
+<Description>Gestion Proyect ID</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Cproyectoid</VarId>
-<VarName>&amp;cProyectoID</VarName></Variable></Condition></StartFrom>
+<VarId>Cgestionproyectid</VarId>
+<VarName>&amp;cGestionProyectID</VarName></Variable></Condition></StartFrom>
 <LoopWhile>
 <Condition>
 <Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
@@ -81,119 +73,35 @@
 <ConditionalConstraint>
 <Constraint>
 <Attribute>
-<AttriId>17</AttriId>
-<AttriName>ProyectoName</AttriName>
-<Description>Proyecto Name</Description></Attribute>
-<Sp></Sp>
-<Token>like</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectoname</VarId>
-<VarName>&amp;cProyectoName</VarName></Variable></Constraint>
-<Condition>
-<Token>not</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectoname</VarId>
-<VarName>&amp;cProyectoName</VarName></Variable>
-<Token>.</Token>
-<Token>isempty(</Token>
-<Token>)</Token></Condition></ConditionalConstraint>
-<ConditionalConstraint>
-<Constraint>
-<Attribute>
-<AttriId>18</AttriId>
-<AttriName>ProyectoFecInicio</AttriName>
-<Description>Proyecto Fec Inicio</Description></Attribute>
+<AttriId>4</AttriId>
+<AttriName>ProyectoID</AttriName>
+<Description>Proyecto ID</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Cproyectofecinicio</VarId>
-<VarName>&amp;cProyectoFecInicio</VarName></Variable></Constraint>
+<VarId>Cproyectoid</VarId>
+<VarName>&amp;cProyectoID</VarName></Variable></Constraint>
 <Condition>
 <Token>not</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Cproyectofecinicio</VarId>
-<VarName>&amp;cProyectoFecInicio</VarName></Variable>
-<Token>.</Token>
-<Token>isempty(</Token>
-<Token>)</Token></Condition></ConditionalConstraint>
-<ConditionalConstraint>
-<Constraint>
-<Attribute>
-<AttriId>19</AttriId>
-<AttriName>ProyectoFecFin</AttriName>
-<Description>Proyecto Fec Fin</Description></Attribute>
-<Sp></Sp>
-<Token>&gt;=</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectofecfin</VarId>
-<VarName>&amp;cProyectoFecFin</VarName></Variable></Constraint>
-<Condition>
-<Token>not</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectofecfin</VarId>
-<VarName>&amp;cProyectoFecFin</VarName></Variable>
-<Token>.</Token>
-<Token>isempty(</Token>
-<Token>)</Token></Condition></ConditionalConstraint>
-<ConditionalConstraint>
-<Constraint>
-<Attribute>
-<AttriId>20</AttriId>
-<AttriName>ProyectoEstado</AttriName>
-<Description>Proyecto Estado</Description></Attribute>
-<Sp></Sp>
-<Token>like</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectoestado</VarId>
-<VarName>&amp;cProyectoEstado</VarName></Variable></Constraint>
-<Condition>
-<Token>not</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectoestado</VarId>
-<VarName>&amp;cProyectoEstado</VarName></Variable>
-<Token>.</Token>
-<Token>isempty(</Token>
-<Token>)</Token></Condition></ConditionalConstraint>
-<ConditionalConstraint>
-<Constraint>
-<Attribute>
-<AttriId>30</AttriId>
-<AttriName>ProyectoNombre</AttriName>
-<Description>Proyecto Nombre</Description></Attribute>
-<Sp></Sp>
-<Token>like</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectonombre</VarId>
-<VarName>&amp;cProyectoNombre</VarName></Variable></Constraint>
-<Condition>
-<Token>not</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cproyectonombre</VarId>
-<VarName>&amp;cProyectoNombre</VarName></Variable>
+<VarId>Cproyectoid</VarId>
+<VarName>&amp;cProyectoID</VarName></Variable>
 <Token>.</Token>
 <Token>isempty(</Token>
 <Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
 <NavigationTree>
 <Table>
 <TableId>7</TableId>
-<TableName>Proyecto</TableName>
-<Description>Proyecto</Description>
+<TableName>GestionProyect</TableName>
+<Description>Gestion Proyect</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>16</AttriId>
-<AttriName>ProyectoID</AttriName>
-<Description>Proyecto ID</Description></Attribute></KeyAttributes>
+<AttriId>8</AttriId>
+<AttriName>GestionProyectID</AttriName>
+<Description>Gestion Proyect ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

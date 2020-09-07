@@ -1,0 +1,36 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_7-138086</SpecVersion>
+<Object>
+<ObjClsGuid>87313f43-5eb2-41d7-9b8c-e8d9f5bf9588</ObjClsGuid>
+<ObjCls>10</ObjCls>
+<ObjId>0</ObjId>
+<ObjName>SubTypes</ObjName>
+<ObjDesc>Subtype groups analysis report</ObjDesc>
+<ObjPgmName>SubTypes</ObjPgmName>
+<ObjClsName>Subtype group</ObjClsName></Object>
+<Warnings>
+<Warning>
+<MsgCode>spc0079</MsgCode>
+<Message>
+<Token>Attribute(s) </Token>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>TareaPNombre</AttriName>
+<Description>Tarea PNombre</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>TareaPDescripcion</AttriName>
+<Description>Tarea PDescripcion</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>TareaPMotivo</AttriName>
+<Description>Tarea PMotivo</Description></Attribute>
+<Token> in subtype group '</Token>
+<SubtypeGroup>
+<SubtypeGroupId>1</SubtypeGroupId>
+<SubtypeGroupName>TareaPadre</SubtypeGroupName></SubtypeGroup>
+<Token>' is(are) not associated to any transaction.</Token></Message></Warning></Warnings>
+<Errors></Errors></ObjectSpec>

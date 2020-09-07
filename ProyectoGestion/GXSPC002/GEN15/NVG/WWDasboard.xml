@@ -4,21 +4,13 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>15</ObjId>
+<ObjId>16</ObjId>
 <ObjName>WWDasboard</ObjName>
 <ObjDesc>WWDasboard</ObjDesc>
 <ObjPgmName>WWDasboard</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
-<Warnings>
-<Warning>
-<MsgCode>spc0156</MsgCode>
-<Message>
-<Token>Event </Token>
-<Token>'Modulo Configuracion'</Token>
-<Token> for control '</Token>
-<Token>Moduloconfiguracion</Token>
-<Token>' is not defined.</Token></Message></Warning></Warnings>
+<Warnings></Warnings>
 <Errors></Errors>
 <Generator>
 <GenId>15</GenId>
@@ -37,7 +29,7 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>16</ObjId>
+<ObjId>17</ObjId>
 <ObjName>WWAdmin</ObjName>
 <ObjPgmName>WWAdmin</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
@@ -49,9 +41,21 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>33</ObjId>
+<ObjId>14</ObjId>
 <ObjName>WWProyect</ObjName>
 <ObjPgmName>WWProyect</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'Modulo Configuracion'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>18</ObjId>
+<ObjName>WConfig</ObjName>
+<ObjPgmName>WConfig</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters></Parameters>
 <IF></IF></CALL></Event>
@@ -62,12 +66,12 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>7</TableId>
+<TableId>4</TableId>
 <TableName>Proyecto</TableName>
 <Description>Proyecto</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>16</AttriId>
+<AttriId>4</AttriId>
 <AttriName>ProyectoID</AttriName>
 <Description>Proyecto ID</Description></Attribute></Order>
 <Condition></Condition>
@@ -83,13 +87,13 @@
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
-<TableId>7</TableId>
+<TableId>4</TableId>
 <TableName>Proyecto</TableName>
 <Description>Proyecto</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>16</AttriId>
+<AttriId>4</AttriId>
 <AttriName>ProyectoID</AttriName>
 <Description>Proyecto ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>

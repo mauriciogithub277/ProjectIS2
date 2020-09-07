@@ -4,7 +4,7 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>19</ObjId>
+<ObjId>20</ObjId>
 <ObjName>UsuarioGeneral</ObjName>
 <ObjDesc>Usuario General</ObjDesc>
 <ObjPgmName>UsuarioGeneral</ObjPgmName>
@@ -30,9 +30,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>10</ObjId>
-<ObjName>NotAuthorized</ObjName>
-<ObjPgmName>NotAuthorized</ObjPgmName>
+<ObjId>7</ObjId>
+<ObjName>WWPBaseObjects.NotAuthorized</ObjName>
+<ObjPgmName>WWPBaseObjects.NotAuthorized</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters>
 <Variable>
@@ -100,13 +100,13 @@
 <Description>Usuario ID</Description></Attribute></KeyAttributes>
 <Tables>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description>
 <RecordsToRead>one</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table></NavigationTree>

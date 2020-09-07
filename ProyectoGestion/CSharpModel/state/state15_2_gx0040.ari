@@ -1,11 +1,9 @@
-current_obj_i(2,web,26).
+current_obj_i(2,web,32).
  
-current_guid('8b1e5a78-c7b6-40e6-b3c9-79ee14c99944').
- 
- 
-called_tree_i(13,26,13,6).
+current_guid('52af0018-f427-4c72-9a8e-9d6cb72b4434').
  
  
+called_tree_i(13,32,13,6).
  
  
  
@@ -20,10 +18,12 @@ called_tree_i(13,26,13,6).
  
  
  
-ij_object_dependency(gx0040,[],[],[],26).
  
  
-obj_parms_i([ 'short aP0_pSupplierID' ],[ [ 'Psupplierid',out ] ]).
+ij_object_dependency(gx0040,[],[],[],32).
+ 
+ 
+obj_parms_i([ 'short aP0_pProyectoID' ],[ [ 'Pproyectoid',out ] ]).
  
  
  

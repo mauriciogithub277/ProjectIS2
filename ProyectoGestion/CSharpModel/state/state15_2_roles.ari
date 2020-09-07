@@ -1,12 +1,12 @@
-current_obj_i(2,trn,3).
+current_obj_i(2,trn,2).
  
 current_guid('8d6984f4-d353-4653-ab2e-1b94183a3683').
  
  
-called_tree_i(0,3,13,22).
-called_tree_i(0,3,13,10).
-called_tree_i(0,3,1,11).
-called_tree_i(0,3,13,4).
+called_tree_i(0,2,13,12).
+called_tree_i(0,2,13,7).
+called_tree_i(0,2,1,11).
+called_tree_i(0,2,13,49).
  
  
  
@@ -23,12 +23,13 @@ called_tree_i(0,3,13,4).
  
  
  
-ij_object_dependency(roles,[],[],[],3).
+ij_object_dependency(roles,[],[],[],2).
  
  
 obj_parms_i([ 'String aP0_Gx_mode','short aP1_RolesID' ],[ [ 'Mode',in ],[ 'Rolesid',in ] ]).
  
  
+has_silent_trn_i(roles_bc).
  
  
  

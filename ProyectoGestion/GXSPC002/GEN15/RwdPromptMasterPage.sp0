@@ -1,4 +1,4 @@
-spec_i([ web,6,'Rwd Prompt Master Page','RwdPromptMasterPage',0,eng,'16_0_7-138086' ]).
+spec_i([ web,6,l('Rwd Prompt Master Page'),'RwdPromptMasterPage',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[],[]).
  
@@ -41,9 +41,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -55,13 +56,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -110,7 +111,7 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('WEB_COMP','Master')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
 rule_i(0,prop('Folder',o(8,'Web'))).
 rule_i(0,prop('ObjDesc','Rwd Prompt Master Page')).
 rule_i(0,prop('ObjName','RwdPromptMasterPage')).
@@ -126,9 +127,9 @@ v_i(f,o,1,'Err').
  
  
  
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',7 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',6 ]).
-attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',7 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',6 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,l('Is Authorized'),'',5 ]).
  
  
  
@@ -198,7 +199,6 @@ html_tags_i(2,'data-abstract-form','').
  
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(2,'Class','Section',d,[ str ]).
-html_comp_i(2,'Id','',d,[ str ]).
 html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(2,'Semanticcontent',div,d,[ str ]).
@@ -206,7 +206,6 @@ html_comp_i(2,'Align',left,d,[ str ]).
 html_comp_i(2,'Valign',top,d,[ str ]).
 html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(3,'Class','PromptMainTable',v,[ str ]).
-html_comp_i(3,'Id','Maintable',v,[ str ]).
 html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(3,'Semanticcontent',div,d,[ str ]).
@@ -214,7 +213,6 @@ html_comp_i(3,'Align',left,d,[ str ]).
 html_comp_i(3,'Valign',top,d,[ str ]).
 html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(4,'Class',row,v,[ str ]).
-html_comp_i(4,'Id','',d,[ str ]).
 html_comp_i(4,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(4,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(4,'Semanticcontent',div,d,[ str ]).
@@ -222,7 +220,6 @@ html_comp_i(4,'Align',left,d,[ str ]).
 html_comp_i(4,'Valign',top,d,[ str ]).
 html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(5,'Class','col-xs-12',v,[ str ]).
-html_comp_i(5,'Id','',d,[ str ]).
 html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(5,'Semanticcontent',div,d,[ str ]).

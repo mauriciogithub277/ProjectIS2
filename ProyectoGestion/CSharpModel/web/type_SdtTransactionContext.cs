@@ -27,7 +27,7 @@ namespace GeneXus.Programs
 {
 	[XmlSerializerFormat]
 	[XmlRoot(ElementName="TransactionContext")]
-	[XmlType(TypeName="TransactionContext" , Namespace="ProyectoGestion" )]
+	[XmlType(TypeName="TransactionContext" , Namespace="IS2" )]
 	[Serializable]
 	public class SdtTransactionContext : GxUserType
 	{
@@ -242,7 +242,7 @@ namespace GeneXus.Programs
 		#endregion
 	}
 	#region Rest interface
-	[DataContract(Name=@"TransactionContext", Namespace="ProyectoGestion")]
+	[DataContract(Name=@"TransactionContext", Namespace="IS2")]
 	public class SdtTransactionContext_RESTInterface : GxGenericCollectionItem<SdtTransactionContext>, System.Web.SessionState.IRequiresSessionState
 	{
 		public SdtTransactionContext_RESTInterface( ) : base()

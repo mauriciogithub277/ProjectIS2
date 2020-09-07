@@ -5,15 +5,27 @@
    <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus16Trial/</Path>
    <Object>
       <ObjCls>0</ObjCls>
+      <ObjName>GestionProyect</ObjName>
+      <ObjDesc>Gestion Proyect</ObjDesc>
+      <ObjLink>gestionproyect.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
       <ObjName>Modulos</ObjName>
       <ObjDesc>Modulos</ObjDesc>
       <ObjLink>modulos.aspx</ObjLink>
    </Object>
    <Object>
-      <ObjCls>13</ObjCls>
-      <ObjName>Wlogin</ObjName>
-      <ObjDesc>Wlogin</ObjDesc>
-      <ObjLink>wlogin.aspx</ObjLink>
+      <ObjCls>0</ObjCls>
+      <ObjName>Tarea</ObjName>
+      <ObjDesc>Tarea</ObjDesc>
+      <ObjLink>tarea.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>EstadoProyecto</ObjName>
+      <ObjDesc>Estado Proyecto</ObjDesc>
+      <ObjLink>estadoproyecto.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
@@ -23,21 +35,21 @@
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
-      <ObjName>WWAdmin</ObjName>
-      <ObjDesc>WWAdmin</ObjDesc>
-      <ObjLink>wwadmin.aspx</ObjLink>
-   </Object>
-   <Object>
-      <ObjCls>13</ObjCls>
       <ObjName>WWUsuario</ObjName>
-      <ObjDesc>Usuarios</ObjDesc>
+      <ObjDesc>Work With Usuario</ObjDesc>
       <ObjLink>wwusuario.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
       <ObjName>WWRoles</ObjName>
-      <ObjDesc>Roles</ObjDesc>
+      <ObjDesc>Work With Roles</ObjDesc>
       <ObjLink>wwroles.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWProyecto</ObjName>
+      <ObjDesc>Work With Proyecto</ObjDesc>
+      <ObjLink>wwproyecto.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
@@ -47,14 +59,32 @@
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
-      <ObjName>WWProyecto</ObjName>
-      <ObjDesc>Proyectoes</ObjDesc>
-      <ObjLink>wwproyecto.aspx</ObjLink>
+      <ObjName>Wlogin</ObjName>
+      <ObjDesc>Wlogin</ObjDesc>
+      <ObjLink>wlogin.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWAdmin</ObjName>
+      <ObjDesc>WWAdmin</ObjDesc>
+      <ObjLink>wwadmin.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WConfig</ObjName>
+      <ObjDesc>WConfig</ObjDesc>
+      <ObjLink>wconfig.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
       <ObjName>WWTarea</ObjName>
-      <ObjDesc>Tareas</ObjDesc>
+      <ObjDesc>Work With Tarea</ObjDesc>
       <ObjLink>wwtarea.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WLineaBase</ObjName>
+      <ObjDesc>WLinea Base</ObjDesc>
+      <ObjLink>wlineabase.aspx</ObjLink>
    </Object>
 </Objects>

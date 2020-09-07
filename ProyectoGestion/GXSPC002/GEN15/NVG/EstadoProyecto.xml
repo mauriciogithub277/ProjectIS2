@@ -1,0 +1,192 @@
+
+<ObjectSpec>
+<SpecVersion>16_0_7-138086</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>7</ObjId>
+<ObjName>EstadoProyecto</ObjName>
+<ObjDesc>Estado Proyecto</ObjDesc>
+<ObjPgmName>EstadoProyecto</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>Default (C#)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Estadoproyectoid</VarId>
+<VarName>&amp;EstadoProyectoID</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>6</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description></Table></BaseTable>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>EstadoProyectoID</AttriName>
+<Description>Estado Proyecto ID</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Variable>
+<VarId>Pgmname</VarId>
+<VarName>&amp;Pgmname</VarName></Variable></FormulaName>
+<FormulaExpression>
+<Token>&quot;EstadoProyecto&quot;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>EstadoProyectoID</AttriName>
+<Description>Estado Proyecto ID</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Variable>
+<VarId>Estadoproyectoid</VarId>
+<VarName>&amp;EstadoProyectoID</VarName></Variable>
+<Token>IF</Token>
+<Token>not</Token>
+<Variable>
+<VarId>Estadoproyectoid</VarId>
+<VarName>&amp;EstadoProyectoID</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>6</TableId>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>EstadoProyectoID</AttriName>
+<Description>Estado Proyecto ID</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>EstadoProyectoID</AttriName>
+<Description>Estado Proyecto ID</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>EstadoProyectoNombre</AttriName>
+<Description>Estado Proyecto Nombre</Description></Attribute>
+<Attribute>
+<AttriId>40</AttriId>
+<AttriName>EstadoProyectoApellido</AttriName>
+<Description>Estado Proyecto Apellido</Description></Attribute>
+<Attribute>
+<AttriId>41</AttriId>
+<AttriName>EstadoProyectoDireccion</AttriName>
+<Description>Estado Proyecto Direccion</Description></Attribute>
+<Attribute>
+<AttriId>42</AttriId>
+<AttriName>EstadoProyectoLugarNacimeinto</AttriName>
+<Description>Estado Proyecto Lugar Nacimeinto</Description></Attribute></Into></Action></BaseTableRule>
+<Rules></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>EstadoProyectoNombre</AttriName>
+<Description>Estado Proyecto Nombre</Description></Attribute>
+<Attribute>
+<AttriId>40</AttriId>
+<AttriName>EstadoProyectoApellido</AttriName>
+<Description>Estado Proyecto Apellido</Description></Attribute>
+<Attribute>
+<AttriId>41</AttriId>
+<AttriName>EstadoProyectoDireccion</AttriName>
+<Description>Estado Proyecto Direccion</Description></Attribute>
+<Attribute>
+<AttriId>42</AttriId>
+<AttriName>EstadoProyectoLugarNacimeinto</AttriName>
+<Description>Estado Proyecto Lugar Nacimeinto</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>EstadoProyectoNombre</AttriName>
+<Description>Estado Proyecto Nombre</Description></Attribute>
+<Attribute>
+<AttriId>40</AttriId>
+<AttriName>EstadoProyectoApellido</AttriName>
+<Description>Estado Proyecto Apellido</Description></Attribute>
+<Attribute>
+<AttriId>41</AttriId>
+<AttriName>EstadoProyectoDireccion</AttriName>
+<Description>Estado Proyecto Direccion</Description></Attribute>
+<Attribute>
+<AttriId>42</AttriId>
+<AttriName>EstadoProyectoLugarNacimeinto</AttriName>
+<Description>Estado Proyecto Lugar Nacimeinto</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>EstadoProyecto</TableName>
+<Description>Estado Proyecto</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules>
+<Formulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

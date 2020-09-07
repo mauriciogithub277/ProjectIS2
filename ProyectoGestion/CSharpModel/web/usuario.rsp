@@ -18,4 +18,4 @@
 /r:GxBaseBuilder.dll
 /out:bin\usuario.dll
 usuario.cs
-isauthorized.cs
+wwpbaseobjects\isauthorized.cs

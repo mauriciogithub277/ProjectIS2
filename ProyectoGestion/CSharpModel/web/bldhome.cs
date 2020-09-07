@@ -67,6 +67,8 @@ public class bldhome : GxBaseBuilder
             return true;
          if (checkTime(obj, cs_path + @"\genexus.programs.sdt.rsp" ))
             return true;
+         if (checkTime(obj, cs_path + @"\type_SdtRoles.cs" ))
+            return true;
          if (checkTime(obj, cs_path + @"\gxdomainpage.cs" ))
             return true;
       }

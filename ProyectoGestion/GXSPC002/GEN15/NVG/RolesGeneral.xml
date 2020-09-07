@@ -4,7 +4,7 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>23</ObjId>
+<ObjId>21</ObjId>
 <ObjName>RolesGeneral</ObjName>
 <ObjDesc>Roles General</ObjDesc>
 <ObjPgmName>RolesGeneral</ObjPgmName>
@@ -20,7 +20,7 @@
 <Parameter>
 <IO>in</IO>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
@@ -30,9 +30,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>10</ObjId>
-<ObjName>NotAuthorized</ObjName>
-<ObjPgmName>NotAuthorized</ObjPgmName>
+<ObjId>7</ObjId>
+<ObjName>WWPBaseObjects.NotAuthorized</ObjName>
+<ObjPgmName>WWPBaseObjects.NotAuthorized</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters>
 <Variable>
@@ -47,12 +47,12 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></Order>
 <Condition></Condition>
@@ -62,42 +62,54 @@
 <StartFrom>
 <Condition>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>@RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></Condition></StartFrom>
 <LoopWhile>
 <Condition>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>@RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
 <NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
 <NavigationTree>
 <Table>
-<TableId>3</TableId>
+<TableId>2</TableId>
 <TableName>Roles</TableName>
 <Description>Roles</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></NavigationTree>
+<Tables>
+<Table>
+<TableId>3</TableId>
+<TableName>Modulos</TableName>
+<Description>Modulos</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>ModulosID</AttriName>
+<Description>Modulos ID</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
@@ -108,7 +120,7 @@
 <Object>
 <ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
 <ObjCls>0</ObjCls>
-<ObjId>3</ObjId>
+<ObjId>2</ObjId>
 <ObjName>Roles</ObjName>
 <ObjPgmName>Roles</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
@@ -118,7 +130,7 @@
 <Token>,</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></Parameters>
 <IF></IF></CALL></Event>
@@ -128,7 +140,7 @@
 <Object>
 <ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
 <ObjCls>0</ObjCls>
-<ObjId>3</ObjId>
+<ObjId>2</ObjId>
 <ObjName>Roles</ObjName>
 <ObjPgmName>Roles</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
@@ -138,7 +150,7 @@
 <Token>,</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>8</AttriId>
+<AttriId>2</AttriId>
 <AttriName>RolesID</AttriName>
 <Description>Roles ID</Description></Attribute></Parameters>
 <IF></IF></CALL></Event>

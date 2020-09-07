@@ -4,9 +4,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>28</ObjId>
+<ObjId>33</ObjId>
 <ObjName>Gx0050</ObjName>
-<ObjDesc>Selection List Attraction Supplier</ObjDesc>
+<ObjDesc>Selection List Tarea</ObjDesc>
 <ObjPgmName>Gx0050</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
@@ -20,22 +20,25 @@
 <Parameter>
 <IO>out</IO>
 <Variable>
-<VarId>Pattractionid</VarId>
-<VarName>&amp;pAttractionID</VarName></Variable></Parameter>
-<Parameter>
-<IO>out</IO>
-<Variable>
-<VarId>Psupplierid</VarId>
-<VarName>&amp;pSupplierID</VarName></Variable></Parameter></Parameters>
+<VarId>Ptareaid</VarId>
+<VarName>&amp;pTareaID</VarName></Variable></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
 <Event>
 <EventName>Start</EventName></Event>
 <Event>
 <EventName>'Toggle'</EventName></Event>
 <Event>
-<EventName>Lblattractionidfilter.Click</EventName></Event>
+<EventName>Lbltareaidfilter.Click</EventName></Event>
 <Event>
-<EventName>Lblsupplieridfilter.Click</EventName></Event>
+<EventName>Lbltareanamefilter.Click</EventName></Event>
+<Event>
+<EventName>Lbltareaversionfilter.Click</EventName></Event>
+<Event>
+<EventName>Lbltareaprioridadfilter.Click</EventName></Event>
+<Event>
+<EventName>Lbltareaestadofilter.Click</EventName></Event>
+<Event>
+<EventName>Lbltareapidfilter.Click</EventName></Event>
 <Event>
 <EventName>Load</EventName>
 <LoadMethod>Auto</LoadMethod>
@@ -45,20 +48,15 @@
 <BaseTable>
 <Table>
 <TableId>5</TableId>
-<TableName>AttractionSupplier</TableName>
-<Description>Attraction Supplier</Description></Table></BaseTable>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>4</AttriId>
-<AttriName>AttractionID</AttriName>
-<Description>Attraction ID</Description></Attribute>
-<Token>,</Token>
-<Attribute>
-<AttriId>10</AttriId>
-<AttriName>SupplierID</AttriName>
-<Description>Supplier ID</Description></Attribute></Order>
+<AttriId>5</AttriId>
+<AttriName>TareaID</AttriName>
+<Description>Tarea ID</Description></Attribute></Order>
 <Condition></Condition>
-<IndexName>IATTRACTIONSUPPLIER</IndexName>
+<IndexName>ITAREA</IndexName>
 <LevelOptions></LevelOptions>
 <Optimizations>
 <Optimization>
@@ -67,45 +65,135 @@
 <StartFrom>
 <Condition>
 <Attribute>
-<AttriId>4</AttriId>
-<AttriName>AttractionID</AttriName>
-<Description>Attraction ID</Description></Attribute>
+<AttriId>5</AttriId>
+<AttriName>TareaID</AttriName>
+<Description>Tarea ID</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Cattractionid</VarId>
-<VarName>&amp;cAttractionID</VarName></Variable></Condition>
-<Condition>
-<Attribute>
-<AttriId>10</AttriId>
-<AttriName>SupplierID</AttriName>
-<Description>Supplier ID</Description></Attribute>
-<Sp></Sp>
-<Token>&gt;=</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Csupplierid</VarId>
-<VarName>&amp;cSupplierID</VarName></Variable></Condition></StartFrom>
+<VarId>Ctareaid</VarId>
+<VarName>&amp;cTareaID</VarName></Variable></Condition></StartFrom>
 <LoopWhile>
 <Condition>
 <Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
-<NonOptimizedWhere></NonOptimizedWhere>
+<NonOptimizedWhere>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>TareaName</AttriName>
+<Description>Tarea Name</Description></Attribute>
+<Sp></Sp>
+<Token>like</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaname</VarId>
+<VarName>&amp;cTareaName</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaname</VarId>
+<VarName>&amp;cTareaName</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>27</AttriId>
+<AttriName>TareaVersion</AttriName>
+<Description>Tarea Version</Description></Attribute>
+<Sp></Sp>
+<Token>like</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaversion</VarId>
+<VarName>&amp;cTareaVersion</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaversion</VarId>
+<VarName>&amp;cTareaVersion</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>TareaPrioridad</AttriName>
+<Description>Tarea Prioridad</Description></Attribute>
+<Sp></Sp>
+<Token>like</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaprioridad</VarId>
+<VarName>&amp;cTareaPrioridad</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaprioridad</VarId>
+<VarName>&amp;cTareaPrioridad</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>TareaEstado</AttriName>
+<Description>Tarea Estado</Description></Attribute>
+<Sp></Sp>
+<Token>like</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaestado</VarId>
+<VarName>&amp;cTareaEstado</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareaestado</VarId>
+<VarName>&amp;cTareaEstado</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>6</AttriId>
+<AttriName>TareaPID</AttriName>
+<Description>Tarea PID</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareapid</VarId>
+<VarName>&amp;cTareaPID</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ctareapid</VarId>
+<VarName>&amp;cTareaPID</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
 <NavigationTree>
 <Table>
 <TableId>5</TableId>
-<TableName>AttractionSupplier</TableName>
-<Description>Attraction Supplier</Description>
+<TableName>Tarea</TableName>
+<Description>Tarea</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>4</AttriId>
-<AttriName>AttractionID</AttriName>
-<Description>Attraction ID</Description></Attribute>
-<Attribute>
-<AttriId>10</AttriId>
-<AttriName>SupplierID</AttriName>
-<Description>Supplier ID</Description></Attribute></KeyAttributes>
+<AttriId>5</AttriId>
+<AttriName>TareaID</AttriName>
+<Description>Tarea ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

@@ -1,4 +1,4 @@
-spec_i([ web,3,'Prompt Master Page ','PromptMasterPage',0,eng,'16_0_7-138086' ]).
+spec_i([ web,3,l('Prompt Master Page '),'PromptMasterPage',0,eng,'16_0_7-138086' ]).
  
 struct_i(2,1,[],[]).
  
@@ -18,7 +18,7 @@ las_i(2,[ [] ]).
 lac_i(2,[ [] ]).
  
  
-lits_i('Footer Info',5,10).
+lits_i(l('Footer Info'),5,10).
  
 cls_i([ 5,10 ],[ 5,20 ]).
  
@@ -42,9 +42,10 @@ rule_i(0,datastore(1,'JRN400','QSQJRN')).
 rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
 rule_i(0,datastore(1,'PGMLIB','')).
 rule_i(0,datastore(1,'DTALIB','')).
-rule_i(0,datastore(1,'CC_USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'CC_USER_PASS','…jb}OjVsiqHpw~ZV')).
+rule_i(0,datastore(1,'CC_USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CC_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CC_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'RecycleRWMin','30')).
 rule_i(0,datastore(1,'RecycleRWType','1')).
 rule_i(0,datastore(1,'RecycleRW','-1')).
@@ -56,13 +57,13 @@ rule_i(0,datastore(1,'CS_RPCPGML','')).
 rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
 rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
 rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
-rule_i(0,datastore(1,'USER_PASSWORD','uÜLÔ&oiÒ¿JÌ*UJ’rM[Ú1J')).
-rule_i(0,datastore(1,'USER_ID',uN8OI0h0iFtlMKMP)).
+rule_i(0,datastore(1,'USER_PASSWORD','uTZyOô6fSÌ)iVrWnÜ4ÚH')).
+rule_i(0,datastore(1,'USER_ID',uTZyOHVcEiFngpRF)).
 rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
 rule_i(0,datastore(1,'CS_CONNECT','First')).
 rule_i(0,datastore(1,'DBMS_PORT','')).
 rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
-rule_i(0,datastore(1,'CS_DBNAME','Id95e454576c200aa329d2f193572c3476')).
+rule_i(0,datastore(1,'CS_DBNAME','Idf8a3d04ecc240d54090b512b6fadb181')).
 rule_i(0,datastore(1,'CS_FLEDSNAME','')).
 rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
 rule_i(0,datastore(1,'CS_DSNAME','')).
@@ -111,7 +112,7 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('WEB_COMP','Master')).
-rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Theme',o(25,'WorkWithPlusTheme'))).
 rule_i(0,prop('Folder',o(8,'Web'))).
 rule_i(0,prop('ObjDesc','Prompt Master Page ')).
 rule_i(0,prop('ObjName','PromptMasterPage')).
@@ -127,9 +128,9 @@ v_i(f,o,1,'Err').
  
  
  
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',7 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',6 ]).
-attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,l('Error text'),'',7 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,l('Error code'),'',6 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,l('Is Authorized'),'',5 ]).
  
  
  
@@ -222,7 +223,7 @@ html_sub_i(14,24,html_i(3,table(24))).
 html_sub_i(24,0,html_i(0,html('<tbody>'))).
 html_sub_i(24,25,html_i(1,row(25))).
 html_sub_i(25,26,html_i(0,cell(26))).
-html_sub_i(26,27,html_i(0,t('Footer Info',3))).
+html_sub_i(26,27,html_i(0,t(l('Footer Info'),3))).
 html_sub_i(24,0,html_i(2,html('</tbody>'))).
 html_sub_i(14,28,html_i(4,table(28))).
 html_sub_i(28,0,html_i(0,html('<tbody>'))).
@@ -339,7 +340,7 @@ html_comp_i(24,'Rules',none,d,[ str ]).
 html_comp_i(25,'Align',left,v,[ str ]).
 html_comp_i(26,'Align',center,v,[ str ]).
 html_comp_i(27,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(27,'Caption','Footer Info',v,[ str ]).
+html_comp_i(27,'Caption',l('Footer Info'),v,[ str ]).
 html_comp_i(27,'Id','Textblock1',v,[ str ]).
 html_comp_i(27,'Class','SmallText',v,[ str ]).
 html_comp_i(27,'Event','',d,[ str ]).
@@ -348,8 +349,8 @@ html_comp_i(27,'Gxformat',0,d,[ num ]).
 html_comp_i(27,'Title','',d,[ str ]).
 html_comp_i(27,'Fill',-1,d,[ bool ]).
 html_comp_i(27,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(27,'Font','',d,[ str ]).
+html_comp_i(27,'Forecolor',rgb(0,4,68),d,[ color ]).
+html_comp_i(27,'Font',font('Microsoft Sans Serif',8,[]),d,[ font ]).
 html_comp_i(28,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(28,'Id','Table7',v,[ str ]).
 html_comp_i(28,'Class','HorizontalSpace',v,[ str ]).
@@ -392,7 +393,7 @@ lit_i(8,1,table(8),[ ctlname('Table3') ]).
 lit_i(15,1,table(15),[ ctlname('Table4') ]).
 lit_i(18,1,table(18),[ ctlname('Table5') ]).
 lit_i(21,1,table(21),[ ctlname('Table6') ]).
-lit_i(27,1,t('Footer Info',3),[ ctlname('Textblock1') ]).
+lit_i(27,1,t(l('Footer Info'),3),[ ctlname('Textblock1') ]).
 lit_i(24,1,table(24),[ ctlname('Table1') ]).
 lit_i(28,1,table(28),[ ctlname('Table7') ]).
 lit_i(31,1,table(31),[ ctlname('Table8') ]).

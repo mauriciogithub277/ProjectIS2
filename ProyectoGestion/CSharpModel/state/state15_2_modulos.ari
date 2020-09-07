@@ -1,10 +1,9 @@
-current_obj_i(2,trn,6).
+current_obj_i(2,trn,5).
  
 current_guid('b6d85261-846d-43aa-b74b-b8d429750771').
  
  
-called_tree_i(0,6,13,30).
-called_tree_i(0,6,13,4).
+called_tree_i(0,5,13,49).
  
  
  
@@ -21,7 +20,7 @@ called_tree_i(0,6,13,4).
  
  
  
-ij_object_dependency(modulos,[],[],[],6).
+ij_object_dependency(modulos,[],[],[],5).
  
  
 obj_parms_i([],[]).

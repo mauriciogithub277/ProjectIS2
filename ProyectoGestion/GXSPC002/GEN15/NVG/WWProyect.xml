@@ -4,13 +4,24 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>33</ObjId>
+<ObjId>14</ObjId>
 <ObjName>WWProyect</ObjName>
 <ObjDesc>WWProyect</ObjDesc>
 <ObjPgmName>WWProyect</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
-<Warnings></Warnings>
+<Warnings>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>7</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>WWDasboard</Token>
+<Token>.</Token></Message></Warning></Warnings>
 <Errors></Errors>
 <Generator>
 <GenId>15</GenId>
@@ -19,27 +30,51 @@
 <Parameters></Parameters>
 <StandAloneRules></StandAloneRules>
 <Event>
-<EventName>'GestionProyectos'</EventName>
+<EventName>'Modulo Tareas'</EventName>
 <CALL>
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>35</ObjId>
+<ObjId>23</ObjId>
+<ObjName>WWTarea</ObjName>
+<ObjPgmName>WWTarea</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'Atras'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>16</ObjId>
+<ObjName>WWDasboard</ObjName>
+<ObjPgmName>WWDasboard</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'Modulo Proyectos'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>13</ObjId>
 <ObjName>WWProyecto</ObjName>
 <ObjPgmName>WWProyecto</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters></Parameters>
 <IF></IF></CALL></Event>
 <Event>
-<EventName>'Modulo Tareas'</EventName>
+<EventName>'Gesion Proyecto'</EventName>
 <CALL>
 <Object>
-<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
-<ObjCls>13</ObjCls>
-<ObjId>38</ObjId>
-<ObjName>WWTarea</ObjName>
-<ObjPgmName>WWTarea</ObjPgmName>
-<ObjClsName>Web Panel</ObjClsName></Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>4</ObjId>
+<ObjName>GestionProyect</ObjName>
+<ObjPgmName>GestionProyect</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
 <Parameters></Parameters>
 <IF></IF></CALL></Event>
 <Event>

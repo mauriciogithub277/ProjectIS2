@@ -27,7 +27,7 @@ namespace GeneXus.Programs
 {
 	[XmlSerializerFormat]
 	[XmlRoot(ElementName="TabOptionsItem")]
-	[XmlType(TypeName="TabOptionsItem" , Namespace="ProyectoGestion" )]
+	[XmlType(TypeName="TabOptionsItem" , Namespace="IS2" )]
 	[Serializable]
 	public class SdtTabOptions_TabOptionsItem : GxUserType
 	{
@@ -185,7 +185,7 @@ namespace GeneXus.Programs
 		#endregion
 	}
 	#region Rest interface
-	[DataContract(Name=@"TabOptionsItem", Namespace="ProyectoGestion")]
+	[DataContract(Name=@"TabOptionsItem", Namespace="IS2")]
 	public class SdtTabOptions_TabOptionsItem_RESTInterface : GxGenericCollectionItem<SdtTabOptions_TabOptionsItem>, System.Web.SessionState.IRequiresSessionState
 	{
 		public SdtTabOptions_TabOptionsItem_RESTInterface( ) : base()

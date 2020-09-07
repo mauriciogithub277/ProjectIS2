@@ -2,7 +2,7 @@
                File: PromptMasterPage
         Description: Prompt Master Page
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/7/2020 16:10:6.1
+       Generated on: 8/24/2020 21:27:54.49
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -136,7 +136,7 @@ namespace GeneXus.Programs {
          {
             disableOutput();
          }
-         context.AddJavascriptSource("promptmasterpage.js", "?202037161062", false, true);
+         context.AddJavascriptSource("promptmasterpage.js", "?202082421275449", false, true);
          context.WriteHtmlTextNl( "</body>") ;
          context.WriteHtmlTextNl( "</html>") ;
          if ( context.isSpaRequest( ) )
@@ -152,7 +152,7 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Prompt Master Page " ;
+         return context.GetMessage( "Prompt Master Page ", "") ;
       }
 
       protected void WB030( )
@@ -670,7 +670,7 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<tr style=\""+CSSHelper.Prettify( "text-align:-khtml-left;text-align:-moz-left;text-align:-webkit-left")+"\">") ;
             context.WriteHtmlText( "<td data-align=\"center\"  style=\""+CSSHelper.Prettify( "text-align:-khtml-center;text-align:-moz-center;text-align:-webkit-center")+"\">") ;
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblTextblock1_Internalname, "Footer Info", "", "", lblTextblock1_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "SmallText", 0, "", 1, 1, 0, "HLP_PromptMasterPage.htm");
+            GxWebStd.gx_label_ctrl( context, lblTextblock1_Internalname, context.GetMessage( "Footer Info", ""), "", "", lblTextblock1_Jsonclick, "'"+""+"'"+",true,"+"'"+"E_MPAGE."+"'", "", "SmallText", 0, "", 1, 1, 0, "HLP_PromptMasterPage.htm");
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "</tr>") ;
             context.WriteHtmlText( "</tbody>") ;
@@ -845,7 +845,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= (getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?202037161067", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?202082421275457", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -862,7 +862,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("promptmasterpage.js", "?202037161067", false, true);
+            context.AddJavascriptSource("promptmasterpage.js", "?202082421275457", false, true);
          }
          /* End function include_jscripts */
       }

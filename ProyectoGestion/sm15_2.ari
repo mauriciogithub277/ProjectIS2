@@ -1,1 +1,25 @@
-domain_i(74,'gxdomainpage.cs').
+domain_i(100,'gxdomainqueryvieweraxisordertype.cs').
+domain_i(101,'gxdomainqueryvieweraxistype.cs').
+domain_i(102,'gxdomainqueryviewerconditionoperator.cs').
+domain_i(103,'gxdomainqueryviewerexpandcollapse.cs').
+domain_i(104,'gxdomainqueryviewerfiltertype.cs').
+domain_i(105,'gxdomainqueryviewerobjecttype.cs').
+domain_i(106,'gxdomainqueryviewersubtotals.cs').
+domain_i(107,'gxdomainqueryviewershowdatalabelsin.cs').
+domain_i(71,'gxdomainpage.cs').
+domain_i(78,'gxdomainwwpdomains.cs').
+domain_i(82,'gxdomainexporttype.cs').
+domain_i(85,'wwpbaseobjects\gxdomainsplitscreen_action.cs').
+domain_i(86,'gxdomainhomesampledatastatus.cs').
+domain_i(90,'gxdomainwwpcardsmenusize.cs').
+domain_i(91,'wwpbaseobjects\gxdomainwwpcardsmenuoptiontype.cs').
+domain_i(92,'gxdomainqueryviewercharttype.cs').
+domain_i(93,'gxdomainqueryvieweroutputtype.cs').
+domain_i(94,'gxdomainqueryviewerplotseries.cs').
+domain_i(95,'gxdomainqueryviewershowdataas.cs').
+domain_i(96,'gxdomainqueryviewerorientation.cs').
+domain_i(97,'gxdomainqueryviewertrendperiod.cs').
+domain_i(98,'gxdomainqueryviewerxaxislabels.cs').
+domain_i(99,'gxdomainqueryvieweraggregationtype.cs').
+ext_sdt_map_i(15,'GeneXus.dll',[ 0,2,0 ]).
+sdt_map_i(15,'Roles',[ 0,2,0 ]).

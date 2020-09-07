@@ -1,8 +1,8 @@
 /*
                File: WWProyecto
-        Description: Proyectoes
+        Description: Work With Proyecto
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/22/2020 21:2:12.91
+       Generated on: 8/24/2020 21:27:55.85
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -39,7 +39,7 @@ namespace GeneXus.Programs {
          DataStoreUtil.LoadDataStores( context);
          dsDefault = context.GetDataStore("Default");
          IsMain = true;
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
       }
 
       public wwproyecto( IGxContext context )
@@ -177,7 +177,7 @@ namespace GeneXus.Programs {
          INITWEB( ) ;
          if ( ! isAjaxCallMode( ) )
          {
-            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("rwdmasterpage", "GeneXus.Programs.rwdmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
+            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("wwpbaseobjects.workwithplusmasterpage", "GeneXus.Programs.wwpbaseobjects.workwithplusmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
             MasterPageObj.setDataArea(this,false);
             ValidateSpaRequest();
             MasterPageObj.webExecute();
@@ -209,11 +209,11 @@ namespace GeneXus.Programs {
 
       public override short ExecuteStartEvent( )
       {
-         PA0Z2( ) ;
+         PA0D2( ) ;
          gxajaxcallmode = (short)((isAjaxCallMode( ) ? 1 : 0));
          if ( ( gxajaxcallmode == 0 ) && ( GxWebError == 0 ) )
          {
-            START0Z2( ) ;
+            START0D2( ) ;
          }
          return gxajaxcallmode ;
       }
@@ -251,14 +251,14 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20203222121297", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202082421275589", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
          }
          context.AddJavascriptSource("calendar.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("calendar-setup.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("calendar-en.js", "?"+context.GetBuildNumber( 138086), false, true);
+         context.AddJavascriptSource("calendar-"+StringUtil.Substring( context.GetLanguageProperty( "culture"), 1, 2)+".js", "?"+context.GetBuildNumber( 138086), false, true);
          context.WriteHtmlText( Form.Headerrawhtml) ;
          context.CloseHtmlHeader();
          if ( context.isSpaRequest( ) )
@@ -307,11 +307,11 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GXH_vPROYECTONAME", StringUtil.RTrim( AV13ProyectoName));
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
-         GxWebStd.gx_hidden_field( context, "nRC_GXsfl_25", StringUtil.LTrim( StringUtil.NToC( (decimal)(nRC_GXsfl_25), 8, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "nRC_GXsfl_25", StringUtil.LTrim( StringUtil.NToC( (decimal)(nRC_GXsfl_25), 8, 0, context.GetLanguageProperty( "decimal_point"), "")));
          GxWebStd.gx_hidden_field( context, "vPGMNAME", StringUtil.RTrim( AV19Pgmname));
          GxWebStd.gx_hidden_field( context, "gxhash_vPGMNAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( AV19Pgmname, "")), context));
-         GxWebStd.gx_hidden_field( context, "GRID_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nFirstRecordOnPage), 15, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "GRID_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nEOF), 1, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "GRID_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nFirstRecordOnPage), 15, 0, context.GetLanguageProperty( "decimal_point"), "")));
+         GxWebStd.gx_hidden_field( context, "GRID_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nEOF), 1, 0, context.GetLanguageProperty( "decimal_point"), "")));
          GxWebStd.gx_hidden_field( context, "GRID_Rows", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Rows), 6, 0, ".", "")));
       }
 
@@ -337,6 +337,18 @@ namespace GeneXus.Programs {
             enableOutput();
          }
          include_jscripts( ) ;
+         context.WriteHtmlText( "<script type=\"text/javascript\">") ;
+         context.WriteHtmlText( "gx.setLanguageCode(\""+context.GetLanguageProperty( "code")+"\");") ;
+         if ( ! context.isSpaRequest( ) )
+         {
+            context.WriteHtmlText( "gx.setDateFormat(\""+context.GetLanguageProperty( "date_fmt")+"\");") ;
+            context.WriteHtmlText( "gx.setTimeFormat("+context.GetLanguageProperty( "time_fmt")+");") ;
+            context.WriteHtmlText( "gx.setCenturyFirstYear("+40+");") ;
+            context.WriteHtmlText( "gx.setDecimalPoint(\""+context.GetLanguageProperty( "decimal_point")+"\");") ;
+            context.WriteHtmlText( "gx.setThousandSeparator(\""+context.GetLanguageProperty( "thousand_sep")+"\");") ;
+            context.WriteHtmlText( "gx.StorageTimeZone = "+1+";") ;
+         }
+         context.WriteHtmlText( "</script>") ;
       }
 
       public override void RenderHtmlContent( )
@@ -347,14 +359,14 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<div") ;
             GxWebStd.ClassAttribute( context, "gx-ct-body"+" "+(String.IsNullOrEmpty(StringUtil.RTrim( Form.Class)) ? "form-horizontal Form" : Form.Class)+"-fx");
             context.WriteHtmlText( ">") ;
-            WE0Z2( ) ;
+            WE0D2( ) ;
             context.WriteHtmlText( "</div>") ;
          }
       }
 
       public override void DispatchEvents( )
       {
-         EVT0Z2( ) ;
+         EVT0D2( ) ;
       }
 
       public override bool HasEnterEvent( )
@@ -379,10 +391,10 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "Proyectoes" ;
+         return context.GetMessage( "Work With Proyecto", "") ;
       }
 
-      protected void WB0Z0( )
+      protected void WB0D0( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -410,7 +422,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-7 col-sm-2 col-sm-offset-1", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, "Proyectoes", "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_WWProyecto.htm");
+            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, context.GetMessage( "Proyectoes", ""), "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_WWProyecto.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-5 col-sm-3 col-sm-push-6 WWActionsCell", "Right", "top", "", "", "div");
@@ -421,7 +433,7 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 13,'',false,'',0)\"";
             ClassString = "BtnAdd";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttBtninsert_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(25), 2, 0)+","+"null"+");", "Insert", bttBtninsert_Jsonclick, 5, "Insert", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'DOINSERT\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_WWProyecto.htm");
+            GxWebStd.gx_button_ctrl( context, bttBtninsert_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(25), 2, 0)+","+"null"+");", context.GetMessage( "GXM_insert", ""), bttBtninsert_Jsonclick, 5, context.GetMessage( "GXM_insert", ""), "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'DOINSERT\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_WWProyecto.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "Right", "top", "div");
@@ -430,10 +442,10 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", " gx-attribute", "left", "top", "", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavProyectoname_Internalname, "Proyecto Name", "col-sm-3 FilterSearchAttributeLabel", 0, true);
+            GxWebStd.gx_label_element( context, edtavProyectoname_Internalname, context.GetMessage( "Proyecto Name", ""), "col-sm-3 FilterSearchAttributeLabel", 0, true);
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 16,'',false,'" + sGXsfl_25_idx + "',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavProyectoname_Internalname, StringUtil.RTrim( AV13ProyectoName), StringUtil.RTrim( context.localUtil.Format( AV13ProyectoName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,16);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "Name", edtavProyectoname_Jsonclick, 0, "FilterSearchAttribute", "", "", "", "", 1, edtavProyectoname_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_WWProyecto.htm");
+            GxWebStd.gx_single_line_edit( context, edtavProyectoname_Internalname, StringUtil.RTrim( AV13ProyectoName), StringUtil.RTrim( context.localUtil.Format( AV13ProyectoName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,16);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", context.GetMessage( "Name", ""), edtavProyectoname_Jsonclick, 0, "FilterSearchAttribute", "", "", "", "", 1, edtavProyectoname_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_WWProyecto.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -497,22 +509,22 @@ namespace GeneXus.Programs {
                   }
                }
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "ID") ;
+               context.SendWebValue( context.GetMessage( "ID", "")) ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"DescriptionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Name") ;
+               context.SendWebValue( context.GetMessage( "Name", "")) ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Nombre") ;
+               context.SendWebValue( context.GetMessage( "Nombre", "")) ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Fec Inicio") ;
+               context.SendWebValue( context.GetMessage( "Fec Inicio", "")) ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Fec Fin") ;
+               context.SendWebValue( context.GetMessage( "Fec Fin", "")) ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Estado") ;
+               context.SendWebValue( context.GetMessage( "Estado", "")) ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"TextActionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "") ;
@@ -543,23 +555,23 @@ namespace GeneXus.Programs {
                GridContainer.AddObjectProperty("CmpContext", "");
                GridContainer.AddObjectProperty("InMasterPage", "false");
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-               GridColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( (decimal)(A16ProyectoID), 4, 0, ".", "")));
+               GridColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( (decimal)(A4ProyectoID), 4, 0, ".", "")));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-               GridColumn.AddObjectProperty("Value", StringUtil.RTrim( A17ProyectoName));
+               GridColumn.AddObjectProperty("Value", StringUtil.RTrim( A20ProyectoName));
                GridColumn.AddObjectProperty("Link", StringUtil.RTrim( edtProyectoName_Link));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-               GridColumn.AddObjectProperty("Value", StringUtil.RTrim( A30ProyectoNombre));
+               GridColumn.AddObjectProperty("Value", StringUtil.RTrim( A32ProyectoNombre));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-               GridColumn.AddObjectProperty("Value", context.localUtil.Format(A18ProyectoFecInicio, "99/99/99"));
+               GridColumn.AddObjectProperty("Value", context.localUtil.Format(A21ProyectoFecInicio, "99/99/99"));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-               GridColumn.AddObjectProperty("Value", context.localUtil.Format(A19ProyectoFecFin, "99/99/99"));
+               GridColumn.AddObjectProperty("Value", context.localUtil.Format(A22ProyectoFecFin, "99/99/99"));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-               GridColumn.AddObjectProperty("Value", StringUtil.RTrim( A20ProyectoEstado));
+               GridColumn.AddObjectProperty("Value", StringUtil.RTrim( A23ProyectoEstado));
                GridContainer.AddColumnProperties(GridColumn);
                GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
                GridColumn.AddObjectProperty("Value", StringUtil.RTrim( AV14Update));
@@ -614,6 +626,16 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "Center", "top", "", "", "div");
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 36,'',false,'',0)\"";
+            ClassString = "BtnBack";
+            StyleString = "";
+            GxWebStd.gx_button_ctrl( context, bttVolver_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(25), 2, 0)+","+"null"+");", context.GetMessage( "Volver", ""), bttVolver_Jsonclick, 7, context.GetMessage( "Volver", ""), "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e110d1_client"+"'", TempTags, "", 2, "HLP_WWProyecto.htm");
+            GxWebStd.gx_div_end( context, "Center", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
          }
@@ -652,7 +674,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START0Z2( )
+      protected void START0D2( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -660,7 +682,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 16_0_7-138086", 0) ;
-            Form.Meta.addItem("description", "Proyectoes", 0) ;
+            Form.Meta.addItem("description", context.GetMessage( "Work With Proyecto", ""), 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -669,16 +691,16 @@ namespace GeneXus.Programs {
          {
          }
          wbErr = false;
-         STRUP0Z0( ) ;
+         STRUP0D0( ) ;
       }
 
-      protected void WS0Z2( )
+      protected void WS0D2( )
       {
-         START0Z2( ) ;
-         EVT0Z2( ) ;
+         START0D2( ) ;
+         EVT0D2( ) ;
       }
 
-      protected void EVT0Z2( )
+      protected void EVT0D2( )
       {
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
@@ -710,7 +732,7 @@ namespace GeneXus.Programs {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: 'DoInsert' */
-                              E110Z2 ();
+                              E120D2 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "LSCR") == 0 )
                            {
@@ -749,12 +771,12 @@ namespace GeneXus.Programs {
                               nGXsfl_25_idx = (int)(NumberUtil.Val( sEvtType, "."));
                               sGXsfl_25_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_25_idx), 4, 0), 4, "0");
                               SubsflControlProps_252( ) ;
-                              A16ProyectoID = (short)(context.localUtil.CToN( cgiGet( edtProyectoID_Internalname), ".", ","));
-                              A17ProyectoName = cgiGet( edtProyectoName_Internalname);
-                              A30ProyectoNombre = cgiGet( edtProyectoNombre_Internalname);
-                              A18ProyectoFecInicio = DateTimeUtil.ResetTime(context.localUtil.CToT( cgiGet( edtProyectoFecInicio_Internalname), 0));
-                              A19ProyectoFecFin = DateTimeUtil.ResetTime(context.localUtil.CToT( cgiGet( edtProyectoFecFin_Internalname), 0));
-                              A20ProyectoEstado = cgiGet( edtProyectoEstado_Internalname);
+                              A4ProyectoID = (short)(context.localUtil.CToN( cgiGet( edtProyectoID_Internalname), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+                              A20ProyectoName = cgiGet( edtProyectoName_Internalname);
+                              A32ProyectoNombre = cgiGet( edtProyectoNombre_Internalname);
+                              A21ProyectoFecInicio = DateTimeUtil.ResetTime(context.localUtil.CToT( cgiGet( edtProyectoFecInicio_Internalname), 0));
+                              A22ProyectoFecFin = DateTimeUtil.ResetTime(context.localUtil.CToT( cgiGet( edtProyectoFecFin_Internalname), 0));
+                              A23ProyectoEstado = cgiGet( edtProyectoEstado_Internalname);
                               AV14Update = cgiGet( edtavUpdate_Internalname);
                               AssignAttri("", false, edtavUpdate_Internalname, AV14Update);
                               AV15Delete = cgiGet( edtavDelete_Internalname);
@@ -768,20 +790,20 @@ namespace GeneXus.Programs {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
                                     /* Execute user event: Start */
-                                    E120Z2 ();
+                                    E130D2 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "REFRESH") == 0 )
                                  {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
                                     /* Execute user event: Refresh */
-                                    E130Z2 ();
+                                    E140D2 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "GRID.LOAD") == 0 )
                                  {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
-                                    E140Z2 ();
+                                    E150D2 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                                  {
@@ -820,7 +842,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE0Z2( )
+      protected void WE0D2( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -836,7 +858,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void PA0Z2( )
+      protected void PA0D2( )
       {
          if ( nDonePA == 0 )
          {
@@ -896,14 +918,14 @@ namespace GeneXus.Programs {
          initialize_formulas( ) ;
          GxWebStd.set_html_headers( context, 0, "", "");
          GRID_nCurrentRecord = 0;
-         RF0Z2( ) ;
+         RF0D2( ) ;
          /* End function gxgrGrid_refresh */
       }
 
       protected void send_integrity_hashes( )
       {
-         GxWebStd.gx_hidden_field( context, "gxhash_PROYECTOID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(A16ProyectoID), "ZZZ9"), context));
-         GxWebStd.gx_hidden_field( context, "PROYECTOID", StringUtil.LTrim( StringUtil.NToC( (decimal)(A16ProyectoID), 4, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "gxhash_PROYECTOID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(A4ProyectoID), "ZZZ9"), context));
+         GxWebStd.gx_hidden_field( context, "PROYECTOID", StringUtil.LTrim( StringUtil.NToC( (decimal)(A4ProyectoID), 4, 0, ".", "")));
       }
 
       protected void clear_multi_value_controls( )
@@ -921,7 +943,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF0Z2( ) ;
+         RF0D2( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -939,7 +961,7 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtavDelete_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavDelete_Enabled), 5, 0), !bGXsfl_25_Refreshing);
       }
 
-      protected void RF0Z2( )
+      protected void RF0D2( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -949,7 +971,7 @@ namespace GeneXus.Programs {
          }
          wbStart = 25;
          /* Execute user event: Refresh */
-         E130Z2 ();
+         E140D2 ();
          nGXsfl_25_idx = 1;
          sGXsfl_25_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_25_idx), 4, 0), 4, "0");
          SubsflControlProps_252( ) ;
@@ -972,42 +994,42 @@ namespace GeneXus.Programs {
             GXPagingTo2 = ((subGrid_Rows==0) ? 10000 : subGrid_fnc_Recordsperpage( )+1);
             pr_default.dynParam(0, new Object[]{ new Object[]{
                                                  AV13ProyectoName ,
-                                                 A17ProyectoName } ,
+                                                 A20ProyectoName } ,
                                                  new int[]{
                                                  TypeConstants.STRING, TypeConstants.STRING
                                                  }
             } ) ;
             lV13ProyectoName = StringUtil.PadR( StringUtil.RTrim( AV13ProyectoName), 40, "%");
-            /* Using cursor H000Z2 */
+            /* Using cursor H000D2 */
             pr_default.execute(0, new Object[] {lV13ProyectoName, GXPagingFrom2, GXPagingTo2, GXPagingTo2});
             nGXsfl_25_idx = 1;
             sGXsfl_25_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_25_idx), 4, 0), 4, "0");
             SubsflControlProps_252( ) ;
             while ( ( (pr_default.getStatus(0) != 101) ) && ( ( ( subGrid_Rows == 0 ) || ( GRID_nCurrentRecord < subGrid_fnc_Recordsperpage( ) ) ) ) )
             {
-               A20ProyectoEstado = H000Z2_A20ProyectoEstado[0];
-               A19ProyectoFecFin = H000Z2_A19ProyectoFecFin[0];
-               A18ProyectoFecInicio = H000Z2_A18ProyectoFecInicio[0];
-               A30ProyectoNombre = H000Z2_A30ProyectoNombre[0];
-               A17ProyectoName = H000Z2_A17ProyectoName[0];
-               A16ProyectoID = H000Z2_A16ProyectoID[0];
-               E140Z2 ();
+               A23ProyectoEstado = H000D2_A23ProyectoEstado[0];
+               A22ProyectoFecFin = H000D2_A22ProyectoFecFin[0];
+               A21ProyectoFecInicio = H000D2_A21ProyectoFecInicio[0];
+               A32ProyectoNombre = H000D2_A32ProyectoNombre[0];
+               A20ProyectoName = H000D2_A20ProyectoName[0];
+               A4ProyectoID = H000D2_A4ProyectoID[0];
+               E150D2 ();
                pr_default.readNext(0);
             }
             GRID_nEOF = (short)(((pr_default.getStatus(0) == 101) ? 1 : 0));
             GxWebStd.gx_hidden_field( context, "GRID_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nEOF), 1, 0, ".", "")));
             pr_default.close(0);
             wbEnd = 25;
-            WB0Z0( ) ;
+            WB0D0( ) ;
          }
          bGXsfl_25_Refreshing = true;
       }
 
-      protected void send_integrity_lvl_hashes0Z2( )
+      protected void send_integrity_lvl_hashes0D2( )
       {
          GxWebStd.gx_hidden_field( context, "vPGMNAME", StringUtil.RTrim( AV19Pgmname));
          GxWebStd.gx_hidden_field( context, "gxhash_vPGMNAME", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( AV19Pgmname, "")), context));
-         GxWebStd.gx_hidden_field( context, "gxhash_PROYECTOID"+"_"+sGXsfl_25_idx, GetSecureSignedToken( sGXsfl_25_idx, context.localUtil.Format( (decimal)(A16ProyectoID), "ZZZ9"), context));
+         GxWebStd.gx_hidden_field( context, "gxhash_PROYECTOID"+"_"+sGXsfl_25_idx, GetSecureSignedToken( sGXsfl_25_idx, context.localUtil.Format( (decimal)(A4ProyectoID), "ZZZ9"), context));
       }
 
       protected int subGrid_fnc_Pagecount( )
@@ -1024,15 +1046,15 @@ namespace GeneXus.Programs {
       {
          pr_default.dynParam(1, new Object[]{ new Object[]{
                                               AV13ProyectoName ,
-                                              A17ProyectoName } ,
+                                              A20ProyectoName } ,
                                               new int[]{
                                               TypeConstants.STRING, TypeConstants.STRING
                                               }
          } ) ;
          lV13ProyectoName = StringUtil.PadR( StringUtil.RTrim( AV13ProyectoName), 40, "%");
-         /* Using cursor H000Z3 */
+         /* Using cursor H000D3 */
          pr_default.execute(1, new Object[] {lV13ProyectoName});
-         GRID_nRecordCount = H000Z3_AGRID_nRecordCount[0];
+         GRID_nRecordCount = H000D3_AGRID_nRecordCount[0];
          pr_default.close(1);
          return (int)(GRID_nRecordCount) ;
       }
@@ -1152,7 +1174,7 @@ namespace GeneXus.Programs {
          return (int)(0) ;
       }
 
-      protected void STRUP0Z0( )
+      protected void STRUP0D0( )
       {
          /* Before Start, stand alone formulas. */
          AV19Pgmname = "WWProyecto";
@@ -1164,17 +1186,17 @@ namespace GeneXus.Programs {
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E120Z2 ();
+         E130D2 ();
          context.wbGlbDoneStart = 1;
          /* After Start, stand alone formulas. */
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
             /* Read saved SDTs. */
             /* Read saved values. */
-            nRC_GXsfl_25 = (int)(context.localUtil.CToN( cgiGet( "nRC_GXsfl_25"), ".", ","));
-            GRID_nFirstRecordOnPage = (long)(context.localUtil.CToN( cgiGet( "GRID_nFirstRecordOnPage"), ".", ","));
-            GRID_nEOF = (short)(context.localUtil.CToN( cgiGet( "GRID_nEOF"), ".", ","));
-            subGrid_Rows = (int)(context.localUtil.CToN( cgiGet( "GRID_Rows"), ".", ","));
+            nRC_GXsfl_25 = (int)(context.localUtil.CToN( cgiGet( "nRC_GXsfl_25"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+            GRID_nFirstRecordOnPage = (long)(context.localUtil.CToN( cgiGet( "GRID_nFirstRecordOnPage"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+            GRID_nEOF = (short)(context.localUtil.CToN( cgiGet( "GRID_nEOF"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
+            subGrid_Rows = (int)(context.localUtil.CToN( cgiGet( "GRID_Rows"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
             GxWebStd.gx_hidden_field( context, "GRID_Rows", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Rows), 6, 0, ".", "")));
             /* Read variables values. */
             AV13ProyectoName = cgiGet( edtavProyectoname_Internalname);
@@ -1197,7 +1219,7 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E120Z2 ();
+         E130D2 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -1205,21 +1227,21 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E120Z2( )
+      protected void E130D2( )
       {
          /* Start Routine */
-         if ( ! new isauthorized(context).executeUdp(  AV19Pgmname) )
+         if ( ! new GeneXus.Programs.wwpbaseobjects.isauthorized(context).executeUdp(  AV19Pgmname) )
          {
-            CallWebObject(formatLink("notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV19Pgmname)));
+            CallWebObject(formatLink("wwpbaseobjects.notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV19Pgmname)));
             context.wjLocDisableFrm = 1;
          }
          subGrid_Rows = 10;
          GxWebStd.gx_hidden_field( context, "GRID_Rows", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Rows), 6, 0, ".", "")));
-         AV14Update = "Update";
+         AV14Update = context.GetMessage( "GXM_update", "");
          AssignAttri("", false, edtavUpdate_Internalname, AV14Update);
-         AV15Delete = "Delete";
+         AV15Delete = context.GetMessage( "GX_BtnDelete", "");
          AssignAttri("", false, edtavDelete_Internalname, AV15Delete);
-         Form.Caption = "Proyectoes";
+         Form.Caption = context.GetMessage( "Proyectoes", "");
          AssignProp("", false, "FORM", "Caption", Form.Caption, true);
          /* Execute user subroutine: 'PREPARETRANSACTION' */
          S112 ();
@@ -1237,7 +1259,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E130Z2( )
+      protected void E140D2( )
       {
          if ( gx_refresh_fired )
          {
@@ -1255,12 +1277,12 @@ namespace GeneXus.Programs {
          /*  Sending Event outputs  */
       }
 
-      private void E140Z2( )
+      private void E150D2( )
       {
          /* Grid_Load Routine */
-         edtavUpdate_Link = formatLink("proyecto.aspx") + "?" + UrlEncode(StringUtil.RTrim("UPD")) + "," + UrlEncode("" +A16ProyectoID);
-         edtavDelete_Link = formatLink("proyecto.aspx") + "?" + UrlEncode(StringUtil.RTrim("DLT")) + "," + UrlEncode("" +A16ProyectoID);
-         edtProyectoName_Link = formatLink("viewproyecto.aspx") + "?" + UrlEncode("" +A16ProyectoID) + "," + UrlEncode(StringUtil.RTrim(""));
+         edtavUpdate_Link = formatLink("proyecto.aspx") + "?" + UrlEncode(StringUtil.RTrim("UPD")) + "," + UrlEncode("" +A4ProyectoID);
+         edtavDelete_Link = formatLink("proyecto.aspx") + "?" + UrlEncode(StringUtil.RTrim("DLT")) + "," + UrlEncode("" +A4ProyectoID);
+         edtProyectoName_Link = formatLink("viewproyecto.aspx") + "?" + UrlEncode("" +A4ProyectoID) + "," + UrlEncode(StringUtil.RTrim(""));
          /* Load Method */
          if ( wbStart != -1 )
          {
@@ -1275,7 +1297,7 @@ namespace GeneXus.Programs {
          /*  Sending Event outputs  */
       }
 
-      protected void E110Z2( )
+      protected void E120D2( )
       {
          /* 'DoInsert' Routine */
          CallWebObject(formatLink("proyecto.aspx") + "?" + UrlEncode(StringUtil.RTrim("INS")) + "," + UrlEncode("" +0));
@@ -1287,7 +1309,7 @@ namespace GeneXus.Programs {
          /* 'LOADGRIDSTATE' Routine */
          if ( StringUtil.StrCmp(AV7HTTPRequest.Method, "GET") == 0 )
          {
-            AV8GridState.FromXml(AV6Session.Get(AV19Pgmname+"GridState"), null, "GridState", "ProyectoGestion");
+            AV8GridState.FromXml(AV6Session.Get(AV19Pgmname+"GridState"), null, "GridState", "IS2");
             if ( AV8GridState.gxTpr_Filtervalues.Count >= 1 )
             {
                AV13ProyectoName = ((SdtGridState_FilterValue)AV8GridState.gxTpr_Filtervalues.Item(1)).gxTpr_Value;
@@ -1311,13 +1333,13 @@ namespace GeneXus.Programs {
       protected void S132( )
       {
          /* 'SAVEGRIDSTATE' Routine */
-         AV8GridState.FromXml(AV6Session.Get(AV19Pgmname+"GridState"), null, "GridState", "ProyectoGestion");
+         AV8GridState.FromXml(AV6Session.Get(AV19Pgmname+"GridState"), null, "GridState", "IS2");
          AV8GridState.gxTpr_Currentpage = (short)(subGrid_fnc_Currentpage( ));
          AV8GridState.gxTpr_Filtervalues.Clear();
          AV9GridStateFilterValue = new SdtGridState_FilterValue(context);
          AV9GridStateFilterValue.gxTpr_Value = AV13ProyectoName;
          AV8GridState.gxTpr_Filtervalues.Add(AV9GridStateFilterValue, 0);
-         AV6Session.Set(AV19Pgmname+"GridState", AV8GridState.ToXml(false, true, "GridState", "ProyectoGestion"));
+         AV6Session.Set(AV19Pgmname+"GridState", AV8GridState.ToXml(false, true, "GridState", "IS2"));
       }
 
       protected void S112( )
@@ -1328,7 +1350,7 @@ namespace GeneXus.Programs {
          AV11TrnContext.gxTpr_Callerondelete = true;
          AV11TrnContext.gxTpr_Callerurl = AV7HTTPRequest.ScriptName+"?"+AV7HTTPRequest.QueryString;
          AV11TrnContext.gxTpr_Transactionname = "Proyecto";
-         AV6Session.Set("TrnContext", AV11TrnContext.ToXml(false, true, "TransactionContext", "ProyectoGestion"));
+         AV6Session.Set("TrnContext", AV11TrnContext.ToXml(false, true, "TransactionContext", "IS2"));
       }
 
       public override void setparameters( Object[] obj )
@@ -1346,9 +1368,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA0Z2( ) ;
-         WS0Z2( ) ;
-         WE0Z2( ) ;
+         PA0D2( ) ;
+         WS0D2( ) ;
+         WE0D2( ) ;
          this.cleanup();
          context.SetWrapped(false);
          context.GX_msglist = BackMsgLst;
@@ -1371,7 +1393,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?20203222121334", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202082421275631", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1388,8 +1410,8 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("wwproyecto.js", "?20203222121334", false, true);
+            context.AddJavascriptSource("messages."+context.GetLanguageProperty( "code")+".js", "?"+GetCacheInvalidationToken( ), false, true);
+            context.AddJavascriptSource("wwproyecto.js", "?202082421275631", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1421,7 +1443,7 @@ namespace GeneXus.Programs {
       protected void sendrow_252( )
       {
          SubsflControlProps_252( ) ;
-         WB0Z0( ) ;
+         WB0D0( ) ;
          if ( ( subGrid_Rows * 1 == 0 ) || ( nGXsfl_25_idx <= subGrid_fnc_Recordsperpage( ) * 1 ) )
          {
             GridRow = GXWebRow.GetNew(context,GridContainer);
@@ -1488,7 +1510,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoID_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A16ProyectoID), 4, 0, ".", "")),context.localUtil.Format( (decimal)(A16ProyectoID), "ZZZ9"),(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoID_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"number",(String)"1",(short)0,(String)"px",(short)17,(String)"px",(short)4,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)0,(bool)true,(String)"ID",(String)"right",(bool)false,(String)""});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoID_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A4ProyectoID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")),context.localUtil.Format( (decimal)(A4ProyectoID), "ZZZ9"),(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoID_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"number",(String)"1",(short)0,(String)"px",(short)17,(String)"px",(short)4,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)0,(bool)true,(String)"ID",(String)"right",(bool)false,(String)""});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1496,7 +1518,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "DescriptionAttribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoName_Internalname,StringUtil.RTrim( A17ProyectoName),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)edtProyectoName_Link,(String)"",(String)"",(String)"",(String)edtProyectoName_Jsonclick,(short)0,(String)"DescriptionAttribute",(String)"",(String)ROClassString,(String)"WWColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)40,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"NameProyect",(String)"left",(bool)true,(String)""});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoName_Internalname,StringUtil.RTrim( A20ProyectoName),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)edtProyectoName_Link,(String)"",(String)"",(String)"",(String)edtProyectoName_Jsonclick,(short)0,(String)"DescriptionAttribute",(String)"",(String)ROClassString,(String)"WWColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)40,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"NameProyect",(String)"left",(bool)true,(String)""});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1504,7 +1526,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoNombre_Internalname,StringUtil.RTrim( A30ProyectoNombre),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoNombre_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)40,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"Name",(String)"left",(bool)true,(String)""});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoNombre_Internalname,StringUtil.RTrim( A32ProyectoNombre),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoNombre_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)40,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"Name",(String)"left",(bool)true,(String)""});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1512,7 +1534,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoFecInicio_Internalname,context.localUtil.Format(A18ProyectoFecInicio, "99/99/99"),context.localUtil.Format( A18ProyectoFecInicio, "99/99/99"),(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoFecInicio_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)8,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)0,(bool)true,(String)"",(String)"right",(bool)false,(String)""});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoFecInicio_Internalname,context.localUtil.Format(A21ProyectoFecInicio, "99/99/99"),context.localUtil.Format( A21ProyectoFecInicio, "99/99/99"),(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoFecInicio_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)8,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)0,(bool)true,(String)"",(String)"right",(bool)false,(String)""});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1520,7 +1542,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoFecFin_Internalname,context.localUtil.Format(A19ProyectoFecFin, "99/99/99"),context.localUtil.Format( A19ProyectoFecFin, "99/99/99"),(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoFecFin_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)8,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)0,(bool)true,(String)"",(String)"right",(bool)false,(String)""});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoFecFin_Internalname,context.localUtil.Format(A22ProyectoFecFin, "99/99/99"),context.localUtil.Format( A22ProyectoFecFin, "99/99/99"),(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoFecFin_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)8,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)0,(bool)true,(String)"",(String)"right",(bool)false,(String)""});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1528,7 +1550,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoEstado_Internalname,StringUtil.RTrim( A20ProyectoEstado),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoEstado_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)30,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"Estado",(String)"left",(bool)true,(String)""});
+            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtProyectoEstado_Internalname,StringUtil.RTrim( A23ProyectoEstado),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)"",(String)"",(String)"",(String)"",(String)edtProyectoEstado_Jsonclick,(short)0,(String)"Attribute",(String)"",(String)ROClassString,(String)"WWColumn WWOptionalColumn",(String)"",(short)-1,(short)0,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)30,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"Estado",(String)"left",(bool)true,(String)""});
             /* Subfile cell */
             if ( GridContainer.GetWrapped() == 1 )
             {
@@ -1545,7 +1567,7 @@ namespace GeneXus.Programs {
             /* Single line edit */
             ROClassString = "TextActionAttribute";
             GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(String)edtavDelete_Internalname,StringUtil.RTrim( AV15Delete),(String)"",(String)"",(String)"'"+""+"'"+",false,"+"'"+""+"'",(String)edtavDelete_Link,(String)"",(String)"",(String)"",(String)edtavDelete_Jsonclick,(short)0,(String)"TextActionAttribute",(String)"",(String)ROClassString,(String)"WWTextActionColumn",(String)"",(short)-1,(int)edtavDelete_Enabled,(short)0,(String)"text",(String)"",(short)0,(String)"px",(short)17,(String)"px",(short)20,(short)0,(short)0,(short)25,(short)1,(short)-1,(short)-1,(bool)true,(String)"",(String)"left",(bool)true,(String)""});
-            send_integrity_lvl_hashes0Z2( ) ;
+            send_integrity_lvl_hashes0D2( ) ;
             GridContainer.AddRow(GridRow);
             nGXsfl_25_idx = ((subGrid_Islastpage==1)&&(nGXsfl_25_idx+1>subGrid_fnc_Recordsperpage( )) ? 1 : nGXsfl_25_idx+1);
             sGXsfl_25_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_25_idx), 4, 0), 4, "0");
@@ -1575,6 +1597,7 @@ namespace GeneXus.Programs {
          edtavDelete_Internalname = "vDELETE";
          divGridtable_Internalname = "GRIDTABLE";
          divGridcell_Internalname = "GRIDCELL";
+         bttVolver_Internalname = "VOLVER";
          divMaintable_Internalname = "MAINTABLE";
          Form.Internalname = "FORM";
          subGrid_Internalname = "GRID";
@@ -1582,7 +1605,7 @@ namespace GeneXus.Programs {
 
       public override void initialize_properties( )
       {
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
          if ( context.isSpaRequest( ) )
          {
             disableJsOutput();
@@ -1612,7 +1635,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Proyectoes";
+         Form.Caption = context.GetMessage( "Work With Proyecto", "");
          subGrid_Rows = 10;
          context.GX_msglist.DisplayMode = 1;
          if ( context.isSpaRequest( ) )
@@ -1630,10 +1653,12 @@ namespace GeneXus.Programs {
       {
          setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV14Update',fld:'vUPDATE',pic:''},{av:'AV15Delete',fld:'vDELETE',pic:''},{av:'AV13ProyectoName',fld:'vPROYECTONAME',pic:''},{av:'AV19Pgmname',fld:'vPGMNAME',pic:'',hsh:true}]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("GRID.LOAD","{handler:'E140Z2',iparms:[{av:'A16ProyectoID',fld:'PROYECTOID',pic:'ZZZ9',hsh:true}]");
+         setEventMetadata("GRID.LOAD","{handler:'E150D2',iparms:[{av:'A4ProyectoID',fld:'PROYECTOID',pic:'ZZZ9',hsh:true}]");
          setEventMetadata("GRID.LOAD",",oparms:[{av:'edtavUpdate_Link',ctrl:'vUPDATE',prop:'Link'},{av:'edtavDelete_Link',ctrl:'vDELETE',prop:'Link'},{av:'edtProyectoName_Link',ctrl:'PROYECTONAME',prop:'Link'}]}");
-         setEventMetadata("'DOINSERT'","{handler:'E110Z2',iparms:[{av:'A16ProyectoID',fld:'PROYECTOID',pic:'ZZZ9',hsh:true}]");
+         setEventMetadata("'DOINSERT'","{handler:'E120D2',iparms:[{av:'A4ProyectoID',fld:'PROYECTOID',pic:'ZZZ9',hsh:true}]");
          setEventMetadata("'DOINSERT'",",oparms:[]}");
+         setEventMetadata("'VOLVER'","{handler:'E110D1',iparms:[]");
+         setEventMetadata("'VOLVER'",",oparms:[]}");
          setEventMetadata("GRID_FIRSTPAGE","{handler:'subgrid_firstpage',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV14Update',fld:'vUPDATE',pic:''},{av:'AV15Delete',fld:'vDELETE',pic:''},{av:'AV19Pgmname',fld:'vPGMNAME',pic:'',hsh:true},{av:'AV13ProyectoName',fld:'vPROYECTONAME',pic:''}]");
          setEventMetadata("GRID_FIRSTPAGE",",oparms:[]}");
          setEventMetadata("GRID_PREVPAGE","{handler:'subgrid_previouspage',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV14Update',fld:'vUPDATE',pic:''},{av:'AV15Delete',fld:'vDELETE',pic:''},{av:'AV19Pgmname',fld:'vPGMNAME',pic:'',hsh:true},{av:'AV13ProyectoName',fld:'vPROYECTONAME',pic:''}]");
@@ -1685,24 +1710,25 @@ namespace GeneXus.Programs {
          sStyleString = "";
          subGrid_Linesclass = "";
          GridColumn = new GXWebColumn();
-         A17ProyectoName = "";
-         A30ProyectoNombre = "";
-         A18ProyectoFecInicio = DateTime.MinValue;
-         A19ProyectoFecFin = DateTime.MinValue;
-         A20ProyectoEstado = "";
+         A20ProyectoName = "";
+         A32ProyectoNombre = "";
+         A21ProyectoFecInicio = DateTime.MinValue;
+         A22ProyectoFecFin = DateTime.MinValue;
+         A23ProyectoEstado = "";
+         bttVolver_Jsonclick = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
          scmdbuf = "";
          lV13ProyectoName = "";
-         H000Z2_A20ProyectoEstado = new String[] {""} ;
-         H000Z2_A19ProyectoFecFin = new DateTime[] {DateTime.MinValue} ;
-         H000Z2_A18ProyectoFecInicio = new DateTime[] {DateTime.MinValue} ;
-         H000Z2_A30ProyectoNombre = new String[] {""} ;
-         H000Z2_A17ProyectoName = new String[] {""} ;
-         H000Z2_A16ProyectoID = new short[1] ;
-         H000Z3_AGRID_nRecordCount = new long[1] ;
+         H000D2_A23ProyectoEstado = new String[] {""} ;
+         H000D2_A22ProyectoFecFin = new DateTime[] {DateTime.MinValue} ;
+         H000D2_A21ProyectoFecInicio = new DateTime[] {DateTime.MinValue} ;
+         H000D2_A32ProyectoNombre = new String[] {""} ;
+         H000D2_A20ProyectoName = new String[] {""} ;
+         H000D2_A4ProyectoID = new short[1] ;
+         H000D3_AGRID_nRecordCount = new long[1] ;
          GridRow = new GXWebRow();
          AV7HTTPRequest = new GxHttpRequest( context);
          AV8GridState = new SdtGridState(context);
@@ -1715,10 +1741,10 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.wwproyecto__default(),
             new Object[][] {
                 new Object[] {
-               H000Z2_A20ProyectoEstado, H000Z2_A19ProyectoFecFin, H000Z2_A18ProyectoFecInicio, H000Z2_A30ProyectoNombre, H000Z2_A17ProyectoName, H000Z2_A16ProyectoID
+               H000D2_A23ProyectoEstado, H000D2_A22ProyectoFecFin, H000D2_A21ProyectoFecInicio, H000D2_A32ProyectoNombre, H000D2_A20ProyectoName, H000D2_A4ProyectoID
                }
                , new Object[] {
-               H000Z3_AGRID_nRecordCount
+               H000D3_AGRID_nRecordCount
                }
             }
          );
@@ -1740,7 +1766,7 @@ namespace GeneXus.Programs {
       private short wbStart ;
       private short subGrid_Backcolorstyle ;
       private short subGrid_Titlebackstyle ;
-      private short A16ProyectoID ;
+      private short A4ProyectoID ;
       private short subGrid_Allowselection ;
       private short subGrid_Allowhovering ;
       private short subGrid_Allowcollapsing ;
@@ -1799,12 +1825,14 @@ namespace GeneXus.Programs {
       private String subGrid_Class ;
       private String subGrid_Linesclass ;
       private String subGrid_Header ;
-      private String A17ProyectoName ;
+      private String A20ProyectoName ;
       private String edtProyectoName_Link ;
-      private String A30ProyectoNombre ;
-      private String A20ProyectoEstado ;
+      private String A32ProyectoNombre ;
+      private String A23ProyectoEstado ;
       private String edtavUpdate_Link ;
       private String edtavDelete_Link ;
+      private String bttVolver_Internalname ;
+      private String bttVolver_Jsonclick ;
       private String sEvt ;
       private String EvtGridId ;
       private String EvtRowId ;
@@ -1829,8 +1857,8 @@ namespace GeneXus.Programs {
       private String edtProyectoEstado_Jsonclick ;
       private String edtavUpdate_Jsonclick ;
       private String edtavDelete_Jsonclick ;
-      private DateTime A18ProyectoFecInicio ;
-      private DateTime A19ProyectoFecFin ;
+      private DateTime A21ProyectoFecInicio ;
+      private DateTime A22ProyectoFecFin ;
       private bool entryPointCalled ;
       private bool toggleJsOutput ;
       private bool wbLoad ;
@@ -1846,13 +1874,13 @@ namespace GeneXus.Programs {
       private GXWebColumn GridColumn ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private String[] H000Z2_A20ProyectoEstado ;
-      private DateTime[] H000Z2_A19ProyectoFecFin ;
-      private DateTime[] H000Z2_A18ProyectoFecInicio ;
-      private String[] H000Z2_A30ProyectoNombre ;
-      private String[] H000Z2_A17ProyectoName ;
-      private short[] H000Z2_A16ProyectoID ;
-      private long[] H000Z3_AGRID_nRecordCount ;
+      private String[] H000D2_A23ProyectoEstado ;
+      private DateTime[] H000D2_A22ProyectoFecFin ;
+      private DateTime[] H000D2_A21ProyectoFecInicio ;
+      private String[] H000D2_A32ProyectoNombre ;
+      private String[] H000D2_A20ProyectoName ;
+      private short[] H000D2_A4ProyectoID ;
+      private long[] H000D3_AGRID_nRecordCount ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
       private GxHttpRequest AV7HTTPRequest ;
@@ -1864,9 +1892,9 @@ namespace GeneXus.Programs {
 
    public class wwproyecto__default : DataStoreHelperBase, IDataStoreHelper
    {
-      protected Object[] conditional_H000Z2( IGxContext context ,
+      protected Object[] conditional_H000D2( IGxContext context ,
                                              String AV13ProyectoName ,
-                                             String A17ProyectoName )
+                                             String A20ProyectoName )
       {
          String sWhereString = "" ;
          String scmdbuf ;
@@ -1906,9 +1934,9 @@ namespace GeneXus.Programs {
          return GXv_Object2 ;
       }
 
-      protected Object[] conditional_H000Z3( IGxContext context ,
+      protected Object[] conditional_H000D3( IGxContext context ,
                                              String AV13ProyectoName ,
-                                             String A17ProyectoName )
+                                             String A20ProyectoName )
       {
          String sWhereString = "" ;
          String scmdbuf ;
@@ -1949,9 +1977,9 @@ namespace GeneXus.Programs {
          switch ( cursor )
          {
                case 0 :
-                     return conditional_H000Z2(context, (String)dynConstraints[0] , (String)dynConstraints[1] );
+                     return conditional_H000D2(context, (String)dynConstraints[0] , (String)dynConstraints[1] );
                case 1 :
-                     return conditional_H000Z3(context, (String)dynConstraints[0] , (String)dynConstraints[1] );
+                     return conditional_H000D3(context, (String)dynConstraints[0] , (String)dynConstraints[1] );
          }
          return base.getDynamicStatement(cursor, context, dynConstraints);
       }
@@ -1970,20 +1998,20 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmH000Z2 ;
-          prmH000Z2 = new Object[] {
+          Object[] prmH000D2 ;
+          prmH000D2 = new Object[] {
           new Object[] {"@lV13ProyectoName",SqlDbType.NChar,40,0} ,
           new Object[] {"@GXPagingFrom2",SqlDbType.Int,9,0} ,
           new Object[] {"@GXPagingTo2",SqlDbType.Int,9,0} ,
           new Object[] {"@GXPagingTo2",SqlDbType.Int,9,0}
           } ;
-          Object[] prmH000Z3 ;
-          prmH000Z3 = new Object[] {
+          Object[] prmH000D3 ;
+          prmH000D3 = new Object[] {
           new Object[] {"@lV13ProyectoName",SqlDbType.NChar,40,0}
           } ;
           def= new CursorDef[] {
-              new CursorDef("H000Z2", "scmdbuf",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000Z2,11, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("H000Z3", "scmdbuf",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000Z3,1, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("H000D2", "scmdbuf",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000D2,11, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("H000D3", "scmdbuf",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000D3,1, GxCacheFrequency.OFF ,true,false )
           };
        }
     }

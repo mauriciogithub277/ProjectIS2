@@ -3,6 +3,32 @@ usercontrol_directory_i('animationview', ['AnimationView']).
 usercontrol_directory_i('audiocontroller', ['AudioController']).
 usercontrol_directory_i('fckeditor', ['CKEditor']).
 usercontrol_directory_i('dashboardviewer', ['DashboardViewer']).
+usercontrol_directory_i('dropdowntabsmenu', ['DropDownTabsMenu']).
+usercontrol_directory_i('dvelop.bootstrap.confirmpanel', ['DVelop']).
+usercontrol_directory_i('dvelop.bootstrap.dropdownoptions', ['DVelop']).
+usercontrol_directory_i('dvelop.bootstrap.panel', ['DVelop']).
+usercontrol_directory_i('dvelop.bootstrap.sidebarmenu', ['DVelop']).
+usercontrol_directory_i('dvelop.bootstrap.tabspanel', ['DVelop']).
+usercontrol_directory_i('dvelop.bootstrap.tagsinput', ['DVelop']).
+usercontrol_directory_i('dvelop.bootstrap.tooltip', ['DVelop']).
+usercontrol_directory_i('dvelop.confirmpanel', ['DVelop']).
+usercontrol_directory_i('dvelop.dvhorizontalmenu', ['DVelop']).
+usercontrol_directory_i('dvelop.dvimagezoom', ['DVelop']).
+usercontrol_directory_i('dvelop.dvmessage', ['DVelop']).
+usercontrol_directory_i('dvelop.dvpaginationbar', ['DVelop']).
+usercontrol_directory_i('dvelop.bootstrap.dvprogressindicator', ['DVelop']).
+usercontrol_directory_i('dvelop.gridtitlescategories', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.confirmpanel', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.dropdownoptions', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.dvprogressindicator', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.panel', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.panel_al', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.sidebarmenu', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.tabspanel', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.tagsinput', ['DVelop']).
+usercontrol_directory_i('dvelop.gxbootstrap.tooltip', ['DVelop']).
+usercontrol_directory_i('dvelop.workwithplusutilities', ['DVelop']).
+usercontrol_directory_i('dvelop.workwithplusutilities_f5', ['DVelop']).
 usercontrol_directory_i('fbhoverpanel', ['FBHoverPanel']).
 usercontrol_directory_i('fileupload', ['FileUpload']).
 usercontrol_directory_i('sdflexgrid', ['FlexGrid']).
@@ -59,11 +85,38 @@ usercontrol_directory_i('basictab', ['Tab']).
 usercontrol_directory_i('tab', ['Tab']).
 usercontrol_directory_i('treeview', ['Treeview']).
 usercontrol_directory_i('weblineargauge', ['WebLinearGauge']).
+usercontrol_directory_i('innewwindow', ['Window']).
 usercontrol_i('actiongroupdynamicitems', ['ActionGroupDynamicItems','Actiongroupdynamicitems']).
 usercontrol_i('animationview', ['AnimationView','Animationview']).
 usercontrol_i('audiocontroller', ['AudioController','Audiocontroller']).
 usercontrol_i('fckeditor', ['FCKEditor','Fckeditor']).
 usercontrol_i('dashboardviewer', ['DashboardViewer','Dashboardviewer']).
+usercontrol_i('dropdowntabsmenu', ['DropDownTabsMenu','Dropdowntabsmenu']).
+usercontrol_i('dvelop.bootstrap.confirmpanel', ['DVelop.Bootstrap.ConfirmPanel','Dvelop.bootstrap.confirmpanel']).
+usercontrol_i('dvelop.bootstrap.dropdownoptions', ['DVelop.Bootstrap.DropDownOptions','Dvelop.bootstrap.dropdownoptions']).
+usercontrol_i('dvelop.bootstrap.panel', ['DVelop.Bootstrap.Panel','Dvelop.bootstrap.panel']).
+usercontrol_i('dvelop.bootstrap.sidebarmenu', ['DVelop.Bootstrap.SidebarMenu','Dvelop.bootstrap.sidebarmenu']).
+usercontrol_i('dvelop.bootstrap.tabspanel', ['DVelop.Bootstrap.TabsPanel','Dvelop.bootstrap.tabspanel']).
+usercontrol_i('dvelop.bootstrap.tagsinput', ['DVelop.Bootstrap.TagsInput','Dvelop.bootstrap.tagsinput']).
+usercontrol_i('dvelop.bootstrap.tooltip', ['DVelop.Bootstrap.Tooltip','Dvelop.bootstrap.tooltip']).
+usercontrol_i('dvelop.confirmpanel', ['DVelop.ConfirmPanel','Dvelop.confirmpanel']).
+usercontrol_i('dvelop.dvhorizontalmenu', ['DVelop.DVHorizontalMenu','Dvelop.dvhorizontalmenu']).
+usercontrol_i('dvelop.dvimagezoom', ['DVelop.DVImageZoom','Dvelop.dvimagezoom']).
+usercontrol_i('dvelop.dvmessage', ['DVelop.DVMessage','Dvelop.dvmessage']).
+usercontrol_i('dvelop.dvpaginationbar', ['DVelop.DVPaginationBar','Dvelop.dvpaginationbar']).
+usercontrol_i('dvelop.bootstrap.dvprogressindicator', ['DVelop.Bootstrap.DVProgressIndicator','Dvelop.bootstrap.dvprogressindicator']).
+usercontrol_i('dvelop.gridtitlescategories', ['DVelop.GridTitlesCategories','Dvelop.gridtitlescategories']).
+usercontrol_i('dvelop.gxbootstrap.confirmpanel', ['DVelop.GXBootstrap.ConfirmPanel','Dvelop.gxbootstrap.confirmpanel']).
+usercontrol_i('dvelop.gxbootstrap.dropdownoptions', ['DVelop.GXBootstrap.DropDownOptions','Dvelop.gxbootstrap.dropdownoptions']).
+usercontrol_i('dvelop.gxbootstrap.dvprogressindicator', ['DVelop.GXBootstrap.DVProgressIndicator','Dvelop.gxbootstrap.dvprogressindicator']).
+usercontrol_i('dvelop.gxbootstrap.panel', ['DVelop.GXBootstrap.Panel','Dvelop.gxbootstrap.panel']).
+usercontrol_i('dvelop.gxbootstrap.panel_al', ['DVelop.GXBootstrap.Panel_AL','Dvelop.gxbootstrap.panel_al']).
+usercontrol_i('dvelop.gxbootstrap.sidebarmenu', ['DVelop.GXBootstrap.SidebarMenu','Dvelop.gxbootstrap.sidebarmenu']).
+usercontrol_i('dvelop.gxbootstrap.tabspanel', ['DVelop.GXBootstrap.TabsPanel','Dvelop.gxbootstrap.tabspanel']).
+usercontrol_i('dvelop.gxbootstrap.tagsinput', ['DVelop.GXBootstrap.TagsInput','Dvelop.gxbootstrap.tagsinput']).
+usercontrol_i('dvelop.gxbootstrap.tooltip', ['DVelop.GXBootstrap.Tooltip','Dvelop.gxbootstrap.tooltip']).
+usercontrol_i('dvelop.workwithplusutilities', ['DVelop.WorkWithPlusUtilities','Dvelop.workwithplusutilities']).
+usercontrol_i('dvelop.workwithplusutilities_f5', ['DVelop.WorkWithPlusUtilities_F5','Dvelop.workwithplusutilities_f5']).
 usercontrol_i('fbhoverpanel', ['FBHoverPanel','Fbhoverpanel']).
 usercontrol_i('fileupload', ['FileUpload','Fileupload']).
 usercontrol_i('sdflexgrid', ['SDFlexGrid','Sdflexgrid']).
@@ -120,6 +173,7 @@ usercontrol_i('basictab', ['BasicTab','Basictab']).
 usercontrol_i('tab', ['Tab','Tab']).
 usercontrol_i('treeview', ['Treeview','Treeview']).
 usercontrol_i('weblineargauge', ['WebLinearGauge','Weblineargauge']).
+usercontrol_i('innewwindow', ['InNewWindow','Innewwindow']).
 usercontrol_property_mapping_i('actiongroupdynamicitems', 'Class', 'Class', 'Class', char, 0, any).
 usercontrol_property_mapping_i('actiongroupdynamicitems', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
 usercontrol_property_mapping_i('actiongroupdynamicitems', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
@@ -212,6 +266,693 @@ usercontrol_property_mapping_i('dashboardviewer', 'CssSupportFiles', 'Csssupport
 usercontrol_property_mapping_i('dashboardviewer', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
 usercontrol_property_mapping_i('dashboardviewer', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
 usercontrol_property_mapping_i('dashboardviewer', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'MenuStyle', 'Menustyle', 'Menustyle', char, 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'VersionNumber', 'Versionnumber', 'Versionnumber', char, 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'TabsMenuData', 'Tabsmenudata', 'Tabsmenudata', o(objectcollection('WWPBaseObjects\TabsMenuData.Tabsmenudataitem')), 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'SetTabsMenuData', 'Settabsmenudata', 'Settabsmenudata', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'GetTabsMenuData', 'Gettabsmenudata', 'Gettabsmenudata', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dropdowntabsmenu', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'Title', 'Title', 'Title', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'ConfirmationText', 'Confirmationtext', 'Confirmationtext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'YesButtonCaption', 'Yesbuttoncaption', 'Yesbuttoncaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'NoButtonCaption', 'Nobuttoncaption', 'Nobuttoncaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'CancelButtonCaption', 'Cancelbuttoncaption', 'Cancelbuttoncaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'YesButtonPosition', 'Yesbuttonposition', 'Yesbuttonposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'ConfirmType', 'Confirmtype', 'Confirmtype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'Result', 'Result', 'Result', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'TextType', 'Texttype', 'Texttype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.confirmpanel', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'IconType', 'Icontype', 'Icontype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'Icon', 'Icon', 'Icon', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'Caption', 'Caption', 'Caption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'Tooltip', 'Tooltip', 'Tooltip', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'ActiveEventKey', 'Activeeventkey', 'Activeeventkey', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'FilteredText_set', 'Filteredtext_set', 'Filteredtext_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'FilteredText_get', 'Filteredtext_get', 'Filteredtext_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'FilteredTextTo_set', 'Filteredtextto_set', 'Filteredtextto_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'FilteredTextTo_get', 'Filteredtextto_get', 'Filteredtextto_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SelectedValue_set', 'Selectedvalue_set', 'Selectedvalue_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SelectedValue_get', 'Selectedvalue_get', 'Selectedvalue_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SelectedText_set', 'Selectedtext_set', 'Selectedtext_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SelectedText_get', 'Selectedtext_get', 'Selectedtext_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'GAMOAuthToken', 'Gamoauthtoken', 'Gamoauthtoken', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'TitleControlAlign', 'Titlecontrolalign', 'Titlecontrolalign', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DropDownOptionsType', 'Dropdownoptionstype', 'Dropdownoptionstype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'TitleControlIdToReplace', 'Titlecontrolidtoreplace', 'Titlecontrolidtoreplace', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'IncludeSortASC', 'Includesortasc', 'Includesortasc', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'IncludeSortDSC', 'Includesortdsc', 'Includesortdsc', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SortedStatus', 'Sortedstatus', 'Sortedstatus', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'IncludeFilter', 'Includefilter', 'Includefilter', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'FilterType', 'Filtertype', 'Filtertype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'FilterIsRange', 'Filterisrange', 'Filterisrange', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'IncludeDataList', 'Includedatalist', 'Includedatalist', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DataListType', 'Datalisttype', 'Datalisttype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'AllowMultipleSelection', 'Allowmultipleselection', 'Allowmultipleselection', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DataListFixedValues', 'Datalistfixedvalues', 'Datalistfixedvalues', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DataListProc', 'Datalistproc', 'Datalistproc', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DataListProcParametersPrefix', 'Datalistprocparametersprefix', 'Datalistprocparametersprefix', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DataListUpdateMinimumCharacters', 'Datalistupdateminimumcharacters', 'Datalistupdateminimumcharacters', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'FixedFilters', 'Fixedfilters', 'Fixedfilters', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SelectedFixedFilter', 'Selectedfixedfilter', 'Selectedfixedfilter', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'ColumnsSelectorValues', 'Columnsselectorvalues', 'Columnsselectorvalues', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'IncludeOnlySelectedOption', 'Includeonlyselectedoption', 'Includeonlyselectedoption', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'IncludeSelectAllOption', 'Includeselectalloption', 'Includeselectalloption', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'CategoryFilteredBehaviour', 'Categoryfilteredbehaviour', 'Categoryfilteredbehaviour', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'EmptyItem', 'Emptyitem', 'Emptyitem', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SortASC', 'Sortasc', 'Sortasc', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SortDSC', 'Sortdsc', 'Sortdsc', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'LoadingData', 'Loadingdata', 'Loadingdata', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'CleanFilter', 'Cleanfilter', 'Cleanfilter', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'RangeFilterFrom', 'Rangefilterfrom', 'Rangefilterfrom', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'RangeFilterTo', 'Rangefilterto', 'Rangefilterto', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'NoResultsFound', 'Noresultsfound', 'Noresultsfound', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SearchButtonText', 'Searchbuttontext', 'Searchbuttontext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'UpdateButtonText', 'Updatebuttontext', 'Updatebuttontext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'EmptyItemText', 'Emptyitemtext', 'Emptyitemtext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'OnlySelectedValues', 'Onlyselectedvalues', 'Onlyselectedvalues', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SelectAllText', 'Selectalltext', 'Selectalltext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'MultipleValuesSeparator', 'Multiplevaluesseparator', 'Multiplevaluesseparator', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DropDownOptionsTitleSettingsIcons', 'Dropdownoptionstitlesettingsicons', 'Dropdownoptionstitlesettingsicons', o('DVB_SDTDropDownOptionsTitleSettingsIcons'), 0, dt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'DropDownOptionsData', 'Dropdownoptionsdata', 'Dropdownoptionsdata', o(objectcollection('WWPBaseObjects\DVB_SDTDropDownOptionsData.Item')), 0, dt).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SetDropDownOptionsTitleSettingsIcons', 'Setdropdownoptionstitlesettingsicons', 'Setdropdownoptionstitlesettingsicons', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'GetDropDownOptionsTitleSettingsIcons', 'Getdropdownoptionstitlesettingsicons', 'Getdropdownoptionstitlesettingsicons', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'SetDropDownOptionsData', 'Setdropdownoptionsdata', 'Setdropdownoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'GetDropDownOptionsData', 'Getdropdownoptionsdata', 'Getdropdownoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dropdownoptions', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'AutoWidth', 'Autowidth', 'Autowidth', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'AutoHeight', 'Autoheight', 'Autoheight', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'ShowHeader', 'Showheader', 'Showheader', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Title', 'Title', 'Title', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Collapsible', 'Collapsible', 'Collapsible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Collapsed', 'Collapsed', 'Collapsed', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'ShowCollapseIcon', 'Showcollapseicon', 'Showcollapseicon', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'IconPosition', 'Iconposition', 'Iconposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'AutoScroll', 'Autoscroll', 'Autoscroll', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.panel', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SelectedItem', 'Selecteditem', 'Selecteditem', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SearchServiceUrl', 'Searchserviceurl', 'Searchserviceurl', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'GAMOAuthToken', 'Gamoauthtoken', 'Gamoauthtoken', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SearchMinChars', 'Searchminchars', 'Searchminchars', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SearchHelperDescription', 'Searchhelperdescription', 'Searchhelperdescription', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SidebarMainClass', 'Sidebarmainclass', 'Sidebarmainclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'HeaderClass', 'Headerclass', 'Headerclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SearchInputClass', 'Searchinputclass', 'Searchinputclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SearchIconClass', 'Searchiconclass', 'Searchiconclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SearchHelperClass', 'Searchhelperclass', 'Searchhelperclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SidebarMenuClass', 'Sidebarmenuclass', 'Sidebarmenuclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'ScrollWidth', 'Scrollwidth', 'Scrollwidth', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'ScrollAlwaysVisible', 'Scrollalwaysvisible', 'Scrollalwaysvisible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'HideScrollInCompactMenu', 'Hidescrollincompactmenu', 'Hidescrollincompactmenu', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'FirstLevelIsGrouping', 'Firstlevelisgrouping', 'Firstlevelisgrouping', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SidebarMenuOptionsData', 'Sidebarmenuoptionsdata', 'Sidebarmenuoptionsdata', o('sdt:DVelop_Menu, WWPBaseObjects'), 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SidebarMenuUserData', 'Sidebarmenuuserdata', 'Sidebarmenuuserdata', o('sdt:DVelop_Menu_UserData, WWPBaseObjects'), 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'AllMenuItemsVisibleAtLoad', 'Allmenuitemsvisibleatload', 'Allmenuitemsvisibleatload', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SetSidebarMenuOptionsData', 'Setsidebarmenuoptionsdata', 'Setsidebarmenuoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'GetSidebarMenuOptionsData', 'Getsidebarmenuoptionsdata', 'Getsidebarmenuoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'SetSidebarMenuUserData', 'Setsidebarmenuuserdata', 'Setsidebarmenuuserdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'GetSidebarMenuUserData', 'Getsidebarmenuuserdata', 'Getsidebarmenuuserdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.sidebarmenu', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'AutoWidth', 'Autowidth', 'Autowidth', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'AutoHeight', 'Autoheight', 'Autoheight', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'AutoScroll', 'Autoscroll', 'Autoscroll', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'ActiveTabId', 'Activetabid', 'Activetabid', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'DesignTimeTabs', 'Designtimetabs', 'Designtimetabs', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'SelectedTabIndex', 'Selectedtabindex', 'Selectedtabindex', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tabspanel', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'ModifiedItemText', 'Modifieditemtext', 'Modifieditemtext', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'TagsInputDataVal', 'Tagsinputdataval', 'Tagsinputdataval', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'TagsInputDataDsc', 'Tagsinputdatadsc', 'Tagsinputdatadsc', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'SetTagsInputDataVal', 'Settagsinputdataval', 'Settagsinputdataval', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'GetTagsInputDataVal', 'Gettagsinputdataval', 'Gettagsinputdataval', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'SetTagsInputDataDsc', 'Settagsinputdatadsc', 'Settagsinputdatadsc', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'GetTagsInputDataDsc', 'Gettagsinputdatadsc', 'Gettagsinputdatadsc', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tagsinput', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'ClassSelector', 'Classselector', 'Classselector', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'DefaultPosition', 'Defaultposition', 'Defaultposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'LabelsShowDelay', 'Labelsshowdelay', 'Labelsshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'ButtonsShowDelay', 'Buttonsshowdelay', 'Buttonsshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'InputsShowDelay', 'Inputsshowdelay', 'Inputsshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'ImagesShowDelay', 'Imagesshowdelay', 'Imagesshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'HideDelay', 'Hidedelay', 'Hidedelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.tooltip', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Closeable', 'Closeable', 'Closeable', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Title', 'Title', 'Title', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ConfirmText', 'Confirmtext', 'Confirmtext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Icon', 'Icon', 'Icon', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Modal', 'Modal', 'Modal', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Result', 'Result', 'Result', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ButtonYesText', 'Buttonyestext', 'Buttonyestext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ButtonNoText', 'Buttonnotext', 'Buttonnotext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ButtonCancelText', 'Buttoncanceltext', 'Buttoncanceltext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'ConfirmType', 'Confirmtype', 'Confirmtype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Draggable', 'Draggable', 'Draggeable', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.confirmpanel', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'Menu', 'Menu', 'Menu', o('sdt:DVelop_Menu, WWPBaseObjects'), 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'CollapsedTitle', 'Collapsedtitle', 'Collapsedtitle', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'ResizeWidth', 'Resizewidth', 'Resizewidth', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'Code', 'Code', 'Code', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'MenuType', 'Menutype', 'Menutype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'MoreOptionEnabled', 'Moreoptionenabled', 'Moreoptionenabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'MoreOptionCaption', 'Moreoptioncaption', 'Moreoptioncaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'MoreOptionIcon', 'Moreoptionicon', 'Moreoptionicon', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'MoreOptionShowIconsOnInnerOptions', 'Moreoptionshowiconsoninneroptions', 'Moreoptionshowiconsoninneroptions', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'SetMenu', 'Setmenu', 'Setmenu', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'GetMenu', 'Getmenu', 'Getmenu', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvhorizontalmenu', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'ImageInternalName', 'Imageinternalname', 'Imageinternalname', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'LargeImage', 'Largeimage', 'Largeimage', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvimagezoom', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'MinHeight', 'Minheight', 'Minheight', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'StylingType', 'Stylingtype', 'Stylingtype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'DefaultMessageType', 'Defaultmessagetype', 'Defaultmessagetype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'TitleEscape', 'Titleescape', 'Titleescape', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'TextEscape', 'Textescape', 'Textescape', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'ChangeNewLinesToBRs', 'Changenewlinestobrs', 'Changenewlinestobrs', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Hide', 'Hide', 'Hide', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'DelayUntilHide', 'Delayuntilhide', 'Delayuntilhide', int, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'MouseHideReset', 'Mousehidereset', 'Mousehidereset', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'MessageAdditionalClasses', 'Messageadditionalclasses', 'Messageadditionalclasses', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'MessageCornerClass', 'Messagecornerclass', 'Messagecornerclass', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Shadow', 'Shadow', 'Shadow', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Opacity', 'Opacity', 'Opacity', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'StackVerticalFirstPos', 'Stackverticalfirstpos', 'Stackverticalfirstpos', int, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'StackHorizontalFirstPos', 'Stackhorizontalfirstpos', 'Stackhorizontalfirstpos', int, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'StackVerticalSpacing', 'Stackverticalspacing', 'Stackverticalspacing', int, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'StackHorizontalSpacing', 'Stackhorizontalspacing', 'Stackhorizontalspacing', int, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'EffectIn', 'Effectin', 'Effectin', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'EffectOut', 'Effectout', 'Effectout', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'AnimationSpeed', 'Animationspeed', 'Animationspeed', int, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'StartPosition', 'Startposition', 'Startposition', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'NextMessagePosition', 'Nextmessageposition', 'Nextmessageposition', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Closer', 'Closer', 'Closer', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'CloserHover', 'Closerhover', 'Closerhover', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Sticker', 'Sticker', 'Sticker', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'StickerHover', 'Stickerhover', 'Stickerhover', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'LabelCloseButton', 'Labelclosebutton', 'Labelclosebutton', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'LabelStickButton', 'Labelstickbutton', 'Labelstickbutton', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'showEvenOnNonblock', 'Showevenonnonblock', 'Showevenonnonblock', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'NonBlock', 'Nonblock', 'Nonblock', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'NonBlockOpacity', 'Nonblockopacity', 'Nonblockopacity', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'EnableHistory', 'Enablehistory', 'Enablehistory', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Menu', 'Menu', 'Menu', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'FixedMenu', 'Fixedmenu', 'Fixedmenu', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'MaxOnScreen', 'Maxonscreen', 'Maxonscreen', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'LabelRedisplay', 'Labelredisplay', 'Labelredisplay', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'LabelAll', 'Labelall', 'Labelall', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'LabelLast', 'Labellast', 'Labellast', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvmessage', 'Gx Control Type', 'Gx control type', 'Gxcontroltype', int, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'ShowFirst', 'Showfirst', 'Showfirst', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'ShowPrevious', 'Showprevious', 'Showprevious', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'ShowNext', 'Shownext', 'Shownext', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'ShowLast', 'Showlast', 'Showlast', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'PagesToShow', 'Pagestoshow', 'Pagestoshow', int, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'PagingButtonsPosition', 'Pagingbuttonsposition', 'Pagingbuttonsposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'PagingCaptionPosition', 'Pagingcaptionposition', 'Pagingcaptionposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'EmptyGridClass', 'Emptygridclass', 'Emptygridclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'SelectedPage', 'Selectedpage', 'Selectedpage', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'RowsPerPageSelector', 'Rowsperpageselector', 'Rowsperpageselector', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'RowsPerPageSelectedValue', 'Rowsperpageselectedvalue', 'Rowsperpageselectedvalue', int, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'RowsPerPageOptions', 'Rowsperpageoptions', 'Rowsperpageoptions', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'First', 'First', 'First', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Previous', 'Previous', 'Previous', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Next', 'Next', 'Next', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Last', 'Last', 'Last', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Caption', 'Caption', 'Caption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'EmptyGridCaption', 'Emptygridcaption', 'Emptygridcaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'RowsPerPageCaption', 'Rowsperpagecaption', 'Rowsperpagecaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'CurrentPage', 'Currentpage', 'Currentpage', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'PageCount', 'Pagecount', 'Pagecount', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'RecordCount', 'Recordcount', 'Recordcount', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Page', 'Page', 'Page', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'SetCurrentPage', 'Setcurrentpage', 'Setcurrentpage', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'GetCurrentPage', 'Getcurrentpage', 'Getcurrentpage', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'SetPageCount', 'Setpagecount', 'Setpagecount', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'GetPageCount', 'Getpagecount', 'Getpagecount', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'SetRecordCount', 'Setrecordcount', 'Setrecordcount', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'GetRecordCount', 'Getrecordcount', 'Getrecordcount', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'SetPage', 'Setpage', 'Setpage', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'GetPage', 'Getpage', 'Getpage', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.dvpaginationbar', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'Type', 'Type', 'Type', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'Caption', 'Caption', 'Caption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'Percentage', 'Percentage', 'Percentage', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'BarWidth', 'Barwidth', 'Barwidth', char, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'CircleWidth', 'Circlewidth', 'Circlewidth', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'CircleProgressWidth', 'Circleprogresswidth', 'Circleprogresswidth', int, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'AnimateOnStart', 'Animateonstart', 'Animateonstart', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.bootstrap.dvprogressindicator', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'GridInternalName', 'Gridinternalname', 'Gridinternalname', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'GridTitlesCategories', 'Gridtitlescategories', 'Gridtitlescategories', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gridtitlescategories', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Title', 'Title', 'Title', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'ConfirmationText', 'Confirmationtext', 'Confirmationtext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'YesButtonCaption', 'Yesbuttoncaption', 'Yesbuttoncaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'NoButtonCaption', 'Nobuttoncaption', 'Nobuttoncaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'CancelButtonCaption', 'Cancelbuttoncaption', 'Cancelbuttoncaption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'YesButtonPosition', 'Yesbuttonposition', 'Yesbuttonposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'ConfirmType', 'Confirmtype', 'Confirmtype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Result', 'Result', 'Result', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'TextType', 'Texttype', 'Texttype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.confirmpanel', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'IconType', 'Icontype', 'Icontype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Icon', 'Icon', 'Icon', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Caption', 'Caption', 'Caption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Tooltip', 'Tooltip', 'Tooltip', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'ActiveEventKey', 'Activeeventkey', 'Activeeventkey', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'FilteredText_set', 'Filteredtext_set', 'Filteredtext_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'FilteredText_get', 'Filteredtext_get', 'Filteredtext_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'FilteredTextTo_set', 'Filteredtextto_set', 'Filteredtextto_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'FilteredTextTo_get', 'Filteredtextto_get', 'Filteredtextto_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SelectedValue_set', 'Selectedvalue_set', 'Selectedvalue_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SelectedValue_get', 'Selectedvalue_get', 'Selectedvalue_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SelectedText_set', 'Selectedtext_set', 'Selectedtext_set', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SelectedText_get', 'Selectedtext_get', 'Selectedtext_get', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'GAMOAuthToken', 'Gamoauthtoken', 'Gamoauthtoken', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'TitleControlAlign', 'Titlecontrolalign', 'Titlecontrolalign', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DropDownOptionsType', 'Dropdownoptionstype', 'Dropdownoptionstype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'TitleControlIdToReplace', 'Titlecontrolidtoreplace', 'Titlecontrolidtoreplace', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'IncludeSortASC', 'Includesortasc', 'Includesortasc', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'IncludeSortDSC', 'Includesortdsc', 'Includesortdsc', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SortedStatus', 'Sortedstatus', 'Sortedstatus', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'IncludeFilter', 'Includefilter', 'Includefilter', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'FilterType', 'Filtertype', 'Filtertype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'FilterIsRange', 'Filterisrange', 'Filterisrange', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'IncludeDataList', 'Includedatalist', 'Includedatalist', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DataListType', 'Datalisttype', 'Datalisttype', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'AllowMultipleSelection', 'Allowmultipleselection', 'Allowmultipleselection', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DataListFixedValues', 'Datalistfixedvalues', 'Datalistfixedvalues', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DataListProc', 'Datalistproc', 'Datalistproc', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DataListProcParametersPrefix', 'Datalistprocparametersprefix', 'Datalistprocparametersprefix', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DataListUpdateMinimumCharacters', 'Datalistupdateminimumcharacters', 'Datalistupdateminimumcharacters', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'FixedFilters', 'Fixedfilters', 'Fixedfilters', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SelectedFixedFilter', 'Selectedfixedfilter', 'Selectedfixedfilter', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'ColumnsSelectorValues', 'Columnsselectorvalues', 'Columnsselectorvalues', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'IncludeOnlySelectedOption', 'Includeonlyselectedoption', 'Includeonlyselectedoption', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'IncludeSelectAllOption', 'Includeselectalloption', 'Includeselectalloption', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'CategoryFilteredBehaviour', 'Categoryfilteredbehaviour', 'Categoryfilteredbehaviour', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'EmptyItem', 'Emptyitem', 'Emptyitem', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SortASC', 'Sortasc', 'Sortasc', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SortDSC', 'Sortdsc', 'Sortdsc', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'LoadingData', 'Loadingdata', 'Loadingdata', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'CleanFilter', 'Cleanfilter', 'Cleanfilter', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'RangeFilterFrom', 'Rangefilterfrom', 'Rangefilterfrom', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'RangeFilterTo', 'Rangefilterto', 'Rangefilterto', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'NoResultsFound', 'Noresultsfound', 'Noresultsfound', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SearchButtonText', 'Searchbuttontext', 'Searchbuttontext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'UpdateButtonText', 'Updatebuttontext', 'Updatebuttontext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'EmptyItemText', 'Emptyitemtext', 'Emptyitemtext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'OnlySelectedValues', 'Onlyselectedvalues', 'Onlyselectedvalues', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SelectAllText', 'Selectalltext', 'Selectalltext', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'MultipleValuesSeparator', 'Multiplevaluesseparator', 'Multiplevaluesseparator', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DropDownOptionsTitleSettingsIcons', 'Dropdownoptionstitlesettingsicons', 'Dropdownoptionstitlesettingsicons', o('DVB_SDTDropDownOptionsTitleSettingsIcons'), 0, dt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'DropDownOptionsData', 'Dropdownoptionsdata', 'Dropdownoptionsdata', o(objectcollection('WWPBaseObjects\DVB_SDTDropDownOptionsData.Item')), 0, dt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SetDropDownOptionsTitleSettingsIcons', 'Setdropdownoptionstitlesettingsicons', 'Setdropdownoptionstitlesettingsicons', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'GetDropDownOptionsTitleSettingsIcons', 'Getdropdownoptionstitlesettingsicons', 'Getdropdownoptionstitlesettingsicons', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'SetDropDownOptionsData', 'Setdropdownoptionsdata', 'Setdropdownoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'GetDropDownOptionsData', 'Getdropdownoptionsdata', 'Getdropdownoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Type', 'Type', 'Type', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Caption', 'Caption', 'Caption', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Percentage', 'Percentage', 'Percentage', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'BarWidth', 'Barwidth', 'Barwidth', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'CircleWidth', 'Circlewidth', 'Circlewidth', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'CircleProgressWidth', 'Circleprogresswidth', 'Circleprogresswidth', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'AnimateOnStart', 'Animateonstart', 'Animateonstart', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.dvprogressindicator', 'Gx Control Type', 'Gx control type', 'Gxcontroltype', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'AutoWidth', 'Autowidth', 'Autowidth', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'AutoHeight', 'Autoheight', 'Autoheight', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'ShowHeader', 'Showheader', 'Showheader', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Title', 'Title', 'Title', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Collapsible', 'Collapsible', 'Collapsible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Collapsed', 'Collapsed', 'Collapsed', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'ShowCollapseIcon', 'Showcollapseicon', 'Showcollapseicon', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'IconPosition', 'Iconposition', 'Iconposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'AutoScroll', 'Autoscroll', 'Autoscroll', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'AutoWidth', 'Autowidth', 'Autowidth', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'AutoHeight', 'Autoheight', 'Autoheight', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'ShowHeader', 'Showheader', 'Showheader', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Title', 'Title', 'Title', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Collapsible', 'Collapsible', 'Collapsible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Collapsed', 'Collapsed', 'Collapsed', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'ShowCollapseIcon', 'Showcollapseicon', 'Showcollapseicon', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'IconPosition', 'Iconposition', 'Iconposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'AutoScroll', 'Autoscroll', 'Autoscroll', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.panel_al', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SelectedItem', 'Selecteditem', 'Selecteditem', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SearchServiceUrl', 'Searchserviceurl', 'Searchserviceurl', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'GAMOAuthToken', 'Gamoauthtoken', 'Gamoauthtoken', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SearchMinChars', 'Searchminchars', 'Searchminchars', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SearchHelperDescription', 'Searchhelperdescription', 'Searchhelperdescription', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SidebarMainClass', 'Sidebarmainclass', 'Sidebarmainclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'HeaderClass', 'Headerclass', 'Headerclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SearchInputClass', 'Searchinputclass', 'Searchinputclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SearchIconClass', 'Searchiconclass', 'Searchiconclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SearchHelperClass', 'Searchhelperclass', 'Searchhelperclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SidebarMenuClass', 'Sidebarmenuclass', 'Sidebarmenuclass', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'ScrollWidth', 'Scrollwidth', 'Scrollwidth', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'ScrollAlwaysVisible', 'Scrollalwaysvisible', 'Scrollalwaysvisible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'HideScrollInCompactMenu', 'Hidescrollincompactmenu', 'Hidescrollincompactmenu', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'FirstLevelIsGrouping', 'Firstlevelisgrouping', 'Firstlevelisgrouping', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SidebarMenuOptionsData', 'Sidebarmenuoptionsdata', 'Sidebarmenuoptionsdata', o('sdt:DVelop_Menu, WWPBaseObjects'), 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SidebarMenuUserData', 'Sidebarmenuuserdata', 'Sidebarmenuuserdata', o('sdt:DVelop_Menu_UserData, WWPBaseObjects'), 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'AllMenuItemsVisibleAtLoad', 'Allmenuitemsvisibleatload', 'Allmenuitemsvisibleatload', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SetSidebarMenuOptionsData', 'Setsidebarmenuoptionsdata', 'Setsidebarmenuoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'GetSidebarMenuOptionsData', 'Getsidebarmenuoptionsdata', 'Getsidebarmenuoptionsdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'SetSidebarMenuUserData', 'Setsidebarmenuuserdata', 'Setsidebarmenuuserdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'GetSidebarMenuUserData', 'Getsidebarmenuuserdata', 'Getsidebarmenuuserdata', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'Gx Control Type', 'Gx control type', 'Gxcontroltype', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'AutoWidth', 'Autowidth', 'Autowidth', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'AutoHeight', 'Autoheight', 'Autoheight', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'AutoScroll', 'Autoscroll', 'Autoscroll', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'ActiveTabId', 'Activetabid', 'Activetabid', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'DesignTimeTabs', 'Designtimetabs', 'Designtimetabs', char, 0, dt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'SelectedTabIndex', 'Selectedtabindex', 'Selectedtabindex', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tabspanel', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'Cls', 'Cls', 'Cls', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'ModifiedItemText', 'Modifieditemtext', 'Modifieditemtext', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'TagsInputDataVal', 'Tagsinputdataval', 'Tagsinputdataval', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'TagsInputDataDsc', 'Tagsinputdatadsc', 'Tagsinputdatadsc', unknown, 0, dt).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'SetTagsInputDataVal', 'Settagsinputdataval', 'Settagsinputdataval', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'GetTagsInputDataVal', 'Gettagsinputdataval', 'Gettagsinputdataval', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'SetTagsInputDataDsc', 'Settagsinputdatadsc', 'Settagsinputdatadsc', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'GetTagsInputDataDsc', 'Gettagsinputdatadsc', 'Gettagsinputdatadsc', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tagsinput', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'ClassSelector', 'Classselector', 'Classselector', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'DefaultPosition', 'Defaultposition', 'Defaultposition', char, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'LabelsShowDelay', 'Labelsshowdelay', 'Labelsshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'ButtonsShowDelay', 'Buttonsshowdelay', 'Buttonsshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'InputsShowDelay', 'Inputsshowdelay', 'Inputsshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'ImagesShowDelay', 'Imagesshowdelay', 'Imagesshowdelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'HideDelay', 'Hidedelay', 'Hidedelay', int, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.gxbootstrap.tooltip', 'Gx Control Type', 'Gx control type', 'Gxcontroltype', int, 0, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'EnableAutoUpdateFromDocumentTitle', 'Enableautoupdatefromdocumenttitle', 'Enableautoupdatefromdocumenttitle', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'EnableFixObjectFitCover', 'Enablefixobjectfitcover', 'Enablefixobjectfitcover', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'EnableFloatingLabels', 'Enablefloatinglabels', 'Enablefloatinglabels', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'EnableConvertComboToBootstrapSelect', 'Enableconvertcombotobootstrapselect', 'Enableconvertcombotobootstrapselect', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'CurrentTab_ReturnUrl', 'Currenttab_returnurl', 'Currenttab_returnurl', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'EnableAutoUpdateFromDocumentTitle', 'Enableautoupdatefromdocumenttitle', 'Enableautoupdatefromdocumenttitle', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'EnableFixObjectFitCover', 'Enablefixobjectfitcover', 'Enablefixobjectfitcover', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'EnableFloatingLabels', 'Enablefloatinglabels', 'Enablefloatinglabels', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'EnableConvertComboToBootstrapSelect', 'Enableconvertcombotobootstrapselect', 'Enableconvertcombotobootstrapselect', boolean, 0, dt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'CurrentTab_ReturnUrl', 'Currenttab_returnurl', 'Currenttab_returnurl', char, 0, rt).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('dvelop.workwithplusutilities_f5', 'Gx Control Type', 'Gx control type', 'Gxcontroltype', int, 0, any).
 usercontrol_property_mapping_i('fbhoverpanel', 'Class', 'Class', 'Class', char, 0, any).
 usercontrol_property_mapping_i('fbhoverpanel', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
 usercontrol_property_mapping_i('fbhoverpanel', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
@@ -817,9 +1558,9 @@ usercontrol_property_mapping_i('queryviewer', 'QueryInfo', 'Queryinfo', 'Queryin
 usercontrol_property_mapping_i('queryviewer', 'IsExternalQuery', 'Isexternalquery', 'Isexternalquery', boolean, 0, any).
 usercontrol_property_mapping_i('queryviewer', 'ExternalQueryResult', 'Externalqueryresult', 'Externalqueryresult', char, 0, any).
 usercontrol_property_mapping_i('queryviewer', 'ObjectInfo', 'Objectinfo', 'Objectinfo', char, 0, any).
-usercontrol_property_mapping_i('queryviewer', 'Axes', 'Axes', 'Axes', o('QueryViewerAxes'), 0, any).
+usercontrol_property_mapping_i('queryviewer', 'Axes', 'Axes', 'Axes', o(objectcollection('QueryViewerAxes.Axis')), 0, any).
 usercontrol_property_mapping_i('queryviewer', 'AllowChangeAxesOrder', 'Allowchangeaxesorder', 'Allowchangeaxesorder', boolean, 0, any).
-usercontrol_property_mapping_i('queryviewer', 'Parameters', 'Parameters', 'Parameters', o('QueryViewerParameters'), 0, any).
+usercontrol_property_mapping_i('queryviewer', 'Parameters', 'Parameters', 'Parameters', o(objectcollection('QueryViewerParameters.Parameter')), 0, any).
 usercontrol_property_mapping_i('queryviewer', 'ObjectName', 'Objectname', 'Objectname', char, 0, rt).
 usercontrol_property_mapping_i('queryviewer', 'Object', 'Object', 'Objectcall', char, 0, rt).
 usercontrol_property_mapping_i('queryviewer', 'Class', 'Class', 'Class', char, 0, any).
@@ -893,6 +1634,7 @@ usercontrol_property_mapping_i('queryviewer', 'CssSupportFiles', 'Csssupportfile
 usercontrol_property_mapping_i('queryviewer', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
 usercontrol_property_mapping_i('queryviewer', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
 usercontrol_property_mapping_i('queryviewer', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('queryviewer', 'Gx Control Type', 'Gx control type', 'Gxcontroltype', int, 0, any).
 usercontrol_property_mapping_i('rating', 'Class', 'Class', 'Class', char, 0, any).
 usercontrol_property_mapping_i('rating', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
 usercontrol_property_mapping_i('rating', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
@@ -1307,6 +2049,38 @@ usercontrol_property_mapping_i('weblineargauge', 'CssSupportFiles', 'Csssupportf
 usercontrol_property_mapping_i('weblineargauge', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
 usercontrol_property_mapping_i('weblineargauge', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
 usercontrol_property_mapping_i('weblineargauge', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'Class', 'Class', 'Class', char, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Enabled', 'Enabled', 'Enabled', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'UserControlType', 'Usercontroltype', 'Usercontroltype', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'ConstructorName', 'Constructorname', 'Constructorname', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'ShowMethodName', 'Showmethodname', 'Showmethodname', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'ControlName', 'Controlname', 'Controlname', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'Width', 'Width', 'Width', char, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Height', 'Height', 'Height', char, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Name', 'Name', 'Name', char, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Target', 'Target', 'Target', char, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Fullscreen', 'Fullscreen', 'Fullscreen', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Location', 'Location', 'Location', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'MenuBar', 'Menubar', 'Menubar', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Resizable', 'Resizable', 'Resizable', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Scrollbars', 'Scrollbars', 'Scrollbars', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'TitleBar', 'Titlebar', 'Titlebar', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'ToolBar', 'Toolbar', 'Toolbar', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'directories', 'Directories', 'Directories', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'status', 'Status', 'Status', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'copyhistory', 'Copyhistory', 'Copyhistory', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'top', 'Top', 'Top', char, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'left', 'Left', 'Left', char, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'fitscreen', 'Fitscreen', 'Fitscreen', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'RefreshParentOnClose', 'Refreshparentonclose', 'Refreshparentonclose', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'Targets', 'Targets', 'Targets', o('InNewWindowTargets'), 0, any).
+usercontrol_property_mapping_i('innewwindow', 'SetTargets', 'Settargets', 'Settargets', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'GetTargets', 'Gettargets', 'Gettargets', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'Visible', 'Visible', 'Visible', boolean, 0, any).
+usercontrol_property_mapping_i('innewwindow', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', char, 1, any).
+usercontrol_property_mapping_i('innewwindow', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', char, 1, any).
 usercontrol_method_i('animationview', 'setanimation', [object], [[char],[boolean]]).
 usercontrol_method_i('animationview', 'setprogress', [object], [[int]]).
 usercontrol_method_i('animationview', 'play', [object], []).
@@ -1323,6 +2097,48 @@ usercontrol_method_i('dashboardviewer', 'getfiltervalues', [object], [[char]]).
 usercontrol_method_i('dashboardviewer', 'setfiltervalue', [object], [[char],[char]]).
 usercontrol_method_i('dashboardviewer', 'setfilterrange', [object], [[char],[char],[char],[char]]).
 usercontrol_method_i('dashboardviewer', 'setfiltervalues', [object], [[char],[object]]).
+usercontrol_method_i('dvelop.bootstrap.confirmpanel', 'confirm', [object], []).
+usercontrol_method_i('dvelop.bootstrap.confirmpanel', 'closeconfirmpanel', [object], []).
+usercontrol_method_i('dvelop.bootstrap.dropdownoptions', 'update', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.bootstrap.panel', 'collapse', [object], []).
+usercontrol_method_i('dvelop.bootstrap.panel', 'expand', [object], []).
+usercontrol_method_i('dvelop.bootstrap.sidebarmenu', 'collapse', [object], []).
+usercontrol_method_i('dvelop.bootstrap.sidebarmenu', 'expand', [object], []).
+usercontrol_method_i('dvelop.bootstrap.sidebarmenu', 'collapseexpand', [object], []).
+usercontrol_method_i('dvelop.bootstrap.sidebarmenu', 'resetselectedoption', [object], []).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'settabtitle', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'addiframetab', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'closeiframetab', [object], [[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'replaceiframetab', [object], [[char],[char],[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'updateiframetabcaption', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'selecttab', [object], [[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'showtab', [object], [[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'hidetabbyid', [object], [[char]]).
+usercontrol_method_i('dvelop.bootstrap.tabspanel', 'hidetab', [object], [[object]]).
+usercontrol_method_i('dvelop.confirmpanel', 'confirm', [object], []).
+usercontrol_method_i('dvelop.dvhorizontalmenu', 'refresh', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.confirmpanel', 'confirm', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.confirmpanel', 'closeconfirmpanel', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.dropdownoptions', 'update', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.panel', 'collapse', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.panel', 'expand', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.panel_al', 'collapse', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.panel_al', 'expand', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.sidebarmenu', 'collapse', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.sidebarmenu', 'expand', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.sidebarmenu', 'collapseexpand', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.sidebarmenu', 'resetselectedoption', [object], []).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'settabtitle', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'addiframetab', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'closeiframetab', [object], [[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'replaceiframetab', [object], [[char],[char],[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'updateiframetabcaption', [object], [[char],[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'selecttab', [object], [[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'showtab', [object], [[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'hidetabbyid', [object], [[char]]).
+usercontrol_method_i('dvelop.gxbootstrap.tabspanel', 'hidetab', [object], [[object]]).
+usercontrol_method_i('dvelop.workwithplusutilities', 'currenttab_return', [object], []).
+usercontrol_method_i('dvelop.workwithplusutilities_f5', 'currenttab_return', [object], []).
 usercontrol_method_i('fileupload', 'clear', [object], []).
 usercontrol_method_i('fileupload', 'startupload', [object], []).
 usercontrol_method_i('googlemapcontrol', 'setmarker', [object], [[char],[object],[object],[char],[object],[object]]).
@@ -1372,6 +2188,7 @@ usercontrol_method_i('tab', 'selecttab', [object], [[object]]).
 usercontrol_method_i('tab', 'hidetab', [object], [[object]]).
 usercontrol_method_i('tab', 'showtab', [object], [[object]]).
 usercontrol_method_i('treeview', 'refresh', [object], []).
+usercontrol_method_i('innewwindow', 'openwindow', [object], []).
 usercontrol_method_mapping_i('animationview', 'setanimation', 'SetAnimation').
 usercontrol_method_mapping_i('animationview', 'setprogress', 'SetProgress').
 usercontrol_method_mapping_i('animationview', 'play', 'Play').
@@ -1388,6 +2205,48 @@ usercontrol_method_mapping_i('dashboardviewer', 'getfiltervalues', 'GetFilterVal
 usercontrol_method_mapping_i('dashboardviewer', 'setfiltervalue', 'SetFilterValue').
 usercontrol_method_mapping_i('dashboardviewer', 'setfilterrange', 'SetFilterRange').
 usercontrol_method_mapping_i('dashboardviewer', 'setfiltervalues', 'SetFilterValues').
+usercontrol_method_mapping_i('dvelop.bootstrap.confirmpanel', 'confirm', 'Confirm').
+usercontrol_method_mapping_i('dvelop.bootstrap.confirmpanel', 'closeconfirmpanel', 'CloseConfirmPanel').
+usercontrol_method_mapping_i('dvelop.bootstrap.dropdownoptions', 'update', 'Update').
+usercontrol_method_mapping_i('dvelop.bootstrap.panel', 'collapse', 'Collapse').
+usercontrol_method_mapping_i('dvelop.bootstrap.panel', 'expand', 'Expand').
+usercontrol_method_mapping_i('dvelop.bootstrap.sidebarmenu', 'collapse', 'Collapse').
+usercontrol_method_mapping_i('dvelop.bootstrap.sidebarmenu', 'expand', 'Expand').
+usercontrol_method_mapping_i('dvelop.bootstrap.sidebarmenu', 'collapseexpand', 'CollapseExpand').
+usercontrol_method_mapping_i('dvelop.bootstrap.sidebarmenu', 'resetselectedoption', 'ResetSelectedOption').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'settabtitle', 'SetTabTitle').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'addiframetab', 'AddIFrameTab').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'closeiframetab', 'CloseIFrameTab').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'replaceiframetab', 'ReplaceIFrameTab').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'updateiframetabcaption', 'UpdateIFrameTabCaption').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'selecttab', 'SelectTab').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'showtab', 'ShowTab').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'hidetabbyid', 'HideTabById').
+usercontrol_method_mapping_i('dvelop.bootstrap.tabspanel', 'hidetab', 'HideTab').
+usercontrol_method_mapping_i('dvelop.confirmpanel', 'confirm', 'Confirm').
+usercontrol_method_mapping_i('dvelop.dvhorizontalmenu', 'refresh', 'Refresh').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.confirmpanel', 'confirm', 'Confirm').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.confirmpanel', 'closeconfirmpanel', 'CloseConfirmPanel').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'update', 'Update').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.panel', 'collapse', 'Collapse').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.panel', 'expand', 'Expand').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.panel_al', 'collapse', 'Collapse').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.panel_al', 'expand', 'Expand').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'collapse', 'Collapse').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'expand', 'Expand').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'collapseexpand', 'CollapseExpand').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'resetselectedoption', 'ResetSelectedOption').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'settabtitle', 'SetTabTitle').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'addiframetab', 'AddIFrameTab').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'closeiframetab', 'CloseIFrameTab').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'replaceiframetab', 'ReplaceIFrameTab').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'updateiframetabcaption', 'UpdateIFrameTabCaption').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'selecttab', 'SelectTab').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'showtab', 'ShowTab').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'hidetabbyid', 'HideTabById').
+usercontrol_method_mapping_i('dvelop.gxbootstrap.tabspanel', 'hidetab', 'HideTab').
+usercontrol_method_mapping_i('dvelop.workwithplusutilities', 'currenttab_return', 'CurrentTab_Return').
+usercontrol_method_mapping_i('dvelop.workwithplusutilities_f5', 'currenttab_return', 'CurrentTab_Return').
 usercontrol_method_mapping_i('fileupload', 'clear', 'Clear').
 usercontrol_method_mapping_i('fileupload', 'startupload', 'StartUpload').
 usercontrol_method_mapping_i('googlemapcontrol', 'setmarker', 'SetMarker').
@@ -1437,6 +2296,7 @@ usercontrol_method_mapping_i('tab', 'selecttab', 'SelectTab').
 usercontrol_method_mapping_i('tab', 'hidetab', 'HideTab').
 usercontrol_method_mapping_i('tab', 'showtab', 'ShowTab').
 usercontrol_method_mapping_i('treeview', 'refresh', 'Refresh').
+usercontrol_method_mapping_i('innewwindow', 'openwindow', 'OpenWindow').
 usercontrol_event_mapping_i('animationview', 'Click', 'Click').
 usercontrol_event_mapping_i('animationview', 'Tap', 'Tap').
 usercontrol_event_mapping_i('animationview', 'Doubletap', 'DoubleTap').
@@ -1452,6 +2312,35 @@ usercontrol_event_mapping_i('fckeditor', 'Keyup', 'KeyUp').
 usercontrol_event_mapping_i('dashboardviewer', 'Itemclick', 'ItemClick').
 usercontrol_event_mapping_i('dashboardviewer', 'Filterschanged', 'FiltersChanged').
 usercontrol_event_mapping_i('dashboardviewer', 'Valueshighlighted', 'ValuesHighlighted').
+usercontrol_event_mapping_i('dvelop.bootstrap.confirmpanel', 'Close', 'Close').
+usercontrol_event_mapping_i('dvelop.bootstrap.confirmpanel', 'Onyes', 'onYes').
+usercontrol_event_mapping_i('dvelop.bootstrap.confirmpanel', 'Onno', 'onNo').
+usercontrol_event_mapping_i('dvelop.bootstrap.confirmpanel', 'Oncancel', 'onCancel').
+usercontrol_event_mapping_i('dvelop.bootstrap.dropdownoptions', 'Onoptionclicked', 'OnOptionClicked').
+usercontrol_event_mapping_i('dvelop.bootstrap.dropdownoptions', 'Oncolumnschanged', 'OnColumnsChanged').
+usercontrol_event_mapping_i('dvelop.bootstrap.panel', 'Ontitleclick', 'OnTitleClick').
+usercontrol_event_mapping_i('dvelop.bootstrap.sidebarmenu', 'Onselecteditem', 'OnSelectedItem').
+usercontrol_event_mapping_i('dvelop.bootstrap.sidebarmenu', 'Onselectedsearchitem', 'OnSelectedSearchItem').
+usercontrol_event_mapping_i('dvelop.bootstrap.tabspanel', 'Tabclicked', 'TabClicked').
+usercontrol_event_mapping_i('dvelop.bootstrap.tagsinput', 'Ontagadded', 'OnTagAdded').
+usercontrol_event_mapping_i('dvelop.bootstrap.tagsinput', 'Ontagremoved', 'OnTagRemoved').
+usercontrol_event_mapping_i('dvelop.confirmpanel', 'Close', 'Close').
+usercontrol_event_mapping_i('dvelop.dvhorizontalmenu', 'Itemclick', 'ItemClick').
+usercontrol_event_mapping_i('dvelop.dvpaginationbar', 'Changepage', 'ChangePage').
+usercontrol_event_mapping_i('dvelop.dvpaginationbar', 'Changerowsperpage', 'ChangeRowsPerPage').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Close', 'Close').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Onyes', 'onYes').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Onno', 'onNo').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.confirmpanel', 'Oncancel', 'onCancel').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Onoptionclicked', 'OnOptionClicked').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.dropdownoptions', 'Oncolumnschanged', 'OnColumnsChanged').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.panel', 'Ontitleclick', 'OnTitleClick').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.panel_al', 'Ontitleclick', 'OnTitleClick').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'Onselecteditem', 'OnSelectedItem').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.sidebarmenu', 'Onselectedsearchitem', 'OnSelectedSearchItem').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.tabspanel', 'Tabclicked', 'TabClicked').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.tagsinput', 'Ontagadded', 'OnTagAdded').
+usercontrol_event_mapping_i('dvelop.gxbootstrap.tagsinput', 'Ontagremoved', 'OnTagRemoved').
 usercontrol_event_mapping_i('fbhoverpanel', 'Actionclicked', 'ActionClicked').
 usercontrol_event_mapping_i('fileupload', 'Uploadcomplete', 'UploadComplete').
 usercontrol_event_mapping_i('gxchartcontrol', 'Click', 'Click').

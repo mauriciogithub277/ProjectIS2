@@ -2,7 +2,7 @@
                File: ViewUsuario
         Description: View Usuario
              Author: GeneXus C# Generator version 16_0_7-138086
-       Generated on: 3/22/2020 21:2:9.6
+       Generated on: 8/24/2020 21:27:57.7
        Program type: Callable routine
           Main DBMS: SQL Server
 */
@@ -38,7 +38,7 @@ namespace GeneXus.Programs {
          DataStoreUtil.LoadDataStores( context);
          dsDefault = context.GetDataStore("Default");
          IsMain = true;
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
       }
 
       public viewusuario( IGxContext context )
@@ -155,7 +155,7 @@ namespace GeneXus.Programs {
          INITWEB( ) ;
          if ( ! isAjaxCallMode( ) )
          {
-            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("rwdmasterpage", "GeneXus.Programs.rwdmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
+            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("wwpbaseobjects.workwithplusmasterpage", "GeneXus.Programs.wwpbaseobjects.workwithplusmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
             MasterPageObj.setDataArea(this,false);
             ValidateSpaRequest();
             MasterPageObj.webExecute();
@@ -187,11 +187,11 @@ namespace GeneXus.Programs {
 
       public override short ExecuteStartEvent( )
       {
-         PA0H2( ) ;
+         PA0J2( ) ;
          gxajaxcallmode = (short)((isAjaxCallMode( ) ? 1 : 0));
          if ( ( gxajaxcallmode == 0 ) && ( GxWebError == 0 ) )
          {
-            START0H2( ) ;
+            START0J2( ) ;
          }
          return gxajaxcallmode ;
       }
@@ -229,7 +229,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 138086), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 138086), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202032221298", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202082421275711", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -279,7 +279,7 @@ namespace GeneXus.Programs {
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
          forbiddenHiddens = new GXProperties();
          forbiddenHiddens.Add("hshsalt", "hsh"+"ViewUsuario");
-         forbiddenHiddens.Add("Name", StringUtil.RTrim( context.localUtil.Format( A2Name, "")));
+         forbiddenHiddens.Add("Name", StringUtil.RTrim( context.localUtil.Format( A9Name, "")));
          GxWebStd.gx_hidden_field( context, "hsh", GetEncryptedHash( forbiddenHiddens.ToString(), GXKey));
          GXUtil.WriteLog("viewusuario:[ SendSecurityCheck value for]"+forbiddenHiddens.ToJSonString());
       }
@@ -291,7 +291,7 @@ namespace GeneXus.Programs {
          send_integrity_footer_hashes( ) ;
          GxWebStd.gx_boolean_hidden_field( context, "vLOADALLTABS", AV11LoadAllTabs);
          GxWebStd.gx_hidden_field( context, "vSELECTEDTABCODE", StringUtil.RTrim( AV7SelectedTabCode));
-         GxWebStd.gx_hidden_field( context, "vUSUARIOID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV12UsuarioID), 4, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "vUSUARIOID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV12UsuarioID), 4, 0, context.GetLanguageProperty( "decimal_point"), "")));
          GxWebStd.gx_hidden_field( context, "gxhash_vUSUARIOID", GetSecureSignedToken( "", context.localUtil.Format( (decimal)(AV12UsuarioID), "ZZZ9"), context));
          GxWebStd.gx_hidden_field( context, "vTABCODE", StringUtil.RTrim( AV6TabCode));
          GxWebStd.gx_hidden_field( context, "gxhash_vTABCODE", GetSecureSignedToken( "", StringUtil.RTrim( context.localUtil.Format( AV6TabCode, "")), context));
@@ -325,6 +325,18 @@ namespace GeneXus.Programs {
          {
             WebComp_Generalwc.componentjscripts();
          }
+         context.WriteHtmlText( "<script type=\"text/javascript\">") ;
+         context.WriteHtmlText( "gx.setLanguageCode(\""+context.GetLanguageProperty( "code")+"\");") ;
+         if ( ! context.isSpaRequest( ) )
+         {
+            context.WriteHtmlText( "gx.setDateFormat(\""+context.GetLanguageProperty( "date_fmt")+"\");") ;
+            context.WriteHtmlText( "gx.setTimeFormat("+context.GetLanguageProperty( "time_fmt")+");") ;
+            context.WriteHtmlText( "gx.setCenturyFirstYear("+40+");") ;
+            context.WriteHtmlText( "gx.setDecimalPoint(\""+context.GetLanguageProperty( "decimal_point")+"\");") ;
+            context.WriteHtmlText( "gx.setThousandSeparator(\""+context.GetLanguageProperty( "thousand_sep")+"\");") ;
+            context.WriteHtmlText( "gx.StorageTimeZone = "+1+";") ;
+         }
+         context.WriteHtmlText( "</script>") ;
       }
 
       public override void RenderHtmlContent( )
@@ -335,14 +347,14 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<div") ;
             GxWebStd.ClassAttribute( context, "gx-ct-body"+" "+(String.IsNullOrEmpty(StringUtil.RTrim( Form.Class)) ? "form-horizontal Form" : Form.Class)+"-fx");
             context.WriteHtmlText( ">") ;
-            WE0H2( ) ;
+            WE0J2( ) ;
             context.WriteHtmlText( "</div>") ;
          }
       }
 
       public override void DispatchEvents( )
       {
-         EVT0H2( ) ;
+         EVT0J2( ) ;
       }
 
       public override bool HasEnterEvent( )
@@ -367,10 +379,10 @@ namespace GeneXus.Programs {
 
       public override String GetPgmdesc( )
       {
-         return "View Usuario" ;
+         return context.GetMessage( "View Usuario", "") ;
       }
 
-      protected void WB0H0( )
+      protected void WB0J0( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -399,12 +411,12 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-4 col-sm-offset-2", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblViewtitle_Internalname, "Usuario Information", "", "", lblViewtitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_ViewUsuario.htm");
+            GxWebStd.gx_label_ctrl( context, lblViewtitle_Internalname, context.GetMessage( "Usuario Information", ""), "", "", lblViewtitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, "HLP_ViewUsuario.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-4 ViewActionsBackCell", "Right", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblViewall_Internalname, "Usuarios", lblViewall_Link, "", lblViewall_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BtnTextBlockBack", 0, "", lblViewall_Visible, 1, 0, "HLP_ViewUsuario.htm");
+            GxWebStd.gx_label_ctrl( context, lblViewall_Internalname, context.GetMessage( "Usuarios", ""), lblViewall_Link, "", lblViewall_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "BtnTextBlockBack", 0, "", lblViewall_Visible, 1, 0, "HLP_ViewUsuario.htm");
             GxWebStd.gx_div_end( context, "Right", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -423,11 +435,11 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtName_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtName_Internalname, "Name", "col-sm-3 ReadonlyAttributeLabel", 1, true);
+            GxWebStd.gx_label_element( context, edtName_Internalname, context.GetMessage( "Name", ""), "col-sm-3 ReadonlyAttributeLabel", 1, true);
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A2Name), StringUtil.RTrim( context.localUtil.Format( A2Name, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ViewUsuario.htm");
+            GxWebStd.gx_single_line_edit( context, edtName_Internalname, StringUtil.RTrim( A9Name), StringUtil.RTrim( context.localUtil.Format( A9Name, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtName_Enabled, 0, "text", "", 40, "chr", 1, "row", 40, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ViewUsuario.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -446,7 +458,7 @@ namespace GeneXus.Programs {
             ucTab.Render(context, "tab", Tab_Internalname, "TABContainer");
             context.WriteHtmlText( "<div class=\"gx_usercontrol_child\" id=\""+"TABContainer"+"title1"+"\" style=\"display:none;\">") ;
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblGeneral_title_Internalname, "General", "", "", lblGeneral_title_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, "HLP_ViewUsuario.htm");
+            GxWebStd.gx_label_ctrl( context, lblGeneral_title_Internalname, context.GetMessage( "General", ""), "", "", lblGeneral_title_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, "HLP_ViewUsuario.htm");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "Section", "left", "top", "", "display:none;", "div");
             context.WriteHtmlText( "General") ;
@@ -493,7 +505,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START0H2( )
+      protected void START0J2( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -501,7 +513,7 @@ namespace GeneXus.Programs {
          if ( ! context.isSpaRequest( ) )
          {
             Form.Meta.addItem("generator", "GeneXus C# 16_0_7-138086", 0) ;
-            Form.Meta.addItem("description", "View Usuario", 0) ;
+            Form.Meta.addItem("description", context.GetMessage( "View Usuario", ""), 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -510,16 +522,16 @@ namespace GeneXus.Programs {
          {
          }
          wbErr = false;
-         STRUP0H0( ) ;
+         STRUP0J0( ) ;
       }
 
-      protected void WS0H2( )
+      protected void WS0J2( )
       {
-         START0H2( ) ;
-         EVT0H2( ) ;
+         START0J2( ) ;
+         EVT0J2( ) ;
       }
 
-      protected void EVT0H2( )
+      protected void EVT0J2( )
       {
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
@@ -551,14 +563,14 @@ namespace GeneXus.Programs {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Start */
-                              E110H2 ();
+                              E110J2 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                            {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Load */
-                              E120H2 ();
+                              E120J2 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                            {
@@ -613,7 +625,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE0H2( )
+      protected void WE0J2( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -629,7 +641,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void PA0H2( )
+      protected void PA0J2( )
       {
          if ( nDonePA == 0 )
          {
@@ -682,7 +694,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF0H2( ) ;
+         RF0J2( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -696,7 +708,7 @@ namespace GeneXus.Programs {
          context.Gx_err = 0;
       }
 
-      protected void RF0H2( )
+      protected void RF0J2( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -715,28 +727,28 @@ namespace GeneXus.Programs {
          gxdyncontrolsrefreshing = false;
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
-            /* Using cursor H000H2 */
+            /* Using cursor H000J2 */
             pr_default.execute(0, new Object[] {AV12UsuarioID});
             while ( (pr_default.getStatus(0) != 101) )
             {
-               A1UsuarioID = H000H2_A1UsuarioID[0];
-               A2Name = H000H2_A2Name[0];
-               AssignAttri("", false, "A2Name", A2Name);
+               A1UsuarioID = H000J2_A1UsuarioID[0];
+               A9Name = H000J2_A9Name[0];
+               AssignAttri("", false, "A9Name", A9Name);
                /* Execute user event: Load */
-               E120H2 ();
+               E120J2 ();
                /* Exiting from a For First loop. */
                if (true) break;
             }
             pr_default.close(0);
-            WB0H0( ) ;
+            WB0J0( ) ;
          }
       }
 
-      protected void send_integrity_lvl_hashes0H2( )
+      protected void send_integrity_lvl_hashes0J2( )
       {
       }
 
-      protected void STRUP0H0( )
+      protected void STRUP0J0( )
       {
          /* Before Start, stand alone formulas. */
          AV15Pgmname = "ViewUsuario";
@@ -744,31 +756,31 @@ namespace GeneXus.Programs {
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E110H2 ();
+         E110J2 ();
          context.wbGlbDoneStart = 1;
          /* After Start, stand alone formulas. */
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
             /* Read saved SDTs. */
             /* Read saved values. */
-            AV12UsuarioID = (short)(context.localUtil.CToN( cgiGet( "vUSUARIOID"), ".", ","));
+            AV12UsuarioID = (short)(context.localUtil.CToN( cgiGet( "vUSUARIOID"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
             AV11LoadAllTabs = StringUtil.StrToBool( cgiGet( "vLOADALLTABS"));
             AV7SelectedTabCode = cgiGet( "vSELECTEDTABCODE");
             Tab_Activepagecontrolname = cgiGet( "TAB_Activepagecontrolname");
-            Tab_Pagecount = (int)(context.localUtil.CToN( cgiGet( "TAB_Pagecount"), ".", ","));
+            Tab_Pagecount = (int)(context.localUtil.CToN( cgiGet( "TAB_Pagecount"), context.GetLanguageProperty( "decimal_point"), context.GetLanguageProperty( "thousand_sep")));
             Tab_Class = cgiGet( "TAB_Class");
             Tab_Historymanagement = StringUtil.StrToBool( cgiGet( "TAB_Historymanagement"));
             /* Read variables values. */
-            A2Name = cgiGet( edtName_Internalname);
-            AssignAttri("", false, "A2Name", A2Name);
+            A9Name = cgiGet( edtName_Internalname);
+            AssignAttri("", false, "A9Name", A9Name);
             /* Read subfile selected row values. */
             /* Read hidden variables. */
             GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
             forbiddenHiddens = new GXProperties();
             forbiddenHiddens.Add("hshsalt", "hsh"+"ViewUsuario");
-            A2Name = cgiGet( edtName_Internalname);
-            AssignAttri("", false, "A2Name", A2Name);
-            forbiddenHiddens.Add("Name", StringUtil.RTrim( context.localUtil.Format( A2Name, "")));
+            A9Name = cgiGet( edtName_Internalname);
+            AssignAttri("", false, "A9Name", A9Name);
+            forbiddenHiddens.Add("Name", StringUtil.RTrim( context.localUtil.Format( A9Name, "")));
             hsh = cgiGet( "hsh");
             if ( ! GXUtil.CheckEncryptedHash( forbiddenHiddens.ToString(), hsh, GXKey) )
             {
@@ -792,7 +804,7 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E110H2 ();
+         E110J2 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -800,24 +812,24 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E110H2( )
+      protected void E110J2( )
       {
          /* Start Routine */
-         if ( ! new isauthorized(context).executeUdp(  AV15Pgmname) )
+         if ( ! new GeneXus.Programs.wwpbaseobjects.isauthorized(context).executeUdp(  AV15Pgmname) )
          {
-            CallWebObject(formatLink("notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV15Pgmname)));
+            CallWebObject(formatLink("wwpbaseobjects.notauthorized.aspx") + "?" + UrlEncode(StringUtil.RTrim(AV15Pgmname)));
             context.wjLocDisableFrm = 1;
          }
          AV16GXLvl6 = 0;
-         /* Using cursor H000H3 */
+         /* Using cursor H000J3 */
          pr_default.execute(1, new Object[] {AV12UsuarioID});
          while ( (pr_default.getStatus(1) != 101) )
          {
-            A1UsuarioID = H000H3_A1UsuarioID[0];
-            A2Name = H000H3_A2Name[0];
-            AssignAttri("", false, "A2Name", A2Name);
+            A1UsuarioID = H000J3_A1UsuarioID[0];
+            A9Name = H000J3_A9Name[0];
+            AssignAttri("", false, "A9Name", A9Name);
             AV16GXLvl6 = 1;
-            Form.Caption = A2Name;
+            Form.Caption = A9Name;
             AssignProp("", false, "FORM", "Caption", Form.Caption, true);
             lblViewall_Link = formatLink("wwusuario.aspx") ;
             AssignProp("", false, lblViewall_Internalname, "Link", lblViewall_Link, true);
@@ -828,7 +840,7 @@ namespace GeneXus.Programs {
          pr_default.close(1);
          if ( AV16GXLvl6 == 0 )
          {
-            Form.Caption = "Record not found";
+            Form.Caption = context.GetMessage( "Record not found", "");
             AssignProp("", false, "FORM", "Caption", Form.Caption, true);
             lblViewall_Visible = 0;
             AssignProp("", false, lblViewall_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(lblViewall_Visible), 5, 0), true);
@@ -855,7 +867,7 @@ namespace GeneXus.Programs {
       protected void S112( )
       {
          /* 'LOAD TAB' Routine */
-         if ( AV11LoadAllTabs || ( StringUtil.StrCmp(AV7SelectedTabCode, "") == 0 ) || ( StringUtil.StrCmp(AV7SelectedTabCode, "General") == 0 ) )
+         if ( AV11LoadAllTabs || ( StringUtil.StrCmp(AV7SelectedTabCode, "") == 0 ) || ( StringUtil.StrCmp(AV7SelectedTabCode, context.GetMessage( "General", "")) == 0 ) )
          {
             /* Object Property */
             if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Generalwc_Component), StringUtil.Lower( "UsuarioGeneral")) != 0 )
@@ -884,7 +896,7 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void E120H2( )
+      protected void E120J2( )
       {
          /* Load Routine */
       }
@@ -910,9 +922,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA0H2( ) ;
-         WS0H2( ) ;
-         WE0H2( ) ;
+         PA0J2( ) ;
+         WS0J2( ) ;
+         WE0J2( ) ;
          this.cleanup();
          context.SetWrapped(false);
          context.GX_msglist = BackMsgLst;
@@ -941,7 +953,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?2020322212927", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((String)Form.Jscriptsrc.Item(idxLst))), "?202082421275733", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -956,8 +968,8 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("viewusuario.js", "?2020322212928", false, true);
+         context.AddJavascriptSource("messages."+context.GetLanguageProperty( "code")+".js", "?"+GetCacheInvalidationToken( ), false, true);
+         context.AddJavascriptSource("viewusuario.js", "?202082421275733", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false, true);
@@ -987,7 +999,7 @@ namespace GeneXus.Programs {
 
       public override void initialize_properties( )
       {
-         context.SetDefaultTheme("Carmine");
+         context.SetDefaultTheme("WorkWithPlusTheme");
          if ( context.isSpaRequest( ) )
          {
             disableJsOutput();
@@ -1004,7 +1016,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "View Usuario";
+         Form.Caption = context.GetMessage( "View Usuario", "");
          if ( context.isSpaRequest( ) )
          {
             enableJsOutput();
@@ -1018,7 +1030,7 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'AV12UsuarioID',fld:'vUSUARIOID',pic:'ZZZ9',hsh:true},{av:'AV6TabCode',fld:'vTABCODE',pic:'',hsh:true},{av:'A2Name',fld:'NAME',pic:''}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'AV12UsuarioID',fld:'vUSUARIOID',pic:'ZZZ9',hsh:true},{av:'AV6TabCode',fld:'vTABCODE',pic:'',hsh:true},{av:'A9Name',fld:'NAME',pic:''}]");
          setEventMetadata("REFRESH",",oparms:[]}");
          return  ;
       }
@@ -1048,7 +1060,7 @@ namespace GeneXus.Programs {
          bodyStyle = "";
          GXKey = "";
          forbiddenHiddens = new GXProperties();
-         A2Name = "";
+         A9Name = "";
          AV7SelectedTabCode = "";
          GX_FocusControl = "";
          Form = new GXWebForm();
@@ -1065,20 +1077,20 @@ namespace GeneXus.Programs {
          sEvtType = "";
          AV15Pgmname = "";
          scmdbuf = "";
-         H000H2_A1UsuarioID = new short[1] ;
-         H000H2_A2Name = new String[] {""} ;
+         H000J2_A1UsuarioID = new short[1] ;
+         H000J2_A9Name = new String[] {""} ;
          hsh = "";
-         H000H3_A1UsuarioID = new short[1] ;
-         H000H3_A2Name = new String[] {""} ;
+         H000J3_A1UsuarioID = new short[1] ;
+         H000J3_A9Name = new String[] {""} ;
          BackMsgLst = new msglist();
          LclMsgLst = new msglist();
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.viewusuario__default(),
             new Object[][] {
                 new Object[] {
-               H000H2_A1UsuarioID, H000H2_A2Name
+               H000J2_A1UsuarioID, H000J2_A9Name
                }
                , new Object[] {
-               H000H3_A1UsuarioID, H000H3_A2Name
+               H000J3_A1UsuarioID, H000J3_A9Name
                }
             }
          );
@@ -1118,7 +1130,7 @@ namespace GeneXus.Programs {
       private String FormProcess ;
       private String bodyStyle ;
       private String GXKey ;
-      private String A2Name ;
+      private String A9Name ;
       private String AV7SelectedTabCode ;
       private String Tab_Class ;
       private String GX_FocusControl ;
@@ -1161,10 +1173,10 @@ namespace GeneXus.Programs {
       private GXUserControl ucTab ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private short[] H000H2_A1UsuarioID ;
-      private String[] H000H2_A2Name ;
-      private short[] H000H3_A1UsuarioID ;
-      private String[] H000H3_A2Name ;
+      private short[] H000J2_A1UsuarioID ;
+      private String[] H000J2_A9Name ;
+      private short[] H000J3_A1UsuarioID ;
+      private String[] H000J3_A9Name ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
       private GXWebForm Form ;
@@ -1186,17 +1198,17 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmH000H2 ;
-          prmH000H2 = new Object[] {
+          Object[] prmH000J2 ;
+          prmH000J2 = new Object[] {
           new Object[] {"@AV12UsuarioID",SqlDbType.SmallInt,4,0}
           } ;
-          Object[] prmH000H3 ;
-          prmH000H3 = new Object[] {
+          Object[] prmH000J3 ;
+          prmH000J3 = new Object[] {
           new Object[] {"@AV12UsuarioID",SqlDbType.SmallInt,4,0}
           } ;
           def= new CursorDef[] {
-              new CursorDef("H000H2", "SELECT [UsuarioID], [Name] FROM [Usuario] WHERE [UsuarioID] = @AV12UsuarioID ORDER BY [UsuarioID] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000H2,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("H000H3", "SELECT [UsuarioID], [Name] FROM [Usuario] WHERE [UsuarioID] = @AV12UsuarioID ORDER BY [UsuarioID] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000H3,1, GxCacheFrequency.OFF ,false,true )
+              new CursorDef("H000J2", "SELECT [UsuarioID], [Name] FROM [Usuario] WHERE [UsuarioID] = @AV12UsuarioID ORDER BY [UsuarioID] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000J2,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("H000J3", "SELECT [UsuarioID], [Name] FROM [Usuario] WHERE [UsuarioID] = @AV12UsuarioID ORDER BY [UsuarioID] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000J3,1, GxCacheFrequency.OFF ,false,true )
           };
        }
     }

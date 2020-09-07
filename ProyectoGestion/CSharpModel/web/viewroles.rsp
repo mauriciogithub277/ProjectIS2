@@ -17,4 +17,4 @@
 /r:GxBaseBuilder.dll
 /out:bin\viewroles.dll
 viewroles.cs
-isauthorized.cs
+wwpbaseobjects\isauthorized.cs

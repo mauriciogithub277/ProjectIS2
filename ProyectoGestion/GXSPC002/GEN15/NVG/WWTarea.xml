@@ -4,25 +4,47 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>38</ObjId>
+<ObjId>23</ObjId>
 <ObjName>WWTarea</ObjName>
-<ObjDesc>Tareas</ObjDesc>
+<ObjDesc>Work With Tarea</ObjDesc>
 <ObjPgmName>WWTarea</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
 <Warnings>
 <Warning>
+<MsgCode>spc0025</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>20</Line></Location>
+<Message>
+<Token>Too many parameters </Token>
+<Token>linking</Token>
+<Sp></Sp>
+<Token>Tarea</Token>
+<Token>.</Token></Message></Warning>
+<Warning>
 <MsgCode>spc0038</MsgCode>
 <Message>
 <Token>There is no index for order </Token>
 <Attribute>
-<AttriId>24</AttriId>
+<AttriId>26</AttriId>
 <AttriName>TareaName</AttriName>
 <Description>Tarea Name</Description></Attribute>
 <Token>; poor performance may be noticed</Token>
 <Token> in grid '</Token>
 <Token>Grid</Token>
 <Token>'</Token>
+<Token>.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0025</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>26</Line></Location>
+<Message>
+<Token>Too many parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>Tarea</Token>
 <Token>.</Token></Message></Warning></Warnings>
 <Errors></Errors>
 <Generator>
@@ -37,9 +59,9 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>10</ObjId>
-<ObjName>NotAuthorized</ObjName>
-<ObjPgmName>NotAuthorized</ObjPgmName>
+<ObjId>7</ObjId>
+<ObjName>WWPBaseObjects.NotAuthorized</ObjName>
+<ObjPgmName>WWPBaseObjects.NotAuthorized</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Parameters>
 <Variable>
@@ -56,12 +78,12 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>8</TableId>
+<TableId>5</TableId>
 <TableName>Tarea</TableName>
 <Description>Tarea</Description></Table></BaseTable>
 <Order>
 <Attribute>
-<AttriId>24</AttriId>
+<AttriId>26</AttriId>
 <AttriName>TareaName</AttriName>
 <Description>Tarea Name</Description></Attribute></Order>
 <Condition></Condition>
@@ -80,7 +102,7 @@
 <ConditionalConstraint>
 <Constraint>
 <Attribute>
-<AttriId>24</AttriId>
+<AttriId>26</AttriId>
 <AttriName>TareaName</AttriName>
 <Description>Tarea Name</Description></Attribute>
 <Sp></Sp>
@@ -100,13 +122,13 @@
 <Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
 <NavigationTree>
 <Table>
-<TableId>8</TableId>
+<TableId>5</TableId>
 <TableName>Tarea</TableName>
 <Description>Tarea</Description>
 <RecordsToRead>many</RecordsToRead>
 <KeyAttributes>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
@@ -120,7 +142,7 @@
 <Object>
 <ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
 <ObjCls>0</ObjCls>
-<ObjId>8</ObjId>
+<ObjId>6</ObjId>
 <ObjName>Tarea</ObjName>
 <ObjPgmName>Tarea</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
@@ -132,7 +154,7 @@
 <Token>nullvalue(</Token>
 <Sp></Sp>
 <Attribute>
-<AttriId>23</AttriId>
+<AttriId>5</AttriId>
 <AttriName>TareaID</AttriName>
 <Description>Tarea ID</Description></Attribute>
 <Token>)</Token></Parameters>
@@ -146,4 +168,16 @@
 <Event>
 <EventName>'PREPARETRANSACTION'</EventName>
 <EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'ATRAS'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>14</ObjId>
+<ObjName>WWProyect</ObjName>
+<ObjPgmName>WWProyect</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Parameters></Parameters>
+<IF></IF></CALL></Event>
 <Suggests></Suggests></ObjectSpec>
